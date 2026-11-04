@@ -1,0 +1,96 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.team3.co.il/jobs/",
+        "url": "https://www.team3.co.il/jobs/",
+        "name": "חברת אבטחה דרושים : כל המשרות במקום אחד - צוות 3",
+        "isPartOf": {
+          "@id": "https://www.team3.co.il/#website"
+        },
+        "datePublished": "2022-08-30T17:06:01+00:00",
+        "dateModified": "2025-07-20T11:02:14+00:00",
+        "description": "רוצה לעבוד בצוות 3? לחברת האבטחה הגדולה בישראל דרושים עובדים למגוון משרות בפריסה ארצית. בחר/י את המשרה הבאה שלך כאן. היכנסו לעמוד עכשיו לפרטים נוספים.",
+        "breadcrumb": {
+          "@id": "https://www.team3.co.il/jobs/#breadcrumb"
+        },
+        "inLanguage": "he-IL",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://www.team3.co.il/jobs/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.team3.co.il/jobs/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "דף הבית",
+            "item": "https://www.team3.co.il/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "דרושים"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.team3.co.il/#website",
+        "url": "https://www.team3.co.il/",
+        "name": "צוות 3",
+        "description": "",
+        "publisher": {
+          "@id": "https://www.team3.co.il/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.team3.co.il/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "he-IL"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.team3.co.il/#organization",
+        "name": "צוות 3",
+        "url": "https://www.team3.co.il/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "he-IL",
+          "@id": "https://www.team3.co.il/#/schema/logo/image/",
+          "url": "https://www.team3.co.il/wp-content/uploads/2022/07/logo.png",
+          "contentUrl": "https://www.team3.co.il/wp-content/uploads/2022/07/logo.png",
+          "width": 150,
+          "height": 150,
+          "caption": "צוות 3"
+        },
+        "image": {
+          "@id": "https://www.team3.co.il/#/schema/logo/image/"
+        },
+        "sameAs": [
+          "https://www.facebook.com/team3group",
+          "https://www.instagram.com/"
+        ]
+      }
+    ]
+  }
+]

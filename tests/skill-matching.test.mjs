@@ -1,0 +1,10 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {testDatabase,actAs} from './support/database.mjs';
+test('Skill coverage uses only the current profile, full job text and public roles; missing information has no score',async()=>{const pg=await testDatabase();try{const a='b2000000-0000-4000-8000-000000000001',b='b2000000-0000-4000-8000-000000000002';await pg.query('insert into auth.users(id) values($1),($2)',[a,b]);await actAs(pg,a);const org=(await pg.query("select create_organization('Skills fixture','employer') id")).rows[0].id;
+await pg.query("insert into candidate_profiles(user_id,full_name,skills) values($1,'Private fixture','SQL')",[a]);
+const j=(await pg.query("insert into jobs(organization_id,title,location,description,type) values($1,'Skills fixture','Israel','Required SQL and Python','full-time') returning id",[org])).rows[0].id;
+await pg.query("insert into jobs(organization_id,title,location,description,type,status) values($1,'Closed fixture','Israel','SQL Python','full-time','closed')",[org]);
+let r=(await pg.query('select * from my_job_skill_matches()')).rows;assert.equal(r.length,1);assert.equal(r[0].id,j);assert.equal(r[0].percentage,50);assert.deepEqual(r[0].matched,['SQL']);assert.deepEqual(r[0].missing,['Python']);
+await actAs(pg,b);assert.equal((await pg.query('select * from my_job_skill_matches()')).rows.length,0);
+await pg.query("insert into candidate_profiles(user_id,full_name,skills) values($1,'Other private fixture','Python SQL')",[b]);r=(await pg.query('select * from my_job_skill_matches()')).rows;assert.equal(r[0].percentage,100);
+await pg.exec('reset role;set role anon');await assert.rejects(pg.query('select * from my_job_skill_matches()'));
+}finally{await pg.close()}});

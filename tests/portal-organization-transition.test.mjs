@@ -1,0 +1,45 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {testDatabase,actAs} from './support/database.mjs';
+test('Portal to employer link needs independent agency approval and preserves shared history and privacy',async()=>{
+ const pg=await testDatabase();try{
+ const agencyUser='fa000000-0000-4000-8000-000000000001',clientUser='fa000000-0000-4000-8000-000000000002',otherUser='fa000000-0000-4000-8000-000000000003';
+ await pg.query("insert into auth.users(id,email,email_confirmed_at) values($1,'agency@link.invalid',now()),($2,'client@link.invalid',now()),($3,'other@link.invalid',now())",[agencyUser,clientUser,otherUser]);
+ await actAs(pg,agencyUser);const agency=(await pg.query("select create_organization('Link test agency','agency') id")).rows[0].id;
+ const client=(await pg.query("insert into agency_clients(organization_id,name,notes) values($1,'Link test client','PRIVATE AGENCY NOTE') returning id",[agency])).rows[0].id;
+ await pg.query("select set_client_portal_member($1,'client@link.invalid')",[client]);await pg.query('select set_client_hourly_fee($1,22)',[client]);
+ const job=(await pg.query("insert into jobs(organization_id,title,location,type,description,client_id,is_public) values($1,'Link test job','Test','full-time','Test',$2,false) returning id",[agency,client])).rows[0].id;
+ const candidate=(await pg.query("insert into candidates(organization_id,owner_id,full_name,email,phone,visibility) values($1,$2,'Test person','person@link.invalid','0508234567','shared') returning id",[agency,agencyUser])).rows[0].id;
+ const placement=(await pg.query("insert into candidate_placements(organization_id,candidate_id,job_id,created_by) values($1,$2,$3,$4) returning id",[agency,candidate,job,agencyUser])).rows[0].id;
+ await pg.query('select request_candidate_submission($1)',[placement]);const submission=(await pg.query('select id from candidate_submissions where placement_id=$1',[placement])).rows[0].id;
+ const presentation=(await pg.query("select share_candidate_portal($1,'Shared professional summary',null) id",[submission])).rows[0].id;
+ await assert.rejects(pg.query('update agency_clients set target_organization_id=$1 where id=$2',[agency,client]),/APPROVED_LINK_REQUIRED/);
+ await actAs(pg,clientUser);const employer=(await pg.query("select create_organization('Link test employer','employer') id")).rows[0].id;
+ const before=(await pg.query('select client_portal_data() d')).rows[0].d;
+ await pg.query("select submit_client_feedback($1,'note','Existing feedback')",[presentation]);
+ const link=(await pg.query('select request_portal_organization_link($1,$2) id',[client,employer])).rows[0].id;
+ await assert.rejects(pg.query('select decide_portal_organization_link($1,true)',[link]),/NOT_PERMITTED/);
+ await assert.rejects(pg.query('select request_portal_organization_link($1,$2)',[client,employer]),/LINK_ALREADY_EXISTS/);
+ await actAs(pg,otherUser);assert.equal((await pg.query('select portal_transition_options() d')).rows[0].d.clients.length,0);
+ await assert.rejects(pg.query('select request_portal_organization_link($1,$2)',[client,employer]),/NOT_PERMITTED/);
+ await assert.rejects(pg.query('select agency_client_link_state($1)',[client]),/NOT_PERMITTED/);
+ await assert.rejects(pg.query('select organization_portal_connections($1)',[employer]),/NOT_PERMITTED/);
+ await actAs(pg,agencyUser);await pg.query('select decide_portal_organization_link($1,true)',[link]);
+ assert.equal((await pg.query('select target_organization_id from agency_clients where id=$1',[client])).rows[0].target_organization_id,employer);
+ assert.equal((await pg.query('select client_pilot_settings($1) d',[client])).rows[0].d.monthly_percent,22);
+ await assert.rejects(pg.query('select decide_portal_organization_link($1,true)',[link]),/NOT_PERMITTED/);
+ await assert.rejects(pg.query('update agency_clients set target_organization_id=null where id=$1',[client]),/END_LINK_FIRST/);
+ await actAs(pg,clientUser);const after=(await pg.query('select client_portal_data() d')).rows[0].d;
+ assert.equal(after.presentations[0].id,before.presentations[0].id);assert.equal(after.presentations[0].feedback[0].note,'Existing feedback');
+ assert.equal((await pg.query('select count(*) n from candidates where organization_id=$1',[agency])).rows[0].n,0);
+ assert.equal((await pg.query('select count(*) n from candidates where organization_id=$1',[employer])).rows[0].n,0);
+ assert.ok(!JSON.stringify(after).includes('PRIVATE AGENCY NOTE'));
+ assert.equal((await pg.query('select organization_portal_connections($1) d',[employer])).rows[0].d[0].status,'active');
+ await pg.query('select end_portal_organization_link($1)',[link]);assert.equal((await pg.query('select organization_portal_connections($1) d',[employer])).rows[0].d.length,0);
+ assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.presentations.length,1);
+ await actAs(pg,agencyUser);assert.equal((await pg.query('select target_organization_id from agency_clients where id=$1',[client])).rows[0].target_organization_id,null);
+ assert.equal((await pg.query("select count(*) n from management_audit where entity_id=$1 and action like 'organization_link_%'",[client])).rows[0].n,3);
+ const second=(await pg.query("insert into agency_clients(organization_id,name) values($1,'New workspace test') returning id",[agency])).rows[0].id;
+ await pg.query("select set_client_portal_member($1,'other@link.invalid')",[second]);await actAs(pg,otherUser);
+ const created=(await pg.query("select request_portal_organization_link($1,null,'New employer from portal','0508234567') id",[second])).rows[0].id;assert.ok(created);
+ assert.ok((await pg.query('select portal_transition_options() d')).rows[0].d.organizations.some(o=>o.name==='New employer from portal'));
+ }finally{await pg.close()}
+});

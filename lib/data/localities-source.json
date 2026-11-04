@@ -1,0 +1,11 @@
+{
+  "publisher": "Israel Central Bureau of Statistics",
+  "dataset": "Localities in Israel 2023",
+  "resource": "d47a54ff-87f0-44b3-b33a-f284c0c38e5a",
+  "url": "https://data.gov.il/he/datasets/lamas/localities-in-israel/d47a54ff-87f0-44b3-b33a-f284c0c38e5a",
+  "retrieved": "2026-11-02",
+  "sourceRows": 1484,
+  "localities": 1249,
+  "selection": "All locality forms below 500; excludes non-locality statistical areas (5xx).",
+  "regions": "Product search regions derived from district and subdistrict; Herzliya and Ramat Hasharon grouped under Sharon."
+}

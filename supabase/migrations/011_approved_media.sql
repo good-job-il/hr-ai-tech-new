@@ -1,0 +1,14 @@
+begin;
+create table public.site_content(id integer primary key check(id=1),intro_video_path text check(intro_video_path is null or (intro_video_path like 'intro/%' and position('..' in intro_video_path)=0)),published boolean not null default false,updated_at timestamptz not null default now());
+alter table public.site_content add constraint video_required_for_publication check(not published or intro_video_path is not null);
+insert into public.site_content(id) values(1);
+alter table public.site_content enable row level security;
+create policy site_content_public on public.site_content for select using(published);
+create policy site_content_admin on public.site_content for select to authenticated using(public.is_platform_admin());
+create policy site_content_update on public.site_content for update to authenticated using(public.is_platform_admin()) with check(public.is_platform_admin());
+revoke all on public.site_content from anon,authenticated;grant select on public.site_content to anon,authenticated;grant update(intro_video_path,published,updated_at) on public.site_content to authenticated;
+insert into storage.buckets(id,name,public,file_size_limit,allowed_mime_types) values('platform-media','platform-media',false,52428800,array['video/mp4','video/webm']) on conflict(id) do nothing;
+create policy platform_media_upload on storage.objects for insert to authenticated with check(bucket_id='platform-media' and public.is_platform_admin() and (storage.foldername(name))[1]='intro');
+create policy platform_media_admin on storage.objects for select to authenticated using(bucket_id='platform-media' and public.is_platform_admin());
+create policy platform_media_public on storage.objects for select using(bucket_id='platform-media' and exists(select 1 from public.site_content s where s.published and s.intro_video_path=storage.objects.name));
+commit;

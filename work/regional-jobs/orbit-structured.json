@@ -1,0 +1,64 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://orbit-cs.com/",
+        "url": "https://orbit-cs.com/",
+        "name": "Orbit Communication Systems",
+        "isPartOf": {
+          "@id": "https://orbit-cs.com/#website"
+        },
+        "datePublished": "2021-06-06T09:03:25+00:00",
+        "dateModified": "2026-06-09T11:16:09+00:00",
+        "description": "Orbit Communication Systems Ltd. is a global leader in satellite tracking and airborne communications solutions, helping to expand and redefine how we connect. Israel and US orbit-cs.com Joined August 2011.",
+        "breadcrumb": {
+          "@id": "https://orbit-cs.com/#breadcrumb"
+        },
+        "inLanguage": "en-US",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://orbit-cs.com/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://orbit-cs.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://orbit-cs.com/#website",
+        "url": "https://orbit-cs.com/",
+        "name": "Orbit Communication Systems",
+        "description": "",
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://orbit-cs.com/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+begin;
+insert into storage.buckets(id,name,public,file_size_limit,allowed_mime_types) values('support-screenshots','support-screenshots',false,3145728,array['image/png','image/jpeg','image/webp']) on conflict(id) do nothing;
+create table public.support_screenshots(id uuid primary key default gen_random_uuid(),ticket_id uuid not null references public.support_tickets,uploaded_by uuid not null references auth.users,object_path text not null unique,created_at timestamptz not null default now(),check(object_path like ticket_id::text||'/%'));
+alter table public.support_screenshots enable row level security;
+create policy support_screenshots_read on public.support_screenshots for select to authenticated using(exists(select 1 from public.support_tickets t where t.id=ticket_id));
+create policy support_screenshots_create on public.support_screenshots for insert to authenticated with check(uploaded_by=auth.uid() and exists(select 1 from public.support_tickets t where t.id=ticket_id and t.user_id=auth.uid()));
+revoke all on public.support_screenshots from public,anon,authenticated;
+grant select on public.support_screenshots to authenticated;grant insert(ticket_id,uploaded_by,object_path) on public.support_screenshots to authenticated;
+create policy support_image_upload on storage.objects for insert to authenticated with check(bucket_id='support-screenshots' and exists(select 1 from public.support_tickets t where t.id::text=(storage.foldername(name))[1] and t.user_id=auth.uid()));
+create policy support_image_read on storage.objects for select to authenticated using(bucket_id='support-screenshots' and exists(select 1 from public.support_screenshots s where s.object_path=name));
+create policy support_image_cleanup on storage.objects for delete to authenticated using(bucket_id='support-screenshots' and exists(select 1 from public.support_tickets t where t.id::text=(storage.foldername(name))[1] and t.user_id=auth.uid()));
+commit;

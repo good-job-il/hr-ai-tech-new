@@ -1,0 +1,526 @@
+[
+  {
+    "title": "בית",
+    "url": "https://cdn.job-x.co.il/"
+  },
+  {
+    "title": "מידע כללי",
+    "url": "https://cdn.job-x.co.il/who-we-are"
+  },
+  {
+    "title": "עמוד הבית",
+    "url": "https://cdn.job-x.co.il/"
+  },
+  {
+    "title": "מספר אזוריםאופנה & חנויותשכר אש!",
+    "url": "https://cdn.job-x.co.il/businesses/adidas/98614fe4-c1ba-4fac-a22c-dbafd2464301"
+  },
+  {
+    "title": "למידע נוסף",
+    "url": "https://cdn.job-x.co.il/businesses/adidas/98614fe4-c1ba-4fac-a22c-dbafd2464301"
+  },
+  {
+    "title": "מספר אזוריםאופנה & חנויותשכר אש!",
+    "url": "https://cdn.job-x.co.il/businesses/adidas/75270348-b10e-478f-8f75-180d0e441775"
+  },
+  {
+    "title": "למידע נוסף",
+    "url": "https://cdn.job-x.co.il/businesses/adidas/75270348-b10e-478f-8f75-180d0e441775"
+  },
+  {
+    "title": "מספר אזוריםאופנה & חנויותשכר אש!",
+    "url": "https://cdn.job-x.co.il/businesses/adidas/302730a2-e63f-4bea-886a-4fb63be858bb"
+  },
+  {
+    "title": "למידע נוסף",
+    "url": "https://cdn.job-x.co.il/businesses/adidas/302730a2-e63f-4bea-886a-4fb63be858bb"
+  },
+  {
+    "title": "מכירות",
+    "url": "https://cdn.job-x.co.il/sales/center"
+  },
+  {
+    "title": "שירות לקוחות",
+    "url": "https://cdn.job-x.co.il/service/center"
+  },
+  {
+    "title": "חנויות אופנה",
+    "url": "https://cdn.job-x.co.il/fashion/center"
+  },
+  {
+    "title": "חיילים משוחררים",
+    "url": "https://cdn.job-x.co.il/soldiers/center"
+  },
+  {
+    "title": "עבודה מעודפת",
+    "url": "https://cdn.job-x.co.il/muadefet/center"
+  },
+  {
+    "title": "עבודות אבטחה",
+    "url": "https://cdn.job-x.co.il/security/center"
+  },
+  {
+    "title": "עבודה בבתי מלון",
+    "url": "https://cdn.job-x.co.il/hotels/center"
+  },
+  {
+    "title": "עבודה ראשונה",
+    "url": "https://cdn.job-x.co.il/firstjob/center"
+  },
+  {
+    "title": "נהגים ורכב",
+    "url": "https://cdn.job-x.co.il/driver/center"
+  },
+  {
+    "title": "מחסנאים",
+    "url": "https://cdn.job-x.co.il/logistics/center"
+  },
+  {
+    "title": "עבודה בחו״ל",
+    "url": "https://cdn.job-x.co.il/work-abroad/center"
+  },
+  {
+    "title": "חינוך והדרכה",
+    "url": "https://cdn.job-x.co.il/education/center"
+  },
+  {
+    "title": "עבודה מהבית",
+    "url": "https://cdn.job-x.co.il/work-from-home/center"
+  },
+  {
+    "title": "שליחויות",
+    "url": "https://cdn.job-x.co.il/couriers-deliveries/center"
+  },
+  {
+    "title": "מכירות",
+    "url": "https://cdn.job-x.co.il/sales/south"
+  },
+  {
+    "title": "שירות לקוחות",
+    "url": "https://cdn.job-x.co.il/service/south"
+  },
+  {
+    "title": "אופנה",
+    "url": "https://cdn.job-x.co.il/fashion/south"
+  },
+  {
+    "title": "נהגים",
+    "url": "https://cdn.job-x.co.il/driver/south"
+  },
+  {
+    "title": "מועדפת",
+    "url": "https://cdn.job-x.co.il/muadefet/south"
+  },
+  {
+    "title": "אבטחה",
+    "url": "https://cdn.job-x.co.il/security/south"
+  },
+  {
+    "title": "חינוך והדרכה",
+    "url": "https://cdn.job-x.co.il/education/south"
+  },
+  {
+    "title": "מלצרות",
+    "url": "https://cdn.job-x.co.il/waiters/south"
+  },
+  {
+    "title": "מלונאות",
+    "url": "https://cdn.job-x.co.il/hotels/south"
+  },
+  {
+    "title": "מחסנאים",
+    "url": "https://cdn.job-x.co.il/logistics/south"
+  },
+  {
+    "title": "עבודות זמניות",
+    "url": "https://cdn.job-x.co.il/avodot-zmaniyot-hashlamat-secher/south"
+  },
+  {
+    "title": "עבודה ראשונה",
+    "url": "https://cdn.job-x.co.il/firstjob/south"
+  },
+  {
+    "title": "שליחיות",
+    "url": "https://cdn.job-x.co.il/couriers-deliveries/south"
+  },
+  {
+    "title": "עבודה מהבית",
+    "url": "https://cdn.job-x.co.il/work-from-home/south"
+  },
+  {
+    "title": "מכירות",
+    "url": "https://cdn.job-x.co.il/sales/north"
+  },
+  {
+    "title": "שירות לקוחות",
+    "url": "https://cdn.job-x.co.il/service/north"
+  },
+  {
+    "title": "אופנה",
+    "url": "https://cdn.job-x.co.il/fashion/north"
+  },
+  {
+    "title": "נהגים",
+    "url": "https://cdn.job-x.co.il/driver/north"
+  },
+  {
+    "title": "מועדפת",
+    "url": "https://cdn.job-x.co.il/muadefet/north"
+  },
+  {
+    "title": "אבטחה",
+    "url": "https://cdn.job-x.co.il/security/north"
+  },
+  {
+    "title": "חינוך והדרכה",
+    "url": "https://cdn.job-x.co.il/education/north"
+  },
+  {
+    "title": "מלצרות",
+    "url": "https://cdn.job-x.co.il/waiters/north"
+  },
+  {
+    "title": "מלונאות",
+    "url": "https://cdn.job-x.co.il/hotels/north"
+  },
+  {
+    "title": "מחסנאים",
+    "url": "https://cdn.job-x.co.il/logistics/north"
+  },
+  {
+    "title": "השלמת הכנסה",
+    "url": "https://cdn.job-x.co.il/avodot-zmaniyot-hashlamat-secher/north"
+  },
+  {
+    "title": "עבודה ראשונה",
+    "url": "https://cdn.job-x.co.il/firstjob/north"
+  },
+  {
+    "title": "שליחויות",
+    "url": "https://cdn.job-x.co.il/couriers-deliveries/north"
+  },
+  {
+    "title": "עבודה מהבית",
+    "url": "https://cdn.job-x.co.il/work-from-home/north"
+  },
+  {
+    "title": "מכירות",
+    "url": "https://cdn.job-x.co.il/sales/sharon"
+  },
+  {
+    "title": "שירות לקוחות",
+    "url": "https://cdn.job-x.co.il/service/sharon"
+  },
+  {
+    "title": "אופנה",
+    "url": "https://cdn.job-x.co.il/fashion/sharon"
+  },
+  {
+    "title": "נהגים",
+    "url": "https://cdn.job-x.co.il/driver/sharon"
+  },
+  {
+    "title": "מועדפת",
+    "url": "https://cdn.job-x.co.il/muadefet/sharon"
+  },
+  {
+    "title": "אבטחה",
+    "url": "https://cdn.job-x.co.il/security/sharon"
+  },
+  {
+    "title": "חינוך והדרכה",
+    "url": "https://cdn.job-x.co.il/education/sharon"
+  },
+  {
+    "title": "מלצרות",
+    "url": "https://cdn.job-x.co.il/waiters/sharon"
+  },
+  {
+    "title": "מלונאות",
+    "url": "https://cdn.job-x.co.il/hotels/sharon"
+  },
+  {
+    "title": "מחסנאים",
+    "url": "https://cdn.job-x.co.il/logistics/sharon"
+  },
+  {
+    "title": "השלמת הכנסה",
+    "url": "https://cdn.job-x.co.il/avodot-zmaniyot-hashlamat-secher/sharon"
+  },
+  {
+    "title": "עבודה ראשונה",
+    "url": "https://cdn.job-x.co.il/firstjob/sharon"
+  },
+  {
+    "title": "שליחויות",
+    "url": "https://cdn.job-x.co.il/couriers-deliveries/sharon"
+  },
+  {
+    "title": "עבודה מהבית",
+    "url": "https://cdn.job-x.co.il/work-from-home/sharon"
+  },
+  {
+    "title": "דרושים סלקום",
+    "url": "https://cdn.job-x.co.il/businesses/cellcom"
+  },
+  {
+    "title": "דרושים פרטנר",
+    "url": "https://cdn.job-x.co.il/businesses/partner"
+  },
+  {
+    "title": "דרושים ביטוח ישיר",
+    "url": "https://cdn.job-x.co.il/businesses/bituah-yashir"
+  },
+  {
+    "title": "דרושים הראל",
+    "url": "https://cdn.job-x.co.il/businesses/harel"
+  },
+  {
+    "title": "דרושים פלאפון",
+    "url": "https://cdn.job-x.co.il/businesses/pelephone"
+  },
+  {
+    "title": "דרושים פספורכארד",
+    "url": "https://cdn.job-x.co.il/businesses/passportcard"
+  },
+  {
+    "title": "דרושים כלמוביל",
+    "url": "https://cdn.job-x.co.il/businesses/colmobil"
+  },
+  {
+    "title": "דרושים איי דיגיטל",
+    "url": "https://cdn.job-x.co.il/businesses/idigital"
+  },
+  {
+    "title": "דרושים בנק לאומי",
+    "url": "https://cdn.job-x.co.il/businesses/bankleumi"
+  },
+  {
+    "title": "דרושים קבוצת פוקס",
+    "url": "https://cdn.job-x.co.il/businesses/foxgroup"
+  },
+  {
+    "title": "דרושים כאל",
+    "url": "https://cdn.job-x.co.il/businesses/cal"
+  },
+  {
+    "title": "דרושים מקס",
+    "url": "https://cdn.job-x.co.il/businesses/max"
+  },
+  {
+    "title": "דרושים אלעל",
+    "url": "https://cdn.job-x.co.il/businesses/elal"
+  },
+  {
+    "title": "דרושים אורבניקה",
+    "url": "https://cdn.job-x.co.il/businesses/urbanica"
+  },
+  {
+    "title": "דרושים ללין",
+    "url": "https://cdn.job-x.co.il/businesses/laline"
+  },
+  {
+    "title": "דרושים אדידס",
+    "url": "https://cdn.job-x.co.il/businesses/adidas"
+  },
+  {
+    "title": "דרושים נייקי",
+    "url": "https://cdn.job-x.co.il/businesses/nike"
+  },
+  {
+    "title": "דרושים פנדורה",
+    "url": "https://cdn.job-x.co.il/businesses/pandora"
+  },
+  {
+    "title": "דרושים פוקס",
+    "url": "https://cdn.job-x.co.il/businesses/fox"
+  },
+  {
+    "title": "דרושים פתאל",
+    "url": "https://cdn.job-x.co.il/businesses/fattal"
+  },
+  {
+    "title": "דרושים גולף",
+    "url": "https://cdn.job-x.co.il/businesses/golfco"
+  },
+  {
+    "title": "דרושים קרולינה למקה",
+    "url": "https://cdn.job-x.co.il/businesses/carolinalemke"
+  },
+  {
+    "title": "דרושים סטימצקי",
+    "url": "https://cdn.job-x.co.il/businesses/steimatzky"
+  },
+  {
+    "title": "דרושים פוט לוקר",
+    "url": "https://cdn.job-x.co.il/businesses/foot-locker"
+  },
+  {
+    "title": "דרושים קסטרו",
+    "url": "https://cdn.job-x.co.il/businesses/castro"
+  },
+  {
+    "title": "דרושים רנואר",
+    "url": "https://cdn.job-x.co.il/businesses/renuar"
+  },
+  {
+    "title": "דרושים זארה",
+    "url": "https://cdn.job-x.co.il/businesses/zara"
+  },
+  {
+    "title": "דרושים אמריקן איגל",
+    "url": "https://cdn.job-x.co.il/businesses/american_eagle"
+  },
+  {
+    "title": "support@job-x.co.il",
+    "url": "mailto:support@job-x.co.il"
+  },
+  {
+    "title": "",
+    "url": "https://www.instagram.com/job_x_co_il?igsh=Mzg4MG9kc2dpdXh3&utm_source=qr"
+  },
+  {
+    "title": "",
+    "url": "https://www.tiktok.com/@job_x.co.il"
+  },
+  {
+    "title": "עמוד הבית",
+    "url": "https://cdn.job-x.co.il/"
+  },
+  {
+    "title": "פרסום משרה",
+    "url": "https://cdn.job-x.co.il/business"
+  },
+  {
+    "title": "מי אנחנו",
+    "url": "https://cdn.job-x.co.il/who-we-are"
+  },
+  {
+    "title": "תקנון",
+    "url": "https://cdn.job-x.co.il/terms"
+  },
+  {
+    "title": "מדיניות פרטיות",
+    "url": "https://cdn.job-x.co.il/policy"
+  },
+  {
+    "title": "מדיניות קוקיז",
+    "url": "https://cdn.job-x.co.il/cookies"
+  },
+  {
+    "title": "הצהרת נגישות",
+    "url": "https://cdn.job-x.co.il/accessibility"
+  },
+  {
+    "title": "צרו קשר",
+    "url": "https://cdn.job-x.co.il/contact"
+  },
+  {
+    "title": "בלוג",
+    "url": "https://cdn.job-x.co.il/blog"
+  },
+  {
+    "title": "שאלות נפוצות",
+    "url": "https://cdn.job-x.co.il/faq"
+  },
+  {
+    "title": "עבודה מהבית",
+    "url": "https://cdn.job-x.co.il/?categories=work-from-home"
+  },
+  {
+    "title": "עבודה מועדפת",
+    "url": "https://cdn.job-x.co.il/?categories=muadefet"
+  },
+  {
+    "title": "עבודה ראשונה (16+)",
+    "url": "https://cdn.job-x.co.il/?categories=firstjob"
+  },
+  {
+    "title": "עבודה בחו״ל",
+    "url": "https://cdn.job-x.co.il/?categories=work-abroad"
+  },
+  {
+    "title": "עבודות זמניות",
+    "url": "https://cdn.job-x.co.il/?categories=avodot-zmaniyot-hashlamat-secher"
+  },
+  {
+    "title": "דרושים בנתב״ג",
+    "url": "https://cdn.job-x.co.il/jobs-ben-gurion-airport/center"
+  },
+  {
+    "title": "דרושים נהגים",
+    "url": "https://cdn.job-x.co.il/?categories=driver"
+  },
+  {
+    "title": "דרושים אבטחה",
+    "url": "https://cdn.job-x.co.il/?categories=security"
+  },
+  {
+    "title": "דרושים חיילים משוחררים",
+    "url": "https://cdn.job-x.co.il/?categories=soldiers"
+  },
+  {
+    "title": "דרושים סלקום",
+    "url": "https://cdn.job-x.co.il/businesses/cellcom"
+  },
+  {
+    "title": "דרושים פרטנר",
+    "url": "https://cdn.job-x.co.il/businesses/partner"
+  },
+  {
+    "title": "דרושים ביטוח ישיר",
+    "url": "https://cdn.job-x.co.il/businesses/bituah-yashir"
+  },
+  {
+    "title": "דרושים הראל",
+    "url": "https://cdn.job-x.co.il/businesses/harel"
+  },
+  {
+    "title": "דרושים קבוצת פוקס",
+    "url": "https://cdn.job-x.co.il/businesses/foxgroup"
+  },
+  {
+    "title": "דרושים כאל",
+    "url": "https://cdn.job-x.co.il/businesses/cal"
+  },
+  {
+    "title": "דרושים מקס",
+    "url": "https://cdn.job-x.co.il/businesses/max"
+  },
+  {
+    "title": "דרושים אלעל",
+    "url": "https://cdn.job-x.co.il/businesses/elal"
+  },
+  {
+    "title": "דרושים פנדורה",
+    "url": "https://cdn.job-x.co.il/businesses/pandora"
+  },
+  {
+    "title": "דרושים נייקי",
+    "url": "https://cdn.job-x.co.il/businesses/nike"
+  },
+  {
+    "title": "דרושים פוט לוקר",
+    "url": "https://cdn.job-x.co.il/businesses/foot-locker"
+  },
+  {
+    "title": "דרושים סטימצקי",
+    "url": "https://cdn.job-x.co.il/businesses/steimatzky"
+  },
+  {
+    "title": "דרושים זארה",
+    "url": "https://cdn.job-x.co.il/businesses/zara"
+  },
+  {
+    "title": "דרושים ללין",
+    "url": "https://cdn.job-x.co.il/businesses/laline"
+  },
+  {
+    "title": "",
+    "url": "https://www.instagram.com/job_x_co_il?igsh=Mzg4MG9kc2dpdXh3&utm_source=qr"
+  },
+  {
+    "title": "",
+    "url": "https://www.tiktok.com/@job_x.co.il"
+  }
+]

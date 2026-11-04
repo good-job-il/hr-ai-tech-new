@@ -1,0 +1,36 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {testDatabase,actAs} from './support/database.mjs';
+test('Per-client anonymity, document denial, historical privacy and scheduling authority',async()=>{const pg=await testDatabase();try{
+const manager='ee000000-0000-4000-8000-000000000001',clientUser='ee000000-0000-4000-8000-000000000002',outsider='ee000000-0000-4000-8000-000000000003';await pg.query("insert into auth.users(id,email,email_confirmed_at) values($1,'manager@example.invalid',now()),($2,'client@example.invalid',now()),($3,'other@example.invalid',now())",[manager,clientUser,outsider]);await actAs(pg,manager);const org=(await pg.query("select create_organization('Isolated agency','agency') id")).rows[0].id;
+const client=(await pg.query("insert into agency_clients(organization_id,name) values($1,'Isolated client') returning id",[org])).rows[0].id;await pg.query('select set_client_hourly_fee($1,22)',[client]);await pg.query("select set_client_portal_member($1,'client@example.invalid',true)",[client]);
+const job=(await pg.query("insert into jobs(organization_id,title,location,type,description,client_id) values($1,'Isolated job','Test','full-time','Test',$2) returning id",[org,client])).rows[0].id;await pg.query('update jobs set is_public=false where id=$1',[job]);const candidate=(await pg.query("insert into candidates(organization_id,owner_id,full_name,email,phone,visibility) values($1,$2,'Test person','private@example.invalid','0508234567','shared') returning id",[org,manager])).rows[0].id;const placement=(await pg.query("insert into candidate_placements(organization_id,candidate_id,job_id,created_by,notes) values($1,$2,$3,$4,'SECRET INTERNAL') returning id",[org,candidate,job,manager])).rows[0].id;
+await pg.query('select request_candidate_submission($1)',[placement]);const submission=(await pg.query('select id from candidate_submissions where placement_id=$1',[placement])).rows[0].id;const doc=(await pg.query("insert into candidate_documents(organization_id,candidate_id,object_path,label,uploaded_by) values($1,$2,$3,'Test CV.pdf',$4) returning id",[org,candidate,org+'/'+candidate+'/test.pdf',manager])).rows[0].id;await pg.query("insert into storage.objects(bucket_id,name) values('organization-cvs',$1)",[org+'/'+candidate+'/test.pdf']);const share=(await pg.query("select share_candidate_portal($1,'Approved professional summary',$2) id",[submission,doc])).rows[0].id;
+
+await actAs(pg,outsider);const request=(await pg.query("select request_client_portal_trial('Example client','Example agency') id")).rows[0].id;
+assert.equal((await pg.query("select request_client_portal_trial('Example client','Example agency') id")).rows[0].id,request);
+assert.equal((await pg.query('select has_client_portal($1) ok',[client])).rows[0].ok,false);
+assert.equal((await pg.query('select count(*) n from support_tickets where id=$1',[request])).rows[0].n,1);
+await actAs(pg,clientUser);assert.equal((await pg.query('select count(*) n from support_tickets where id=$1',[request])).rows[0].n,0);
+await actAs(pg,clientUser);await pg.query("select submit_client_feedback($1,'note','Test person private history')",[share]);
+await assert.rejects(pg.query("select submit_client_feedback($1,'interview_scheduled','',now()+interval '2 days')",[share]),/INVALID_INTERVIEW/);
+await assert.rejects(pg.query("select set_client_sharing_policy($1,true,'client')",[client]),/Not permitted/);
+await actAs(pg,manager);await pg.query("select set_client_sharing_policy($1,true,'client')",[client]);
+await actAs(pg,clientUser);assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.presentations.length,0);
+assert.equal((await pg.query("select count(*) n from storage.objects where bucket_id='organization-cvs'")).rows[0].n,0);
+await actAs(pg,manager);
+await assert.rejects(pg.query("select share_candidate_portal_identified_internal($1,'',$2)",[submission,doc]),/permission denied/);
+await assert.rejects(pg.query("select share_candidate_portal($1,'',null)",[submission]),/ANONYMOUS_REVIEW/);
+await assert.rejects(pg.query("select share_candidate_portal($1,'Test person',null,true)",[submission]),/IDENTIFIER/);
+await assert.rejects(pg.query("select share_candidate_portal($1,'private@example.invalid',null,true)",[submission]),/IDENTIFIER/);
+await assert.rejects(pg.query("select share_candidate_portal($1,'0508234567',null,true)",[submission]),/IDENTIFIER/);
+await assert.rejects(pg.query("select share_candidate_portal($1,'Skills',$2,true)",[submission,doc]),/ANONYMOUS_REVIEW/);
+await pg.query("select share_candidate_portal($1,'Experienced in accounting',null,true)",[submission]);
+await actAs(pg,clientUser);let portal=(await pg.query('select client_portal_data() d')).rows[0].d;
+assert.equal(portal.presentations[0].snapshot.anonymous,true);assert.equal(portal.presentations[0].snapshot.summary,'Experienced in accounting');
+assert.equal(portal.presentations[0].feedback.length,0);for(const value of ['Test person','private@example.invalid','0508234567','Test CV.pdf'])assert.ok(!JSON.stringify(portal).includes(value));
+await assert.rejects(pg.query('select client_presentation_document($1)',[share]));
+assert.equal((await pg.query("select count(*) n from storage.objects where bucket_id='organization-cvs'")).rows[0].n,0);
+await pg.query("select submit_client_feedback($1,'interview_scheduled','Confirmed',now()+interval '2 days')",[share]);
+portal=(await pg.query('select client_portal_data() d')).rows[0].d;assert.equal(portal.presentations[0].feedback[0].action,'interview_scheduled');
+await actAs(pg,manager);assert.equal((await pg.query('select count(*) n from placement_interviews where placement_id=$1',[placement])).rows[0].n,1);
+await actAs(pg,outsider);await assert.rejects(pg.query('select client_sharing_policy($1)',[client]),/Not permitted/);
+}finally{await pg.close()}});

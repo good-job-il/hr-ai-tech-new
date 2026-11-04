@@ -1,0 +1,2 @@
+import UiIcon from './ui-icon';
+export default function EmptyState({title,description,icon='mine',href,action}:{title:string;description?:string;icon?:string;href?:string;action?:string}){return <div className="sharedEmpty"><span className="emptyIcon"><UiIcon name={icon} size={29}/></span><b>{title}</b>{description&&<p>{description}</p>}{href&&action&&<a className="outlineButton" href={href}>{action}</a>}</div>}

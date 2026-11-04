@@ -1,0 +1,13 @@
+begin;
+create table public.support_tickets(id uuid primary key default gen_random_uuid(),user_id uuid not null references auth.users,category text not null check(category in('help','bug','privacy','deletion')),subject text not null check(length(trim(subject)) between 1 and 160),body text not null check(length(trim(body)) between 1 and 4000),status text not null default 'open' check(status in('open','in_progress','closed')),created_at timestamptz not null default now());
+alter table public.support_tickets enable row level security;
+create policy support_read on public.support_tickets for select to authenticated using(user_id=auth.uid() or public.is_platform_admin());
+create policy support_create on public.support_tickets for insert to authenticated with check(user_id=auth.uid() and status='open');
+create policy support_manage on public.support_tickets for update to authenticated using(public.is_platform_admin()) with check(public.is_platform_admin());
+revoke all on public.support_tickets from anon,authenticated;grant select on public.support_tickets to authenticated;grant insert(user_id,category,subject,body) on public.support_tickets to authenticated;grant update(status) on public.support_tickets to authenticated;
+create table public.support_replies(id uuid primary key default gen_random_uuid(),ticket_id uuid not null references public.support_tickets,author_id uuid not null references auth.users,body text not null check(length(trim(body)) between 1 and 4000),created_at timestamptz not null default now());
+alter table public.support_replies enable row level security;
+create policy support_reply_read on public.support_replies for select to authenticated using(exists(select 1 from public.support_tickets t where t.id=ticket_id));
+create policy support_reply_create on public.support_replies for insert to authenticated with check(author_id=auth.uid() and exists(select 1 from public.support_tickets t where t.id=ticket_id));
+revoke all on public.support_replies from anon,authenticated;grant select on public.support_replies to authenticated;grant insert(ticket_id,author_id,body) on public.support_replies to authenticated;
+commit;

@@ -1,0 +1,1 @@
+import {test} from 'node:test';import {readFile} from 'node:fs/promises';import {testDatabase} from './support/database.mjs';test('Cloud hierarchy rollback scenario is valid before running against Preview',async()=>{const pg=await testDatabase();try{await pg.exec(await readFile(new URL('./cloud-hierarchy.sql',import.meta.url),'utf8'))}finally{await pg.close()}});

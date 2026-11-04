@@ -1,0 +1,20 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const dir='supabase/migrations/';
+let s=await readFile(dir+'034_candidate_workbench.sql','utf8');
+let f=s.slice(s.indexOf('create function public.set_candidate_interest'),s.indexOf('create function public.search_candidate_pool')).replace('create function','create or replace function').replace(/begin\r?\n select \* into strict c/,'begin\n role_name:=public.import_role_label(role_name);\n select * into strict c');
+const head=`begin;
+-- Preserve unresolved source evidence and all candidate-interest IDs.
+create function public.import_role_label(value text) returns text language sql immutable set search_path='' as $$select case when trim(value) ~ '^[0-9]+$' then 'תפקיד לא מזוהה מהייבוא · '||trim(value) else trim(value) end$$;
+create table public.unresolved_role_sources(role_id uuid primary key references public.career_roles,organization_id uuid not null references public.organizations,source_code text not null,previous_name text not null,recorded_at timestamptz not null default now());
+alter table public.unresolved_role_sources enable row level security;
+create policy unresolved_role_sources_read on public.unresolved_role_sources for select to authenticated using(public.is_member(organization_id));
+revoke all on public.unresolved_role_sources from public,anon,authenticated;
+grant select on public.unresolved_role_sources to authenticated;
+insert into public.unresolved_role_sources(role_id,organization_id,source_code,previous_name) select id,organization_id,trim(name),name from public.career_roles where trim(name) ~ '^[0-9]+$';
+update public.career_roles set name=public.import_role_label(name) where trim(name) ~ '^[0-9]+$';
+`;
+let report=(await readFile(dir+'044_platform_role_report.sql','utf8')).replace('begin;','').replace(/commit;\s*$/,'').replace('create function','create or replace function');
+report=report.replace("'unidentified_records',(select", "'unresolved_roles',(select count(*) from labels where role like 'תפקיד לא מזוהה מהייבוא · %%'),'unidentified_records',(select");
+await writeFile(dir+'045_unresolved_role_sources.sql',head+f+report+`\nrevoke all on function public.import_role_label(text) from public,anon;\ngrant execute on function public.import_role_label(text) to authenticated;\ncommit;\n`);
+const ui='app/platform-role-report.tsx';s=await readFile(ui,'utf8');s=s.replace('unidentified_records:number','unresolved_roles?:number;unidentified_records:number');
+s=s.replace('<div className="roleReportLayout">','{(data.summary.unresolved_roles??0)>0&&<p role="status">{t(`${n(data.summary.unresolved_roles)} קודי תפקיד מהייבוא ממתינים לשם מאומת. השיוכים נשמרו; אין להסיק מהם מקצוע.`,`${n(data.summary.unresolved_roles)} imported role codes await verified names. Assignments are preserved; these codes do not identify a profession.`)}</p>}<div className="roleReportLayout">');await writeFile(ui,s);

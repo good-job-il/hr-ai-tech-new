@@ -1,0 +1,57 @@
+[
+  {
+    "check": "public_job_catalog",
+    "status": 206,
+    "ms": 731,
+    "count": "0-0/365"
+  },
+  {
+    "check": "candidates",
+    "status": 401,
+    "ms": 149,
+    "count": null,
+    "privateDenied": true
+  },
+  {
+    "check": "candidate_profiles",
+    "status": 401,
+    "ms": 123,
+    "count": null,
+    "privateDenied": true
+  },
+  {
+    "check": "candidate_documents",
+    "status": 401,
+    "ms": 110,
+    "count": null,
+    "privateDenied": true
+  },
+  {
+    "check": "client_presentations",
+    "status": 401,
+    "ms": 121,
+    "count": null,
+    "privateDenied": true
+  },
+  {
+    "check": "client_feedback",
+    "status": 401,
+    "ms": 112,
+    "count": null,
+    "privateDenied": true
+  },
+  {
+    "check": "memberships",
+    "status": 401,
+    "ms": 100,
+    "count": null,
+    "privateDenied": true
+  },
+  {
+    "check": "placement_employment",
+    "status": 401,
+    "ms": 120,
+    "count": null,
+    "privateDenied": true
+  }
+]

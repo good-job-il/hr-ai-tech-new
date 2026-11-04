@@ -1,0 +1,15 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {jobSources} from '../lib/job-sources.mjs';
+import {canonicalUrl} from '../lib/job-source-parser.mjs';
+const dir=resolve(process.argv[2]);
+const rows=(await Promise.all(['verified-http.json','verified-riskified.json','verified-elementor.json'].map(async f=>JSON.parse(await readFile(resolve(dir,f),'utf8'))))).flat();
+const verified=[...new Map(rows.filter(r=>r.status==='verified'&&/Tel.?Aviv|Herzliya|Haifa|Ramat.?Gan|Israel|, IL/i.test(r.location)).map(r=>{r.source_url=canonicalUrl(r.source_url,r.source_url);if(!r.source_url||!r.verified_at)throw Error('Missing verification provenance');return [r.source_url,r]})).values()];
+if(new Set(verified.map(r=>r.source_id)).size!==5)throw Error('Expected all five pilot sources');
+const quote=v=>v==null?'null':"'"+String(v).replaceAll("'","''")+"'";
+const sourceValues=jobSources.map(s=>`(${quote(s.id)},${quote(s.company)},${quote(s.url)})`).join(',\n');
+const jobValues=verified.map(r=>'('+[r.source_id,r.source_url,r.title,r.location,r.department,r.employment_type,r.verified_at,r.verification_method].map(quote).join(',')+')').join(',\n');
+const sql=`begin;\ninsert into public.job_sources(id,company,career_url) values ${sourceValues} on conflict(id) do update set company=excluded.company,career_url=excluded.career_url;\ninsert into public.external_jobs(source_id,source_url,title,location,department,employment_type,verified_at,verification_method) values ${jobValues}\non conflict(source_url) do update set title=excluded.title,location=excluded.location,department=excluded.department,employment_type=excluded.employment_type,verified_at=excluded.verified_at,verification_method=excluded.verification_method,status='active';\ncommit;\nselect s.company,count(*) as verified_jobs from public.external_jobs j join public.job_sources s on s.id=j.source_id where j.status='active' and j.verified_at>now()-interval '7 days' group by s.company order by s.company;\n`;
+await writeFile(resolve(dir,'import-verified.sql'),sql);
+await writeFile(resolve(dir,'verified-jobs.json'),JSON.stringify({verifiedAt:new Date().toISOString(),region:'Israel',jobs:verified,counts:Object.fromEntries(jobSources.map(s=>[s.company,verified.filter(r=>r.source_id===s.id).length]))},null,2));
+console.log(JSON.stringify({verifiedJobs:verified.length,byCompany:Object.fromEntries(jobSources.map(s=>[s.company,verified.filter(r=>r.source_id===s.id).length]))}));

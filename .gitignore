@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+
+.next-commercial/
+.next-local/
+.next-pilot/
+.next-recovery/
+
+.vercel
+.env.local
+
+work/pilot-build-*
+/outputs.zip
+/data.sql

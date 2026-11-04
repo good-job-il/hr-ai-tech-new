@@ -1,0 +1,402 @@
+[
+  {
+    "rank": 1,
+    "company": "אנבידיה"
+  },
+  {
+    "rank": 2,
+    "company": "תעשייה אווירית"
+  },
+  {
+    "rank": 3,
+    "company": "גוגל"
+  },
+  {
+    "rank": 4,
+    "company": "מיקרוסופט"
+  },
+  {
+    "rank": 5,
+    "company": "אפלייד מטריאלס"
+  },
+  {
+    "rank": 6,
+    "company": "ביטוח ישיר"
+  },
+  {
+    "rank": 7,
+    "company": "אלביט מערכות"
+  },
+  {
+    "rank": 8,
+    "company": "SAP"
+  },
+  {
+    "rank": 9,
+    "company": "צ'ק פוינט טכנולוגיות תוכנה"
+  },
+  {
+    "rank": 10,
+    "company": "חברת החשמל"
+  },
+  {
+    "rank": 11,
+    "company": "MAX"
+  },
+  {
+    "rank": 12,
+    "company": "ישראכרט"
+  },
+  {
+    "rank": 13,
+    "company": "מימון ישיר"
+  },
+  {
+    "rank": 14,
+    "company": "כלל החזקות עסקי ביטוח"
+  },
+  {
+    "rank": 15,
+    "company": "מקורות"
+  },
+  {
+    "rank": 16,
+    "company": "שטראוס"
+  },
+  {
+    "rank": 17,
+    "company": "NICE"
+  },
+  {
+    "rank": 18,
+    "company": "רפאל"
+  },
+  {
+    "rank": 19,
+    "company": "MSD"
+  },
+  {
+    "rank": 20,
+    "company": "פייסבוק"
+  },
+  {
+    "rank": 21,
+    "company": "Apple"
+  },
+  {
+    "rank": 22,
+    "company": "DELL"
+  },
+  {
+    "rank": 23,
+    "company": "אינטל"
+  },
+  {
+    "rank": 24,
+    "company": "תדהר"
+  },
+  {
+    "rank": 25,
+    "company": "Palo Alto / CyberArk"
+  },
+  {
+    "rank": 26,
+    "company": "אלעל"
+  },
+  {
+    "rank": 27,
+    "company": "הראל חברה לביטוח"
+  },
+  {
+    "rank": 28,
+    "company": "ICL"
+  },
+  {
+    "rank": 29,
+    "company": "Amazon / AWS"
+  },
+  {
+    "rank": 30,
+    "company": "מגדל אחזקות ביטוח ופיננסים"
+  },
+  {
+    "rank": 31,
+    "company": "בנק מזרחי טפחות"
+  },
+  {
+    "rank": 32,
+    "company": "רכבת ישראל"
+  },
+  {
+    "rank": 33,
+    "company": "בנק הפועלים"
+  },
+  {
+    "rank": 34,
+    "company": "Novo Nordisk"
+  },
+  {
+    "rank": 35,
+    "company": "בנק לאומי"
+  },
+  {
+    "rank": 36,
+    "company": "תנובה"
+  },
+  {
+    "rank": 37,
+    "company": "טבע"
+  },
+  {
+    "rank": 38,
+    "company": "לאומית שירותי בריאות"
+  },
+  {
+    "rank": 39,
+    "company": "AIG"
+  },
+  {
+    "rank": 40,
+    "company": "דניה"
+  },
+  {
+    "rank": 41,
+    "company": "ישראל קנדה"
+  },
+  {
+    "rank": 42,
+    "company": "הפניקס"
+  },
+  {
+    "rank": 43,
+    "company": "סודה סטרים"
+  },
+  {
+    "rank": 44,
+    "company": "מכבי שירותי בריאות"
+  },
+  {
+    "rank": 45,
+    "company": "מאוחדת"
+  },
+  {
+    "rank": 46,
+    "company": "מלם תים"
+  },
+  {
+    "rank": 47,
+    "company": "בנק דיסקונט"
+  },
+  {
+    "rank": 48,
+    "company": "Cal"
+  },
+  {
+    "rank": 49,
+    "company": "כלמוביל"
+  },
+  {
+    "rank": 50,
+    "company": "הרשות לניירות ערך"
+  },
+  {
+    "rank": 51,
+    "company": "enlight"
+  },
+  {
+    "rank": 52,
+    "company": "מנורה מבטחים"
+  },
+  {
+    "rank": 53,
+    "company": "ביי מי טכנולוגיות"
+  },
+  {
+    "rank": 54,
+    "company": "אדידס"
+  },
+  {
+    "rank": 55,
+    "company": "סופר-פארם (חנויות הרשת והמשרד המרכזי)"
+  },
+  {
+    "rank": 56,
+    "company": "shva"
+  },
+  {
+    "rank": 57,
+    "company": "Fullpath"
+  },
+  {
+    "rank": 58,
+    "company": "שרותי בריאות כללית"
+  },
+  {
+    "rank": 59,
+    "company": "Philip Morris"
+  },
+  {
+    "rank": 60,
+    "company": "מור בית השקעות"
+  },
+  {
+    "rank": 61,
+    "company": "הבינלאומי"
+  },
+  {
+    "rank": 62,
+    "company": "פלאפון"
+  },
+  {
+    "rank": 63,
+    "company": "SQLINK"
+  },
+  {
+    "rank": 64,
+    "company": "קבוצת בסט"
+  },
+  {
+    "rank": 65,
+    "company": "תאת טכנולוגיות"
+  },
+  {
+    "rank": 66,
+    "company": "קבוצת אמן"
+  },
+  {
+    "rank": 67,
+    "company": "אסם"
+  },
+  {
+    "rank": 68,
+    "company": "איילון חברה לביטוח"
+  },
+  {
+    "rank": 69,
+    "company": "INVENCO (ORPAK)"
+  },
+  {
+    "rank": 70,
+    "company": "סלע בינוי"
+  },
+  {
+    "rank": 71,
+    "company": "חברת נמל אשדוד"
+  },
+  {
+    "rank": 72,
+    "company": "אלקליל"
+  },
+  {
+    "rank": 73,
+    "company": "מטריקס"
+  },
+  {
+    "rank": 74,
+    "company": "hms"
+  },
+  {
+    "rank": 75,
+    "company": "infocall"
+  },
+  {
+    "rank": 76,
+    "company": "אסותא"
+  },
+  {
+    "rank": 77,
+    "company": "Develeap"
+  },
+  {
+    "rank": 78,
+    "company": "Plasan"
+  },
+  {
+    "rank": 79,
+    "company": "monday.com"
+  },
+  {
+    "rank": 80,
+    "company": "קבוצת גדיש"
+  },
+  {
+    "rank": 81,
+    "company": "MSD Technology Labs (MAHI)"
+  },
+  {
+    "rank": 82,
+    "company": "קבוצת ניאופרם"
+  },
+  {
+    "rank": 83,
+    "company": "תומר חברה ממשלתית"
+  },
+  {
+    "rank": 84,
+    "company": "וקסמן גרופ"
+  },
+  {
+    "rank": 85,
+    "company": "סמלת"
+  },
+  {
+    "rank": 86,
+    "company": "אחים מרגולין הנדסה ויעוץ"
+  },
+  {
+    "rank": 87,
+    "company": "סיוון ביצוע"
+  },
+  {
+    "rank": 88,
+    "company": "קבוצת אלמוג"
+  },
+  {
+    "rank": 89,
+    "company": "שינדלר ישראל"
+  },
+  {
+    "rank": 90,
+    "company": "orbit"
+  },
+  {
+    "rank": 91,
+    "company": "קבוצת לובינסקי"
+  },
+  {
+    "rank": 92,
+    "company": "הכשרה חברה לביטוח"
+  },
+  {
+    "rank": 93,
+    "company": "מתן שרותי בריאות"
+  },
+  {
+    "rank": 94,
+    "company": "תקשובים - מרכז תקשורת עסקי"
+  },
+  {
+    "rank": 95,
+    "company": "topgroup"
+  },
+  {
+    "rank": 96,
+    "company": "altshare"
+  },
+  {
+    "rank": 97,
+    "company": "Sysaid"
+  },
+  {
+    "rank": 98,
+    "company": "צוות 3"
+  },
+  {
+    "rank": 99,
+    "company": "CIMENT"
+  },
+  {
+    "rank": 100,
+    "company": "QualityAI"
+  }
+]

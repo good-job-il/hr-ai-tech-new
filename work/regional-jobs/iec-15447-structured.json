@@ -1,0 +1,51 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://careers.iec.co.il/#website",
+        "url": "https://careers.iec.co.il/",
+        "name": "חברת החשמל - אתר המשרות",
+        "description": "הצטרפו אלינו לעצב את עתיד האנרגיה של ישראל",
+        "publisher": {
+          "@id": "https://careers.iec.co.il/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://careers.iec.co.il/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "he-IL"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://careers.iec.co.il/#organization",
+        "name": "חברת החשמל - אתר המשרות",
+        "url": "https://careers.iec.co.il/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "he-IL",
+          "@id": "https://careers.iec.co.il/#/schema/logo/image/",
+          "url": "https://careers.iec.co.il/wp-content/uploads/2025/04/Fav-Icon.png",
+          "contentUrl": "https://careers.iec.co.il/wp-content/uploads/2025/04/Fav-Icon.png",
+          "width": 512,
+          "height": 513,
+          "caption": "חברת החשמל - אתר המשרות"
+        },
+        "image": {
+          "@id": "https://careers.iec.co.il/#/schema/logo/image/"
+        }
+      }
+    ]
+  }
+]

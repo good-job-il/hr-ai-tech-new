@@ -1,0 +1,1446 @@
+{
+  "version": 1,
+  "updated": "2026-11-02",
+  "fields": [
+    {
+      "id": "management",
+      "he": "ניהול והנהלה",
+      "en": "Management & Executive"
+    },
+    {
+      "id": "finance",
+      "he": "כספים ופיננסים",
+      "en": "Finance & Accounting"
+    },
+    {
+      "id": "software",
+      "he": "פיתוח תוכנה וטכנולוגיה",
+      "en": "Software & Technology"
+    },
+    {
+      "id": "infrastructure",
+      "he": "תשתיות, IT וסייבר",
+      "en": "IT, Infrastructure & Security"
+    },
+    {
+      "id": "data",
+      "he": "נתונים ובינה מלאכותית",
+      "en": "Data & AI"
+    },
+    {
+      "id": "product",
+      "he": "מוצר ועיצוב",
+      "en": "Product & Design"
+    },
+    {
+      "id": "sales",
+      "he": "מכירות ופיתוח עסקי",
+      "en": "Sales & Business Development"
+    },
+    {
+      "id": "marketing",
+      "he": "שיווק ופרסום",
+      "en": "Marketing & Advertising"
+    },
+    {
+      "id": "service",
+      "he": "שירות ותמיכת לקוחות",
+      "en": "Customer Service & Success"
+    },
+    {
+      "id": "hr",
+      "he": "משאבי אנוש וגיוס",
+      "en": "Human Resources & Recruitment"
+    },
+    {
+      "id": "operations",
+      "he": "תפעול ולוגיסטיקה",
+      "en": "Operations & Logistics"
+    },
+    {
+      "id": "admin",
+      "he": "אדמיניסטרציה ומשרד",
+      "en": "Administration & Office"
+    },
+    {
+      "id": "engineering",
+      "he": "הנדסה וייצור",
+      "en": "Engineering & Manufacturing"
+    },
+    {
+      "id": "construction",
+      "he": "בנייה ונדל״ן",
+      "en": "Construction & Real Estate"
+    },
+    {
+      "id": "health",
+      "he": "בריאות ורפואה",
+      "en": "Healthcare & Medical"
+    },
+    {
+      "id": "education",
+      "he": "חינוך והדרכה",
+      "en": "Education & Training"
+    },
+    {
+      "id": "legal",
+      "he": "משפטים וציות",
+      "en": "Legal & Compliance"
+    },
+    {
+      "id": "transport",
+      "he": "נהיגה והפצה",
+      "en": "Driving & Distribution"
+    },
+    {
+      "id": "hospitality",
+      "he": "מלונאות, מסעדנות וקמעונאות",
+      "en": "Hospitality & Retail"
+    }
+  ],
+  "roles": [
+    {
+      "id": "ceo",
+      "field": "management",
+      "he": "מנכ״ל/ית",
+      "en": "CEO",
+      "aliases": [
+        "chief executive officer",
+        "מנכל",
+        "מנכ״ל",
+        "מנכ ל"
+      ]
+    },
+    {
+      "id": "coo",
+      "field": "management",
+      "he": "סמנכ״ל/ית תפעול",
+      "en": "COO",
+      "aliases": [
+        "chief operating officer",
+        "סמנכל תפעול",
+        "vp operations"
+      ]
+    },
+    {
+      "id": "cfo",
+      "field": "management",
+      "he": "סמנכ״ל/ית כספים",
+      "en": "CFO",
+      "aliases": [
+        "chief financial officer",
+        "סמנכל כספים",
+        "vp finance"
+      ]
+    },
+    {
+      "id": "cto",
+      "field": "management",
+      "he": "סמנכ״ל/ית טכנולוגיות",
+      "en": "CTO",
+      "aliases": [
+        "chief technology officer",
+        "סמנכל טכנולוגיות"
+      ]
+    },
+    {
+      "id": "chief-of-staff",
+      "field": "management",
+      "he": "ראש/ת מטה",
+      "en": "Chief of Staff",
+      "aliases": [
+        "ראש מטה",
+        "chief of staff"
+      ]
+    },
+    {
+      "id": "branch-manager",
+      "field": "management",
+      "he": "מנהל/ת סניף",
+      "en": "Branch Manager",
+      "aliases": [
+        "מנהל סניף",
+        "מנהלת סניף",
+        "branch manager"
+      ]
+    },
+    {
+      "id": "accountant",
+      "field": "finance",
+      "he": "מנהל/ת חשבונות",
+      "en": "Bookkeeper",
+      "aliases": [
+        "מנהל חשבונות",
+        "מנהלת חשבונות",
+        "מנהל/ת חשבונות",
+        "מנהח",
+        "מנה ח",
+        "הנהלת חשבונות",
+        "bookkeeper",
+        "bookkeeping"
+      ]
+    },
+    {
+      "id": "payroll",
+      "field": "finance",
+      "he": "חשב/ת שכר",
+      "en": "Payroll Specialist",
+      "aliases": [
+        "חשב שכר",
+        "חשבת שכר",
+        "חשב/ת שכר",
+        "payroll",
+        "salary controller"
+      ]
+    },
+    {
+      "id": "controller",
+      "field": "finance",
+      "he": "חשב/ת",
+      "en": "Financial Controller",
+      "aliases": [
+        "controller",
+        "חשב",
+        "חשבת",
+        "חשב/ת",
+        "חשב חברה",
+        "חשב/ת חברה"
+      ]
+    },
+    {
+      "id": "assistant-controller",
+      "field": "finance",
+      "he": "עוזר/ת חשב",
+      "en": "Assistant Controller",
+      "aliases": [
+        "assistant controller",
+        "עוזר חשב",
+        "עוזרת חשב",
+        "עוזר/ת חשב"
+      ]
+    },
+    {
+      "id": "finance-manager",
+      "field": "finance",
+      "he": "מנהל/ת כספים",
+      "en": "Finance Manager",
+      "aliases": [
+        "finance manager",
+        "finance director",
+        "מנהל כספים",
+        "מנהלת כספים",
+        "מנהל/ת כספים"
+      ]
+    },
+    {
+      "id": "financial-analyst",
+      "field": "finance",
+      "he": "אנליסט/ית פיננסי/ת",
+      "en": "Financial Analyst",
+      "aliases": [
+        "financial analyst",
+        "אנליסט פיננסי",
+        "אנליסטית פיננסית"
+      ]
+    },
+    {
+      "id": "fp-and-a",
+      "field": "finance",
+      "he": "כלכלן/ית תקציב ובקרה",
+      "en": "FP&A Analyst",
+      "aliases": [
+        "fp&a",
+        "fp and a",
+        "תקציב ובקרה",
+        "כלכלן",
+        "כלכלנית",
+        "כלכלן/ית",
+        "economist"
+      ]
+    },
+    {
+      "id": "cpa",
+      "field": "finance",
+      "he": "רואה/ת חשבון",
+      "en": "Certified Public Accountant",
+      "aliases": [
+        "רואה חשבון",
+        "רואת חשבון",
+        "רואה/ת חשבון",
+        "cpa",
+        "auditor"
+      ]
+    },
+    {
+      "id": "collections",
+      "field": "finance",
+      "he": "רכז/ת גבייה",
+      "en": "Collections Specialist",
+      "aliases": [
+        "גבייה",
+        "גביה",
+        "collections",
+        "credit controller"
+      ]
+    },
+    {
+      "id": "treasurer",
+      "field": "finance",
+      "he": "גזבר/ית",
+      "en": "Treasurer",
+      "aliases": [
+        "גזבר",
+        "גזברית",
+        "גזבר/ית",
+        "treasury",
+        "treasurer"
+      ]
+    },
+    {
+      "id": "frontend",
+      "field": "software",
+      "he": "מפתח/ת Frontend",
+      "en": "Frontend Developer",
+      "aliases": [
+        "frontend",
+        "front end",
+        "מפתח פרונט",
+        "מפתחת פרונט"
+      ]
+    },
+    {
+      "id": "backend",
+      "field": "software",
+      "he": "מפתח/ת Backend",
+      "en": "Backend Developer",
+      "aliases": [
+        "backend",
+        "back end",
+        "מפתח בקאנד"
+      ]
+    },
+    {
+      "id": "fullstack",
+      "field": "software",
+      "he": "מפתח/ת Full Stack",
+      "en": "Full Stack Developer",
+      "aliases": [
+        "full stack",
+        "fullstack",
+        "פול סטאק"
+      ]
+    },
+    {
+      "id": "software-engineer",
+      "field": "software",
+      "he": "מהנדס/ת תוכנה",
+      "en": "Software Engineer",
+      "aliases": [
+        "software engineer",
+        "software developer",
+        "מהנדס תוכנה",
+        "מהנדסת תוכנה",
+        "מפתח תוכנה",
+        "מפתחת תוכנה"
+      ]
+    },
+    {
+      "id": "mobile",
+      "field": "software",
+      "he": "מפתח/ת מובייל",
+      "en": "Mobile Developer",
+      "aliases": [
+        "android developer",
+        "ios developer",
+        "mobile developer",
+        "מפתח מובייל"
+      ]
+    },
+    {
+      "id": "qa",
+      "field": "software",
+      "he": "בודק/ת תוכנה",
+      "en": "QA Engineer",
+      "aliases": [
+        "qa engineer",
+        "qa tester",
+        "quality assurance",
+        "בודק תוכנה",
+        "בודקת תוכנה"
+      ]
+    },
+    {
+      "id": "qa-automation",
+      "field": "software",
+      "he": "מפתח/ת אוטומציה",
+      "en": "QA Automation Engineer",
+      "aliases": [
+        "qa automation",
+        "automation engineer",
+        "test automation",
+        "אוטומציה לבדיקות"
+      ]
+    },
+    {
+      "id": "software-architect",
+      "field": "software",
+      "he": "ארכיטקט/ית תוכנה",
+      "en": "Software Architect",
+      "aliases": [
+        "software architect",
+        "solution architect",
+        "solutions architect",
+        "ארכיטקט תוכנה"
+      ]
+    },
+    {
+      "id": "engineering-manager",
+      "field": "software",
+      "he": "מנהל/ת פיתוח",
+      "en": "Engineering Manager",
+      "aliases": [
+        "engineering manager",
+        "software group manager",
+        "development manager",
+        "מנהל פיתוח",
+        "מנהלת פיתוח",
+        "vp r&d",
+        "head of engineering",
+        "director of engineering"
+      ]
+    },
+    {
+      "id": "tech-lead",
+      "field": "software",
+      "he": "ראש/ת צוות פיתוח",
+      "en": "Development Team Lead",
+      "aliases": [
+        "development team lead",
+        "engineering team lead",
+        "ראש צוות פיתוח",
+        "ראש/ת צוות פיתוח",
+        "tech lead"
+      ]
+    },
+    {
+      "id": "devops",
+      "field": "infrastructure",
+      "he": "מהנדס/ת DevOps",
+      "en": "DevOps Engineer",
+      "aliases": [
+        "devops"
+      ]
+    },
+    {
+      "id": "sre",
+      "field": "infrastructure",
+      "he": "מהנדס/ת אמינות מערכות",
+      "en": "Site Reliability Engineer",
+      "aliases": [
+        "site reliability",
+        "sre"
+      ]
+    },
+    {
+      "id": "system-admin",
+      "field": "infrastructure",
+      "he": "מנהל/ת מערכות",
+      "en": "System Administrator",
+      "aliases": [
+        "system administrator",
+        "system admin",
+        "איש סיסטם",
+        "מנהל מערכות"
+      ]
+    },
+    {
+      "id": "it-support",
+      "field": "infrastructure",
+      "he": "תומך/ת IT",
+      "en": "IT Support",
+      "aliases": [
+        "it support",
+        "help desk",
+        "helpdesk",
+        "תמיכה טכנית מחשבים"
+      ]
+    },
+    {
+      "id": "network",
+      "field": "infrastructure",
+      "he": "מהנדס/ת רשתות",
+      "en": "Network Engineer",
+      "aliases": [
+        "network engineer",
+        "network administrator",
+        "מנהל רשת",
+        "מהנדס רשתות"
+      ]
+    },
+    {
+      "id": "cyber",
+      "field": "infrastructure",
+      "he": "מומחה/ית אבטחת מידע",
+      "en": "Cybersecurity Specialist",
+      "aliases": [
+        "cybersecurity",
+        "security analyst",
+        "security engineer",
+        "אבטחת מידע",
+        "cyber security"
+      ]
+    },
+    {
+      "id": "ciso",
+      "field": "infrastructure",
+      "he": "מנהל/ת אבטחת מידע",
+      "en": "CISO",
+      "aliases": [
+        "ciso",
+        "chief information security",
+        "מנהל אבטחת מידע"
+      ]
+    },
+    {
+      "id": "it-manager",
+      "field": "infrastructure",
+      "he": "מנהל/ת IT",
+      "en": "IT Manager",
+      "aliases": [
+        "it manager",
+        "head of it",
+        "מנהל it",
+        "מנהל מערכות מידע"
+      ]
+    },
+    {
+      "id": "cloud",
+      "field": "infrastructure",
+      "he": "מהנדס/ת ענן",
+      "en": "Cloud Engineer",
+      "aliases": [
+        "cloud engineer",
+        "cloud architect",
+        "מהנדס ענן"
+      ]
+    },
+    {
+      "id": "data-analyst",
+      "field": "data",
+      "he": "אנליסט/ית נתונים",
+      "en": "Data Analyst",
+      "aliases": [
+        "data analyst",
+        "אנליסט נתונים",
+        "אנליסטית נתונים"
+      ]
+    },
+    {
+      "id": "data-scientist",
+      "field": "data",
+      "he": "מדען/ית נתונים",
+      "en": "Data Scientist",
+      "aliases": [
+        "data scientist",
+        "מדען נתונים"
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "field": "data",
+      "he": "מהנדס/ת למידת מכונה",
+      "en": "Machine Learning Engineer",
+      "aliases": [
+        "machine learning engineer",
+        "ml engineer",
+        "ai engineer"
+      ]
+    },
+    {
+      "id": "data-engineer",
+      "field": "data",
+      "he": "מהנדס/ת נתונים",
+      "en": "Data Engineer",
+      "aliases": [
+        "data engineer",
+        "מהנדס נתונים"
+      ]
+    },
+    {
+      "id": "bi",
+      "field": "data",
+      "he": "מפתח/ת BI",
+      "en": "BI Developer",
+      "aliases": [
+        "bi developer",
+        "business intelligence",
+        "מפתח bi"
+      ]
+    },
+    {
+      "id": "dba",
+      "field": "data",
+      "he": "מנהל/ת מסדי נתונים",
+      "en": "Database Administrator",
+      "aliases": [
+        "database administrator",
+        "dba"
+      ]
+    },
+    {
+      "id": "product-manager",
+      "field": "product",
+      "he": "מנהל/ת מוצר",
+      "en": "Product Manager",
+      "aliases": [
+        "product manager",
+        "product management",
+        "מנהל מוצר",
+        "מנהלת מוצר",
+        "מנהל/ת מוצר"
+      ]
+    },
+    {
+      "id": "product-owner",
+      "field": "product",
+      "he": "בעל/ת מוצר",
+      "en": "Product Owner",
+      "aliases": [
+        "product owner",
+        "בעל מוצר"
+      ]
+    },
+    {
+      "id": "product-director",
+      "field": "product",
+      "he": "מנהל/ת תחום מוצר",
+      "en": "Head of Product",
+      "aliases": [
+        "head of product",
+        "vp product",
+        "product director",
+        "מנהל תחום מוצר"
+      ]
+    },
+    {
+      "id": "ux-ui",
+      "field": "product",
+      "he": "מעצב/ת UX/UI",
+      "en": "UX/UI Designer",
+      "aliases": [
+        "ux designer",
+        "ui designer",
+        "ux ui",
+        "ui ux",
+        "product designer",
+        "מעצב ux",
+        "מעצבת ux"
+      ]
+    },
+    {
+      "id": "ux-research",
+      "field": "product",
+      "he": "חוקר/ת חוויית משתמש",
+      "en": "UX Researcher",
+      "aliases": [
+        "ux researcher",
+        "user researcher",
+        "חוקר חוויית משתמש"
+      ]
+    },
+    {
+      "id": "graphic-design",
+      "field": "product",
+      "he": "מעצב/ת גרפי/ת",
+      "en": "Graphic Designer",
+      "aliases": [
+        "graphic designer",
+        "מעצב גרפי",
+        "מעצבת גרפית"
+      ]
+    },
+    {
+      "id": "sales-rep",
+      "field": "sales",
+      "he": "נציג/ת מכירות",
+      "en": "Sales Representative",
+      "aliases": [
+        "sales representative",
+        "sales rep",
+        "נציג מכירות",
+        "נציגת מכירות",
+        "נציג/ת מכירות"
+      ]
+    },
+    {
+      "id": "field-sales",
+      "field": "sales",
+      "he": "איש/אשת מכירות שטח",
+      "en": "Field Sales Representative",
+      "aliases": [
+        "field sales",
+        "מכירות שטח",
+        "סוכן מכירות"
+      ]
+    },
+    {
+      "id": "account-executive",
+      "field": "sales",
+      "he": "מנהל/ת מכירות ללקוחות",
+      "en": "Account Executive",
+      "aliases": [
+        "account executive"
+      ]
+    },
+    {
+      "id": "account-manager",
+      "field": "sales",
+      "he": "מנהל/ת תיקי לקוחות",
+      "en": "Account Manager",
+      "aliases": [
+        "account manager",
+        "מנהל תיקי לקוחות",
+        "מנהלת תיקי לקוחות"
+      ]
+    },
+    {
+      "id": "sales-manager",
+      "field": "sales",
+      "he": "מנהל/ת מכירות",
+      "en": "Sales Manager",
+      "aliases": [
+        "sales manager",
+        "sales director",
+        "head of sales",
+        "vp sales",
+        "מנהל מכירות",
+        "מנהלת מכירות"
+      ]
+    },
+    {
+      "id": "business-development",
+      "field": "sales",
+      "he": "מנהל/ת פיתוח עסקי",
+      "en": "Business Development Manager",
+      "aliases": [
+        "business development",
+        "פיתוח עסקי"
+      ]
+    },
+    {
+      "id": "sdr",
+      "field": "sales",
+      "he": "נציג/ת פיתוח מכירות",
+      "en": "Sales Development Representative",
+      "aliases": [
+        "sales development",
+        "business development representative",
+        "sdr",
+        "bdr"
+      ]
+    },
+    {
+      "id": "partnerships",
+      "field": "sales",
+      "he": "מנהל/ת שותפויות",
+      "en": "Partnerships Manager",
+      "aliases": [
+        "partnerships manager",
+        "partnership manager",
+        "מנהל שותפויות"
+      ]
+    },
+    {
+      "id": "marketing-manager",
+      "field": "marketing",
+      "he": "מנהל/ת שיווק",
+      "en": "Marketing Manager",
+      "aliases": [
+        "marketing manager",
+        "marketing director",
+        "head of marketing",
+        "מנהל שיווק",
+        "מנהלת שיווק"
+      ]
+    },
+    {
+      "id": "performance",
+      "field": "marketing",
+      "he": "מנהל/ת קמפיינים",
+      "en": "Performance Marketing Specialist",
+      "aliases": [
+        "performance marketing",
+        "campaign manager",
+        "ppc",
+        "מנהל קמפיינים",
+        "קידום ממומן"
+      ]
+    },
+    {
+      "id": "seo",
+      "field": "marketing",
+      "he": "מקדם/ת אתרים",
+      "en": "SEO Specialist",
+      "aliases": [
+        "seo",
+        "קידום אתרים"
+      ]
+    },
+    {
+      "id": "content",
+      "field": "marketing",
+      "he": "מנהל/ת תוכן",
+      "en": "Content Manager",
+      "aliases": [
+        "content manager",
+        "content writer",
+        "כותב תוכן",
+        "מנהל תוכן"
+      ]
+    },
+    {
+      "id": "social",
+      "field": "marketing",
+      "he": "מנהל/ת רשתות חברתיות",
+      "en": "Social Media Manager",
+      "aliases": [
+        "social media",
+        "סושיאל",
+        "רשתות חברתיות"
+      ]
+    },
+    {
+      "id": "brand",
+      "field": "marketing",
+      "he": "מנהל/ת מותג",
+      "en": "Brand Manager",
+      "aliases": [
+        "brand manager",
+        "מנהל מותג"
+      ]
+    },
+    {
+      "id": "growth",
+      "field": "marketing",
+      "he": "מנהל/ת צמיחה",
+      "en": "Growth Manager",
+      "aliases": [
+        "growth manager",
+        "growth marketing",
+        "head of growth"
+      ]
+    },
+    {
+      "id": "crm-marketing",
+      "field": "marketing",
+      "he": "מנהל/ת CRM",
+      "en": "CRM Manager",
+      "aliases": [
+        "crm manager",
+        "lifecycle marketing",
+        "marketing automation"
+      ]
+    },
+    {
+      "id": "customer-service",
+      "field": "service",
+      "he": "נציג/ת שירות לקוחות",
+      "en": "Customer Service Representative",
+      "aliases": [
+        "customer service",
+        "שירות לקוחות",
+        "שרות לקוחות"
+      ]
+    },
+    {
+      "id": "customer-success",
+      "field": "service",
+      "he": "מנהל/ת הצלחת לקוח",
+      "en": "Customer Success Manager",
+      "aliases": [
+        "customer success",
+        "csm",
+        "הצלחת לקוח"
+      ]
+    },
+    {
+      "id": "technical-support",
+      "field": "service",
+      "he": "מהנדס/ת תמיכה",
+      "en": "Technical Support Engineer",
+      "aliases": [
+        "support engineer",
+        "technical support",
+        "תמיכה טכנית"
+      ]
+    },
+    {
+      "id": "service-manager",
+      "field": "service",
+      "he": "מנהל/ת שירות",
+      "en": "Customer Service Manager",
+      "aliases": [
+        "customer service manager",
+        "head of support",
+        "מנהל שירות",
+        "מנהלת שירות"
+      ]
+    },
+    {
+      "id": "call-center",
+      "field": "service",
+      "he": "נציג/ת מוקד",
+      "en": "Call Center Representative",
+      "aliases": [
+        "call center",
+        "נציג מוקד",
+        "נציגת מוקד"
+      ]
+    },
+    {
+      "id": "recruiter",
+      "field": "hr",
+      "he": "רכז/ת גיוס",
+      "en": "Recruiter",
+      "aliases": [
+        "recruiter",
+        "talent acquisition",
+        "רכז גיוס",
+        "רכזת גיוס",
+        "רכז/ת גיוס"
+      ]
+    },
+    {
+      "id": "hr-manager",
+      "field": "hr",
+      "he": "מנהל/ת משאבי אנוש",
+      "en": "HR Manager",
+      "aliases": [
+        "hr manager",
+        "hr director",
+        "head of hr",
+        "משאבי אנוש"
+      ]
+    },
+    {
+      "id": "hrbp",
+      "field": "hr",
+      "he": "שותף/ה עסקי/ת למשאבי אנוש",
+      "en": "HR Business Partner",
+      "aliases": [
+        "hr business partner",
+        "hrbp"
+      ]
+    },
+    {
+      "id": "sourcer",
+      "field": "hr",
+      "he": "סורסר/ית",
+      "en": "Talent Sourcer",
+      "aliases": [
+        "sourcer",
+        "sourcing specialist",
+        "סורסינג"
+      ]
+    },
+    {
+      "id": "learning",
+      "field": "hr",
+      "he": "מנהל/ת הדרכה",
+      "en": "Learning & Development Specialist",
+      "aliases": [
+        "learning and development",
+        "learning & development",
+        "מנהל הדרכה",
+        "רכז הדרכה"
+      ]
+    },
+    {
+      "id": "operations-manager",
+      "field": "operations",
+      "he": "מנהל/ת תפעול",
+      "en": "Operations Manager",
+      "aliases": [
+        "operations manager",
+        "operations director",
+        "head of operations",
+        "מנהל תפעול",
+        "מנהלת תפעול"
+      ]
+    },
+    {
+      "id": "logistics",
+      "field": "operations",
+      "he": "רכז/ת לוגיסטיקה",
+      "en": "Logistics Coordinator",
+      "aliases": [
+        "logistics coordinator",
+        "לוגיסטיקה"
+      ]
+    },
+    {
+      "id": "warehouse",
+      "field": "operations",
+      "he": "מחסנאי/ת ומלקט/ת",
+      "en": "Warehouse Associate",
+      "aliases": [
+        "warehouse associate",
+        "warehouse worker",
+        "מחסנאי",
+        "מחסנאית",
+        "מלקט",
+        "מלקטת"
+      ]
+    },
+    {
+      "id": "warehouse-manager",
+      "field": "operations",
+      "he": "מנהל/ת מחסן",
+      "en": "Warehouse Manager",
+      "aliases": [
+        "warehouse manager",
+        "מנהל מחסן",
+        "מנהלת מחסן"
+      ]
+    },
+    {
+      "id": "procurement",
+      "field": "operations",
+      "he": "קניין/ית רכש",
+      "en": "Buyer / Procurement Specialist",
+      "aliases": [
+        "procurement",
+        "buyer",
+        "קניין",
+        "קניינית",
+        "רכש"
+      ]
+    },
+    {
+      "id": "supply-chain",
+      "field": "operations",
+      "he": "מנהל/ת שרשרת אספקה",
+      "en": "Supply Chain Manager",
+      "aliases": [
+        "supply chain",
+        "שרשרת אספקה"
+      ]
+    },
+    {
+      "id": "import-export",
+      "field": "operations",
+      "he": "רכז/ת יבוא ויצוא",
+      "en": "Import & Export Coordinator",
+      "aliases": [
+        "import export",
+        "יבוא",
+        "יצוא"
+      ]
+    },
+    {
+      "id": "project-manager",
+      "field": "operations",
+      "he": "מנהל/ת פרויקטים",
+      "en": "Project Manager",
+      "aliases": [
+        "project manager",
+        "project management",
+        "מנהל פרויקט",
+        "מנהלת פרויקט",
+        "מנהל/ת פרויקט"
+      ]
+    },
+    {
+      "id": "back-office",
+      "field": "admin",
+      "he": "פקיד/ת בק אופיס",
+      "en": "Back Office Clerk",
+      "aliases": [
+        "back office",
+        "בק אופיס",
+        "בקופיס"
+      ]
+    },
+    {
+      "id": "secretary",
+      "field": "admin",
+      "he": "מזכיר/ה",
+      "en": "Secretary",
+      "aliases": [
+        "secretary",
+        "מזכיר",
+        "מזכירה"
+      ]
+    },
+    {
+      "id": "reception",
+      "field": "admin",
+      "he": "פקיד/ת קבלה",
+      "en": "Receptionist",
+      "aliases": [
+        "receptionist",
+        "פקיד קבלה",
+        "פקידת קבלה"
+      ]
+    },
+    {
+      "id": "assistant",
+      "field": "admin",
+      "he": "עוזר/ת אישי/ת",
+      "en": "Personal Assistant",
+      "aliases": [
+        "personal assistant",
+        "executive assistant",
+        "עוזר אישי",
+        "עוזרת אישית"
+      ]
+    },
+    {
+      "id": "office-manager",
+      "field": "admin",
+      "he": "מנהל/ת משרד",
+      "en": "Office Manager",
+      "aliases": [
+        "office manager",
+        "מנהל משרד",
+        "מנהלת משרד"
+      ]
+    },
+    {
+      "id": "mechanical",
+      "field": "engineering",
+      "he": "מהנדס/ת מכונות",
+      "en": "Mechanical Engineer",
+      "aliases": [
+        "mechanical engineer",
+        "מהנדס מכונות"
+      ]
+    },
+    {
+      "id": "electrical",
+      "field": "engineering",
+      "he": "מהנדס/ת חשמל",
+      "en": "Electrical Engineer",
+      "aliases": [
+        "electrical engineer",
+        "מהנדס חשמל"
+      ]
+    },
+    {
+      "id": "industrial",
+      "field": "engineering",
+      "he": "מהנדס/ת תעשייה וניהול",
+      "en": "Industrial Engineer",
+      "aliases": [
+        "industrial engineer",
+        "תעשייה וניהול"
+      ]
+    },
+    {
+      "id": "production",
+      "field": "engineering",
+      "he": "עובד/ת ייצור",
+      "en": "Production Worker",
+      "aliases": [
+        "production worker",
+        "עובד ייצור",
+        "עובדת ייצור",
+        "הרכבות"
+      ]
+    },
+    {
+      "id": "production-manager",
+      "field": "engineering",
+      "he": "מנהל/ת ייצור",
+      "en": "Production Manager",
+      "aliases": [
+        "production manager",
+        "plant manager",
+        "מנהל ייצור"
+      ]
+    },
+    {
+      "id": "quality",
+      "field": "engineering",
+      "he": "מנהל/ת איכות",
+      "en": "Quality Manager",
+      "aliases": [
+        "quality manager",
+        "quality control",
+        "בקרת איכות"
+      ]
+    },
+    {
+      "id": "technician",
+      "field": "engineering",
+      "he": "טכנאי/ת",
+      "en": "Technician",
+      "aliases": [
+        "technician",
+        "טכנאי",
+        "טכנאית"
+      ]
+    },
+    {
+      "id": "electrician",
+      "field": "engineering",
+      "he": "חשמלאי/ת",
+      "en": "Electrician",
+      "aliases": [
+        "electrician",
+        "חשמלאי"
+      ]
+    },
+    {
+      "id": "civil-engineer",
+      "field": "construction",
+      "he": "מהנדס/ת בניין",
+      "en": "Civil Engineer",
+      "aliases": [
+        "civil engineer",
+        "מהנדס בניין"
+      ]
+    },
+    {
+      "id": "site-manager",
+      "field": "construction",
+      "he": "מנהל/ת עבודה בבנייה",
+      "en": "Construction Site Manager",
+      "aliases": [
+        "construction manager",
+        "site manager",
+        "מנהל עבודה"
+      ]
+    },
+    {
+      "id": "real-estate",
+      "field": "construction",
+      "he": "סוכן/ת נדל״ן",
+      "en": "Real Estate Agent",
+      "aliases": [
+        "real estate agent",
+        "מתווך",
+        "תיווך נדלן"
+      ]
+    },
+    {
+      "id": "architect",
+      "field": "construction",
+      "he": "אדריכל/ית",
+      "en": "Architect",
+      "aliases": [
+        "אדריכל",
+        "אדריכלית",
+        "architect"
+      ]
+    },
+    {
+      "id": "nurse",
+      "field": "health",
+      "he": "אח/ות מוסמכ/ת",
+      "en": "Registered Nurse",
+      "aliases": [
+        "registered nurse",
+        "אחות מוסמכת",
+        "אח מוסמך"
+      ]
+    },
+    {
+      "id": "physician",
+      "field": "health",
+      "he": "רופא/ה",
+      "en": "Physician",
+      "aliases": [
+        "physician",
+        "medical doctor",
+        "רופא",
+        "רופאה"
+      ]
+    },
+    {
+      "id": "pharmacist",
+      "field": "health",
+      "he": "רוקח/ת",
+      "en": "Pharmacist",
+      "aliases": [
+        "pharmacist",
+        "רוקח",
+        "רוקחת"
+      ]
+    },
+    {
+      "id": "caregiver",
+      "field": "health",
+      "he": "מטפל/ת סיעודי/ת",
+      "en": "Caregiver",
+      "aliases": [
+        "caregiver",
+        "מטפל סיעודי",
+        "סיעוד"
+      ]
+    },
+    {
+      "id": "teacher",
+      "field": "education",
+      "he": "מורה",
+      "en": "Teacher",
+      "aliases": [
+        "teacher",
+        "מורה"
+      ]
+    },
+    {
+      "id": "trainer",
+      "field": "education",
+      "he": "מדריך/ה",
+      "en": "Instructor",
+      "aliases": [
+        "instructor",
+        "מדריך",
+        "מדריכה"
+      ]
+    },
+    {
+      "id": "kindergarten",
+      "field": "education",
+      "he": "גננ/ת",
+      "en": "Kindergarten Teacher",
+      "aliases": [
+        "kindergarten teacher",
+        "גננת"
+      ]
+    },
+    {
+      "id": "lawyer",
+      "field": "legal",
+      "he": "עורך/ת דין",
+      "en": "Lawyer",
+      "aliases": [
+        "lawyer",
+        "attorney",
+        "עורך דין",
+        "עורכת דין"
+      ]
+    },
+    {
+      "id": "legal-counsel",
+      "field": "legal",
+      "he": "יועץ/ת משפטי/ת",
+      "en": "Legal Counsel",
+      "aliases": [
+        "legal counsel",
+        "general counsel",
+        "יועץ משפטי"
+      ]
+    },
+    {
+      "id": "compliance",
+      "field": "legal",
+      "he": "קצין/ת ציות",
+      "en": "Compliance Officer",
+      "aliases": [
+        "compliance",
+        "ציות"
+      ]
+    },
+    {
+      "id": "driver",
+      "field": "transport",
+      "he": "נהג/ת",
+      "en": "Driver",
+      "aliases": [
+        "driver",
+        "נהג",
+        "נהגת"
+      ]
+    },
+    {
+      "id": "truck-driver",
+      "field": "transport",
+      "he": "נהג/ת משאית",
+      "en": "Truck Driver",
+      "aliases": [
+        "truck driver",
+        "נהג משאית",
+        "נהג חלוקה"
+      ]
+    },
+    {
+      "id": "courier",
+      "field": "transport",
+      "he": "שליח/ה",
+      "en": "Courier",
+      "aliases": [
+        "courier",
+        "שליח",
+        "שליחה"
+      ]
+    },
+    {
+      "id": "cook",
+      "field": "hospitality",
+      "he": "טבח/ית",
+      "en": "Cook",
+      "aliases": [
+        "cook",
+        "chef",
+        "טבח",
+        "טבחית"
+      ]
+    },
+    {
+      "id": "waiter",
+      "field": "hospitality",
+      "he": "מלצר/ית",
+      "en": "Waiter",
+      "aliases": [
+        "waiter",
+        "waitress",
+        "מלצר",
+        "מלצרית"
+      ]
+    },
+    {
+      "id": "store-manager",
+      "field": "hospitality",
+      "he": "מנהל/ת חנות",
+      "en": "Store Manager",
+      "aliases": [
+        "store manager",
+        "מנהל חנות"
+      ]
+    },
+    {
+      "id": "cashier",
+      "field": "hospitality",
+      "he": "קופאי/ת",
+      "en": "Cashier",
+      "aliases": [
+        "cashier",
+        "קופאי",
+        "קופאית"
+      ]
+    },
+    {
+      "id": "security-guard",
+      "field": "hospitality",
+      "he": "מאבטח/ת",
+      "en": "Security Guard",
+      "aliases": [
+        "security guard",
+        "מאבטח",
+        "מאבטחת"
+      ]
+    },
+    {
+      "id": "cleaner",
+      "field": "hospitality",
+      "he": "עובד/ת ניקיון",
+      "en": "Cleaner",
+      "aliases": [
+        "cleaner",
+        "ניקיון"
+      ]
+    }
+  ]
+}

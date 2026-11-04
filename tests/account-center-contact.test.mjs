@@ -1,0 +1,33 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {testDatabase,actAs} from './support/database.mjs';import {validAccountPhone,accountDetailError} from '../lib/account-contact.mjs';import {trialDaysRemaining} from '../lib/commercial-trial.mjs';
+test('Account contact validation and Jerusalem trial dates are explicit and do not infer identity',()=>{
+ for(const phone of ['0508234567','+972508234567','+1 202 555 0101'])assert.equal(validAccountPhone(phone),true);
+ for(const phone of ['',null,'1234567','0000000000','phone','0508234567@example.com'])assert.equal(validAccountPhone(phone),false);
+ assert.equal(accountDetailError({name:'Name',title:'Title',phone:'',requiredPhone:false}),null);assert.equal(accountDetailError({name:'Name',title:'Title',phone:'',requiredPhone:true}),'PRIMARY_CONTACT_PHONE_REQUIRED');
+ assert.equal(trialDaysRemaining('2027-02-03T10:00:00Z',new Date('2026-11-03T08:00:00Z')),92);
+ assert.equal(trialDaysRemaining('2026-11-03T22:30:00Z',new Date('2026-11-03T22:10:00Z')),0);assert.equal(trialDaysRemaining('invalid'),null);
+});
+test('Account profile isolation, contact gates, role preservation and private avatars',async()=>{const pg=await testDatabase();try{
+ const owner='ec000000-0000-4000-8000-000000000001',candidate='ec000000-0000-4000-8000-000000000002',other='ec000000-0000-4000-8000-000000000003';
+ await pg.query("insert into auth.users(id,email,email_confirmed_at,raw_user_meta_data) values($1,'owner@example.invalid',now(),'{}'),($2,'candidate@example.invalid',now(),'{}'),($3,'other@example.invalid',now(),'{}')",[owner,candidate,other]);
+ await assert.rejects(pg.query("insert into auth.users(id,email,raw_user_meta_data) values(gen_random_uuid(),'business@example.invalid','{\"account_type\":\"agency\"}')"),/PRIMARY_CONTACT_PHONE_REQUIRED/);
+ await pg.query("insert into auth.users(id,email,raw_user_meta_data) values(gen_random_uuid(),'business-valid@example.invalid','{\"account_type\":\"employer\",\"contact_phone\":\"0508234567\"}')");
+ await actAs(pg,owner);await assert.rejects(pg.query("select create_organization('Needs phone','agency')"),/PRIMARY_CONTACT_PHONE_REQUIRED/);
+ const org=(await pg.query("select create_organization_with_contact('Phone fixture','agency','0508234567') id")).rows[0].id;
+ await assert.rejects(pg.query("select save_my_account('Owner','Title','','he',false,null)"),/PRIMARY_CONTACT_PHONE_REQUIRED/);
+ await pg.query("select save_my_account('Owner display','CEO','0508234567','en',true,null)");let a=(await pg.query('select my_account_data() d')).rows[0].d;
+ assert.equal(a.full_name,'Owner display');assert.equal(a.compact_tables,true);assert.equal(a.phone_verified,false);assert.equal(a.primary_contact_required,true);assert.equal(a.language,'en');
+ assert.equal((await pg.query('select is_platform_admin() ok')).rows[0].ok,false);assert.equal((await pg.query('select role from memberships where organization_id=$1',[org])).rows[0].role,'org_admin');
+ await assert.rejects(pg.query("update account_settings set contact_phone='0501112233' where user_id=$1",[owner]),/permission denied/);
+ const job=(await pg.query("insert into jobs(organization_id,title,location,type,description) values($1,'Fixture role','Test','full-time','Source description') returning id",[org])).rows[0].id;
+ await actAs(pg,candidate);assert.equal((await pg.query('select count(*) n from account_settings where user_id=$1',[owner])).rows[0].n,0);
+ await assert.rejects(pg.query("insert into applications(job_id,candidate_id,cover_letter) values($1,$2,'Interested')",[job,candidate]),/APPLICATION_CONTACT_PHONE_REQUIRED/);
+ await assert.rejects(pg.query("select save_my_contact_phone('not a number')"),/CONTACT_PHONE_REQUIRED/);
+ await pg.query("select save_my_account('Candidate','Analyst','','he',false,null)");
+ await pg.query("select save_my_contact_phone('0501122334')");await pg.query("insert into applications(job_id,candidate_id,cover_letter) values($1,$2,'Interested')",[job,candidate]);
+ assert.equal((await pg.query('select count(*) n from applications where candidate_id=$1',[candidate])).rows[0].n,1);
+ const image=candidate+'/photo.png';await pg.query("insert into storage.objects(bucket_id,name) values('account-avatars',$1)",[image]);await pg.query("select save_my_account('Candidate','Analyst','0501122334','he',false,$1)",[image]);assert.equal((await pg.query('select my_account_data() d')).rows[0].d.avatar_path,image);
+ await actAs(pg,other);assert.equal((await pg.query("select count(*) n from storage.objects where bucket_id='account-avatars'")).rows[0].n,0);
+ await assert.rejects(pg.query("select save_my_account('Other','Manager','','he',false,$1)",[image]),/INVALID_AVATAR/);
+ await assert.rejects(pg.query("insert into storage.objects(bucket_id,name) values('account-avatars',$1)",[candidate+'/foreign.png']),/row-level security/);
+ await assert.rejects(pg.query("select create_organization_before_contact('Bypass','employer')"),/permission denied/);
+ }finally{await pg.close()}});

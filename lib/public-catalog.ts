@@ -1,0 +1,4 @@
+import {db} from './supabase';import {createCatalogCache} from './catalog-cache.mjs';import type {Job} from '../app/models';
+const cache=createCatalogCache(async()=>{if(!db)throw Error('No connection');const rows:Job[]=[];let count=0;for(let offset=0;;offset+=500){const r=await db.from('public_job_catalog').select('*',{count:'exact'}).order('verified_at',{ascending:false,nullsFirst:false}).order('id').range(offset,offset+499);if(r.error)throw r.error;count=r.count??0;for(const row of r.data??[])rows.push({...row,organization_id:row.organization_id??'',organization:{name:row.company},preview:true} as Job);if(offset+500>=count)break}return {jobs:rows,count}});
+export const loadPublicCatalog=()=>cache.load() as Promise<{jobs:Job[];count:number}>;
+export const invalidatePublicCatalog=()=>cache.invalidate();

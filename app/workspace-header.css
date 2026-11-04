@@ -1,0 +1,22 @@
+body .shell:not(.publicMode)>main>header.workspaceTopbar,body header.workspaceTopbar{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:88px;height:auto;margin:18px 28px 0;padding:17px 21px;border:1px solid #e6e3f3;border-radius:15px;background:#fff;box-shadow:0 5px 18px #42297b06;position:relative;z-index:2;text-align:start}
+body .workspaceTopbarHeading{display:flex;align-items:center;gap:13px;min-width:0}
+body .workspaceTopbarIcon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#f1ebff;color:#7648eb;flex-shrink:0}
+body .workspaceTopbarTitles{min-width:0;display:grid;gap:3px}
+body .workspaceTopbarScope{font-size:12px;line-height:1.5;color:#81869c;overflow-wrap:anywhere}
+body .workspaceTopbarTitle{font-size:21px;font-weight:650;letter-spacing:-.3px;line-height:1.4;color:#202444;overflow-wrap:anywhere}
+body .workspaceTopbarActions{display:flex;align-items:center;justify-content:flex-end;gap:18px;min-width:0}
+body .workspaceTopbarUtilities{display:flex;align-items:center;gap:10px;border-inline-start:1px solid #e8e6f1;padding-inline-start:17px;flex-wrap:wrap}
+body .workspaceTopbarUtilities button,body .workspaceTopbarUtilities a{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:39px;padding:8px 11px;border:1px solid #e6e5f0;border-radius:10px;background:#fff;color:#454866;font-size:12px;line-height:1.4;text-decoration:none;white-space:nowrap}
+body .workspaceTopbarUtilities button.language{border-color:transparent;background:transparent}
+body .workspaceTopbarUtilities select{max-width:185px;min-height:39px;margin:0;font-size:12px}
+body button.workspaceHeaderIdentity{display:flex;align-items:center;gap:10px;min-width:0;max-width:300px;margin:0;padding:4px;border:0;background:transparent;color:#30364f;text-align:start;border-radius:10px;line-height:1.5}
+body button.workspaceHeaderIdentity:hover{background:#faf8ff}
+body .workspaceHeaderAvatar{width:38px;height:38px;flex-shrink:0;display:grid;place-items:center;border-radius:12px;background:#f0eaff;color:#7648eb;font-size:14px;font-weight:600;overflow:hidden}
+body .workspaceHeaderAvatar img{width:100%;height:100%;object-fit:cover}
+body .workspaceHeaderPerson{display:grid;gap:1px;min-width:0}
+body .workspaceHeaderPerson strong{font-size:13px;font-weight:600;color:#30364f;overflow-wrap:anywhere}
+body .workspaceHeaderPerson small{font-size:11px;color:#858ba0;overflow-wrap:anywhere}
+body .clientPortal>header.workspaceTopbar{margin:0 0 22px}
+@media(max-width:1100px){body .workspaceTopbarActions{gap:10px}body .workspaceHeaderPerson{max-width:170px}body .workspaceTopbarUtilities{padding-inline-start:10px;gap:6px}body .workspaceTopbarTitle{font-size:19px}}
+@media(max-width:760px){body .shell:not(.publicMode)>main>header.workspaceTopbar,body header.workspaceTopbar{margin:12px 14px 0;padding:16px;flex-wrap:wrap;gap:15px;border-radius:14px}body .workspaceTopbarActions{width:100%;justify-content:space-between;flex-wrap:wrap;gap:12px}body .workspaceTopbarUtilities{margin-inline-start:auto}body .workspaceTopbarTitle{font-size:20px}body .workspaceHeaderPerson{max-width:none}body .workspaceTopbarScope{font-size:12px}body .clientPortal>header.workspaceTopbar{margin:0 0 16px}}
+@media(max-width:420px){body .workspaceTopbarActions{align-items:flex-start}body .workspaceTopbarUtilities{border:0;padding:0;margin:0;width:100%;justify-content:flex-end}body button.workspaceHeaderIdentity{max-width:100%}}
