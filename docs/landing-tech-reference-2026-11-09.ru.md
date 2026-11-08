@@ -28,3 +28,7 @@ Root берёт direction из siteLanguageCopy; DOM head → profile и logical
 Production build, TypeScript и 18 целевых tests Hebrew/language/account-help/taxonomy/regions/location/sharing passed. Браузерные проверки и live-публикация фиксируются ниже и в HR-17. БД/Auth/DNS и реальные пароли не изменяются; email/отклики не отправляются для этой визуальной проверки.
 
 Браузер localhost: width862 (точный размер reference), 1307 desktop, 390×844 phone и768×1024 iPad he/en; no horizontal overflow; 5 benefits,4 tools,4 metrics,8 jobs, head RTL identity/card слева и LTR reflected/card справа. Текст AI overlay читаемый в обоих направлениях. Keyword נתניה переносится в существующий каталог, FAQ открывает4вопроса и закрывается, Forgot password видим только в auth dialog. Публикация проверяется отдельно; без исходящих сообщений и записи тестовых данных.
+
+## Следующий этап точного сопоставления
+
+09.11.2026: измеренное уточнение размеров, typography и исходных графических элементов, с обязательным review-сравнением до завершения: [landing-precision-2026-11-09.ru.md](landing-precision-2026-11-09.ru.md). Scope/reference01 и ограничения данных из текущего документа сохранены.

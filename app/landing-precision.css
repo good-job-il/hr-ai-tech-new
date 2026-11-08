@@ -1,0 +1,186 @@
+/* Dimensions are measured in the approved 862px artwork's coordinate system. */
+body .landingPrecision{container-type:inline-size;--u:1px}
+body .landingPrecision .referenceGlyph{display:block;flex:none;width:calc(var(--gw)*var(--u));height:calc(var(--gh)*var(--u));background-image:url('/landing-reference-atlas.png');background-repeat:no-repeat;background-size:calc(862*var(--u)) calc(1824*var(--u));background-position:calc(-1*var(--gx)*var(--u)) calc(-1*var(--gy)*var(--u))}
+body .landingTech.landingPrecision .careerOrbImage{clip-path:ellipse(48% 48% at 50% 48%)}
+body .landingTech.landingPrecision .careerChip{display:none}
+body .landingTech.landingPrecision .careerOrb:dir(ltr) .careerChip{display:grid;place-items:center;left:45.7%;top:43.4%;width:9.1%;height:9.2%;padding:0;border-radius:2px;background:#211877;color:#d9f6ff;font-family:Arial,sans-serif;font-size:clamp(10px,1.5vw,22px);line-height:1;text-shadow:0 0 3px #5068ff}
+@media(min-width:760px){
+ body .landingTech.landingPrecision{--u:min(calc(100cqw/862),calc(1240px/862));font-family:Heebo,Arial,sans-serif}
+ body .landingTech.landingPrecision .publicHeader.publicHeaderTech{display:grid;grid-template-columns:calc(132*var(--u)) minmax(0,1fr) calc(202*var(--u));gap:calc(28*var(--u));height:calc(61*var(--u));min-height:0;padding:calc(12*var(--u)) max(calc(32*var(--u)),calc((100% - 798*var(--u))/2));margin:0;align-items:center}
+ body .landingTech.landingPrecision .publicHeader .publicBrand{font-size:calc(25*var(--u));gap:calc(6*var(--u));letter-spacing:calc(-.7*var(--u))}
+ body .landingTech.landingPrecision .publicHeader .brandImage{width:calc(34*var(--u));height:calc(34*var(--u))}
+ body .landingTech.landingPrecision .publicHeader nav{display:flex;justify-content:flex-start;gap:calc(24*var(--u));flex-basis:auto;order:0;border:0;padding:0 calc(8*var(--u)) 0 0;margin:0;overflow:visible}
+ body .landingTech.landingPrecision .publicHeader nav :is(a,button,span){font-size:calc(9*var(--u));font-weight:750;line-height:calc(14*var(--u));min-height:0;padding:0}
+ body .landingTech.landingPrecision .publicHeader.publicHeaderTech .publicActions{display:flex;gap:calc(12*var(--u));direction:inherit;border:0;padding:0;flex-basis:auto;justify-content:space-between}
+ body .landingTech.landingPrecision .publicHeader.publicHeaderTech .publicActions>button{height:calc(32*var(--u));min-height:0;font-size:calc(8*var(--u));padding:0;line-height:1.2;border-radius:calc(4*var(--u));gap:calc(5*var(--u));max-width:none}
+ body .landingTech.landingPrecision .publicActions>.outlineButton{width:calc(73*var(--u))}
+ body .landingTech.landingPrecision .publicActions>.gradientButton{width:calc(117*var(--u))}
+ body .landingTech.landingPrecision .publicActions .uiIcon{width:calc(13*var(--u));height:calc(13*var(--u))}
+ body .landingTech.landingPrecision :is(.gradientButton,.outlineButton){border-radius:calc(5*var(--u))}
+ body .landingTech.landingPrecision .careerHero{position:relative;display:block;box-sizing:border-box;max-width:calc(862*var(--u));width:100%;height:calc(392*var(--u));min-height:0;margin:0 auto;padding:0;background:radial-gradient(ellipse at 33% 46%,#ede4ff6b,transparent 62%)}
+ body .landingTech.landingPrecision .careerHeroCopy{position:absolute;inset-inline-start:calc(61*var(--u));top:0;width:calc(340*var(--u));height:100%;text-align:start}
+ body .landingTech.landingPrecision .heroPill{position:absolute;top:calc(49*var(--u));inset-inline-start:0;width:calc(186*var(--u));height:calc(24*var(--u));padding:0;display:flex;align-items:center;justify-content:center;gap:calc(6*var(--u));border:1px solid #ece7ff;background:#ffffffd9;font-size:calc(8.3*var(--u));line-height:calc(13*var(--u));border-radius:calc(20*var(--u))}
+ body .landingTech.landingPrecision .heroPill .uiIcon{width:calc(11*var(--u));height:calc(11*var(--u))}
+ body .landingTech.landingPrecision .careerHeroCopy h1{position:absolute;top:calc(87*var(--u));inset-inline-start:0;width:100%;height:calc(94*var(--u));font-size:calc(44.5*var(--u));line-height:calc(46*var(--u));font-weight:850;letter-spacing:calc(-1.45*var(--u));margin:0;color:#0b0e25}
+ body .landingTech.landingPrecision .careerHeroCopy h1 em{font-size:calc(46.5*var(--u));line-height:calc(48*var(--u));padding:0;font-weight:850;background:linear-gradient(105deg,#00b5f0,#6648f6 62%,#9a2eff);background-clip:text;-webkit-background-clip:text}
+ body .landingTech.landingPrecision .careerHeroCopy>p{position:absolute;top:calc(201*var(--u));inset-inline-start:0;width:100%;max-width:none;margin:0;font-size:calc(11.5*var(--u));line-height:calc(20*var(--u));color:#747087;font-weight:400}
+ body .landingTech.landingPrecision .heroButtons{position:absolute;top:calc(260*var(--u));inset-inline-start:0;width:calc(286*var(--u));height:calc(36*var(--u));margin:0;display:flex;flex-wrap:nowrap;gap:calc(10*var(--u))}
+ body .landingTech.landingPrecision .heroButtons :is(a,button){box-sizing:border-box;min-width:0;min-height:0;height:calc(36*var(--u));padding:0;font-size:calc(9*var(--u));line-height:1.2;gap:calc(7*var(--u));flex:none;font-weight:650}
+ body .landingTech.landingPrecision .heroButtons>.gradientButton{width:calc(134*var(--u))}
+ body .landingTech.landingPrecision .heroButtons>.outlineButton{width:calc(142*var(--u))}
+ body .landingTech.landingPrecision .heroButtons .uiIcon{width:calc(13*var(--u));height:calc(13*var(--u))}
+ body .landingTech.landingPrecision .heroCommunity{position:absolute;top:calc(320*var(--u));inset-inline-start:0;width:calc(340*var(--u));height:calc(28*var(--u));display:flex;align-items:center;gap:calc(10*var(--u));margin:0;font-size:calc(8.2*var(--u));line-height:calc(13*var(--u));color:#6e6780}
+ body .landingTech.landingPrecision .communityPortraits i{width:calc(28*var(--u));height:calc(28*var(--u));margin-inline-start:calc(-1*var(--u));border-width:calc(2*var(--u));background-size:calc(726*var(--u)) calc(1536*var(--u));background-position:calc(-549*var(--u)) calc(-320*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits i:nth-child(2){background-position:calc(-572*var(--u)) calc(-320*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits i:nth-child(3){background-position:calc(-596*var(--u)) calc(-320*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits i:nth-child(4){background-position:calc(-622*var(--u)) calc(-320*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits b{width:calc(26*var(--u));height:calc(26*var(--u));margin-inline-start:calc(7*var(--u));font-size:calc(11*var(--u))}
+ body .landingTech.landingPrecision .careerHeroArt{position:absolute;display:block;inset-inline-end:calc(50*var(--u));top:calc(29*var(--u));width:calc(470*var(--u));height:calc(338*var(--u));min-height:0;padding:0;margin:0}
+ body .landingTech.landingPrecision .careerOrb{position:absolute;inset-inline-start:calc(20*var(--u));top:calc(33*var(--u));width:calc(225*var(--u));height:calc(225*var(--u));margin:0;filter:drop-shadow(0 0 calc(15*var(--u)) #b7a1ff34)}
+ body .landingTech.landingPrecision .careerOrbImage{width:100%;height:100%}
+ body .landingTech.landingPrecision .careerOrb:dir(ltr) .careerChip{font-size:calc(14*var(--u))}
+ body .landingTech.landingPrecision .orbitalRing{border-width:calc(2*var(--u));transform:rotate(-25deg)}
+ body .landingTech.landingPrecision .ringOne{inset:-10% -8%;border-inline-start-color:transparent;border-bottom-color:transparent}
+ body .landingTech.landingPrecision .ringTwo{inset:-18% -17%;border-inline-end-color:transparent;border-top-color:transparent;border-width:calc(3*var(--u))}
+ body .landingTech.landingPrecision .ringThree{inset:5% -16%;border-top-color:transparent;border-inline-end-color:transparent;border-width:calc(1*var(--u))}
+ body .landingTech.landingPrecision .careerProfileGroup{position:absolute;inset-inline-end:0;top:0;width:calc(205*var(--u));height:calc(338*var(--u));padding:0}
+ body .landingTech.landingPrecision .careerHeroArt .careerProfileCard{position:relative;box-sizing:border-box;width:100%;height:100%;min-height:0;padding:0;background:#ffffffdf;border:1px solid #eeeafa;border-radius:calc(18*var(--u));box-shadow:0 calc(14*var(--u)) calc(30*var(--u)) #8669cc10;transform:none}
+ body .landingTech.landingPrecision .careerProfileTop{position:absolute;top:calc(15*var(--u));inset-inline-start:calc(15*var(--u));width:calc(175*var(--u));height:calc(50*var(--u));padding:0;display:flex;flex-direction:row-reverse;gap:calc(10*var(--u));align-items:flex-start}
+ body .landingTech.landingPrecision .careerAvatar{width:calc(48*var(--u));height:calc(48*var(--u));background-size:calc(810*var(--u)) calc(1713.7*var(--u));background-position:calc(-59*var(--u)) calc(-96*var(--u));border:1px solid #e9e1f4}
+ body .landingTech.landingPrecision .careerProfileTop>div{padding-top:calc(1*var(--u))}
+ body .landingTech.landingPrecision .careerProfileTop strong{font-size:calc(10*var(--u));line-height:calc(15*var(--u));font-weight:750;white-space:nowrap}
+ body .landingTech.landingPrecision .careerProfileTop div>span{margin-top:calc(4*var(--u));font-size:calc(7*var(--u));line-height:calc(11*var(--u));white-space:nowrap}
+ body .landingTech.landingPrecision .careerProfileTop small{margin-top:calc(3*var(--u));font-size:calc(6.5*var(--u));line-height:calc(10*var(--u));gap:calc(2*var(--u))}
+ body .landingTech.landingPrecision .careerProfileTop .uiIcon{width:calc(8*var(--u));height:calc(8*var(--u))}
+ body .landingTech.landingPrecision .profileReadiness{position:absolute;top:calc(83*var(--u));inset-inline-start:calc(16*var(--u));width:calc(173*var(--u));height:calc(41*var(--u));margin:0;gap:calc(10*var(--u));font-size:calc(8*var(--u))}
+ body .landingTech.landingPrecision .profileReadiness>span{width:calc(41*var(--u));height:calc(41*var(--u));border-width:calc(4*var(--u));font-size:calc(10*var(--u))}
+ body .landingTech.landingPrecision .profileAiBand{position:absolute;top:calc(134*var(--u));inset-inline-start:calc(16*var(--u));width:calc(173*var(--u));height:calc(28*var(--u));padding:0;gap:calc(4*var(--u));font-size:calc(8*var(--u));border-radius:calc(4*var(--u))}
+ body .landingTech.landingPrecision .profileAiBand small{font-size:calc(6*var(--u))}
+ body .landingTech.landingPrecision .careerSkillPills{position:absolute;top:calc(176*var(--u));inset-inline-start:calc(16*var(--u));width:calc(173*var(--u));margin:0;gap:calc(4*var(--u));display:flex;flex-wrap:wrap;justify-content:flex-start;direction:inherit}
+ body .landingTech.landingPrecision .careerSkillPills>span{font-size:calc(7*var(--u));line-height:calc(10*var(--u));padding:calc(3*var(--u)) calc(5*var(--u));border-radius:calc(9*var(--u))}
+ body .landingTech.landingPrecision .careerProfileSection{position:absolute;top:calc(225*var(--u));inset-inline-start:calc(16*var(--u));width:calc(173*var(--u));margin:0;padding:calc(10*var(--u)) calc(25*var(--u)) 0 0;border-top:1px solid #eeeaf7;text-align:start}
+ body .landingTech.landingPrecision .careerProfileSection:last-child{top:calc(279*var(--u));border:0}
+ body .landingTech.landingPrecision .careerProfileSection:dir(ltr){padding:calc(10*var(--u)) 0 0 calc(25*var(--u))}
+ body .landingTech.landingPrecision .careerProfileSection>.uiIcon{top:calc(12*var(--u));width:calc(14*var(--u));height:calc(14*var(--u));color:#9a59fa}
+ body .landingTech.landingPrecision .careerProfileSection b{font-size:calc(8*var(--u));line-height:calc(13*var(--u));margin-bottom:calc(3*var(--u))}
+ body .landingTech.landingPrecision .careerProfileSection>span{font-size:calc(7*var(--u));line-height:calc(11*var(--u))}
+ body .landingTech.landingPrecision .careerProfileSection>small{font-size:calc(6.5*var(--u));line-height:calc(10*var(--u))}
+ body .landingTech.landingPrecision .careerHeroArt figcaption{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;white-space:nowrap}
+ body .landingTech.landingPrecision .landingBody{display:flex;flex-direction:column;max-width:calc(862*var(--u));width:100%;padding:0 calc(32*var(--u)) calc(8*var(--u));margin:0 auto}
+ body .landingTech.landingPrecision .landingBody>section{flex:none}
+ body .landingTech.landingPrecision .benefits{height:calc(225*var(--u));padding:calc(22*var(--u)) 0 0;margin:0}
+ body .landingTech.landingPrecision .benefits>h2{display:block;text-align:center;height:calc(29*var(--u));line-height:calc(29*var(--u));font-size:calc(23*var(--u));font-weight:800;letter-spacing:calc(-.5*var(--u));margin:0 0 calc(11*var(--u));padding:0}
+ body .landingTech.landingPrecision .benefits .brandWordmark{display:inline-block;direction:ltr;line-height:inherit}
+ body .landingTech.landingPrecision .benefitGrid{grid-template-columns:repeat(5,minmax(0,1fr));height:calc(163*var(--u));gap:calc(8*var(--u))}
+ body .landingTech.landingPrecision .benefit{box-sizing:border-box;height:100%;min-height:0;padding:calc(17*var(--u)) calc(9*var(--u));border:1px solid #eee8fa;border-radius:calc(18*var(--u));background:#ffffff71;box-shadow:none}
+ body .landingTech.landingPrecision .benefit .featureIcon{width:calc(47*var(--u));height:calc(47*var(--u));margin:0 auto calc(10*var(--u));background:none}
+ body .landingTech.landingPrecision .benefit h3{font-size:calc(11.5*var(--u));line-height:calc(18*var(--u));font-weight:750;margin:0 0 calc(6*var(--u));color:#111226}
+ body .landingTech.landingPrecision .benefit p{font-size:calc(9*var(--u));line-height:calc(16*var(--u));font-weight:400;color:#898299;margin:0}
+ body .landingTech.landingPrecision .featureSoon{font-size:calc(7*var(--u));padding:calc(3*var(--u)) calc(6*var(--u));top:calc(8*var(--u));inset-inline-end:calc(9*var(--u))}
+ body .landingTech.landingPrecision .approvedSearch{box-sizing:border-box;width:100%;height:calc(165*var(--u));min-height:0;margin:calc(31*var(--u)) 0 0;padding:calc(17*var(--u)) calc(27*var(--u)) 0;border-radius:calc(23*var(--u));border:1px solid #eee9fc;background:#fbf9ff9c;box-shadow:0 calc(7*var(--u)) calc(13*var(--u)) #8653fa1f}
+ body .landingTech.landingPrecision .approvedSearch>h2{height:calc(31*var(--u));font-size:calc(23*var(--u));line-height:calc(31*var(--u));font-weight:800;margin:0 0 calc(11*var(--u));padding:0}
+ body .landingTech.landingPrecision .approvedSearch .heroSearchForm{height:calc(42*var(--u));grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,.95fr) minmax(0,.95fr) calc(134*var(--u));gap:calc(10*var(--u));margin:0;align-items:end}
+ body .landingTech.landingPrecision .approvedSearch .heroSearchForm>label{font-size:0;line-height:0;gap:0;min-width:0;grid-column:auto}
+ body .landingTech.landingPrecision .approvedSearch .heroSearchForm :is(input,select){height:calc(42*var(--u));min-height:0;font-size:calc(9*var(--u));line-height:calc(14*var(--u));padding:0 calc(10*var(--u));padding-inline-start:calc(29*var(--u));border-radius:calc(6*var(--u));background:#fff}
+ body .landingTech.landingPrecision .approvedSearch .heroSearchForm>button{height:calc(42*var(--u));min-height:0;font-size:calc(10*var(--u));padding:0;gap:calc(6*var(--u));line-height:calc(15*var(--u));grid-column:auto}
+ body .landingTech.landingPrecision .searchFieldIcon{bottom:calc(14*var(--u));inset-inline-start:calc(10*var(--u))}
+ body .landingTech.landingPrecision .searchFieldIcon .uiIcon{width:calc(13*var(--u));height:calc(13*var(--u))}
+ body .landingTech.landingPrecision .popularRoles{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:calc(6*var(--u));height:calc(22*var(--u));margin:calc(19*var(--u)) 0 0;align-items:center}
+ body .landingTech.landingPrecision .popularRoles>small{font-size:calc(8*var(--u));white-space:nowrap;flex:none}
+ body .landingTech.landingPrecision .popularRoles button{height:calc(22*var(--u));min-height:0;max-width:calc(140*var(--u));font-size:calc(8*var(--u));line-height:calc(12*var(--u));padding:calc(4*var(--u)) calc(8*var(--u));border:0;flex:1;min-width:0}
+ body .landingTech.landingPrecision .hotJobs{margin:calc(28*var(--u)) 0 0}
+ body .landingTech.landingPrecision .careerTools{display:grid;box-sizing:border-box;grid-template-columns:repeat(4,minmax(0,1fr)) calc(174*var(--u));gap:calc(8*var(--u));padding:calc(12*var(--u));height:calc(206*var(--u));min-height:0;margin:calc(33*var(--u)) 0 0;border:1px solid #eee9fb;border-radius:calc(20*var(--u));background:#faf9ff}
+ body .landingTech.landingPrecision .careerIntro{order:5;min-width:0;grid-column:auto;margin:calc(-12*var(--u)) 0 calc(-12*var(--u));margin-inline-end:calc(-12*var(--u));padding:calc(12*var(--u)) calc(18*var(--u));border:0;border-radius:0;text-align:start;position:relative;background:linear-gradient(125deg,#edf1ff,#f9f8ff);overflow:hidden}
+ body .landingTech.landingPrecision .careerIntro .planned{font-size:calc(8*var(--u));padding:calc(3*var(--u)) calc(8*var(--u));border-radius:calc(9*var(--u));line-height:1}
+ body .landingTech.landingPrecision .careerIntro h2{font-size:calc(24*var(--u));line-height:calc(29*var(--u));margin:calc(7*var(--u)) 0 calc(6*var(--u));font-weight:800;white-space:nowrap}
+ body .landingTech.landingPrecision .careerIntro p{font-size:calc(11*var(--u));line-height:calc(18*var(--u));margin:0 0 calc(14*var(--u));color:#777087}
+ body .landingTech.landingPrecision .careerIntro .gradientButton{min-height:0;height:calc(36*var(--u));padding:0 calc(10*var(--u));font-size:calc(9*var(--u));gap:calc(5*var(--u));white-space:nowrap}
+ body .landingTech.landingPrecision .careerTools>article{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;margin:0;padding:calc(14*var(--u)) calc(10*var(--u)) calc(6*var(--u));border-radius:calc(12*var(--u));min-width:0;background:#ffffffcf}
+ body .landingTech.landingPrecision .careerTools .featureIcon{width:calc(50*var(--u));height:calc(50*var(--u));background:none;margin:0 auto calc(11*var(--u))}
+ body .landingTech.landingPrecision .careerTools h3{font-size:calc(10*var(--u));line-height:calc(16*var(--u));font-weight:750;white-space:nowrap;margin:0 0 calc(6*var(--u));color:#131226}
+ body .landingTech.landingPrecision .careerTools>article p{font-size:calc(9*var(--u));line-height:calc(15*var(--u));margin:0 0 calc(10*var(--u));color:#91869f;text-align:center}
+ body .landingTech.landingPrecision .toolLink{font-size:calc(9*var(--u));line-height:calc(13*var(--u));min-height:0;padding:0;margin-top:auto;gap:calc(4*var(--u));white-space:nowrap}
+ body .landingTech.landingPrecision .toolLink .uiIcon{width:calc(11*var(--u));height:calc(11*var(--u))}
+ body .landingTech.landingPrecision .careerTools>article>small{font-size:calc(6*var(--u));line-height:calc(8*var(--u));margin-top:calc(2*var(--u));color:#ac97c0}
+ body .landingTech.landingPrecision .platformMetrics{box-sizing:border-box;height:calc(142*var(--u));margin:calc(22*var(--u)) 0 0;padding:calc(25*var(--u)) calc(6*var(--u));grid-template-columns:repeat(4,minmax(0,1fr));border-radius:calc(20*var(--u));background:#fff8}
+ body .landingTech.landingPrecision .platformMetrics article{gap:calc(9*var(--u))}
+ body .landingTech.landingPrecision .platformMetrics strong{font-size:calc(26*var(--u));line-height:calc(32*var(--u));font-weight:800}
+ body .landingTech.landingPrecision .platformMetrics article>span:last-child{font-size:calc(10*var(--u));line-height:calc(16*var(--u));color:#777087}
+ body .landingTech.landingPrecision .howItWorks{margin:calc(16*var(--u)) 0 0;padding:0;height:calc(194*var(--u))}
+ body .landingTech.landingPrecision .howItWorks>h2{height:calc(31*var(--u));font-size:calc(24*var(--u));line-height:calc(31*var(--u));font-weight:800;margin:0 0 calc(31*var(--u));padding:0}
+ body .landingTech.landingPrecision .howItWorks .steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(22*var(--u));height:calc(132*var(--u));padding:0;margin:0}
+ body .landingTech.landingPrecision .howItWorks .steps>article{height:100%;min-height:0;padding:calc(24*var(--u)) calc(13*var(--u)) calc(10*var(--u));border-radius:calc(20*var(--u));border-color:#eee8fa;background:#ffffffa6}
+ body .landingTech.landingPrecision .stepNumber{width:calc(25*var(--u));height:calc(25*var(--u));top:calc(-20*var(--u));left:50%;inset-inline-end:auto;transform:translateX(-50%);font-size:calc(13*var(--u))}
+ body .landingTech.landingPrecision .steps .referenceGlyph{margin:0 auto calc(8*var(--u))}
+ body .landingTech.landingPrecision .steps h3{font-size:calc(12*var(--u));line-height:calc(19*var(--u));font-weight:750;margin:0 0 calc(6*var(--u))}
+ body .landingTech.landingPrecision .steps p{font-size:calc(9*var(--u));line-height:calc(16*var(--u));margin:0;color:#878096}
+ body .landingTech.landingPrecision .joinBanner{box-sizing:border-box;height:calc(102*var(--u));min-height:0;margin:calc(21*var(--u)) 0 0;padding:0 calc(40*var(--u));border-radius:calc(14*var(--u));gap:calc(25*var(--u));display:flex;align-items:center;justify-content:space-between}
+ body .landingTech.landingPrecision .joinBanner h2{font-size:calc(29*var(--u));line-height:calc(39*var(--u));font-weight:800;margin:0 0 calc(3*var(--u));white-space:nowrap}
+ body .landingTech.landingPrecision .joinBanner p{font-size:calc(11*var(--u));line-height:calc(17*var(--u));margin:0}
+ body .landingTech.landingPrecision .joinBanner .outlineButton{height:calc(45*var(--u));min-height:0;min-width:calc(163*var(--u));padding:0 calc(14*var(--u));font-size:calc(9*var(--u));gap:calc(6*var(--u))}
+ body .landingTech.landingPrecision .publicFooter{box-sizing:border-box;height:calc(206*var(--u));min-height:0;padding:calc(17*var(--u)) max(calc(32*var(--u)),calc((100% - 798*var(--u))/2)) 0;margin:0}
+ body .landingTech.landingPrecision .footerTop{box-sizing:border-box;grid-template-columns:1.3fr repeat(4,minmax(0,1fr));gap:calc(30*var(--u));height:calc(147*var(--u));padding:0 0 calc(18*var(--u));margin:0}
+ body .landingTech.landingPrecision .footerBrand{grid-column:auto;padding-inline-start:calc(8*var(--u))}
+ body .landingTech.landingPrecision .publicFooter .publicBrand{min-height:0;height:calc(34*var(--u));gap:calc(6*var(--u))}
+ body .landingTech.landingPrecision .publicFooter .brandImage{width:calc(34*var(--u));height:calc(34*var(--u))}
+ body .landingTech.landingPrecision .footerTop .publicBrand .brandWordmark{font-size:calc(24*var(--u));line-height:1.1}
+ body .landingTech.landingPrecision .footerBrand>p{font-size:calc(9*var(--u));line-height:calc(16*var(--u));margin:calc(8*var(--u)) 0 calc(9*var(--u));color:#c4bed0}
+ body .landingTech.landingPrecision .footerSocials{gap:calc(6*var(--u))}
+ body .landingTech.landingPrecision .footerSocials>span{width:calc(20*var(--u));height:calc(20*var(--u))}
+ body .landingTech.landingPrecision .footerSocials .uiIcon{width:calc(11*var(--u));height:calc(11*var(--u))}
+ body .landingTech.landingPrecision .footerTop>div>b{font-size:calc(10*var(--u));line-height:calc(15*var(--u));font-weight:700;margin:0 0 calc(9*var(--u))}
+ body .landingTech.landingPrecision .footerTop :is(a,button,span.unpublishedLink){font-size:calc(9*var(--u));line-height:calc(17*var(--u));min-height:calc(17*var(--u));padding:0;margin:0}
+ body .landingTech.landingPrecision .footerBottom{box-sizing:border-box;height:calc(42*var(--u));min-height:0;margin:0;padding:calc(12*var(--u)) 0;font-size:calc(9*var(--u));line-height:calc(16*var(--u));gap:calc(15*var(--u));border-top:1px solid #6c6a8233;flex-wrap:nowrap}
+ body .landingTech.landingPrecision .footerLanguage{font-size:calc(9*var(--u));min-height:0;line-height:calc(16*var(--u))}
+}
+@media(max-width:759px){body .landingPrecision .steps .referenceGlyph{margin:0 auto 14px}body .landingPrecision .careerTools .referenceGlyph{transform:scale(.94)}}
+@media(min-width:760px){
+ body .landingTech.landingPrecision .publicHeader .publicBrand{grid-column:1;grid-row:1}
+ body .landingTech.landingPrecision .publicHeader nav{grid-column:2;grid-row:1}
+ body .landingTech.landingPrecision .publicHeader.publicHeaderTech .publicActions{grid-column:3;grid-row:1}
+ body .landingTech.landingPrecision .stepNumber{inset-inline-start:auto;inset-inline-end:auto;left:50%;right:auto}
+ body .landingTech.landingPrecision .hotJobs .featuredJobActions{gap:calc(5*var(--u));flex-wrap:nowrap}
+ body .landingTech.landingPrecision .hotJobs .featuredJobActions button{padding-inline:calc(7*var(--u));font-size:calc(9*var(--u));min-height:calc(32*var(--u))}
+ body .landingTech.landingPrecision .hotJobs .featuredJobActions button:not(:first-child){width:calc(32*var(--u));padding:calc(6*var(--u));flex:none}
+}
+body .landingTech.landingPrecision .careerOrbImage{clip-path:ellipse(46.3% 46.5% at 50% 47.5%)}
+@media(min-width:760px){
+ body .landingTech.landingPrecision .publicHeader.publicHeaderTech .publicActions>.outlineButton{width:calc(73*var(--u));flex:none}
+ body .landingTech.landingPrecision .publicHeader.publicHeaderTech .publicActions>.gradientButton{width:calc(117*var(--u));flex:none}
+ body .landingTech.landingPrecision .footerTop>div{display:block;gap:0;min-height:0}
+ body .landingTech.landingPrecision .careerOrb{width:calc(235*var(--u));height:calc(235*var(--u))}
+ body .landingTech.landingPrecision .benefitGrid{width:calc(787*var(--u));grid-template-columns:repeat(5,calc(155*var(--u)));gap:calc(3*var(--u));margin-inline-start:auto}
+}
+/* The head and portraits also come directly from the unchanged selected artwork. */
+body .landingTech.landingPrecision .careerOrbImage{display:block;width:100%;height:100%;background-image:url('/landing-reference-atlas.png');background-repeat:no-repeat;background-size:391.8181818% 829.0909091%;background-position:42.5233645% 7.7306733%;clip-path:circle(50%)}
+body .landingTech.landingPrecision .careerOrb:dir(ltr) .careerChip{left:46.8%;top:45.5%;width:9%;height:9%;font-size:12px;background:#25228a}
+@media(min-width:760px){
+ body .landingTech.landingPrecision .careerOrb{width:calc(220*var(--u));height:calc(220*var(--u));inset-inline-start:calc(27*var(--u));top:calc(34*var(--u))}
+ body .landingTech.landingPrecision .careerOrb:dir(ltr) .careerChip{font-size:calc(12*var(--u))}
+ body .landingTech.landingPrecision .ringOne{inset:-8%;border-inline-start-color:transparent;border-bottom-color:transparent}
+ body .landingTech.landingPrecision .ringTwo{inset:-15% -14%;border-inline-end-color:transparent;border-top-color:transparent}
+ body .landingTech.landingPrecision .careerProfileTop{inset-inline-start:calc(14*var(--u));width:calc(178*var(--u))}
+ body .landingTech.landingPrecision .careerAvatar{width:calc(51*var(--u));height:calc(51*var(--u));background-image:url('/landing-reference-atlas.png');background-size:calc(862*var(--u)) calc(1824*var(--u));background-position:calc(-63*var(--u)) calc(-105*var(--u));border:0}
+ body .landingTech.landingPrecision .communityPortraits i{background-image:url('/landing-reference-atlas.png');background-size:calc(862*var(--u)) calc(1824*var(--u));background-position:calc(-658*var(--u)) calc(-380*var(--u));border-width:calc(1*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits i:nth-child(2){background-position:calc(-688*var(--u)) calc(-380*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits i:nth-child(3){background-position:calc(-718*var(--u)) calc(-380*var(--u))}
+ body .landingTech.landingPrecision .communityPortraits i:nth-child(4){background-position:calc(-748*var(--u)) calc(-380*var(--u))}
+}
+@media(min-width:760px){body .landingTech.landingPrecision .benefits>h2{font-size:calc(23.6*var(--u))}}
+@media(min-width:760px){body .landingTech.landingPrecision .careerHeroCopy h1 em{position:relative;top:calc(2*var(--u));font-size:calc(46.2*var(--u))}}
+@media(min-width:760px){body .landingTech.landingPrecision .careerHeroCopy h1 em{background-image:linear-gradient(90deg,#00b2ff,#505afb 40%,#624efb 65%,#6e37f7)}}
+@media(min-width:760px){body .landingTech.landingPrecision .approvedSearch>h2{position:relative;top:calc(-2.5*var(--u));font-size:calc(20.3*var(--u));line-height:calc(27*var(--u));transform:scaleY(1.075);transform-origin:center}}
+@media(min-width:760px){body .landingTech.landingPrecision .approvedSearch .heroSearchForm>label{font-size:calc(11*var(--u));line-height:calc(14*var(--u))}body .landingTech.landingPrecision .filterName{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}
+body .landingTech.landingPrecision .careerOrb{aspect-ratio:1}
+body .landingTech.landingPrecision .careerOrbImage{position:absolute;inset:0}
+body .landingTech.landingPrecision .footerSocials>span{border:0;background:none;width:21px;height:22px}
+body .landingTech.landingPrecision .footerLanguage{display:inline-flex;align-items:center;gap:6px}
+@media(min-width:760px){body .landingTech.landingPrecision .footerBrand{position:relative}body .landingTech.landingPrecision .footerBrand>p{margin-top:calc(16*var(--u))}body .landingTech.landingPrecision .footerSocials{position:absolute;top:calc(107*var(--u));inset-inline-start:calc(10*var(--u));gap:calc(7.25*var(--u));direction:ltr}body .landingTech.landingPrecision .footerSocials>span{width:calc(21*var(--u));height:calc(22*var(--u))}body .landingTech.landingPrecision .footerLanguage{gap:calc(6*var(--u))}}
+body .landingPrecision .orbitalArt{display:none}
+@media(min-width:760px){
+ body .landingTech.landingPrecision .orbitalArt{display:block;position:absolute;inset-inline-end:calc(192*var(--u));top:calc(-17*var(--u));width:calc(300*var(--u));height:calc(355*var(--u));background-image:url('/landing-reference-atlas.png');background-size:calc(862*var(--u)) calc(1824*var(--u));background-position:calc(-242*var(--u)) calc(-73*var(--u));background-repeat:no-repeat;z-index:0;pointer-events:none;clip-path:polygon(0 0,100% 0,100% 53.3%,88% 53.3%,88% 64%,100% 64%,100% 100%,0 100%)}
+ body .landingTech.landingPrecision .orbitalArt:dir(ltr){transform:scaleX(-1)}
+ body .landingTech.landingPrecision .careerOrb{filter:none;z-index:1}
+ body .landingTech.landingPrecision .careerOrbImage{opacity:0}
+ body .landingTech.landingPrecision :is(.orbitalRing,.orbitalStar){display:none}
+}
