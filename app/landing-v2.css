@@ -1,59 +1,120 @@
-/* Approved combined homepage. All rules stay inside this public landing page. */
-body .landingV2{background:radial-gradient(ellipse at 15% 8%,#e8edff 0,transparent 30%),radial-gradient(ellipse at 85% 12%,#f0eaff 0,transparent 32%),#fbfcff;color:#131a42;overflow:hidden}
-body .landingV2 .publicHeader{max-width:1240px;margin:22px auto 0;border:1px solid #e8e8fb;box-shadow:0 12px 40px #5054a708;background:#ffffffed}
-body .landingV2 .careerHero{max-width:1280px;margin:auto;padding:64px 28px 60px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:30px;min-height:570px}
+/* Full-page source: output/design-comparison-v1/03-combined-recommended.png. */
+body .landingV2{--landing-ink:#080f35;--landing-line:#d8e3ff;background:radial-gradient(ellipse at 15% 12%,#e0ecff80,transparent 35%),linear-gradient(110deg,#f7fbff,#edf7ff 55%,#f9fcff);color:var(--landing-ink);overflow:hidden}
+body .landingV2 .publicHeader{width:100%;max-width:none;min-height:64px;height:auto;margin:0;padding:12px max(30px,calc((100% - 1220px)/2));display:flex;flex-direction:row;direction:inherit;gap:28px;border:0;border-bottom:1px solid #eef2fa;border-radius:0;box-shadow:none;background:#ffffffd9}
+body .landingV2 .publicHeader .publicBrand{font-size:27px;gap:9px;flex-shrink:0}
+body .landingV2 .publicHeader .brandImage{width:42px;height:42px}
+body .landingV2 .publicHeader nav{display:flex;align-items:center;justify-content:center;gap:22px;flex:1;padding:0;border:0}
+body .landingV2 .publicHeader nav :is(a,button,span){font-size:12px;line-height:1.5;text-decoration:none;color:#101737;white-space:nowrap;padding:6px 0;min-height:30px;display:inline-flex;align-items:center;border:0;background:none}
+body .landingV2 .publicHeader.publicHeaderMockup{direction:inherit}
+body .landingV2 .publicHeader.publicHeaderMockup .publicActions{display:flex;gap:10px;flex-shrink:0;direction:inherit;border:0;padding:0}
+body .landingV2 .publicActions>button{font-size:11px;padding:8px 13px;min-height:35px;white-space:nowrap;border-radius:8px}
+body .landingV2 .publicActions .langButton{padding:4px 0;min-width:0;border:0;font-size:10px;background:none;color:#697795}
+body .landingV2 .languageLabel{gap:4px}.landingV2 .languageLabel svg{width:16px;height:11px}
+body .landingV2 :is(.gradientButton,.dark){background:linear-gradient(100deg,#8b32ff,#318fff);box-shadow:0 5px 16px #6f68ea20;border-radius:8px}
+body .landingV2 :is(.outlineButton){background:#ffffffb5;border:1px solid #c7c0ff;color:#7b43ff;border-radius:8px}
+body .landingV2 .careerHero{max-width:1240px;min-height:416px;margin:0 auto;padding:32px 30px 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
 body .landingV2 .careerHeroCopy{min-width:0;text-align:start}
-body .landingV2 .heroEyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #e3defc;border-radius:30px;color:#7253c6;font-size:12px;font-weight:600;background:#ffffffb8}
-body .landingV2 .careerHeroCopy h1{font-size:clamp(43px,4.7vw,66px);line-height:1.1;letter-spacing:-1.8px;margin:24px 0;font-weight:800;color:#12183e}
-body .landingV2 .careerHeroCopy h1 em{font-style:normal;display:inline-block;background:linear-gradient(100deg,#327cff,#8643ef);background-clip:text;-webkit-background-clip:text;color:transparent;padding-block:4px}
-body .landingV2 .careerHeroCopy>p{font-size:16px;line-height:1.95;color:#63718d;max-width:530px;margin:0}
-body .landingV2 .heroButtons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-body .landingV2 .heroButtons :is(a,button){display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;min-height:50px;font-size:14px;text-decoration:none}
-body .landingV2 .heroNote{display:block;font-size:12px;color:#7b85a2;margin-top:17px}
-body .landingV2 .careerHeroArt{margin:0;position:relative;min-width:0;display:grid;grid-template-columns:minmax(0,1.13fr) minmax(0,1fr);align-items:center;gap:0;padding-block:22px 55px;isolation:isolate}
-body .landingV2 .careerHeroArt:before{content:"";position:absolute;inset:7% -5% 1%;border-radius:50%;background:radial-gradient(ellipse,#dcd9ff80,transparent 68%);z-index:-1}
-body .landingV2 .careerOrb{position:relative;margin-inline-end:-26px;z-index:0;min-width:0;filter:drop-shadow(0 15px 28px #5f4bd32b)}
+body .landingV2 .careerHeroCopy h1{font-size:clamp(48px,6.6vw,78px);font-weight:800;letter-spacing:-1.7px;line-height:1.04;margin:0 0 24px;color:#080f35}
+body .landingV2 .careerHeroCopy h1 em{font-style:normal;background:linear-gradient(95deg,#358eff,#9342f9);background-clip:text;-webkit-background-clip:text;color:transparent;display:inline-block;padding-block:3px}
+body .landingV2 .careerHeroCopy>p{font-size:15px;line-height:1.75;margin:0;color:#151d44;max-width:570px}
+body .landingV2 .heroButtons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+body .landingV2 .heroButtons :is(a,button){display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 21px;min-height:45px;line-height:1.4;font-size:14px;text-decoration:none}
+body .landingV2 .careerHeroArt{position:relative;margin:0;min-width:0;min-height:350px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:center;isolation:isolate;padding:10px 0}
+body .landingV2 .careerHeroArt:before{content:"";position:absolute;width:94%;height:100%;inset-inline-end:0;top:-8px;z-index:-2;border-radius:48% 52% 46% 54%;background:linear-gradient(145deg,#a1d8ff85,#9283fa73 65%,#f7faff00)}
+body .landingV2 .careerArtWaves{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+body .landingV2 .careerHeroArt:dir(ltr) .careerArtWaves{transform:scaleX(-1)}
+body .landingV2 .careerOrb{min-width:0;position:relative;z-index:0;margin-inline-end:-30px;filter:drop-shadow(0 12px 20px #6556dd25)}
 body .landingV2 .careerOrbImage{display:block;width:100%;height:auto;transform:scaleX(1)}
-/* Base asset faces LEFT. Logical grid puts the card after the head: left in RTL, right in LTR. */
 body .landingV2 .careerHeroArt:dir(ltr) .careerOrbImage{transform:scaleX(-1)}
-body .landingV2 .careerProfileGroup{position:relative;min-width:0;z-index:1}
-body .landingV2 .careerProfileCard{background:linear-gradient(150deg,#fffffffa,#f8fafff5);border:1px solid #fff;border-radius:21px;padding:22px 18px;box-shadow:0 16px 45px #5253bb26,0 0 0 1px #dce0fb;min-height:326px;text-align:start}
-body .landingV2 .careerProfileTop{display:flex;gap:10px;align-items:center;padding-bottom:18px;border-bottom:1px solid #e6e9f7}
-body .landingV2 .careerAvatar{width:47px;height:47px;display:grid;place-items:center;background:linear-gradient(140deg,#eee6ff,#e6f1ff);color:#7753ed;border-radius:50%;flex-shrink:0}
-body .landingV2 .careerProfileTop strong{display:block;font-size:16px;line-height:1.4;white-space:nowrap}
-body .landingV2 .careerProfileTop div>span{display:block;font-size:10px;color:#8c93ab;line-height:1.7;margin-top:3px}
-body .landingV2 .careerProfileSection{position:relative;padding-block:18px 0;padding-inline-end:25px}
-body .landingV2 .careerProfileSection>.uiIcon{position:absolute;inset-inline-end:0;top:17px;color:#8558ed;width:18px;height:18px}
-body .landingV2 .careerProfileSection>b{display:block;font-size:11px;margin-bottom:12px;color:#40486a;line-height:1.5}
-body .landingV2 .careerSkillPills{display:flex;gap:5px}.landingV2 .careerSkillPills i{display:block;flex:1;height:14px;background:#e8e3ff;border-radius:10px}
-body .landingV2 .careerLine{display:block;height:5px;border-radius:4px;background:#dfe3f5;margin:9px 0;max-width:100%}.landingV2 .careerLine.short{width:62%;background:#e9ebf7}
-body .landingV2 .careerMiniCards{display:flex;gap:7px;position:absolute;inset-inline:0;top:calc(100% + 12px)}
-body .landingV2 .careerMiniCards>span{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;border:1px solid #e0e2fc;border-radius:10px;background:#ffffffec;box-shadow:0 8px 20px #6a59cc12;padding:10px 7px;font-size:10px;color:#63549b;line-height:1.5}
-body .landingV2 .careerMiniCards .uiIcon{flex-shrink:0;color:#8853ea}
-body .landingV2 .careerHeroArt figcaption{position:absolute;bottom:-4px;inset-inline:0;text-align:center;font-size:9px;color:#7e88a3}
-body .landingV2 .landingBody{max-width:1240px;padding-inline:28px}
-body .landingV2 :is(.benefits,.homepageOpenings,.careerTools,.howItWorks,.candidateFAQ){margin-block:40px}
-body .landingV2 :is(.benefitsHeading,.howItWorks>h2,.candidateFAQ>h2){text-align:center;font-size:27px;line-height:1.5;letter-spacing:-.5px;margin-bottom:25px}
-body .landingV2 :is(.benefit,.howItWorks .steps>article){border:1px solid #e2e5fb;box-shadow:0 5px 20px #544cc108;background:#ffffffc9;border-radius:17px;padding:26px 20px}
-body .landingV2 .benefitGrid{gap:15px}.landingV2 .benefit h3{font-size:16px;line-height:1.5}.landingV2 .benefit p{font-size:13px;line-height:1.9;color:#6c7894}
-body .landingV2 .featureIcon{color:#8351ee;background:#f1edff;border-radius:13px;width:46px;height:46px}
-body .landingV2 .approvedSearch{border:1px solid #dde4ff;border-radius:20px;background:linear-gradient(135deg,#ffffffeb,#f0f5ffb0);box-shadow:0 10px 32px #5553b90a;padding:28px;margin-block:40px;scroll-margin-top:24px}
-body .landingV2 .approvedSearch>h2{text-align:center;font-size:26px;margin:0 0 24px;line-height:1.5}
-body .landingV2 .approvedSearch .heroSearchForm{grid-template-columns:minmax(0,1.2fr) minmax(0,1.2fr) minmax(0,.9fr) minmax(0,.9fr) auto;gap:12px;margin:0}
-body .landingV2 .approvedSearch .heroSearchForm label{font-size:12px;line-height:1.5;min-width:0}
-body .landingV2 .approvedSearch .heroSearchForm button{grid-column:auto;min-height:46px}
-body .landingV2 .approvedSearch .popularRoles{margin-top:18px;gap:7px}
-body .landingV2 .featuredJobGrid{gap:17px}.landingV2 .homepageOpenings .detailPanel{border-radius:17px;box-shadow:0 6px 22px #5553b908}
-body .landingV2 .careerTools{display:grid;grid-template-columns:1.35fr repeat(4,1fr);gap:0;border:1px solid #dfe3fb;background:linear-gradient(115deg,#f0edff,#f8fbff);border-radius:19px;padding:24px}
-body .landingV2 .careerTools>article{border:0;background:none;box-shadow:none;padding:16px 12px;text-align:center}.landingV2 .careerTools h3{font-size:14px;line-height:1.6}.landingV2 .careerIntro h2{font-size:24px}.landingV2 .careerIntro p{font-size:12px;line-height:1.8}
-body .landingV2 .realStatus{grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #e2e5f9;background:#ffffffbd;border-radius:18px;padding:26px 12px;margin-block:35px}
-body .landingV2 .realStatus b{font-size:21px}.landingV2 .realStatus span{font-size:12px}.landingV2 .realStatus>div{min-width:0}
-body .landingV2 .howItWorks .steps{gap:16px}.landingV2 .howItWorks .steps h3{font-size:15px;line-height:1.5}.landingV2 .howItWorks .steps p{font-size:13px;line-height:1.8}
-body .landingV2 .candidateFAQ{max-width:900px;margin-inline:auto}.landingV2 .candidateFAQ details{background:#ffffffd9;border:1px solid #dfe5f8;border-radius:13px}.landingV2 .candidateFAQ summary{min-height:54px;font-size:14px}
-body .landingV2 .joinBanner{border-radius:18px;background:linear-gradient(105deg,#783cff,#3a79ff);padding:30px 35px;margin-block:40px}.landingV2 .joinBanner h2{font-size:28px;line-height:1.5}.landingV2 .joinBanner p{font-size:13px;line-height:1.8}
-body .landingV2 .publicFooter{background:#12172f;color:#d7dcee;margin:0;padding-top:40px}
-body .landingV2 .footerTop{gap:35px;padding-bottom:32px}.landingV2 .footerTop>div>b{font-size:14px}.landingV2 .footerTop :is(a,button){font-size:13px;line-height:1.7;min-height:40px;display:flex;align-items:center}.landingV2 .footerTop p{font-size:12px;line-height:1.9;max-width:240px;color:#a6b1ce}
-body .landingV2 .publicFooter .publicBrand{font-size:24px;gap:9px}.landingV2 .publicFooter .brandImage{width:38px;height:38px}.landingV2 .footerBottom{padding-block:20px;color:#a6b1ce;font-size:12px}
-@media(max-width:1100px){body .landingV2 .publicHeader{margin-inline:18px}body .landingV2 .careerHero{gap:22px;padding-block:45px;min-height:520px}body .landingV2 .careerProfileCard{padding:18px 14px}body .landingV2 .careerProfileTop{flex-direction:column;align-items:flex-start}body .landingV2 .careerProfileTop strong{font-size:15px}body .landingV2 .approvedSearch .heroSearchForm{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingV2 .approvedSearch .heroSearchForm>button{grid-column:1/-1}body .landingV2 .careerTools{grid-template-columns:repeat(4,minmax(0,1fr))}body .landingV2 .careerIntro{grid-column:1/-1;padding-bottom:12px}}
-@media(max-width:800px){body .landingV2 .careerHero{grid-template-columns:1fr;padding:36px 24px 30px;gap:18px}body .landingV2 .careerHeroCopy{max-width:600px;margin:auto;text-align:center}body .landingV2 .careerHeroCopy h1{font-size:52px}body .landingV2 .careerHeroCopy>p{font-size:15px}body .landingV2 .heroButtons{justify-content:center}body .landingV2 .careerHeroArt{width:100%;max-width:530px;justify-self:center;padding-block:10px 60px}body .landingV2 .careerProfileCard{min-height:300px}body .landingV2 .careerProfileTop{flex-direction:row;align-items:center}body .landingV2 .benefitGrid{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingV2 .careerTools{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingV2 .howItWorks .steps{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingV2 .footerTop{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}}
-@media(max-width:480px){body .landingV2 .publicHeader{margin:12px 12px 0}body .landingV2 .careerHero{padding:28px 18px 22px;gap:16px}body .landingV2 .careerHeroCopy h1{font-size:43px;letter-spacing:-1.2px}body .landingV2 .careerHeroCopy>p{font-size:14px;line-height:1.85}body .landingV2 .heroEyebrow{font-size:11px}body .landingV2 .heroButtons{gap:8px}body .landingV2 .heroButtons :is(a,button){font-size:12px;padding:13px 14px}body .landingV2 .careerProfileCard{padding:15px 12px;border-radius:16px;min-height:290px}body .landingV2 .careerProfileTop{gap:7px;flex-direction:column;align-items:flex-start;padding-bottom:10px}body .landingV2 .careerAvatar{width:35px;height:35px}body .landingV2 .careerProfileTop strong{font-size:14px}body .landingV2 .careerProfileSection{padding-top:14px;padding-inline-end:19px}body .landingV2 .careerProfileSection>b{font-size:10px;margin-bottom:7px}body .landingV2 .careerProfileSection>.uiIcon{width:15px;height:15px;top:13px}body .landingV2 .careerMiniCards{flex-direction:column;gap:4px;top:calc(100% + 7px)}body .landingV2 .careerMiniCards>span{font-size:9px;padding:5px}body .landingV2 .careerHeroArt{padding-bottom:85px}body .landingV2 .careerHeroArt figcaption{bottom:0;font-size:8px}body .landingV2 .landingBody{padding-inline:18px}body .landingV2 .benefit{padding:20px 13px}body .landingV2 .benefit h3{font-size:14px}body .landingV2 .benefit p{font-size:12px}body .landingV2 .approvedSearch{padding:20px 16px}body .landingV2 .approvedSearch>h2{font-size:22px}body .landingV2 .approvedSearch .heroSearchForm{grid-template-columns:1fr}body .landingV2 .realStatus{grid-template-columns:1fr;gap:22px}body .landingV2 .realStatus>div{border:0}body .landingV2 .joinBanner{padding:25px 22px}body .landingV2 .joinBanner h2{font-size:23px}body .landingV2 .footerTop{gap:24px 15px}body .landingV2 .footerTop>div:first-child{grid-column:1/-1}body .landingV2 .footerBottom{flex-wrap:wrap;gap:10px}}
+body .landingV2 .careerProfileGroup{position:relative;z-index:1;min-width:0}
+body .landingV2 .careerProfileCard{padding:20px 22px 24px;min-height:326px;background:linear-gradient(145deg,#fffffffc,#f7f9fff5);border:1px solid white;border-radius:20px;box-shadow:0 12px 24px #5a59d52b,0 0 0 1px #cecfff;transform:rotate(-1.5deg);text-align:start}
+body .landingV2 .careerHeroArt:dir(ltr) .careerProfileCard{transform:rotate(1.5deg)}
+body .landingV2 .careerProfileTop{display:flex;flex-direction:row-reverse;align-items:center;gap:12px;padding-bottom:18px;border-bottom:1px solid #e4e7f8}
+body .landingV2 .careerAvatar{height:55px;width:55px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;background:#e3e0ff;color:#9382ff}
+body .landingV2 .careerProfileTop strong{display:block;font-size:17px;line-height:1.4;white-space:nowrap}
+body .landingV2 .careerProfileTop div>span{display:none}
+body .landingV2 .careerProfileSection{position:relative;padding-block:17px 0;padding-inline-end:24px}
+body .landingV2 .careerProfileSection>.uiIcon{position:absolute;inset-inline-end:0;top:17px;width:21px;height:21px;color:#8650ff}
+body .landingV2 .careerProfileSection>b{display:block;font-size:12px;line-height:1.5;margin-bottom:11px}
+body .landingV2 .careerSkillPills{display:flex;gap:6px}
+body .landingV2 .careerSkillPills i{flex:1;display:block;height:15px;border-radius:20px;background:#e1ddff}
+body .landingV2 .careerLine{display:block;height:5px;background:#d1d2ed;border-radius:4px;margin:9px 0}
+body .landingV2 .careerLine.short{width:66%;background:#e2e4f5}
+body .landingV2 .careerMiniCards{position:absolute;inset-inline-start:-92px;top:18px;width:92px;display:flex;flex-direction:column;gap:100px;pointer-events:none}
+body .landingV2 .careerMiniCards>span{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:74px;padding:10px 5px;border:1px solid #c8c5ff;border-radius:13px;background:#fffffff2;box-shadow:0 8px 20px #6555d91c;color:#10173d;text-align:center;font-weight:700;font-size:10px;line-height:1.5}
+body .landingV2 .careerMiniCards .uiIcon{color:#8542ff;width:25px;height:25px}
+body .landingV2 .careerHeroArt figcaption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body .landingV2 .landingBody{max-width:1240px;margin:auto;padding:0 30px}
+body .landingV2 .benefits{padding:0;margin:0 0 20px}
+body .landingV2 .benefitGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+body .landingV2 .benefit{border:1px solid var(--landing-line);border-radius:15px;box-shadow:0 4px 16px #6284d508;background:#ffffffb0;text-align:center;padding:17px 14px 15px;min-height:140px}
+body .landingV2 .benefit>.uiIcon{display:block;margin:0 auto 11px;color:#8745ff;width:32px;height:32px}
+body .landingV2 .benefit h3{font-size:16px;line-height:1.45;margin:0 0 5px;color:var(--landing-ink)}
+body .landingV2 .benefit p{font-size:12px;line-height:1.6;color:#475476;margin:0}
+body .landingV2 .approvedSearch{margin:20px 0;padding:18px 24px 22px;scroll-margin-top:15px;border:1px solid var(--landing-line);border-radius:17px;background:#ffffffad;box-shadow:0 4px 18px #5e71cd06}
+body .landingV2 .approvedSearch>h2{text-align:center;font-size:27px;line-height:1.4;margin:0 0 18px}
+body .landingV2 .approvedSearch .heroSearchForm{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr) auto;gap:12px;align-items:end;margin:0}
+body .landingV2 .approvedSearch .heroSearchForm label{font-size:11px;line-height:1.4;min-width:0}
+body .landingV2 .approvedSearch .heroSearchForm label:first-child,body .landingV2 .approvedSearch .heroSearchForm>button{grid-column:auto}
+body .landingV2 .approvedSearch .heroSearchForm>button{min-height:44px;padding-inline:22px}
+body .landingV2 .approvedSearch .popularRoles{margin-top:13px;margin-bottom:0;gap:6px}
+body .landingV2 .approvedSearch .popularRoles button{font-size:10px;padding:5px 9px}
+body .landingV2 .hotJobs{margin:24px 0}
+body .landingV2 .hotJobs .sectionHead{margin-bottom:14px}
+body .landingV2 .hotJobs .sectionHead h2{font-size:25px;margin:0}
+body .landingV2 .hotJobs .sectionHead .muted{font-size:12px}
+body .landingV2 .hotJobs .featuredJobGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+body .landingV2 .hotJobs .detailPanel{padding:18px 16px;border:1px solid var(--landing-line);border-radius:15px;background:#ffffffc9;box-shadow:0 4px 15px #657bd40a;display:flex;flex-direction:column;min-width:0}
+body .landingV2 .hotJobs .jobTitleButton{padding:0;min-height:0;border:0;background:none;text-align:start}
+body .landingV2 .hotJobs .jobTitleButton h3{font-size:15px;line-height:1.5;margin:0 0 9px}
+body .landingV2 .hotJobs .detailPanel>p{font-size:12px;line-height:1.65;margin:3px 0;color:#657394}
+body .landingV2 .hotJobs .detailPanel>p:last-of-type{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+body .landingV2 .hotJobs .featuredJobActions{margin-top:auto;padding-top:18px;gap:7px}
+body .landingV2 .hotJobs .featuredJobActions button{min-height:35px;font-size:10px;padding:7px 10px}
+body .landingV2 .careerTools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) 1.1fr;gap:0;border:1px solid var(--landing-line);border-radius:17px;background:linear-gradient(120deg,#eeedffaf,#f9fcffb0);margin:20px 0;padding:18px 24px;min-height:134px}
+body .landingV2 .careerIntro{order:4;position:relative;text-align:start;padding-inline-start:22px;border-inline-start:1px solid #bacbff}
+body .landingV2 .careerIntro .planned{font-size:11px;padding:4px 13px;background:#8347ff;color:white;border-radius:20px;display:inline-block}
+body .landingV2 .careerIntro h2{font-size:27px;margin:4px 0;line-height:1.4}
+body .landingV2 .careerIntro p{font-size:13px;line-height:1.65;color:#48557b;margin:0;max-width:220px}
+body .landingV2 .careerTools>article{order:1;text-align:center;padding:10px 10px 0;border:0;background:none;border-radius:0;box-shadow:none}
+body .landingV2 .careerTools>article>.uiIcon{display:block;margin:0 auto 12px;color:#8548ff}
+body .landingV2 .careerTools h3{font-size:15px;line-height:1.45;margin:0 0 3px}
+body .landingV2 .toolSoon{font-size:12px;color:#8655fb}
+body .landingV2 .careerPromises{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+body .landingV2 .careerPromises>article{padding:16px;border:1px solid var(--landing-line);border-radius:15px;background:#ffffffac;text-align:center}
+body .landingV2 .careerPromises .uiIcon{color:#8552ff;display:block;margin:0 auto 10px}
+body .landingV2 .careerPromises h3{font-size:16px;margin:0 0 4px}
+body .landingV2 .careerPromises p{font-size:13px;line-height:1.6;margin:0;color:#506083}
+body .landingV2 .howItWorks{margin:16px 0 20px}
+body .landingV2 .howItWorks>h2{text-align:center;font-size:28px;line-height:1.4;margin:0 0 16px}
+body .landingV2 .howItWorks .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;padding:0}
+body .landingV2 .howItWorks .steps>article{position:relative;padding:17px 13px 13px;border:1px solid var(--landing-line);border-radius:15px;background:#ffffffa8;box-shadow:none;text-align:center}
+body .landingV2 .howItWorks .steps>article:not(:last-child):after{content:"←";position:absolute;inset-inline-end:-27px;top:47%;width:26px;color:#668fff;font-size:19px;border-top:1px dashed #a2bcff;line-height:0}
+body .landingV2 .howItWorks:dir(ltr) .steps>article:not(:last-child):after{content:"→"}
+body .landingV2 .stepNumber{position:absolute;top:-8px;inset-inline-end:18px;width:29px;height:29px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(120deg,#4aa6ff,#8753ff);box-shadow:0 3px 10px #6871eb25;color:white;font-size:16px}
+body .landingV2 .steps .uiIcon{color:#8545ff;display:block;margin:0 auto 12px}
+body .landingV2 .steps h3{font-size:15px;line-height:1.5;margin:0 0 4px}
+body .landingV2 .steps p{font-size:12px;line-height:1.6;margin:0;color:#526081}
+body .landingV2 .joinBanner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 34px;margin:20px 0 12px;min-height:88px;border-radius:14px;background:linear-gradient(105deg,#912bff,#377eff);color:white}
+body .landingV2 .joinBanner h2{font-size:27px;line-height:1.45;margin:0 0 2px}
+body .landingV2 .joinBanner p{font-size:14px;line-height:1.5;margin:0;color:#f0ecff}
+body .landingV2 .joinBanner button{display:inline-flex;align-items:center;gap:9px;justify-content:center;padding:11px 20px;min-height:45px;white-space:nowrap}
+body .landingV2 .publicFooter{display:block;padding:25px max(30px,calc((100% - 1180px)/2)) 0;margin:0;border-radius:0;background:#11172e;color:#e2e7f6}
+body .landingV2 .footerTop{display:grid;grid-template-columns:1.3fr repeat(4,minmax(0,1fr));gap:30px;padding:0 0 22px}
+body .landingV2 .publicFooter .publicBrand{font-size:27px;gap:8px;min-height:44px;display:inline-flex}
+body .landingV2 .publicFooter .brandImage{width:43px;height:43px}
+body .landingV2 .footerTop>div>b{font-size:14px;line-height:1.4;display:block;margin:0 0 10px}
+body .landingV2 .footerTop :is(a,button,span.unpublishedLink){font-size:12px;line-height:1.7;display:flex;align-items:center;min-height:22px;padding:0;text-decoration:none;color:#c1cae2;background:none;border:0;text-align:start}
+body .landingV2 .footerTop .publicBrand .brandWordmark{color:white;font-size:27px}
+body .landingV2 .publicFooter .brandWordmark>span{font-size:inherit;line-height:inherit;display:inline}
+body .landingV2 .unpublishedLink{cursor:default}
+body .landingV2 .footerBottom{border-top:1px solid #626d8580;padding:14px 0;min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#c1cae2}
+body .landingV2 .footerBottom>div{display:flex;gap:8px}
+body .landingV2 .landingFaqDialog{width:min(850px,calc(100vw - 28px));max-height:85vh;overflow:auto;padding:30px;border:1px solid #d4ddfa;border-radius:18px;color:#11183d;background:#f8fbff}
+body .landingV2 .landingFaqDialog::backdrop{background:#111a4180;backdrop-filter:blur(4px)}
+body .landingV2 .landingFaqDialog .candidateFAQ{margin:0}
+body .landingV2 .faqClose{position:sticky;top:0;margin-inline-start:auto;display:block;font-size:24px;min-width:36px;background:white;border:1px solid #dce5ff}
+@media(max-width:1150px){body .landingV2 .publicHeader{gap:18px;padding-inline:24px}body .landingV2 .publicHeader nav{gap:13px}body .landingV2 .publicHeader .publicBrand{font-size:24px}body .landingV2 .publicActions{gap:6px}body .landingV2 .publicActions>button{padding-inline:9px;font-size:10px}body .landingV2 .careerHero{gap:30px}body .landingV2 .careerProfileCard{padding-inline:17px}body .landingV2 .careerProfileTop{gap:8px}body .landingV2 .careerProfileTop strong{font-size:16px}body .landingV2 .careerAvatar{width:45px;height:45px}body .landingV2 .hotJobs .featuredJobActions{flex-wrap:wrap}body .landingV2 .footerTop{gap:20px}}
+@media(max-width:900px){body .landingV2 .publicHeader{flex-wrap:wrap;justify-content:space-between;gap:10px 18px;padding-block:12px}body .landingV2 .publicHeader nav{order:3;flex-basis:100%;padding-top:9px;border-top:1px solid #e4ebf9;gap:24px}body .landingV2 .careerHero{grid-template-columns:1fr 1fr;gap:22px;padding:28px 24px;min-height:390px}body .landingV2 .careerHeroCopy h1{font-size:47px}body .landingV2 .careerHeroCopy>p{font-size:13px}body .landingV2 .heroButtons{gap:8px;margin-top:20px}body .landingV2 .heroButtons :is(a,button){font-size:12px;padding:11px 13px}body .landingV2 .careerProfileCard{padding:16px 12px;min-height:290px}body .landingV2 .careerProfileTop{flex-direction:column;align-items:flex-start}body .landingV2 .careerMiniCards{width:76px;inset-inline-start:-76px;font-size:9px;gap:85px}body .landingV2 .careerMiniCards>span{font-size:9px;min-height:65px}body .landingV2 .careerProfileSection>b{font-size:11px}body .landingV2 .landingBody{padding-inline:24px}body .landingV2 .approvedSearch .heroSearchForm{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingV2 .approvedSearch .heroSearchForm>button{grid-column:1/-1}body .landingV2 .hotJobs .featuredJobGrid{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingV2 .careerIntro{padding-inline-start:14px}body .landingV2 .careerIntro h2{font-size:22px}body .landingV2 .careerIntro p{font-size:11px}body .landingV2 .careerTools h3{font-size:13px}body .landingV2 .joinBanner h2{font-size:23px}body .landingV2 .joinBanner p{font-size:12px}body .landingV2 .footerTop{grid-template-columns:repeat(4,minmax(0,1fr))}body .landingV2 .footerBrand{grid-column:1/-1}}
+@media(max-width:600px){body .landingV2 .publicHeader{padding:12px 18px}body .landingV2 .publicHeader .publicBrand{font-size:22px}body .landingV2 .publicHeader .brandImage{width:36px;height:36px}body .landingV2 .publicHeader nav{gap:15px;flex-wrap:wrap}body .landingV2 .publicHeader nav :is(a,button,span){font-size:11px}body .landingV2 .publicActions{gap:5px}body .landingV2 .publicActions .langButton{font-size:9px}body .landingV2 .publicActions>button{font-size:10px;min-height:33px;padding-inline:8px}body .landingV2 .publicActions>button:last-child{max-width:102px;white-space:normal;font-size:9px}body .landingV2 .careerHero{grid-template-columns:1fr;padding:26px 18px 18px;gap:18px}body .landingV2 .careerHeroCopy{text-align:center}body .landingV2 .careerHeroCopy h1{font-size:47px;margin-bottom:15px}body .landingV2 .careerHeroCopy>p{font-size:13px;line-height:1.8}body .landingV2 .heroButtons{justify-content:center;margin-top:18px}body .landingV2 .careerHeroArt{max-width:430px;width:100%;justify-self:center;min-height:315px}body .landingV2 .careerProfileTop{flex-direction:row-reverse;gap:7px}body .landingV2 .careerProfileTop strong{font-size:14px}body .landingV2 .careerAvatar{width:35px;height:35px}body .landingV2 .careerMiniCards{gap:88px;top:15px;width:70px;inset-inline-start:-68px}body .landingV2 .careerMiniCards>span{font-size:8px;padding:7px 3px}body .landingV2 .careerProfileCard{min-height:280px}body .landingV2 .careerProfileSection{padding-inline-end:18px}body .landingV2 .careerProfileSection>.uiIcon{width:17px;height:17px}body .landingV2 .careerProfileSection>b{font-size:10px}body .landingV2 .landingBody{padding-inline:18px}body .landingV2 .benefitGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}body .landingV2 .benefit{padding:16px 12px;min-height:140px}body .landingV2 .benefit h3{font-size:14px}body .landingV2 .benefit p{font-size:12px}body .landingV2 .approvedSearch{padding:18px 15px}body .landingV2 .approvedSearch>h2{font-size:23px}body .landingV2 .approvedSearch .heroSearchForm{grid-template-columns:1fr}body .landingV2 .hotJobs .featuredJobGrid{grid-template-columns:1fr}body .landingV2 .hotJobs .jobTitleButton h3{font-size:17px}body .landingV2 .hotJobs .featuredJobActions{flex-wrap:nowrap}body .landingV2 .hotJobs .featuredJobActions button{font-size:12px}body .landingV2 .careerTools{grid-template-columns:repeat(3,minmax(0,1fr));padding:18px 12px;row-gap:15px}body .landingV2 .careerIntro{order:0;grid-column:1/-1;border:0;padding:0 8px}body .landingV2 .careerIntro p{max-width:none;font-size:12px}body .landingV2 .careerTools>article{padding:10px 5px}body .landingV2 .careerTools h3{font-size:11px}body .landingV2 .careerPromises{grid-template-columns:1fr;gap:10px}body .landingV2 .careerPromises>article{padding:18px}body .landingV2 .howItWorks .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}body .landingV2 .howItWorks .steps>article:after{display:none}body .landingV2 .steps h3{font-size:13px}body .landingV2 .joinBanner{flex-direction:column;align-items:flex-start;padding:20px 23px;gap:15px}body .landingV2 .joinBanner h2{font-size:25px}body .landingV2 .publicFooter{padding:25px 23px 0}body .landingV2 .footerTop{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}body .landingV2 .footerTop>div>b{margin-bottom:10px}body .landingV2 .footerTop :is(a,button,span.unpublishedLink){min-height:30px}body .landingV2 .footerBottom{font-size:10px}}
+@media(max-width:600px){body .landingV2 .publicHeader .publicActions{display:flex;flex-basis:100%;flex-wrap:nowrap;justify-content:space-between;order:2;padding:0;border:0}body .landingV2 .publicHeader .publicActions>button{width:auto;min-height:36px;font-size:11px;padding:8px 10px}body .landingV2 .publicHeader nav{order:3}body .landingV2 .publicHeader .publicActions>button:last-child{max-width:none}}

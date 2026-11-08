@@ -1,5 +1,10 @@
 export default function UiIcon({name,size=21}:{name:string;size?:number}){
 const paths:Record<string,React.ReactNode>={
+ bolt:<path d="m14 2-9 12h6l-1 8 9-12h-6z"/>,
+ target:<><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="m12 12 9-9m-4 0h4v4"/></>,
+ send:<path d="m2 10 20-8-8 20-3-9zM11 13 22 2"/>,
+ graduation:<><path d="m2 9 10-5 10 5-10 5zM6 11v6c4 3 8 3 12 0v-6M22 9v8"/></>,
+ badge:<><rect x="4" y="3" width="16" height="19" rx="2"/><path d="M9 2h6v4H9z"/><circle cx="12" cy="11" r="2"/><path d="M8 19v-1a4 4 0 0 1 8 0v1"/></>,
  camera:<><rect x="3" y="6" width="18" height="15" rx="3"/><path d="m8 6 2-3h4l2 3"/><circle cx="12" cy="13" r="4"/></>,
  tasks:<><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v4H9zM8 13l2 2 5-5M8 18h8"/></>,
  dashboard:<><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></>,
