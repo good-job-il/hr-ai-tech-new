@@ -1,0 +1,161 @@
+/* Approved reference: 01-original-tech-new-logo.png. Scope excludes all workspaces. */
+body .landingTech{--tech-ink:#101127;--tech-violet:#8538ff;background:radial-gradient(ellipse at 32% 8%,#eee8ff8c,transparent 32%),linear-gradient(#fff,#fcfbff 55%,#fff);color:var(--tech-ink);overflow:hidden}
+body .landingTech .publicHeader.publicHeaderTech{direction:inherit;min-height:62px;padding:12px max(32px,calc((100% - 1220px)/2));gap:25px;background:#ffffffeb;flex-wrap:nowrap}
+body .landingTech .publicHeader .publicBrand{font-size:27px;gap:7px}
+body .landingTech .publicHeader .brandImage{width:36px;height:36px}
+body .landingTech .publicHeader nav{order:initial;flex:1;flex-basis:auto;padding:0;border:0;gap:23px;flex-wrap:nowrap}
+body .landingTech .publicHeader nav :is(a,button,span){font-size:11px;font-weight:700;min-height:28px;padding:0;white-space:nowrap}
+body .landingTech .publicHeader.publicHeaderTech .publicActions{display:flex;direction:inherit;gap:10px;padding:0;border:0;flex-basis:auto;order:initial;flex-wrap:nowrap}
+body .landingTech .publicHeader.publicHeaderTech .publicActions>button{width:auto;max-width:none;min-height:34px;padding:8px 12px;font-size:10px;border-radius:5px;gap:6px;white-space:nowrap}
+body .landingTech .publicHeader.publicHeaderTech .publicActions>.langButton{padding:2px;font-size:9px;min-height:28px}
+body .landingTech :is(.gradientButton,.dark){background:linear-gradient(105deg,#8d32ff,#713dff 45%,#168cff);border-radius:5px;box-shadow:0 5px 12px #7646ed2b}
+body .landingTech .outlineButton{border:1px solid #e5dfff;background:white;color:#8143ff;border-radius:5px}
+body .landingTech .careerHero{max-width:1240px;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);padding:28px 32px 30px;gap:30px;min-height:clamp(390px,45vw,535px);background:none}
+body .landingTech .careerHeroCopy h1{font-size:clamp(42px,5.6vw,70px);letter-spacing:-1.5px;line-height:1.04;margin:19px 0 20px;color:#0b0b20}
+body .landingTech .careerHeroCopy h1 em{background:linear-gradient(100deg,#09a9f0,#6f43fa 65%,#a92aff);background-clip:text;-webkit-background-clip:text;color:transparent}
+body .landingTech .heroPill{display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border:1px solid #eee8ff;font-size:10px;color:#8b42ff;background:#ffffffe6;border-radius:20px;white-space:nowrap}
+body .landingTech .heroPill>.uiIcon{width:12px;height:12px}
+body .landingTech .careerHeroCopy>p{color:#565266;font-size:clamp(12px,1.35vw,16px);line-height:1.85;margin:0}
+body .landingTech .heroButtons{gap:11px;margin-top:22px;flex-wrap:nowrap}
+body .landingTech .heroButtons :is(a,button){min-width:0;min-height:39px;flex:none;padding:10px 17px;font-size:11px;gap:7px}
+body .landingTech .heroButtons .uiIcon{width:14px;height:14px}
+body .landingTech .heroCommunity{display:flex;align-items:center;gap:10px;flex-direction:row;margin-top:25px;font-size:10px;color:#4d465e}
+body .landingTech .communityPortraits{display:flex;direction:ltr;align-items:center;flex-shrink:0}
+body .landingTech .communityPortraits i{width:25px;height:25px;border:2px solid white;border-radius:50%;margin-inline-start:-4px;background-image:url('/design-reference.png');background-size:726px 1536px;background-position:-549px -320px;background-color:#eee4fc}
+body .landingTech .communityPortraits i:nth-child(2){background-position:-572px -320px}
+body .landingTech .communityPortraits i:nth-child(3){background-position:-596px -320px}
+body .landingTech .communityPortraits i:nth-child(4){background-position:-622px -320px}
+body .landingTech .communityPortraits b{width:25px;height:25px;display:grid;place-items:center;font-weight:400;color:#9f70ed;background:#fff;border:1px solid #efe8ff;border-radius:50%;margin-inline-start:4px}
+body .landingTech .careerHeroArt{min-height:335px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);padding:0;margin:0;isolation:isolate}
+body .landingTech .careerHeroArt:before{display:none}
+body .landingTech .careerOrb{margin:0;position:relative;z-index:0;width:120%;inset-inline-start:-6%;filter:drop-shadow(0 0 22px #bca7ff3b)}
+body .landingTech .careerOrbImage{position:relative;z-index:1;width:100%;height:auto}
+body .landingTech .careerChip{position:absolute;z-index:2;left:55%;top:46%;transform:translate(-50%,-50%);font-family:Arial,sans-serif;line-height:1;font-size:clamp(10px,1.3vw,17px);padding:1px;color:#e7edff;text-shadow:0 0 5px #1a0fa3}
+body .landingTech .careerOrb:dir(ltr) .careerChip{left:45%}
+body .landingTech .orbitalRing{position:absolute;border:2px solid #ffffffdd;border-radius:50%;pointer-events:none;z-index:0;transform:rotate(-25deg)}
+body .landingTech .ringOne{inset:-10% -8%;border-inline-start-color:transparent;border-bottom-color:transparent}
+body .landingTech .ringTwo{inset:-18% -17%;border-inline-end-color:transparent;border-top-color:transparent;border-width:3px}
+body .landingTech .ringThree{inset:5% -16%;border-top-color:transparent;border-inline-end-color:transparent;border-width:1px}
+body .landingTech .ringOne:before,body .landingTech .ringTwo:after{content:'';width:7px;height:7px;border-radius:50%;position:absolute;top:5%;left:70%;background:#c4b0ff}
+body .landingTech .ringTwo:after{top:75%;left:94%;width:5px;height:5px}
+body .landingTech .orbitalStar{position:absolute;color:white;font-style:normal;font-size:20px;text-shadow:0 0 8px white}
+body .landingTech .starOne{top:-20%;left:8%}body .landingTech .starTwo{top:70%;left:95%;font-size:12px}
+body .landingTech .careerProfileGroup{z-index:3;min-width:0;align-self:center}
+body .landingTech .careerProfileCard{min-height:0;padding:17px 14px 13px;border:1px solid #eeeafb;border-radius:18px;box-shadow:0 13px 30px #8b6ed317;background:#ffffffdb;transform:none;text-align:start}
+body .landingTech .careerProfileCard:dir(ltr){transform:none}
+body .landingTech .careerProfileTop{display:flex;flex-direction:row-reverse;align-items:center;gap:8px;padding:0;border:0}
+body .landingTech .careerAvatar{width:43px;height:43px;border:1px solid #e3d9f3;background-image:url('/design-reference.png');background-size:726px 1536px;background-position:-53px -86px;border-radius:50%;flex:none}
+body .landingTech .careerProfileTop>div{flex:1;min-width:0}
+body .landingTech .careerProfileTop strong{font-size:12px;white-space:normal;color:#111222}
+body .landingTech .careerProfileTop div>span{display:block;font-size:8px;color:#6f6988;margin-top:3px;direction:ltr;white-space:nowrap}
+body .landingTech .careerProfileTop small{display:flex;align-items:center;gap:2px;font-size:7px;color:#8d4cff;margin-top:4px}
+body .landingTech .careerProfileTop .uiIcon{width:9px;height:9px}
+body .landingTech .profileReadiness{display:flex;flex-direction:row-reverse;gap:10px;align-items:center;margin:20px 0 13px;font-size:9px}
+body .landingTech .profileReadiness>span{width:37px;height:37px;border:4px solid #c6edfc;border-top-color:#3dbcec;border-radius:50%;display:grid;place-items:center;flex:none;color:#4db7e8;font-size:10px}
+body .landingTech .profileAiBand{display:flex;align-items:center;justify-content:center;gap:4px;padding:8px 3px;border-radius:4px;background:linear-gradient(100deg,#8a30ff,#2889ff);color:white;font-size:8px;font-weight:600}
+body .landingTech .profileAiBand .uiIcon{width:12px;height:12px}
+body .landingTech .profileAiBand small{font-size:6px;opacity:.85}
+body .landingTech .careerSkillPills{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;margin:11px 0 13px;direction:ltr}
+body .landingTech .careerSkillPills>span{padding:4px 5px;background:#f1edff;color:#8a49ff;font-size:7px;line-height:1;border-radius:8px}
+body .landingTech .careerProfileSection{padding:12px 22px 0 0;position:relative;margin-top:10px;border-top:1px solid #edeaf7;text-align:start}
+body .landingTech .careerProfileSection:dir(ltr){padding:12px 0 0 22px}
+body .landingTech .careerProfileSection>.uiIcon{inset-inline-start:0;inset-inline-end:auto;top:13px;width:15px;height:15px;color:#9a5cff}
+body .landingTech .careerProfileSection b{font-size:9px;margin-bottom:5px}
+body .landingTech .careerProfileSection>span,body .landingTech .careerProfileSection>small{display:block;font-size:8px;line-height:1.65;color:#80798f}
+body .landingTech .careerProfileSection>small{font-size:7px}
+body .landingTech .careerHeroArt figcaption{position:absolute;clip-path:none;overflow:visible;white-space:normal;width:44%;height:auto;inset-inline-end:0;bottom:-13px;color:#9a91af;font-size:7px;text-align:center}
+body .landingTech .landingBody{max-width:1240px;padding:0 32px}
+body .landingTech .benefits{margin:0 0 30px;padding-top:16px}
+body .landingTech .benefits>h2{display:flex;align-items:center;justify-content:center;gap:4px;margin:4px 0 24px;font-size:clamp(22px,2.6vw,30px);letter-spacing:-.6px}
+body .landingTech .benefits .brandWordmark{display:inline;font-size:inherit;letter-spacing:inherit}
+body .landingTech .benefits .brandWordmark>span{display:inline;font-size:inherit}
+body .landingTech .benefitGrid{grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+body .landingTech .benefit{display:block;position:relative;padding:16px 10px;min-height:164px;background:linear-gradient(#fff9,#fff4);border:1px solid #eee9fb;border-radius:19px;box-shadow:none;text-align:center}
+body .landingTech .featureIcon{width:47px;height:47px;border-radius:50%;display:grid;place-items:center;margin:0 auto 15px;background:var(--tint-bg);color:var(--tint)}
+body .landingTech .featureIcon .uiIcon{width:27px;height:27px}
+body .landingTech .tint-violet{--tint:#8b40ff;--tint-bg:#f4edff}
+body .landingTech .tint-orange{--tint:#ff943a;--tint-bg:#fff5ed}
+body .landingTech .tint-green{--tint:#12be91;--tint-bg:#edfaf5}
+body .landingTech .tint-blue{--tint:#237bff;--tint-bg:#eff5ff}
+body .landingTech .tint-coral{--tint:#ff656e;--tint-bg:#fff1f3}
+body .landingTech .benefit h3{font-size:12px;line-height:1.55;color:#121324;margin:0 0 7px}
+body .landingTech .benefit p{font-size:10px;line-height:1.75;color:#858097;margin:0}
+body .landingTech .featureSoon{position:absolute;inset-inline-end:9px;top:8px;font-size:7px;line-height:1;padding:3px 6px;border-radius:10px;background:#f0e7ff;color:#9451ff}
+body .landingTech .approvedSearch{margin:30px 0;padding:20px 27px 23px;border-radius:23px;border-color:#eee9ff;background:linear-gradient(120deg,#fff9,#faf7ffae);box-shadow:0 7px 13px #8653fa1f}
+body .landingTech .approvedSearch>h2{font-size:24px;margin:0 0 23px}
+body .landingTech .approvedSearch .heroSearchForm{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,.95fr) minmax(0,.95fr) auto;gap:10px;align-items:end;margin:0}
+body .landingTech .approvedSearch .heroSearchForm>label{position:relative;grid-column:auto;font-size:9px;gap:5px;color:#858094}
+body .landingTech .approvedSearch .heroSearchForm>button{grid-column:auto;min-height:42px;font-size:11px;padding-inline:18px;gap:7px}
+body .landingTech .approvedSearch .heroSearchForm :is(input,select){height:42px;font-size:10px;border-color:#f0eafa;box-shadow:0 3px 9px #8352ff07;padding-inline-start:31px}
+body .landingTech .searchFieldIcon{display:flex;position:absolute;bottom:14px;inset-inline-start:10px;pointer-events:none;color:#bba6eb}
+body .landingTech .searchFieldIcon .uiIcon{width:14px;height:14px}
+body .landingTech .approvedSearch .popularRoles{margin-top:20px;gap:6px;justify-content:center}
+body .landingTech .popularRoles small{font-size:8px;color:#8a839f}
+body .landingTech .popularRoles button{font-size:8px;border-radius:20px;padding:5px 9px;max-width:170px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;background:#f5efff;color:#8c48ff}
+body .landingTech .hotJobs{margin:30px 0}
+body .landingTech .hotJobs .detailPanel{background:#ffffffd9;border-color:#eee7fc;border-radius:19px}
+body .landingTech .careerTools{grid-template-columns:repeat(4,minmax(0,1fr)) 1.1fr;gap:9px;padding:12px;margin:30px 0 24px;border:1px solid #eee9fc;border-radius:20px;background:#faf9ff;min-height:205px}
+body .landingTech .careerIntro{order:5;border:0;padding:10px 10px 8px;position:relative;align-self:stretch;background:linear-gradient(130deg,#eff1ff,#f8f7ff);border-radius:12px;text-align:start;overflow:hidden}
+body .landingTech .careerIntro .planned{font-size:8px;padding:3px 8px;line-height:1}
+body .landingTech .careerIntro h2{font-size:24px;line-height:1.3;margin:8px 0 6px}
+body .landingTech .careerIntro p{font-size:11px;line-height:1.7;color:#6e6689;margin-bottom:13px}
+body .landingTech .careerIntro .gradientButton{padding:8px 10px;font-size:9px;min-height:32px;gap:5px}
+body .landingTech .careerIntro .uiIcon{width:14px;height:14px}
+body .landingTech .careerTools>article{display:flex;flex-direction:column;align-items:center;order:1;background:#ffffffd9;padding:14px 8px 8px;border-radius:12px}
+body .landingTech .careerTools .featureIcon{margin-bottom:11px;flex:none}
+body .landingTech .careerTools h3{font-size:11px;margin-bottom:7px;color:#101125}
+body .landingTech .careerTools>article p{font-size:9px;line-height:1.7;color:#8a849a;margin:0 0 10px;text-align:center}
+body .landingTech .toolLink{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:4px;padding:0;border:0;background:none;color:#8b45ff;font-size:9px;font-weight:600}
+body .landingTech .toolLink .uiIcon{width:12px;height:12px}
+body .landingTech .toolLink:dir(rtl) .uiIcon{transform:scaleX(-1)}
+body .landingTech .careerTools>article small{margin-top:4px;font-size:7px;color:#a088c1}
+body .landingTech .platformMetrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #eee8fc;border-radius:20px;background:#ffffffa6;margin:24px 0;padding:25px 6px}
+body .landingTech .platformMetrics article{display:flex;flex-direction:column;align-items:center;gap:9px;position:relative;text-align:center}
+body .landingTech .platformMetrics article+article:before{content:'';position:absolute;inset-inline-start:0;top:0;bottom:0;width:1px;background:#eee7fd}
+body .landingTech .platformMetrics .uiIcon{color:#8a43ff;width:28px;height:28px}
+body .landingTech .platformMetrics strong{font-size:28px;line-height:1.25;color:#101436}
+body .landingTech .platformMetrics article>span{font-size:11px;color:#736b88}
+body .landingTech .howItWorks{margin:25px 0 20px}
+body .landingTech .howItWorks>h2{font-size:25px;margin:0 0 28px}
+body .landingTech .howItWorks .steps{gap:22px;padding:0}
+body .landingTech .howItWorks .steps>article{padding:22px 13px 18px;min-height:155px;border-color:#eee7fc;border-radius:20px;background:#ffffffb0}
+body .landingTech .howItWorks .steps>article:after{display:none}
+body .landingTech .stepNumber{inset-inline-end:auto;left:50%;transform:translateX(-50%);top:-12px;background:#853aff;width:25px;height:25px;font-size:13px}
+body .landingTech .steps .uiIcon{color:#8b42ff;width:28px;height:28px;margin-bottom:14px}
+body .landingTech .steps h3{font-size:12px;line-height:1.6;margin-bottom:6px}
+body .landingTech .steps p{font-size:10px;line-height:1.7;color:#817890}
+body .landingTech .joinBanner{padding:22px 40px;margin:20px 0 8px;min-height:103px;border-radius:14px;background:linear-gradient(105deg,#8b26ff,#6f2fff 47%,#086bff)}
+body .landingTech .joinBanner h2{font-size:clamp(25px,3vw,35px);line-height:1.4;margin-bottom:6px}
+body .landingTech .joinBanner p{font-size:12px;color:#f4edff}
+body .landingTech .joinBanner .outlineButton{border:0;padding:12px 16px;min-height:44px;font-size:10px;background:#fff;color:#8b3bff;gap:6px}
+body .landingTech .joinBanner .uiIcon{width:15px;height:15px}
+body .landingTech .publicFooter{background:radial-gradient(ellipse at 10% 100%,#1d243e,transparent 60%),#12172e;padding:22px max(32px,calc((100% - 1180px)/2)) 0}
+body .landingTech .footerTop{grid-template-columns:1.3fr repeat(4,minmax(0,1fr));gap:32px;padding-bottom:27px}
+body .landingTech .footerBrand{grid-column:auto}
+body .landingTech .publicFooter .publicBrand{font-size:25px;gap:7px}
+body .landingTech .publicFooter .brandImage{width:37px;height:37px}
+body .landingTech .footerTop .publicBrand .brandWordmark{font-size:25px}
+body .landingTech .footerBrand>p{font-size:10px;line-height:1.9;color:#c3c1d1;margin:10px 0}
+body .landingTech .footerSocials{display:flex;gap:6px;direction:ltr;justify-content:flex-end}
+body .landingTech .footerSocials>span{border:1px solid #8a8da8;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;color:#c7c9dc}
+body .landingTech .footerSocials .uiIcon{width:12px;height:12px}
+body .landingTech .footerTop>div>b{font-size:11px;margin-bottom:10px}
+body .landingTech .footerTop :is(a,button,span.unpublishedLink){font-size:9px;line-height:1.8;min-height:21px;color:#c2bdce}
+body .landingTech .footerBottom{padding:13px 0;font-size:9px;border-color:#5e61754f;display:flex;flex-wrap:wrap;justify-content:space-between;gap:15px}
+body .landingTech .footerLanguage{display:inline-flex;border:0;background:none;padding:0;color:#c7c1d6;font-size:9px;min-height:20px}
+body .landingTech .footerBottom>div{display:flex;gap:7px}
+@media(min-width:760px) and (max-width:1100px){body .landingTech .publicHeader.publicHeaderTech{gap:15px;padding-inline:25px}body .landingTech .publicHeader .publicBrand{font-size:22px}body .landingTech .publicHeader .brandImage{width:32px;height:32px}body .landingTech .publicHeader nav{gap:14px}body .landingTech .publicHeader nav :is(a,button,span){font-size:9px}body .landingTech .publicHeader.publicHeaderTech .publicActions{gap:6px}body .landingTech .publicHeader.publicHeaderTech .publicActions>button{font-size:8px;padding-inline:9px}body .landingTech .publicHeader.publicHeaderTech .publicActions>.langButton{font-size:8px}body .landingTech .publicHeader .languageLabel{gap:2px}body .landingTech .publicHeader .languageLabel svg{width:12px;height:9px}body .landingTech .careerHero{gap:24px}body .landingTech .careerProfileTop{flex-direction:row-reverse}body .landingTech .careerHeroCopy h1{font-size:clamp(39px,5.6vw,61px)}}
+@media(max-width:759px){body .landingTech .publicHeader.publicHeaderTech{flex-wrap:wrap;gap:10px;padding:12px 18px}body .landingTech .publicHeader .publicBrand{font-size:23px}body .landingTech .publicHeader .brandImage{width:33px;height:33px}body .landingTech .publicHeader.publicHeaderTech .publicActions{flex-basis:auto;flex-wrap:nowrap}body .landingTech .publicHeader.publicHeaderTech .publicActions>button{font-size:9px;padding:7px 8px}body .landingTech .publicHeader nav{flex-basis:100%;order:3;gap:15px;padding-top:9px;border-top:1px solid #f0eafa;justify-content:space-between}body .landingTech .publicHeader nav :is(a,button,span){font-size:10px}body .landingTech .careerHero{gap:18px;padding:27px 22px 25px;grid-template-columns:1fr;min-height:0}body .landingTech .careerHeroCopy{text-align:center}body .landingTech .careerHeroCopy h1{font-size:52px}body .landingTech .careerHeroCopy>p{font-size:13px}body .landingTech .heroButtons{justify-content:center}body .landingTech .heroCommunity{justify-content:center;font-size:9px}body .landingTech .careerHeroArt{width:min(440px,100%);justify-self:center;min-height:340px}body .landingTech .careerProfileTop{flex-direction:row-reverse}body .landingTech .landingBody{padding-inline:20px}body .landingTech .benefits{padding-top:12px}body .landingTech .benefits>h2{font-size:21px;flex-wrap:wrap;gap:3px;margin-bottom:20px}body .landingTech .benefitGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}body .landingTech .benefit:last-child{grid-column:1/-1}body .landingTech .benefit{min-height:155px;padding:17px 13px}body .landingTech .benefit h3{font-size:13px}body .landingTech .benefit p{font-size:11px}body .landingTech .approvedSearch{padding:19px 16px;margin:25px 0}body .landingTech .approvedSearch>h2{font-size:23px}body .landingTech .approvedSearch .heroSearchForm{grid-template-columns:repeat(2,minmax(0,1fr))}body .landingTech .approvedSearch .heroSearchForm>button{grid-column:1/-1}body .landingTech .popularRoles button{max-width:140px}body .landingTech .careerTools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px;margin:25px 0}body .landingTech .careerIntro{order:0;grid-column:1/-1;padding:16px;min-height:0}body .landingTech .careerIntro p{max-width:none;font-size:12px}body .landingTech .careerTools>article{padding:17px 12px}body .landingTech .careerTools h3{font-size:13px}body .landingTech .careerTools>article p{font-size:11px}body .landingTech .toolLink{font-size:11px}body .landingTech .platformMetrics{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:23px;padding:22px 0}body .landingTech .platformMetrics article:nth-child(3):before{display:none}body .landingTech .platformMetrics strong{font-size:25px}body .landingTech .howItWorks .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}body .landingTech .steps h3{font-size:13px}body .landingTech .steps p{font-size:11px}body .landingTech .joinBanner{flex-direction:column;align-items:flex-start;padding:25px;gap:17px}body .landingTech .joinBanner h2{font-size:26px}body .landingTech .publicFooter{padding:24px 22px 0}body .landingTech .footerTop{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}body .landingTech .footerBrand{grid-column:1/-1;max-width:300px}body .landingTech .footerTop>div>b{font-size:13px}body .landingTech .footerTop :is(a,button,span.unpublishedLink){font-size:11px;min-height:26px}body .landingTech .footerBrand>p{font-size:12px}body .landingTech .footerSocials{justify-content:flex-start}}
+@media(max-width:480px){body .landingTech .publicHeader.publicHeaderTech .publicActions{flex-basis:100%;justify-content:space-between}body .landingTech .careerHeroCopy h1{font-size:45px}body .landingTech .heroPill{font-size:8px}body .landingTech .heroButtons :is(a,button){font-size:10px;padding-inline:12px}body .landingTech .careerProfileCard{padding:14px 10px 12px}body .landingTech .careerAvatar{width:37px;height:37px;background-position:-56px -88px}body .landingTech .careerProfileTop{gap:6px}body .landingTech .careerProfileTop strong{font-size:11px}body .landingTech .careerProfileTop div>span{font-size:7px}body .landingTech .careerSkillPills{gap:3px}body .landingTech .careerSkillPills>span{font-size:6px;padding:4px}body .landingTech .careerProfileSection{padding-inline-start:18px;padding-inline-end:0}body .landingTech .careerProfileSection:dir(ltr){padding-inline-start:18px;padding-inline-end:0}body .landingTech .profileReadiness{font-size:8px;gap:6px}body .landingTech .profileAiBand{font-size:6px}body .landingTech .approvedSearch .heroSearchForm{grid-template-columns:1fr}body .landingTech .approvedSearch .heroSearchForm label{font-size:11px}body .landingTech .approvedSearch .heroSearchForm :is(input,select){font-size:12px}body .landingTech .benefits>h2{font-size:19px}}
+/* Keep the illustration and tool colours aligned with the selected tech reference. */
+body .landingTech .careerOrb{width:110%;inset-inline-start:-2%}
+body .landingTech .careerProfileGroup{inset-inline-end:18px;width:calc(100% + 10px)}
+body .landingTech .profileReadiness{margin:16px 0 11px}
+body .landingTech .careerSkillPills{margin:10px 0 11px}
+body .landingTech .careerProfileSection{padding-top:10px;margin-top:8px}
+body .landingTech .careerProfileSection:dir(ltr){padding-top:10px}
+body .landingTech .careerTools article .featureIcon{color:var(--tint);background:var(--tint-bg)}
+@media(min-width:760px){body .landingTech .hotJobs .featuredJobGrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:759px){body .landingTech .careerProfileGroup{inset-inline-end:0;width:100%}body .landingTech .careerOrb{width:115%;inset-inline-start:-5%}}
+body .landingTech .careerHeroArt:dir(ltr) .careerProfileCard{transform:none}
+@media(min-width:1100px){body .landingTech .careerProfileCard{padding:24px 20px 20px}body .landingTech .careerProfileTop strong{font-size:16px}body .landingTech .careerProfileTop div>span{font-size:11px}body .landingTech .careerProfileTop small{font-size:9px}body .landingTech .profileReadiness{font-size:12px;margin-block:23px 18px}body .landingTech .careerAvatar{width:43px;height:43px}body .landingTech .profileAiBand{font-size:10px;padding-block:10px}body .landingTech .careerSkillPills{margin-block:16px}body .landingTech .careerSkillPills>span{font-size:9px}body .landingTech .careerProfileSection{padding-top:16px;margin-top:14px}body .landingTech .careerProfileSection b{font-size:12px}body .landingTech .careerProfileSection>span{font-size:10px}body .landingTech .careerProfileSection>small{font-size:9px}body .landingTech .benefit{padding:23px 15px;min-height:205px}body .landingTech .benefit h3{font-size:15px}body .landingTech .benefit p{font-size:12px}body .landingTech .featureIcon{width:55px;height:55px}body .landingTech .featureIcon .uiIcon{width:31px;height:31px}body .landingTech .careerTools{min-height:230px;padding:17px;gap:13px}body .landingTech .careerTools h3{font-size:14px}body .landingTech .careerTools>article p{font-size:11px}body .landingTech .toolLink{font-size:11px}body .landingTech .careerIntro h2{font-size:30px}body .landingTech .careerIntro p{font-size:14px}body .landingTech .careerIntro .gradientButton{font-size:11px}body .landingTech .platformMetrics{padding-block:30px}body .landingTech .platformMetrics strong{font-size:34px}body .landingTech .platformMetrics article>span{font-size:13px}body .landingTech .steps h3{font-size:15px}body .landingTech .steps p{font-size:12px}body .landingTech .howItWorks .steps>article{min-height:180px}body .landingTech .footerTop>div>b{font-size:13px}body .landingTech .footerTop :is(a,button,span.unpublishedLink){font-size:12px;min-height:25px}body .landingTech .footerBrand>p{font-size:12px}body .landingTech .footerBottom{font-size:11px}}

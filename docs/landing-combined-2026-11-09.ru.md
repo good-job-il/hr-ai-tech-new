@@ -66,3 +66,7 @@ Recovery больше не показывает глобальный Forgot pass
 Ограничения совпадения: raster mockup — визуальная спецификация, не исходный файл иконок/шрифта/точных color tokens; нельзя обещать идентичность каждого пикселя. Прямо согласованные отличия — digital head по direction, 4 действующих фильтра со всеми options, 8 реальных jobs, language switch; dynamic содержимое вакансий и локализация меняют высоту. Blog/legal labels ещё disabled, planned tools Coming soon.
 
 Проверки повторного аудита: TypeScript, production build и 14 целевых тестов прошли. В браузере he/en phone390, iPad768, desktop1024/1307: 8 jobs, 4 filters, no horizontal overflow, корректный head transform. Sign in содержит Forgot password непосредственно после password; вне dialog кнопки нет. Открытие отдельного recovery dialog и закрытие кнопкой/Escape проверены без отправки email. Статус после завершения reset сохранён. Снимки и live SHA фиксируются в HR-17 после публикации.
+
+## Исправление выбора reference владельцем
+
+09.11.2026: владелец подтвердил, что выбрана картинка01 с digital head, а не combined03. Всё выше о selected03/composition — история ошибочного выбора. Актуальный источник и реализация: [landing-tech-reference-2026-11-09.ru.md](landing-tech-reference-2026-11-09.ru.md).

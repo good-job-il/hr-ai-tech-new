@@ -2,6 +2,13 @@ import {useId} from 'react';
 export default function UiIcon({name,size=21,tone}:{name:string;size?:number;tone?:'brand'}){
 const gradient='icon-'+useId().replace(/:/g,'');
 const paths:Record<string,React.ReactNode>={
+ robot:<><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M2 11v5m20-5v5M8 20v2m8-2v2M8 16h8"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/><circle cx="12" cy="2" r="1"/></>,
+ chat:<><path d="M4 3h16a1 1 0 0 1 1 1v13H9l-6 5V4a1 1 0 0 1 1-1Z"/><path d="M7 9h1m4 0h1m4 0h1M7 13h9"/></>,
+ brain:<><path d="M12 5c-1-4-7-3-7 1-4 0-4 6-1 7-3 3 0 7 3 6 0 4 5 4 5 0V5Zm0 0c1-4 7-3 7 1 4 0 4 6 1 7 3 3 0 7-3 6 0 4-5 4-5 0M8 7v4H5m3 4h4m4-8v4h3m-3 4h-4"/></>,
+ rocket:<><path d="M9 15c-2-2-2-5 1-8s7-5 12-5c0 5-2 9-5 12s-6 3-8 1ZM8 9H4l-3 5 7 1m7 1v4l-5 3-1-7M5 18l-3 4m4-3-2 3"/><circle cx="16" cy="8" r="2"/></>,
+ trophy:<><path d="M7 3h10v6a5 5 0 0 1-10 0V3Zm5 11v6m-5 2h10M7 5H3v3a5 5 0 0 0 5 5m9-8h4v3a5 5 0 0 1-5 5"/></>,
+ instagram:<><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></>,
+ youtube:<><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 6 3-6 3Z"/></>,
  login:<><circle cx="9" cy="6" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2H3m14-11 4 3-4 3m-3-3h7"/></>,
  location:<><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></>,
  'person-plus':<><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2m4-12v6m-3-3h6"/></>,

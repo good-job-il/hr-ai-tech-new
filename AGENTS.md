@@ -52,3 +52,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Утверждённая картинка главной
+
+- Последнее прямое исправление владельца 09.11.2026: основа главной — `output/design-comparison-v1/01-original-tech-new-logo.png`, вариант с цифровой головой. Не подменять его combined03.
+- Сохранять все четыре фильтра в действующем порядке/со всеми options, 8 реальных jobs и правило head-facing-card. Актуальное решение: `docs/landing-tech-reference-2026-11-09.ru.md`; старый combined document — история.
