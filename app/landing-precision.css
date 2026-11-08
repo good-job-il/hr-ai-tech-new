@@ -184,3 +184,5 @@ body .landingPrecision .orbitalArt{display:none}
  body .landingTech.landingPrecision .careerOrbImage{opacity:0}
  body .landingTech.landingPrecision :is(.orbitalRing,.orbitalStar){display:none}
 }
+@media(min-width:760px){body .landingTech.landingPrecision .orbitalArt{clip-path:polygon(0 0,100% 0,100% 53.3%,88% 53.3%,88% 64%,100% 64%,100% 86.2%,72% 86.2%,72% 97%,100% 97%,100% 100%,0 100%);mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}}
+@media(min-width:760px){body .landingTech.landingPrecision .orbitalArt{clip-path:polygon(0 0,100% 0,100% 52.67%,87.67% 52.67%,87.67% 86.2%,72% 86.2%,72% 100%,0 100%)}}
