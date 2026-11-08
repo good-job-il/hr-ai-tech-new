@@ -1,5 +1,6 @@
 'use client';
 import BrandIcon from './brand-icon';
+import BrandWordmark from './brand-wordmark';
 import UiIcon from './ui-icon';
 import {useState,type ReactNode} from 'react';
 import type {Job} from './models';
@@ -11,7 +12,7 @@ export default function JobDetail({job,lang='he',draft=false,onClose,application
  const missing=he?'לא נמסר בפרטי המשרה.':'Not provided in the job posting.';
  const type=({'full-time':he?'משרה מלאה':'Full-time','part-time':he?'משרה חלקית':'Part-time',contract:he?'חוזה':'Contract'} as Record<string,string>)[job.type]??(he?'היקף משרה לא נמסר':'Employment type not specified');
  const mode=({onsite:he?'במשרד':'Onsite',hybrid:he?'היברידי':'Hybrid',remote:he?'מרחוק':'Remote'} as Record<string,string>)[job.work_mode??''];
- return <div className="jobDetailPage" dir={he?'rtl':'ltr'}><div className="detailHeader"><a href="/" className="detailBrand"><BrandIcon/><span>hr-ai.tech<small>HR-Tech</small></span></a>{draft&&<a href="/review">{he?'כל טיוטות המשרות':'All job drafts'} ←</a>}</div>
+ return <div className="jobDetailPage" dir={he?'rtl':'ltr'}><div className="detailHeader"><a href="/" className="detailBrand"><BrandIcon/><BrandWordmark/></a>{draft&&<a href="/review">{he?'כל טיוטות המשרות':'All job drafts'} ←</a>}</div>
   <div className="detailBreadcrumb"><nav className="breadcrumbTrail" aria-label={he?'מיקום באתר':'Breadcrumb'}><bdi dir="ltr">hr-ai.tech</bdi><span aria-hidden="true">/</span><span>{he?'משרות':'Jobs'}</span><span aria-hidden="true">/</span><span>{he?'פרטי משרה':'Position details'}</span></nav>{onClose&&<button autoFocus onClick={onClose}>{he?'חזרה למשרות':'Back to jobs'} ←</button>}</div>
   {draft&&<p className="draftBanner" role="status">{he?'תצוגת עריכה מקומית · המשרה לא פורסמה · נדרשת בדיקת תוכן':'Local editorial preview · Unpublished · Content review required'}</p>}
   <div className="detailLayout"><div className="detailMain">
