@@ -1,4 +1,4 @@
-/* Shared HeadHunter interface. Public and private views use the same primitives. */
+/* Shared hr-ai.tech interface. Public and private views use the same primitives. */
 :root{--brand-violet:#7245ef;--brand-blue:#347df0;--brand-ink:#171d46;--brand-muted:#68728e;--brand-line:#e4e7f4;--brand-soft:#f3f0ff;--brand-surface:#fff;--brand-page:#f7f8ff;--brand-radius:16px;--brand-gradient:linear-gradient(110deg,#833df1,#634af4 48%,#287bfa);--hh-ink:var(--brand-ink);--hh-muted:var(--brand-muted);--hh-border:var(--brand-line)}
 body{background:var(--brand-page);color:var(--brand-ink)}
 body :is(button,input,select,textarea){font-family:inherit}

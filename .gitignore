@@ -15,3 +15,7 @@ node_modules/
 work/pilot-build-*
 /outputs.zip
 /data.sql
+
+supabase/.temp/
+supabase/.branches/
+output/

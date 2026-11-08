@@ -1,48 +1,79 @@
-HeadHunter — isolated staging implementation
+# hr-ai.tech
 
-Continue the existing project in this folder. Do not create another copy or connect production.
-Runtime: Next.js / TypeScript / Supabase (PostgreSQL + Auth + private Storage).
+אתר משרות ומערכת גיוס קיימת: Next.js 16.4.3, React 19.2, TypeScript ו־Supabase (PostgreSQL, Auth, Storage). הממשק בעברית ובאנגלית. שם HeadHunter בתיעוד היסטורי אינו שם המותג הנוכחי.
 
-Run:
-  pnpm install --frozen-lockfile
-  pnpm test
-  pnpm typecheck
-  pnpm build
-  pnpm dev
+## מקורות וסטטוס
 
-Staging setup:
-1. Use the new Supabase organization HeadHunter Preview (free), organization ID erditxxumjnppvsluhqm.
-2. Complete creation of the headhunter-preview project. The user sets and retains its database password.
-3. Apply migrations 001_initial.sql then 002_workspace.sql ONLY to that empty staging project.
-4. Configure the two public variables from .env.example in .env.local and Vercel Preview only.
-5. Keep email confirmation enabled. Configure exact redirect URLs for local and Preview origins.
-6. Deploy to a NEW Vercel project using a Preview deployment, with protection enabled. Do not configure custom domains or production variables.
-7. Run real Supabase/Auth/Storage/browser acceptance tests before calling the platform active.
+- [מסמך האב מ־08.11.2026](docs/master-project-prompt.he.md): הדרישות החדשות, MVP וגבולות הפרסום.
+- [מפת פערים וראיות בדיקה](docs/mvp-readiness-2026-11-08.he.md): מצב הבדיקה הנוכחי, פערים ותוכנית פיילוט.
+- `docs/project-overview.ru.md` ו־`docs/project-documentation.pdf`: תמונות מצב היסטוריות, לא אישור להפעלת הענן כיום.
+- Linear: HR-17 מרכז את מסמך האב; HR-14 מרכז CI/Preview; HR-7/HR-8/HR-12 כוללים חסמי קבלה. אין לסמן את ה־MVP כמוכן לפי בדיקות מקומיות בלבד.
 
-Implemented:
-- Hebrew RTL / English LTR, persisted language, white / blue-purple design with an original SVG AI head and candidate-card illustration based on the user's textual description.
-- Public open jobs, search, application and recruiter pipeline.
-- Separate employer / agency organizations; owner/admin/recruiter/viewer/finance memberships.
-- Candidate profile and private PDF CVs up to 5MB; expiring signed links.
-- Agency personal / shared pools. Shared-only pool for employers. Email uniqueness within organization, normalized by trim/lowercase.
-- Access requests approved/denied by owner/admin; authorized canonical merge retaining source and audit. Source grants never broaden target access.
-- Interviews with local-time entry and UTC storage; candidate-visible details; no calendar or email invitation is sent.
-- Reward policy text restricted to owner/admin/finance; only owner/admin can write. No invented rates or payments.
-- Basic counts limited to rows accessible under RLS. Team additions use an existing user's ID; no invitation email is sent.
+## הפעלה מקומית
 
-Verification:
-- Node domain tests and PostgreSQL RLS integration test use `pnpm test`.
-- RLS tests run actual SQL in PGlite's embedded PostgreSQL engine, with synthetic auth/storage schema shims and six synthetic identities. This is NOT a full Supabase cloud test.
-- TypeScript and optimized Next build were executed successfully during this continuation.
-- Local browser verified language switching/persistence, disabled data submission without connection, desktop and 390px mobile layout without horizontal overflow.
+Node.js 24 ו־npm, ואז:
 
-Open acceptance work:
-- Cloud signup/email confirmation, real JWT/PostgREST, real Storage uploads/signed links, multi-user browser flows and Vercel Preview protection/URL.
-- Authenticated workspace UI and file-upload behavior have code and database tests but await connected browser end-to-end verification.
-- Email-only deduplication; phone/ID matching is not implemented.
-- Merge retains source in archive and its audit; no automatic contact-field reconciliation.
-- A user belongs to one organization in the initial creation flow. Switching organizations and account recovery UI are not included.
-- Marketplace, hiring-manager role, AI matching, SMTP/calendar integrations and payments are deferred.
-- The referenced ChatGPT source exposed only five recent user turns and reference placeholders, not the full design or reward-policy specification. Nothing beyond the current user's explicit requirements is claimed as recovered.
+```sh
+npm ci
+npm run dev -- --port 3100
+```
 
-No production data, DNS, or hr-ai.tech configuration was accessed or changed.
+אם משתמשים בפורט 3100, יש להגדיר `NEXT_PUBLIC_SITE_URL=http://localhost:3100` בהגדרות המקומיות לפני ההרצה, כדי שגם metadata יפנה לפורט הנכון. ברירת המחדל של פיתוח בלי origin מפורש היא localhost:3000.
+
+Next.js קורא `.env` ו־`.env.local` אוטומטית. בדוק את יעד החיבור לפני כל שינוי נתונים. הקובץ המקומי הנוכחי מצביע על מסד העבודה; הוא אינו אישור לבצע בו בדיקות כתיבה. לצורך פיתוח מבודד נדרש פרויקט Supabase נפרד. אין להעתיק נתוני מועמדים אמיתיים למסד בדיקות כברירת מחדל.
+
+| משתנה | מטרה |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | כתובת פרויקט Supabase של הסביבה |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | מפתח ציבורי לאותו פרויקט, עם אכיפת RLS |
+| `NEXT_PUBLIC_SITE_URL` | Origin של הסביבה: HTTPS, ללא נתיב; localhost HTTP מותר רק בפיתוח |
+| `PREVIEW_SUPABASE_PROJECT_REF` | מזהה מסד הבדיקות הנפרד, חובה ב־Vercel Preview |
+| `HH_BUILD_DIR` | תיקיית בנייה נפרדת, למשל `.next-pilot` |
+
+ב־Vercel Preview, אם לא הוגדר `NEXT_PUBLIC_SITE_URL`, ה־origin נגזר מ־`VERCEL_URL` של הפריסה. Production משתמש ב־origin המפורש או ב־`https://www.hr-ai.tech`. מחוץ ל־Vercel ברירת המחדל לבניית release היא `https://www.hr-ai.tech`; פריסות אחרות חייבות להגדיר origin מפורש. קישורי שיתוף בדפדפן משתמשים בכתובת הסביבה הנוכחית. קישורי localhost שימושיים רק במחשב המקומי.
+
+משתני `NEXT_PUBLIC_*` נכנסים לחבילת הדפדפן בזמן בנייה. לעולם לא להוסיף להם סיסמאות, service-role, מפתחות AI או אסימוני פריסה. `.env*` נשארים מחוץ ל־Git; `.env.example` מכיל שמות בלבד. כתיבת הודעות עסקיות ושליחת WhatsApp אינן חלק מהבדיקות המקומיות.
+
+## בדיקות
+
+```sh
+npm run typecheck
+npm test
+npm run build
+npm run check:preview -- .env.preview.local
+```
+
+`npm test` מריץ Node test runner ו־PGlite עם עד שני תהליכי בדיקה במקביל כדי להגביל צריכת זיכרון. הוא בונה מסד מקומי בזיכרון; הוא אינו משתמש ב־Supabase הענני. תרחישי SQL בשמות cloud עדיין מורצים מקומית במבחנים אלה. אין להריץ ידנית את scripts הישנים נגד ענן בלי לקרוא אותם ולוודא את יעדם.
+
+`.github/workflows/checks.yml` מגדיר `npm ci`, typecheck, tests, build על PR ועל main/codex branches. ה־CI אינו מקבל סודות, אינו נפרס ואינו מחובר למסד עבודה. בנייה ללא Supabase אינה בדיקת תהליכי גיוס. ריצה מוצלחת בענן GitHub צריכה להיקרא בנפרד; עצם קיום הקובץ אינו תוצאה.
+
+## Preview בטוח
+
+1. לעבוד בענף `codex/...`; לא לדחוף ל־main כדי לבדוק שינוי באתר הרשמי.
+2. להכין פרויקט Supabase נפרד, schema תואם ונתוני בדיקה מורשים בלבד; לא לייבא Auth או מועמדים מהמסד העובד אוטומטית.
+3. ב־Vercel להגדיר משתני Preview בלבד: URL, publishable key, ref נפרד ו־origin. לא להוריש `SUPABASE_SERVICE_ROLE_KEY` או `NEXT_SUPABASE_DB_PASS`. האינטגרציות החיצוניות נשארות כבויות.
+4. להריץ `npm run check:preview -- <private-env-file>`. הבדיקה קוראת הגדרות בלבד, אינה מתחברת לרשת ואינה מדפיסה ערכי סודות. מעבר אינו מוכיח שהמפתח שייך לפרויקט או שהענן עובד.
+5. גם `next.config.ts` עוצר Vercel Preview אם חסר ref נפרד, נעשה שימוש במסד העבודה הידוע, הוגדר origin רשמי או הועברו הרשאות DB מיותרות. יש לבדוק בנפרד שלא הוגדרו סודות אחרים שהכלי אינו מכיר.
+6. לפרסם Preview בלבד; לבדוק את URL הפריסה, SHA, יעד Supabase, Auth redirects ו־Storage. לא לשנות DNS, domain aliases או Production env. Git push בענף אינו הוכחה ל־Preview מוצלח.
+
+הפס העליון מופיע רק ב־development/Preview ומציין את גרסת הבדיקה, ללא טענה שאין נתוני עבודה. ה־footer אינו טוען שהמסד מבודד. Production אינו מציג פס פיתוח. המיתוג הזמני הוא שם טקסטואלי `hr-ai.tech`; לא נבחר לוגו סופי מתוך שלוש ההצעות.
+
+## מסד נתונים ומיגרציות
+
+המקור הנוכחי כולל `001` עד `058`, לפי סדר שמות הקבצים ב־`supabase/migrations/`. הן כוללות ארגונים ותפקידים, RLS, מועמדים ומסמכים, ייבוא, לקוחות ופורטל, תגמולים וחשבונות מסחריים. אין להסתפק ב־001 ו־002.
+
+לפני שינוי ענן יש לקרוא את היסטוריית המיגרציות המרוחקת, להשוות למקור ולבצע גיבוי. אין להחיל את כל הקבצים מחדש על מסד קיים. **פער ידוע:** Linear HR-8 מדווח על `059_storage_download_permissions.sql` בענן, אבל הקובץ אינו נמצא בענף main שסונכרן בחלון עבודה זה. יש להשיג את המקור המדויק וליישב את היסטוריית המיגרציות לפני `db push`. לא להחליף אותו במיגרציה משוערת בעלת אותו מספר.
+
+בדיקות תפקוד ו־RLS מקומיות אינן מכסות JWT, PostgREST, קישורים חתומים, קאש Storage או מייל אמיתי. תיעוד HR-8 כולל כשל פתוח של גישה ל־CV דרך URL שהיה מורשה לפני ביטול הגישה. תנאי ביטול הגישה ובדיקת שחזור מבודד נדרשים לפני פיילוט.
+
+## מפת מקור
+
+- `app/home.tsx`, `landing.tsx`, `public-header.tsx`: האתר הציבורי וניווט החשבון.
+- `app/organization-*.tsx`, `workspace.tsx`: סביבת הארגון וההרשאות.
+- `app/candidate-*.tsx`: מאגר, CV, מיזוג ופרטי מועמד.
+- `app/agency-clients.tsx`, `app/client-portal/`: לקוחות ופורטל מוגבל.
+- `app/recruitment-partnerships.tsx`: רישום קשרים; אין לראות בו פורטל ספק מלא.
+- `supabase/migrations/`: לוגיקה עסקית ואכיפה במסד, לצד קוד השרת.
+- `tests/`: בדיקות מקומיות. `public/design-reference.png`: תמונת הייחוס הקיימת, עם שם ומספרים היסטוריים שאין להעתיק כנתוני מוצר.
+
+קבצי DB, dumps, תוצרים, `supabase/.temp/`, `supabase/.branches/` וסודות אינם נכללים בקומיטים חדשים. יש לבדוק diff לפני commit/push. הוראות העבודה המחייבות נמצאות ב־AGENTS.md.
