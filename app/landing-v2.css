@@ -47,7 +47,7 @@ body .landingV2 .careerHeroArt figcaption{position:absolute;width:1px;height:1px
 body .landingV2 .landingBody{max-width:1240px;margin:auto;padding:0 30px}
 body .landingV2 .benefits{padding:0;margin:0 0 20px}
 body .landingV2 .benefitGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-body .landingV2 .benefit{border:1px solid var(--landing-line);border-radius:15px;box-shadow:0 4px 16px #6284d508;background:#ffffffb0;text-align:center;padding:17px 14px 15px;min-height:140px}
+body .landingV2 .benefit{display:block;border:1px solid var(--landing-line);border-radius:15px;box-shadow:0 4px 16px #6284d508;background:#ffffffb0;text-align:center;padding:17px 14px 15px;min-height:140px}
 body .landingV2 .benefit>.uiIcon{display:block;margin:0 auto 11px;color:#8745ff;width:32px;height:32px}
 body .landingV2 .benefit h3{font-size:16px;line-height:1.45;margin:0 0 5px;color:var(--landing-ink)}
 body .landingV2 .benefit p{font-size:12px;line-height:1.6;color:#475476;margin:0}

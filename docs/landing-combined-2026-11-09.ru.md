@@ -52,3 +52,5 @@ HeroSearch, FieldPicker, RoleInput, LocationInput, taxonomy и geography не м
 Blog, Terms и Privacy из рисунка пока не имеют опубликованных страниц: отображаются как aria-disabled с подписью «Not published yet», без пустых ссылок или выдуманных юридических документов. Career tools явно Coming soon. Это ограничения готовности содержимого, а не активные функции.
 
 Проверки уточнения: production build и TypeScript успешны; 19 существующих тестов no-niqqud, языка, sharing, help/account navigation, городов/регионов, словарей и поиска прошли. Браузер: 1024px desktop, phone 390×844, iPad 768×1024, he/en, 8 карточек, отсутствие horizontal overflow, направление головы. FAQ открывает 4 вопроса и закрывается. Публикация и live-проверка фиксируются отдельно в HR-17.
+
+Дополнительная live-проверка desktop 1307px выявила унаследованный grid старых benefit cards, отсутствующий на 1024px: текст сжимался в 48px. Scoped display:block в новых карточках устраняет конфликт; проверены все типы карточек на широком экране. Это исправление CSS, фильтры/данные не затронуты.
