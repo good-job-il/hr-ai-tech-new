@@ -1,10 +1,19 @@
-export default function UiIcon({name,size=21}:{name:string;size?:number}){
+import {useId} from 'react';
+export default function UiIcon({name,size=21,tone}:{name:string;size?:number;tone?:'brand'}){
+const gradient='icon-'+useId().replace(/:/g,'');
 const paths:Record<string,React.ReactNode>={
+ login:<><circle cx="9" cy="6" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2H3m14-11 4 3-4 3m-3-3h7"/></>,
+ location:<><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></>,
+ 'person-plus':<><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2m4-12v6m-3-3h6"/></>,
+ 'calendar-check':<><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></>,
+ trending:<><path d="M3 21h18M5 17v-4m6 4V9m6 8v-5M3 10l6-5 5 3 7-6m-5 0h5v5"/></>,
+ 'arrow-forward':<path d="M4 12h16m-5-5 5 5-5 5"/>,
+ avatar:<><circle cx="12" cy="7" r="4" fill="currentColor" stroke="none"/><path d="M3 23v-3a9 9 0 0 1 18 0v3" fill="currentColor" stroke="none"/></>,
  bolt:<path d="m14 2-9 12h6l-1 8 9-12h-6z"/>,
  target:<><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="m12 12 9-9m-4 0h4v4"/></>,
  send:<path d="m2 10 20-8-8 20-3-9zM11 13 22 2"/>,
  graduation:<><path d="m2 9 10-5 10 5-10 5zM6 11v6c4 3 8 3 12 0v-6M22 9v8"/></>,
- badge:<><rect x="4" y="3" width="16" height="19" rx="2"/><path d="M9 2h6v4H9z"/><circle cx="12" cy="11" r="2"/><path d="M8 19v-1a4 4 0 0 1 8 0v1"/></>,
+ badge:<><path d="M14 2H4v20h16V8zM14 2v6h6"/><circle cx="10" cy="10" r="2"/><path d="M7 18v-1a3 3 0 0 1 6 0v1H7m8-5h2m-2 4h2"/></>,
  camera:<><rect x="3" y="6" width="18" height="15" rx="3"/><path d="m8 6 2-3h4l2 3"/><circle cx="12" cy="13" r="4"/></>,
  tasks:<><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v4H9zM8 13l2 2 5-5M8 18h8"/></>,
  dashboard:<><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></>,
@@ -29,5 +38,5 @@ const paths:Record<string,React.ReactNode>={
  facebook:<path d="M14 22V13h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.5L15 1c-3 0-5 2-5 5v3H7v4h3v9"/>,
  telegram:<path d="m2 10 20-8-4 20-7-6-4 3 1-6 10-8-7 11-3-3z"/>
 };
-return <svg className="uiIcon" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[({person:'workspace',interviews:'calendar',briefcase:'jobs'} as Record<string,string>)[name]??name]??paths.jobs}</svg>;
+return <svg className="uiIcon" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={tone==='brand'?`url(#${gradient})`:'currentColor'} strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{tone==='brand'&&<defs><linearGradient id={gradient} x1="0" y1="0" x2="1" y2="1"><stop stopColor="#9634ff"/><stop offset="1" stopColor="#297dff"/></linearGradient></defs>}{paths[({person:'workspace',interviews:'calendar',briefcase:'jobs'} as Record<string,string>)[name]??name]??paths.jobs}</svg>;
 }

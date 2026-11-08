@@ -54,3 +54,15 @@ Blog, Terms и Privacy из рисунка пока не имеют опубли
 Проверки уточнения: production build и TypeScript успешны; 19 существующих тестов no-niqqud, языка, sharing, help/account navigation, городов/регионов, словарей и поиска прошли. Браузер: 1024px desktop, phone 390×844, iPad 768×1024, he/en, 8 карточек, отсутствие horizontal overflow, направление головы. FAQ открывает 4 вопроса и закрывается. Публикация и live-проверка фиксируются отдельно в HR-17.
 
 Дополнительная live-проверка desktop 1307px выявила унаследованный grid старых benefit cards, отсутствующий на 1024px: текст сжимался в 48px. Scoped display:block в новых карточках устраняет конфликт; проверены все типы карточек на широком экране. Это исправление CSS, фильтры/данные не затронуты.
+
+## Повторный визуальный аудит и Forgot password (09.11.2026)
+
+Владелец справедливо уточнил, совпадают ли также иконки/цвета и уместен ли Forgot password под footer. Предыдущая проверка не подтверждала pixel-perfect: аналогичные иконки person/calendar/chart, серый body copy и упрощённые детали карточки расходились с рисунком. Заявление о полном совпадении было чрезмерным.
+
+Уточнены SVG-силуэты (person-plus, calendar-check, trending, graduation, location, team), общий необязательный brand-gradient у UiIcon, navy secondary copy, skeleton avatar/profile, стрелки mini cards и тонкие SVG-волны CTA. Иконки фильтров декоративные (aria-hidden/pointer-events:none), введены без изменения их значений, словарей, порядка и обработчиков. 8 вакансий и порядок остальных секций сохранены. Все raster-изображения и утверждённый логотип сохранены.
+
+Recovery больше не показывает глобальный Forgot password под страницей. Кнопка type=button находится непосредственно после password в существующей auth form. Она закрывает Sign in и открывает отдельный доступный recovery dialog с единственной email form; close/backdrop/Escape закрывают окно. Постоянный PASSWORD_RECOVERY listener остаётся смонтированным, существующие Supabase resetPasswordForEmail/updateUser и redirect/minimum не менялись. Это проверка UI, recovery email/смена реального пароля не выполнялись. Business/candidate auth flow не переписывался.
+
+Ограничения совпадения: raster mockup — визуальная спецификация, не исходный файл иконок/шрифта/точных color tokens; нельзя обещать идентичность каждого пикселя. Прямо согласованные отличия — digital head по direction, 4 действующих фильтра со всеми options, 8 реальных jobs, language switch; dynamic содержимое вакансий и локализация меняют высоту. Blog/legal labels ещё disabled, planned tools Coming soon.
+
+Проверки повторного аудита: TypeScript, production build и 14 целевых тестов прошли. В браузере he/en phone390, iPad768, desktop1024/1307: 8 jobs, 4 filters, no horizontal overflow, корректный head transform. Sign in содержит Forgot password непосредственно после password; вне dialog кнопки нет. Открытие отдельного recovery dialog и закрытие кнопкой/Escape проверены без отправки email. Статус после завершения reset сохранён. Снимки и live SHA фиксируются в HR-17 после публикации.
