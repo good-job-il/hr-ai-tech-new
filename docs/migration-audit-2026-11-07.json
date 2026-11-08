@@ -1,0 +1,3593 @@
+{
+  "checkedAt": "2026-11-07T20:06:17.363219+00:00",
+  "target": "rnstsczayhzrxzcstzpr",
+  "sha": "aba33d59ce0d9879c0c7a13e6badd999dcb017a6",
+  "environment": {
+    "postgres_version": "PostgreSQL 17.11 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 15.2.0, 64-bit",
+    "read_only": "on",
+    "isolation": "repeatable read"
+  },
+  "migrations": [
+    {
+      "name": "001_initial.sql",
+      "sha256": "1c50b54d2330e2baba87884134468db92325e6548c5a9cc956a6a0e9e5f0f84b"
+    },
+    {
+      "name": "002_workspace.sql",
+      "sha256": "e5ec4906c1d7034258b956daec8215423814bc83224c6f8da4ef02f75a02851b"
+    },
+    {
+      "name": "003_operations.sql",
+      "sha256": "f828bac1b7966448e6a6af13109c2425bc6a894e45a5f4546ca45c5846149681"
+    },
+    {
+      "name": "004_external_jobs.sql",
+      "sha256": "ec67a522f5f0e5736532dd27f3da28bdec166b9fbdb187875ba4a8ceb2187a4a"
+    },
+    {
+      "name": "005_editorial_review.sql",
+      "sha256": "d6165f6c129d133f17f34ed8b9f8a798d4092c35cc4788fd404e2cd55b778b4b"
+    },
+    {
+      "name": "006_complete_workflows.sql",
+      "sha256": "0a330c9768bce5935980aabb38ad1c1df6a7452f60ff72816162ed83e7697df1"
+    },
+    {
+      "name": "007_notifications_and_review.sql",
+      "sha256": "29ceb63f4005c547ac298cdfd911e2e669f743cbd819a21376c24e465776250c"
+    },
+    {
+      "name": "008_manual_pipeline_and_audit.sql",
+      "sha256": "28a653928eea7aaad38902451830fe0e4372a8d43f2132c936b1dc6453b11e4a"
+    },
+    {
+      "name": "009_imports_and_operations.sql",
+      "sha256": "4bb4415644bbd539266e93798d1b4c110e592171c4c0aa348d37674b01309345"
+    },
+    {
+      "name": "010_company_profiles_and_consent.sql",
+      "sha256": "9ff8e979170dde1be3667d85c33c28464c7d6a382d3948e8eb16ba37b939a499"
+    },
+    {
+      "name": "011_approved_media.sql",
+      "sha256": "2b537f8449ef00c978f87a77ca194eaf38cb524afd69c0b90cc44839ad3d5a50"
+    },
+    {
+      "name": "012_localized_job_editor.sql",
+      "sha256": "7b7a3c9e647e27920436453a655114cf65e3f9851078b4167c0958e3fa6a02be"
+    },
+    {
+      "name": "013_preserve_merge_workflows.sql",
+      "sha256": "459a3959a9e7b785e7aa38f3b3b1ec7782678d1e08e4e4265b1b7c1a42d4f28b"
+    },
+    {
+      "name": "014_pilot_support.sql",
+      "sha256": "b1c361e3e318e8a5f4b7d82f75d77639e2c532e446a68bf469ad5e2ff5f51ea8"
+    },
+    {
+      "name": "015_private_handling_notes.sql",
+      "sha256": "948f86f152717eab2143e3bf91405982a80b429cbda4859158ba004b4fd0a241"
+    },
+    {
+      "name": "016_organization_hierarchy.sql",
+      "sha256": "3453b3ed7ed2c06867b7b8c4bbfc6782d0cacaf3b09d6f95bba0eac40417ce30"
+    },
+    {
+      "name": "017_scoped_recruitment.sql",
+      "sha256": "47e2e9375377c4bf712c83a2098aa258e78e760e0fd09ac4625e789ce395972a"
+    },
+    {
+      "name": "018_team_invitations.sql",
+      "sha256": "650ee906291f9d5615292b9b8633de41fdf7b80b2884cb75e291385aa6fd032d"
+    },
+    {
+      "name": "019_merge_review_and_restore.sql",
+      "sha256": "c5d0eeb5c80af5d404b9a0973aaac8bf071856805b1928ff5be1cea2eaed1d95"
+    },
+    {
+      "name": "020_candidate_contact_and_duplicate_review.sql",
+      "sha256": "64ea70d027204948a3424b7b87a19c27ad0c38073e6d621901f4cd233d8aca2b"
+    },
+    {
+      "name": "021_record_operation_audit.sql",
+      "sha256": "35d63a017e86b8cbb0e3807734e6cf8fb46c9bc3c2362cb7586ed6502551ad34"
+    },
+    {
+      "name": "022_scoped_candidate_export.sql",
+      "sha256": "97bde11b731d8eff08d942cb28cb3a8fc7a99a871dbe5b9d6fbee9753a0a48de"
+    },
+    {
+      "name": "023_candidate_submission_approvals.sql",
+      "sha256": "fb6eb4332b4d20ed5674d39471832cb2c985d5e7459c4bdf4faaa174e5755644"
+    },
+    {
+      "name": "024_candidate_documents.sql",
+      "sha256": "aef156cece9ef22160e77c440a1e9c689c3d54209937bc586aa5055c6bab1402"
+    },
+    {
+      "name": "025_candidate_contact_validation.sql",
+      "sha256": "d09a4d12911de990fe901af2c7ae5b598af2c28635162b83f2cc0af8f7ad90ca"
+    },
+    {
+      "name": "026_lightweight_public_catalog.sql",
+      "sha256": "6ab16c194e773232b4f6e5d77acfedbf0decb30aeb19af1ed5928442e2cc498a"
+    },
+    {
+      "name": "027_bulk_candidate_import.sql",
+      "sha256": "8c436379901756b34921583ace9459b7ded8e97cbae42ae50cd9b57cf56c1b30"
+    },
+    {
+      "name": "028_professional_skill_coverage.sql",
+      "sha256": "2fd4aa6692d98f1f45d61021650e0d3700c07c469b3c5c11fd368c8211dd79df"
+    },
+    {
+      "name": "029_isolated_qa_organizations.sql",
+      "sha256": "0024ae8424ddad80065578fc4f1aa4ad7982eace3f00ead072433927fb9fb1b2"
+    },
+    {
+      "name": "030_platform_metric_details.sql",
+      "sha256": "47f4d1ea08647f2817725b5e8660e1271ee2d976a7e939e48a200fa990b700b1"
+    },
+    {
+      "name": "031_search_all_job_sections.sql",
+      "sha256": "9059c078ebd05c4ecbb895f72320d0c7649833a72a058159a81c9a740c919321"
+    },
+    {
+      "name": "032_recruitment_partnerships.sql",
+      "sha256": "fd8159d3d150f042d46cceb3bd691c08e8ec42654ae92f8f945d082e8cf81930"
+    },
+    {
+      "name": "033_platform_support_context.sql",
+      "sha256": "7a90ff53a9083f05d4b47aa87042d472bb252cd19929002f32662cf647dace46"
+    },
+    {
+      "name": "034_candidate_workbench.sql",
+      "sha256": "af30400f6949285f819a4f5426e70284415927b4bdf0cd47f1941d68d599d830"
+    },
+    {
+      "name": "035_resumable_candidate_import.sql",
+      "sha256": "dd3102176103cf12121af44f4973daa43a23747dc708e24e7fe1035e1a510594"
+    },
+    {
+      "name": "036_merge_candidate_interests.sql",
+      "sha256": "8cf16cc6b115400d90e5aafc3c5a227db1b0878ec076cafea89f45edcd837fda"
+    },
+    {
+      "name": "037_candidate_source_details.sql",
+      "sha256": "90aef203210d443fbf0aa86f1f23e65ba5ea389d38d7abaf5fb86f01c9684323"
+    },
+    {
+      "name": "038_candidate_import_format_fix.sql",
+      "sha256": "4ff95d747edda700cf913412ecbd8a77449b0a54653f11bc1d683ba9dbacb9da"
+    },
+    {
+      "name": "039_candidate_import_repair.sql",
+      "sha256": "fdb768214736ec50054cfdbaf90eb67c2196547033fb7177701879f1cfbfe557"
+    },
+    {
+      "name": "040_candidate_table_preferences.sql",
+      "sha256": "a25f98bf1931e75c9165c6d108128b2b5179180b63e4e7725145d3d93cf94404"
+    },
+    {
+      "name": "041_candidate_pool_sort.sql",
+      "sha256": "1e115ee0fda055046a458e60e452ee07cfb2b696743f1aff5fb1653f2ab4e6ab"
+    },
+    {
+      "name": "042_candidate_mobile_prefix.sql",
+      "sha256": "4dc346b2b8006abb6a8a2ea2f378b3569d8df657caba60a982eb765571d29b1c"
+    },
+    {
+      "name": "043_imported_role_labels.sql",
+      "sha256": "034d3cc0186ec16f8a335a167d58b6325dc9474bbc12cb4f09ccc5a58f14ab66"
+    },
+    {
+      "name": "044_platform_role_report.sql",
+      "sha256": "01b92632166a8807d189b1e78fd3ef6e9655cd4f04690daa3ff936dfc4ac7677"
+    },
+    {
+      "name": "045_unresolved_role_sources.sql",
+      "sha256": "a77a7e58e700dcf8cf4c78143592666c7aaa80e832024bebb28856b30d07b33e"
+    },
+    {
+      "name": "046_client_pilot.sql",
+      "sha256": "b364b105e2fd59d5308c6b423c744c366126775ac1841e13eeea7f2a05f57d47"
+    },
+    {
+      "name": "047_client_portal_followup.sql",
+      "sha256": "73ffee132f171ecc7f9c4307c643cc997edf47e8af89b2d9cd782c920c1b29e8"
+    },
+    {
+      "name": "048_client_portal_progress.sql",
+      "sha256": "310dc824b65d8c42358d93932b4dc77365f02f9534d6b34dbfa1b06327c2a9e7"
+    },
+    {
+      "name": "049_agency_client_workspace.sql",
+      "sha256": "a0586f1f0cd89aebfd8b1f9d336b7de78d238aaec6852213aa5885e6814d7f92"
+    },
+    {
+      "name": "050_client_sharing_policy.sql",
+      "sha256": "03095da636b1135a8d0e75244dcb57ef079f7ca2fc52ce66548cd0ce4851db38"
+    },
+    {
+      "name": "051_client_interview_audit.sql",
+      "sha256": "3a67eb4bffa456ae1b0c2810b9a6258033e91ff3c0c4f30c15a07c8d804eede8"
+    },
+    {
+      "name": "052_portal_access_requests.sql",
+      "sha256": "542b7e9ec0f9aa6157931a3493b0023315818939df039caef3ac2e38df1d5f37"
+    },
+    {
+      "name": "053_commercial_accounts.sql",
+      "sha256": "e6300e44c6e285585cbe3e545b46a09b6b7b243429c143d57428c09d30cdd287"
+    },
+    {
+      "name": "054_candidate_company_search.sql",
+      "sha256": "b680d0ce31a5b4267db4f2c6e91d66457dc0adae925f7bee7c17bb8fb4c1e6ea"
+    },
+    {
+      "name": "055_support_screenshots.sql",
+      "sha256": "19e053f1dc4fca7f4014544fdaddedef58e30e79248cf7a50c2b9dca8b075cde"
+    },
+    {
+      "name": "056_account_center_and_contacts.sql",
+      "sha256": "56416cc421d293e14078e9364f9f789d92141b998996635ade406360d6860deb"
+    },
+    {
+      "name": "057_portal_organization_transition.sql",
+      "sha256": "8a16004191aff2b669edc638a91a6b45497b763f7fa54e09305aef5265d7dc48"
+    },
+    {
+      "name": "058_candidate_correspondence.sql",
+      "sha256": "e249ceca437449d9d92e61607ce2873f8f80bb039e537ccbcc41a4e30b16e9ad"
+    }
+  ],
+  "objectCounts": {
+    "buckets": 6,
+    "columns": 542,
+    "constraints": 423,
+    "functions": 163,
+    "indexes": 119,
+    "policies": 118,
+    "tables": 74,
+    "triggers": 29
+  },
+  "differences": {
+    "missing": [],
+    "extra": [],
+    "changed": []
+  },
+  "tableCounts": [
+    {
+      "table_name": "public.access_requests",
+      "rows": 0
+    },
+    {
+      "table_name": "public.account_settings",
+      "rows": 4
+    },
+    {
+      "table_name": "public.agency_client_fee_terms",
+      "rows": 1
+    },
+    {
+      "table_name": "public.agency_client_portal_policy",
+      "rows": 1
+    },
+    {
+      "table_name": "public.agency_clients",
+      "rows": 1
+    },
+    {
+      "table_name": "public.application_activity",
+      "rows": 0
+    },
+    {
+      "table_name": "public.application_internal_notes",
+      "rows": 0
+    },
+    {
+      "table_name": "public.application_messages",
+      "rows": 0
+    },
+    {
+      "table_name": "public.applications",
+      "rows": 0
+    },
+    {
+      "table_name": "public.automation_rules",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_access",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_documents",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_import_batches",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_import_date_repairs",
+      "rows": 9520
+    },
+    {
+      "table_name": "public.candidate_import_jobs",
+      "rows": 1
+    },
+    {
+      "table_name": "public.candidate_import_repairs",
+      "rows": 1
+    },
+    {
+      "table_name": "public.candidate_import_rows",
+      "rows": 51892
+    },
+    {
+      "table_name": "public.candidate_interests",
+      "rows": 51364
+    },
+    {
+      "table_name": "public.candidate_internal_notes",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_phone_prefix_repairs",
+      "rows": 51071
+    },
+    {
+      "table_name": "public.candidate_placements",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_profiles",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_saved_filters",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_submissions",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidate_table_preferences",
+      "rows": 1
+    },
+    {
+      "table_name": "public.candidate_whatsapp_messages",
+      "rows": 0
+    },
+    {
+      "table_name": "public.candidates",
+      "rows": 51364
+    },
+    {
+      "table_name": "public.career_roles",
+      "rows": 167
+    },
+    {
+      "table_name": "public.client_feedback",
+      "rows": 0
+    },
+    {
+      "table_name": "public.client_organization_links",
+      "rows": 0
+    },
+    {
+      "table_name": "public.client_portal_members",
+      "rows": 0
+    },
+    {
+      "table_name": "public.client_presentations",
+      "rows": 0
+    },
+    {
+      "table_name": "public.commercial_accounts",
+      "rows": 1
+    },
+    {
+      "table_name": "public.commercial_events",
+      "rows": 1
+    },
+    {
+      "table_name": "public.commercial_trial_notices",
+      "rows": 0
+    },
+    {
+      "table_name": "public.company_profiles",
+      "rows": 1
+    },
+    {
+      "table_name": "public.customer_testimonials",
+      "rows": 0
+    },
+    {
+      "table_name": "public.external_jobs",
+      "rows": 367
+    },
+    {
+      "table_name": "public.health_samples",
+      "rows": 2
+    },
+    {
+      "table_name": "public.interviews",
+      "rows": 0
+    },
+    {
+      "table_name": "public.job_categories",
+      "rows": 0
+    },
+    {
+      "table_name": "public.job_import_batches",
+      "rows": 4
+    },
+    {
+      "table_name": "public.job_sources",
+      "rows": 16
+    },
+    {
+      "table_name": "public.jobs",
+      "rows": 12
+    },
+    {
+      "table_name": "public.management_audit",
+      "rows": 267120
+    },
+    {
+      "table_name": "public.member_permissions",
+      "rows": 0
+    },
+    {
+      "table_name": "public.memberships",
+      "rows": 2
+    },
+    {
+      "table_name": "public.merge_audit",
+      "rows": 0
+    },
+    {
+      "table_name": "public.merge_proposals",
+      "rows": 0
+    },
+    {
+      "table_name": "public.notifications",
+      "rows": 0
+    },
+    {
+      "table_name": "public.organization_whatsapp_connections",
+      "rows": 1
+    },
+    {
+      "table_name": "public.organizations",
+      "rows": 1
+    },
+    {
+      "table_name": "public.pilot_source_jobs",
+      "rows": 12
+    },
+    {
+      "table_name": "public.placement_activity",
+      "rows": 0
+    },
+    {
+      "table_name": "public.placement_employment",
+      "rows": 0
+    },
+    {
+      "table_name": "public.placement_interviews",
+      "rows": 0
+    },
+    {
+      "table_name": "public.placement_work_periods",
+      "rows": 0
+    },
+    {
+      "table_name": "public.platform_admins",
+      "rows": 1
+    },
+    {
+      "table_name": "public.platform_support_sessions",
+      "rows": 3
+    },
+    {
+      "table_name": "public.profile_views",
+      "rows": 0
+    },
+    {
+      "table_name": "public.recruitment_partnerships",
+      "rows": 0
+    },
+    {
+      "table_name": "public.recruitment_tasks",
+      "rows": 0
+    },
+    {
+      "table_name": "public.reward_entries",
+      "rows": 0
+    },
+    {
+      "table_name": "public.reward_policies",
+      "rows": 0
+    },
+    {
+      "table_name": "public.role_aliases",
+      "rows": 0
+    },
+    {
+      "table_name": "public.role_import_label_repairs",
+      "rows": 107
+    },
+    {
+      "table_name": "public.saved_jobs",
+      "rows": 0
+    },
+    {
+      "table_name": "public.site_content",
+      "rows": 1
+    },
+    {
+      "table_name": "public.support_replies",
+      "rows": 0
+    },
+    {
+      "table_name": "public.support_screenshots",
+      "rows": 0
+    },
+    {
+      "table_name": "public.support_tickets",
+      "rows": 0
+    },
+    {
+      "table_name": "public.team_invites",
+      "rows": 0
+    },
+    {
+      "table_name": "public.unresolved_role_sources",
+      "rows": 60
+    },
+    {
+      "table_name": "public.whatsapp_unmatched_messages",
+      "rows": 0
+    }
+  ],
+  "foreignKeys": [
+    {
+      "conname": "identities_user_id_fkey",
+      "child_schema": "auth",
+      "child_table": "identities",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_placements_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_placements",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_activity_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "placement_activity",
+      "parent_schema": "public",
+      "parent_table": "candidate_placements",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_activity_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "placement_activity",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "memberships_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "memberships",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "memberships_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "memberships",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "jobs_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "jobs",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_profiles_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_profiles",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "applications_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "applications",
+      "parent_schema": "public",
+      "parent_table": "jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "applications_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "applications",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidates_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidates",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidates_owner_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidates",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "owner_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidates_merged_into_fkey",
+      "child_schema": "public",
+      "child_table": "candidates",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "merged_into",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_access_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_access",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_access_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_access",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "access_requests_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "access_requests",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "access_requests_requester_id_fkey",
+      "child_schema": "public",
+      "child_table": "access_requests",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "requester_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "interviews_application_id_fkey",
+      "child_schema": "public",
+      "child_table": "interviews",
+      "parent_schema": "public",
+      "parent_table": "applications",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "application_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "reward_policies_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "reward_policies",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_audit_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_audit",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_audit_source_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_audit",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "source_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_audit_target_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_audit",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "target_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_audit_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_audit",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "external_jobs_source_id_fkey",
+      "child_schema": "public",
+      "child_table": "external_jobs",
+      "parent_schema": "public",
+      "parent_table": "job_sources",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "source_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "platform_admins_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "platform_admins",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_placements_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_placements",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "applications_external_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "applications",
+      "parent_schema": "public",
+      "parent_table": "external_jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "external_job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "saved_jobs_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "saved_jobs",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "saved_jobs_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "saved_jobs",
+      "parent_schema": "public",
+      "parent_table": "jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "saved_jobs_external_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "saved_jobs",
+      "parent_schema": "public",
+      "parent_table": "external_jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "external_job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "recruitment_tasks_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "recruitment_tasks",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "recruitment_tasks_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "recruitment_tasks",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "application_activity_application_id_fkey",
+      "child_schema": "public",
+      "child_table": "application_activity",
+      "parent_schema": "public",
+      "parent_table": "applications",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "application_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_placements_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_placements",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_placements_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_placements",
+      "parent_schema": "public",
+      "parent_table": "jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "application_messages_application_id_fkey",
+      "child_schema": "public",
+      "child_table": "application_messages",
+      "parent_schema": "public",
+      "parent_table": "applications",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "application_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "application_messages_author_id_fkey",
+      "child_schema": "public",
+      "child_table": "application_messages",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "author_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "notifications_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "notifications",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "notifications_application_id_fkey",
+      "child_schema": "public",
+      "child_table": "notifications",
+      "parent_schema": "public",
+      "parent_table": "applications",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "application_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "profile_views_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "profile_views",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "profile_views_viewer_id_fkey",
+      "child_schema": "public",
+      "child_table": "profile_views",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "viewer_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_interviews_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "placement_interviews",
+      "parent_schema": "public",
+      "parent_table": "candidate_placements",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "management_audit_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "management_audit",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "management_audit_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "management_audit",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "role_aliases_category_id_fkey",
+      "child_schema": "public",
+      "child_table": "role_aliases",
+      "parent_schema": "public",
+      "parent_table": "job_categories",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "category_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "job_import_batches_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "job_import_batches",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "health_samples_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "health_samples",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "automation_rules_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "automation_rules",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "recruitment_tasks_application_id_fkey",
+      "child_schema": "public",
+      "child_table": "recruitment_tasks",
+      "parent_schema": "public",
+      "parent_table": "applications",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "application_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "company_profiles_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "company_profiles",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "company_profiles_source_id_fkey",
+      "child_schema": "public",
+      "child_table": "company_profiles",
+      "parent_schema": "public",
+      "parent_table": "job_sources",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "source_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "support_tickets_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "support_tickets",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "support_replies_ticket_id_fkey",
+      "child_schema": "public",
+      "child_table": "support_replies",
+      "parent_schema": "public",
+      "parent_table": "support_tickets",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "ticket_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "support_replies_author_id_fkey",
+      "child_schema": "public",
+      "child_table": "support_replies",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "author_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "application_internal_notes_application_id_fkey",
+      "child_schema": "public",
+      "child_table": "application_internal_notes",
+      "parent_schema": "public",
+      "parent_table": "applications",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "application_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "application_internal_notes_author_id_fkey",
+      "child_schema": "public",
+      "child_table": "application_internal_notes",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "author_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "member_manager_fk",
+      "child_schema": "public",
+      "child_table": "memberships",
+      "parent_schema": "public",
+      "parent_table": "memberships",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "organization_id"
+        },
+        {
+          "child": "manager_id",
+          "parent": "user_id"
+        }
+      ]
+    },
+    {
+      "conname": "member_permissions_granted_by_fkey",
+      "child_schema": "public",
+      "child_table": "member_permissions",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "granted_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "member_permissions_organization_id_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "member_permissions",
+      "parent_schema": "public",
+      "parent_table": "memberships",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "organization_id"
+        },
+        {
+          "child": "user_id",
+          "parent": "user_id"
+        }
+      ]
+    },
+    {
+      "conname": "applications_handler_id_fkey",
+      "child_schema": "public",
+      "child_table": "applications",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "handler_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "recruitment_tasks_assigned_to_fkey",
+      "child_schema": "public",
+      "child_table": "recruitment_tasks",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "assigned_to",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "agency_clients_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "agency_clients",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "agency_clients_target_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "agency_clients",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "target_organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "jobs_client_id_fkey",
+      "child_schema": "public",
+      "child_table": "jobs",
+      "parent_schema": "public",
+      "parent_table": "agency_clients",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "client_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "reward_entries_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "reward_entries",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "reward_entries_beneficiary_id_fkey",
+      "child_schema": "public",
+      "child_table": "reward_entries",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "beneficiary_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "reward_entries_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "reward_entries",
+      "parent_schema": "public",
+      "parent_table": "candidate_placements",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidates_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidates",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "team_invites_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "team_invites",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "team_invites_manager_id_fkey",
+      "child_schema": "public",
+      "child_table": "team_invites",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "manager_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "team_invites_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "team_invites",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "team_invites_accepted_by_fkey",
+      "child_schema": "public",
+      "child_table": "team_invites",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "accepted_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_audit_restored_by_fkey",
+      "child_schema": "public",
+      "child_table": "merge_audit",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "restored_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_proposals_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_proposals",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_proposals_source_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_proposals",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "source_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_proposals_target_id_fkey",
+      "child_schema": "public",
+      "child_table": "merge_proposals",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "target_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_proposals_requested_by_fkey",
+      "child_schema": "public",
+      "child_table": "merge_proposals",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "requested_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "merge_proposals_reviewed_by_fkey",
+      "child_schema": "public",
+      "child_table": "merge_proposals",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "reviewed_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_submissions_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_submissions",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_submissions_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_submissions",
+      "parent_schema": "public",
+      "parent_table": "candidate_placements",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_submissions_requested_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_submissions",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "requested_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_submissions_reviewed_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_submissions",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "reviewed_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_submissions_sent_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_submissions",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "sent_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_documents_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_documents",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_documents_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_documents",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_documents_uploaded_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_documents",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "uploaded_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_batches_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_batches",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_batches_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_batches",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "recruitment_partnerships_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "recruitment_partnerships",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "recruitment_partnerships_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "recruitment_partnerships",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "platform_support_sessions_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "platform_support_sessions",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "platform_support_sessions_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "platform_support_sessions",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "career_roles_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "career_roles",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "career_roles_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "career_roles",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_interests_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_interests",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_interests_role_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_interests",
+      "parent_schema": "public",
+      "parent_table": "career_roles",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "role_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_saved_filters_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_saved_filters",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_saved_filters_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_saved_filters",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_jobs_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_jobs",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_jobs_created_by_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_jobs",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "created_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_rows_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_rows",
+      "parent_schema": "public",
+      "parent_table": "candidate_import_jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_rows_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_rows",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "pilot_source_jobs_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "pilot_source_jobs",
+      "parent_schema": "public",
+      "parent_table": "jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_repairs_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_repairs",
+      "parent_schema": "public",
+      "parent_table": "candidate_import_jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_repairs_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_repairs",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_date_repairs_job_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_date_repairs",
+      "parent_schema": "public",
+      "parent_table": "candidate_import_jobs",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "job_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_import_date_repairs_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_import_date_repairs",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_table_preferences_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_table_preferences",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_table_preferences_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_table_preferences",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_phone_prefix_repairs_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_phone_prefix_repairs",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_phone_prefix_repairs_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_phone_prefix_repairs",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_phone_prefix_repairs_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_phone_prefix_repairs",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "role_import_label_repairs_role_id_fkey",
+      "child_schema": "public",
+      "child_table": "role_import_label_repairs",
+      "parent_schema": "public",
+      "parent_table": "career_roles",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "role_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "role_import_label_repairs_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "role_import_label_repairs",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "role_import_label_repairs_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "role_import_label_repairs",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "unresolved_role_sources_role_id_fkey",
+      "child_schema": "public",
+      "child_table": "unresolved_role_sources",
+      "parent_schema": "public",
+      "parent_table": "career_roles",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "role_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "unresolved_role_sources_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "unresolved_role_sources",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "agency_client_fee_terms_client_id_fkey",
+      "child_schema": "public",
+      "child_table": "agency_client_fee_terms",
+      "parent_schema": "public",
+      "parent_table": "agency_clients",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "client_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_portal_members_client_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_portal_members",
+      "parent_schema": "public",
+      "parent_table": "agency_clients",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "client_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_portal_members_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_portal_members",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_presentations_client_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_presentations",
+      "parent_schema": "public",
+      "parent_table": "agency_clients",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "client_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_presentations_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_presentations",
+      "parent_schema": "public",
+      "parent_table": "candidate_placements",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_presentations_submission_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_presentations",
+      "parent_schema": "public",
+      "parent_table": "candidate_submissions",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "submission_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_presentations_shared_by_fkey",
+      "child_schema": "public",
+      "child_table": "client_presentations",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "shared_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_feedback_presentation_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_feedback",
+      "parent_schema": "public",
+      "parent_table": "client_presentations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "presentation_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_feedback_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_feedback",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_employment_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "placement_employment",
+      "parent_schema": "public",
+      "parent_table": "candidate_placements",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_employment_updated_by_fkey",
+      "child_schema": "public",
+      "child_table": "placement_employment",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "updated_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_work_periods_placement_id_fkey",
+      "child_schema": "public",
+      "child_table": "placement_work_periods",
+      "parent_schema": "public",
+      "parent_table": "placement_employment",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "placement_id",
+          "parent": "placement_id"
+        }
+      ]
+    },
+    {
+      "conname": "placement_work_periods_updated_by_fkey",
+      "child_schema": "public",
+      "child_table": "placement_work_periods",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "updated_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "agency_client_portal_policy_client_id_fkey",
+      "child_schema": "public",
+      "child_table": "agency_client_portal_policy",
+      "parent_schema": "public",
+      "parent_table": "agency_clients",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "client_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "agency_client_portal_policy_updated_by_fkey",
+      "child_schema": "public",
+      "child_table": "agency_client_portal_policy",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "updated_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "whatsapp_unmatched_messages_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "whatsapp_unmatched_messages",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "commercial_accounts_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "commercial_accounts",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "commercial_events_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "commercial_events",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "commercial_events_actor_id_fkey",
+      "child_schema": "public",
+      "child_table": "commercial_events",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "actor_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "commercial_trial_notices_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "commercial_trial_notices",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "commercial_trial_notices_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "commercial_trial_notices",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "support_screenshots_ticket_id_fkey",
+      "child_schema": "public",
+      "child_table": "support_screenshots",
+      "parent_schema": "public",
+      "parent_table": "support_tickets",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "ticket_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "support_screenshots_uploaded_by_fkey",
+      "child_schema": "public",
+      "child_table": "support_screenshots",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "uploaded_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "account_settings_user_id_fkey",
+      "child_schema": "public",
+      "child_table": "account_settings",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "user_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_organization_links_client_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_organization_links",
+      "parent_schema": "public",
+      "parent_table": "agency_clients",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "client_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_organization_links_employer_id_fkey",
+      "child_schema": "public",
+      "child_table": "client_organization_links",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "employer_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_organization_links_requested_by_fkey",
+      "child_schema": "public",
+      "child_table": "client_organization_links",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "requested_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "client_organization_links_decided_by_fkey",
+      "child_schema": "public",
+      "child_table": "client_organization_links",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "decided_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "organization_whatsapp_connections_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "organization_whatsapp_connections",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "organization_whatsapp_connections_requested_by_fkey",
+      "child_schema": "public",
+      "child_table": "organization_whatsapp_connections",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "requested_by",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_internal_notes_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_internal_notes",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_internal_notes_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_internal_notes",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_internal_notes_author_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_internal_notes",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "author_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_whatsapp_messages_organization_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_whatsapp_messages",
+      "parent_schema": "public",
+      "parent_table": "organizations",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "organization_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_whatsapp_messages_candidate_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_whatsapp_messages",
+      "parent_schema": "public",
+      "parent_table": "candidates",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "candidate_id",
+          "parent": "id"
+        }
+      ]
+    },
+    {
+      "conname": "candidate_whatsapp_messages_author_id_fkey",
+      "child_schema": "public",
+      "child_table": "candidate_whatsapp_messages",
+      "parent_schema": "auth",
+      "parent_table": "users",
+      "convalidated": true,
+      "columns": [
+        {
+          "child": "author_id",
+          "parent": "id"
+        }
+      ]
+    }
+  ],
+  "orphanChecks": [
+    {
+      "constraint_name": "\"auth\".\"identities\".identities_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_placements\".candidate_placements_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_activity\".placement_activity_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_activity\".placement_activity_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"memberships\".memberships_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"memberships\".memberships_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"jobs\".jobs_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_profiles\".candidate_profiles_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"applications\".applications_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"applications\".applications_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidates\".candidates_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidates\".candidates_owner_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidates\".candidates_merged_into_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_access\".candidate_access_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_access\".candidate_access_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"access_requests\".access_requests_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"access_requests\".access_requests_requester_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"interviews\".interviews_application_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"reward_policies\".reward_policies_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_audit\".merge_audit_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_audit\".merge_audit_source_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_audit\".merge_audit_target_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_audit\".merge_audit_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"external_jobs\".external_jobs_source_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"platform_admins\".platform_admins_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_placements\".candidate_placements_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"applications\".applications_external_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"saved_jobs\".saved_jobs_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"saved_jobs\".saved_jobs_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"saved_jobs\".saved_jobs_external_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"recruitment_tasks\".recruitment_tasks_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"recruitment_tasks\".recruitment_tasks_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"application_activity\".application_activity_application_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_placements\".candidate_placements_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_placements\".candidate_placements_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"application_messages\".application_messages_application_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"application_messages\".application_messages_author_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"notifications\".notifications_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"notifications\".notifications_application_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"profile_views\".profile_views_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"profile_views\".profile_views_viewer_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_interviews\".placement_interviews_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"management_audit\".management_audit_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"management_audit\".management_audit_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"role_aliases\".role_aliases_category_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"job_import_batches\".job_import_batches_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"health_samples\".health_samples_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"automation_rules\".automation_rules_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"recruitment_tasks\".recruitment_tasks_application_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"company_profiles\".company_profiles_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"company_profiles\".company_profiles_source_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"support_tickets\".support_tickets_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"support_replies\".support_replies_ticket_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"support_replies\".support_replies_author_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"application_internal_notes\".application_internal_notes_application_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"application_internal_notes\".application_internal_notes_author_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"memberships\".member_manager_fk",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"member_permissions\".member_permissions_granted_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"member_permissions\".member_permissions_organization_id_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"applications\".applications_handler_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"recruitment_tasks\".recruitment_tasks_assigned_to_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"agency_clients\".agency_clients_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"agency_clients\".agency_clients_target_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"jobs\".jobs_client_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"reward_entries\".reward_entries_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"reward_entries\".reward_entries_beneficiary_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"reward_entries\".reward_entries_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidates\".candidates_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"team_invites\".team_invites_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"team_invites\".team_invites_manager_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"team_invites\".team_invites_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"team_invites\".team_invites_accepted_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_audit\".merge_audit_restored_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_proposals\".merge_proposals_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_proposals\".merge_proposals_source_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_proposals\".merge_proposals_target_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_proposals\".merge_proposals_requested_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"merge_proposals\".merge_proposals_reviewed_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_submissions\".candidate_submissions_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_submissions\".candidate_submissions_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_submissions\".candidate_submissions_requested_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_submissions\".candidate_submissions_reviewed_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_submissions\".candidate_submissions_sent_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_documents\".candidate_documents_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_documents\".candidate_documents_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_documents\".candidate_documents_uploaded_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_batches\".candidate_import_batches_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_batches\".candidate_import_batches_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"recruitment_partnerships\".recruitment_partnerships_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"recruitment_partnerships\".recruitment_partnerships_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"platform_support_sessions\".platform_support_sessions_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"platform_support_sessions\".platform_support_sessions_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"career_roles\".career_roles_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"career_roles\".career_roles_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_interests\".candidate_interests_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_interests\".candidate_interests_role_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_saved_filters\".candidate_saved_filters_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_saved_filters\".candidate_saved_filters_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_jobs\".candidate_import_jobs_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_jobs\".candidate_import_jobs_created_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_rows\".candidate_import_rows_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_rows\".candidate_import_rows_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"pilot_source_jobs\".pilot_source_jobs_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_repairs\".candidate_import_repairs_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_repairs\".candidate_import_repairs_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_date_repairs\".candidate_import_date_repairs_job_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_import_date_repairs\".candidate_import_date_repairs_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_table_preferences\".candidate_table_preferences_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_table_preferences\".candidate_table_preferences_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_phone_prefix_repairs\".candidate_phone_prefix_repairs_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_phone_prefix_repairs\".candidate_phone_prefix_repairs_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_phone_prefix_repairs\".candidate_phone_prefix_repairs_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"role_import_label_repairs\".role_import_label_repairs_role_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"role_import_label_repairs\".role_import_label_repairs_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"role_import_label_repairs\".role_import_label_repairs_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"unresolved_role_sources\".unresolved_role_sources_role_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"unresolved_role_sources\".unresolved_role_sources_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"agency_client_fee_terms\".agency_client_fee_terms_client_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_portal_members\".client_portal_members_client_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_portal_members\".client_portal_members_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_presentations\".client_presentations_client_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_presentations\".client_presentations_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_presentations\".client_presentations_submission_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_presentations\".client_presentations_shared_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_feedback\".client_feedback_presentation_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_feedback\".client_feedback_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_employment\".placement_employment_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_employment\".placement_employment_updated_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_work_periods\".placement_work_periods_placement_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"placement_work_periods\".placement_work_periods_updated_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"agency_client_portal_policy\".agency_client_portal_policy_client_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"agency_client_portal_policy\".agency_client_portal_policy_updated_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"whatsapp_unmatched_messages\".whatsapp_unmatched_messages_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"commercial_accounts\".commercial_accounts_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"commercial_events\".commercial_events_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"commercial_events\".commercial_events_actor_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"commercial_trial_notices\".commercial_trial_notices_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"commercial_trial_notices\".commercial_trial_notices_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"support_screenshots\".support_screenshots_ticket_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"support_screenshots\".support_screenshots_uploaded_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"account_settings\".account_settings_user_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_organization_links\".client_organization_links_client_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_organization_links\".client_organization_links_employer_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_organization_links\".client_organization_links_requested_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"client_organization_links\".client_organization_links_decided_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"organization_whatsapp_connections\".organization_whatsapp_connections_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"organization_whatsapp_connections\".organization_whatsapp_connections_requested_by_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_internal_notes\".candidate_internal_notes_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_internal_notes\".candidate_internal_notes_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_internal_notes\".candidate_internal_notes_author_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_whatsapp_messages\".candidate_whatsapp_messages_organization_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_whatsapp_messages\".candidate_whatsapp_messages_candidate_id_fkey",
+      "orphan_rows": 0
+    },
+    {
+      "constraint_name": "\"public\".\"candidate_whatsapp_messages\".candidate_whatsapp_messages_author_id_fkey",
+      "orphan_rows": 0
+    }
+  ],
+  "relationships": {
+    "document_org_mismatches": 0,
+    "placement_org_mismatches": 0,
+    "candidates_without_interests": 0
+  },
+  "auth": {
+    "users": 4,
+    "identities": 4,
+    "password_users": 4,
+    "email_confirmed_users": 4,
+    "banned_users": 0,
+    "users_with_recorded_sign_in": 4,
+    "users_without_identity": 0,
+    "users_without_membership": 2
+  },
+  "authProviders": [
+    {
+      "provider": "email",
+      "identities": 4
+    }
+  ],
+  "migrationHistory": [
+    {
+      "version": "001",
+      "name": "initial"
+    },
+    {
+      "version": "002",
+      "name": "workspace"
+    },
+    {
+      "version": "003",
+      "name": "operations"
+    },
+    {
+      "version": "004",
+      "name": "external_jobs"
+    },
+    {
+      "version": "005",
+      "name": "editorial_review"
+    },
+    {
+      "version": "006",
+      "name": "complete_workflows"
+    },
+    {
+      "version": "007",
+      "name": "notifications_and_review"
+    },
+    {
+      "version": "008",
+      "name": "manual_pipeline_and_audit"
+    },
+    {
+      "version": "009",
+      "name": "imports_and_operations"
+    },
+    {
+      "version": "010",
+      "name": "company_profiles_and_consent"
+    },
+    {
+      "version": "011",
+      "name": "approved_media"
+    },
+    {
+      "version": "012",
+      "name": "localized_job_editor"
+    },
+    {
+      "version": "013",
+      "name": "preserve_merge_workflows"
+    },
+    {
+      "version": "014",
+      "name": "pilot_support"
+    },
+    {
+      "version": "015",
+      "name": "private_handling_notes"
+    },
+    {
+      "version": "016",
+      "name": "organization_hierarchy"
+    },
+    {
+      "version": "017",
+      "name": "scoped_recruitment"
+    },
+    {
+      "version": "018",
+      "name": "team_invitations"
+    },
+    {
+      "version": "019",
+      "name": "merge_review_and_restore"
+    },
+    {
+      "version": "020",
+      "name": "candidate_contact_and_duplicate_review"
+    },
+    {
+      "version": "021",
+      "name": "record_operation_audit"
+    },
+    {
+      "version": "022",
+      "name": "scoped_candidate_export"
+    },
+    {
+      "version": "023",
+      "name": "candidate_submission_approvals"
+    },
+    {
+      "version": "024",
+      "name": "candidate_documents"
+    },
+    {
+      "version": "025",
+      "name": "candidate_contact_validation"
+    },
+    {
+      "version": "026",
+      "name": "lightweight_public_catalog"
+    },
+    {
+      "version": "027",
+      "name": "bulk_candidate_import"
+    },
+    {
+      "version": "028",
+      "name": "professional_skill_coverage"
+    },
+    {
+      "version": "029",
+      "name": "isolated_qa_organizations"
+    },
+    {
+      "version": "030",
+      "name": "platform_metric_details"
+    },
+    {
+      "version": "031",
+      "name": "search_all_job_sections"
+    },
+    {
+      "version": "032",
+      "name": "recruitment_partnerships"
+    },
+    {
+      "version": "033",
+      "name": "platform_support_context"
+    },
+    {
+      "version": "034",
+      "name": "candidate_workbench"
+    },
+    {
+      "version": "035",
+      "name": "resumable_candidate_import"
+    },
+    {
+      "version": "036",
+      "name": "merge_candidate_interests"
+    },
+    {
+      "version": "037",
+      "name": "candidate_source_details"
+    },
+    {
+      "version": "038",
+      "name": "candidate_import_format_fix"
+    },
+    {
+      "version": "039",
+      "name": "candidate_import_repair"
+    },
+    {
+      "version": "040",
+      "name": "candidate_table_preferences"
+    },
+    {
+      "version": "041",
+      "name": "candidate_pool_sort"
+    },
+    {
+      "version": "042",
+      "name": "candidate_mobile_prefix"
+    },
+    {
+      "version": "043",
+      "name": "imported_role_labels"
+    },
+    {
+      "version": "044",
+      "name": "platform_role_report"
+    },
+    {
+      "version": "045",
+      "name": "unresolved_role_sources"
+    },
+    {
+      "version": "046",
+      "name": "client_pilot"
+    },
+    {
+      "version": "047",
+      "name": "client_portal_followup"
+    },
+    {
+      "version": "048",
+      "name": "client_portal_progress"
+    },
+    {
+      "version": "049",
+      "name": "agency_client_workspace"
+    },
+    {
+      "version": "050",
+      "name": "client_sharing_policy"
+    },
+    {
+      "version": "051",
+      "name": "client_interview_audit"
+    },
+    {
+      "version": "052",
+      "name": "portal_access_requests"
+    },
+    {
+      "version": "053",
+      "name": "commercial_accounts"
+    },
+    {
+      "version": "054",
+      "name": "candidate_company_search"
+    },
+    {
+      "version": "055",
+      "name": "support_screenshots"
+    },
+    {
+      "version": "056",
+      "name": "account_center_and_contacts"
+    },
+    {
+      "version": "057",
+      "name": "portal_organization_transition"
+    },
+    {
+      "version": "058",
+      "name": "candidate_correspondence"
+    }
+  ],
+  "storageObjects": [],
+  "limitations": [
+    "Source dump/manifest not supplied; row preservation is not established.",
+    "Each query batch uses a separate repeatable-read read-only snapshot; active writes may change counts between batches.",
+    "Auth aggregates do not prove historical account preservation or successful login.",
+    "PGlite uses minimal Auth/Storage stubs; extra managed Supabase objects require review.",
+    "Catalog deparser differences across PostgreSQL versions require review; no DDL is applied."
+  ],
+  "checks": {
+    "schemaMatches": true,
+    "migrationHistoryMatches": true,
+    "foreignKeysValid": true,
+    "organizationLinksValid": true
+  },
+  "result": "INCOMPLETE_SOURCE_MANIFEST_REQUIRED"
+}
