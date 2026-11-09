@@ -186,3 +186,12 @@ body .landingPrecision .orbitalArt{display:none}
 }
 @media(min-width:760px){body .landingTech.landingPrecision .orbitalArt{clip-path:polygon(0 0,100% 0,100% 53.3%,88% 53.3%,88% 64%,100% 64%,100% 86.2%,72% 86.2%,72% 97%,100% 97%,100% 100%,0 100%);mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}}
 @media(min-width:760px){body .landingTech.landingPrecision .orbitalArt{clip-path:polygon(0 0,100% 0,100% 52.67%,87.67% 52.67%,87.67% 86.2%,72% 86.2%,72% 100%,0 100%)}}
+/* Owner feedback: a light grey hero and legible search controls take precedence. */
+body .landingTech.landingPrecision .careerHero{background:radial-gradient(ellipse at 32% 48%,#eee8fc75,transparent 65%),#f6f7fb}
+body .landingTech.landingPrecision .approvedSearch .heroSearchForm :is(input,select){font-size:16px;color:#302d47;font-weight:500;opacity:1}
+body .landingTech.landingPrecision .approvedSearch .heroSearchForm input::placeholder{color:#625c78;opacity:1}
+@media(min-width:760px){body .landingTech.landingPrecision .approvedSearch .heroSearchForm :is(input,select){font-size:max(12px,calc(12*var(--u)));padding-inline-start:calc(28*var(--u));padding-inline-end:calc(9*var(--u))}}
+
+body .landingTech.landingPrecision .approvedSearch :is(.fieldPicker>ul,.locationMenu){min-width:min(240px,75vw);inset-inline-start:0;inset-inline-end:auto;line-height:1.5;text-align:start}
+body .landingTech.landingPrecision .approvedSearch :is(.fieldPicker>ul,.locationMenu>ul){overflow-x:hidden}
+body .landingTech.landingPrecision .approvedSearch li bdi{min-width:0;overflow-wrap:anywhere}
