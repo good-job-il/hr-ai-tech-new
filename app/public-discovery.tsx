@@ -1,4 +1,5 @@
 'use client';
+import {featuredJobs} from '../lib/featured-ranking.mjs';
 import LocationInput from './location-input';
 import FieldPicker from './field-picker';
 import RoleInput from './role-input';
@@ -13,7 +14,7 @@ export function FeaturedJobs({jobs,lang,onOpen,onAll,onSave,onShare,saved,matche
  const tr=(a:string,b:string)=>lang==='he'?a:b;
  return <section id="hot-jobs" className="homepageOpenings hotJobs hotJobsRefined" aria-labelledby="hot-jobs-title" aria-busy={loading&&!jobs.length}>
   <div className="sectionHead"><div><h2 id="hot-jobs-title">{tr('משרות חמות','Featured jobs')}</h2>{jobs.length>0&&<p className="muted">{tr('מתוך המשרות הזמינות באתר','From the available roles on hr-ai.tech')}</p>}</div>{jobs.length>0&&<button className="hotJobsAll" onClick={onAll}>{tr('לכל המשרות','All roles')}<UiIcon name="arrow-forward" size={16}/></button>}</div>
-  {jobs.length>0?<div className="featuredJobGrid">{jobs.slice(0,8).map(j=><article className="detailPanel" key={jobKey(j)}>
+  {jobs.length>0?<div className="featuredJobGrid">{featuredJobs(jobs).map(j=><article className="detailPanel" data-job-key={jobKey(j)} key={jobKey(j)}>
    <p className="hotJobCompany" dir="auto">{j.organization?.name}</p>
    <button className="jobTitleButton" onClick={()=>onOpen(j)}><h3 dir="auto">{j.title}</h3></button>
    <p className="hotJobLocation"><UiIcon name="location" size={16}/><bdi dir="auto">{j.location}</bdi></p>
