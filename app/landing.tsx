@@ -1,5 +1,5 @@
 'use client';
-import {useRef} from 'react';
+import {useRef,useState,useEffect} from 'react';
 import BrandIcon from './brand-icon';
 import BrandWordmark from './brand-wordmark';
 import CareerHeroArt from './career-hero-art';
@@ -10,13 +10,13 @@ import {CandidateFAQ} from './public-discovery';
 import {siteLanguageCopy} from '../lib/site-language.mjs';
 import type {ReactNode} from 'react';
 
-export default function Landing({lang,heroSearch,featured,onAuth,onTab,onLanguage,signedIn,accountView='dashboard',jobCount,connected}:{
+export default function Landing({lang,heroSearch,featured,onAuth,onHelp,onTab,onLanguage,signedIn,accountView='dashboard',jobCount,connected}:{
  accountView?:'dashboard'|'team'|'admin';lang:'he'|'en';children:ReactNode;heroSearch?:ReactNode;featured?:ReactNode;fields?:ReactNode;companies?:ReactNode;
- onAuth:()=>void;onTab:(tab:string)=>void;onLanguage:()=>void;signedIn:boolean;jobCount:number;connected:boolean;
+ onAuth:()=>void;onHelp:()=>void;onTab:(tab:string)=>void;onLanguage:()=>void;signedIn:boolean;jobCount:number;connected:boolean;
 }){
  const tr=(he:string,en:string)=>lang==='he'?he:en;
- const faq=useRef<HTMLDialogElement>(null);
- const help=()=>signedIn?window.dispatchEvent(new Event('hh-open-help')):onTab('support');
+ const faq=useRef<HTMLDialogElement>(null);const [helpReady,setHelpReady]=useState(false);useEffect(()=>setHelpReady(true),[]);
+ const help=onHelp;
  const unavailable=(he:string,en:string)=><span className="unpublishedLink" aria-disabled="true" title={tr('טרם פורסם','Not published yet')}>{tr(he,en)}</span>;
  const features=[
   ['robot','violet','AI אישי לקריירה שלך','Personal career AI','כלים מתוכננים להתאמת משרות לפי הניסיון, הכישורים והיעדים שלך.','Planned tools to match roles to your experience, skills and goals.'],
@@ -60,8 +60,8 @@ export default function Landing({lang,heroSearch,featured,onAuth,onTab,onLanguag
    <div className="footerBrand"><a className="publicBrand" href="/"><BrandIcon/><BrandWordmark/></a><p>{tr('פלטפורמת גיוס וקריירה בישראל. משרות איכותיות, פרופיל מקצועי וכלים חכמים לקידום הקריירה שלך.','A recruitment and career platform in Israel. Quality opportunities, a professional profile and tools for your next step.')}</p><div className="footerSocials" aria-label={tr('ערוצים חברתיים — בקרוב','Social channels — coming soon')}>{['linkedin','facebook','instagram','whatsapp','youtube'].map(icon=><span aria-disabled="true" title={tr('בקרוב','Coming soon')} key={icon}><ReferenceIcon name={'social-'+icon}/></span>)}</div></div>
    <div><b>{tr('למועמדים','For candidates')}</b><a href="#positions">{tr('חיפוש משרות','Search jobs')}</a><button onClick={onAuth}>{tr('פרופיל אישי','My profile')}</button><button onClick={()=>onTab('career')}>{tr('התאמות AI','AI matching')}</button><button onClick={()=>onTab('career')}>{tr('קורות חיים','CV tools')}</button><a href="#career">{tr('מרכז AI לקריירה','AI career center')}</a></div>
    <div><b>{tr('לחברות','For companies')}</b><button onClick={()=>onTab('employers')}>{tr('פרסום משרה','Post a job')}</button><button onClick={()=>onTab('employers')}>{tr('חיפוש עובדים','Find candidates')}</button><button onClick={()=>onTab('career')}>AI Matching</button>{unavailable('אנליטיקה','Analytics')}<button onClick={()=>onTab('employers')}>{tr('פתרונות לעסקים','Business solutions')}</button></div>
-   <div><b>{tr('חברה','Company')}</b><a href="#benefits">{tr('אודות','About')}</a>{unavailable('קריירה','Careers')}{unavailable('בלוג','Blog')}<button onClick={help}>{tr('צור קשר','Contact')}</button>{unavailable('מדיה','Media')}</div>
-   <div id="resources"><b>{tr('תמיכה','Support')}</b><button onClick={help}>{tr('מרכז עזרה','Help center')}</button><button onClick={()=>faq.current?.showModal()}>{tr('שאלות נפוצות','Frequently asked questions')}</button>{unavailable('מדריכים','Guides')}{unavailable('סטטוס מערכת','System status')}</div>
+   <div><b>{tr('חברה','Company')}</b><a href="#benefits">{tr('אודות','About')}</a>{unavailable('קריירה','Careers')}{unavailable('בלוג','Blog')}<button disabled={!helpReady} onClick={help}>{tr('צור קשר','Contact')}</button>{unavailable('מדיה','Media')}</div>
+   <div id="resources"><b>{tr('תמיכה','Support')}</b><button disabled={!helpReady} onClick={help}>{tr('מרכז עזרה','Help center')}</button><button onClick={()=>faq.current?.showModal()}>{tr('שאלות נפוצות','Frequently asked questions')}</button>{unavailable('מדריכים','Guides')}{unavailable('סטטוס מערכת','System status')}</div>
   </div><div className="footerBottom"><bdi dir="ltr">© {new Date().getFullYear()} hr-ai.tech</bdi><div>{unavailable('תנאי שימוש','Terms of use')}<span aria-hidden="true"> | </span>{unavailable('מדיניות פרטיות','Privacy policy')}</div><button className="footerLanguage" title={tr('Switch to English','מעבר לעברית')} onClick={onLanguage}><ReferenceIcon name="globe"/>{tr('עברית','English')}</button></div></footer>
   <dialog className="landingFaqDialog" ref={faq} aria-label={tr('שאלות נפוצות','Frequently asked questions')}><button className="faqClose" onClick={()=>faq.current?.close()} aria-label={tr('סגירה','Close')}>×</button><CandidateFAQ lang={lang}/></dialog>
  </div>;
