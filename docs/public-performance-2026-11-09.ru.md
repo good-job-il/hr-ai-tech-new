@@ -23,3 +23,11 @@
 Production build и TypeScript passed.14 целевых tests: catalog-cache,site-language,hebrew-text,job-regions,location-search,public-catalog,job-sharing,account-center-contact. Preview desktop/390/820: логотип слева,4 filters,8 jobs,горизонтального overflow нет; language toggle работает, digital head смотрит на card в LTR/RTL.
 
 Проверка production после публикации фиксируется отдельным дополнением и в HR-20. Закрытые/неопубликованные роли не добавлялись,7-day cutoff не возвращался, аудит всех внешних источников не входит в эту оптимизацию.
+
+## Подтверждение production
+
+Main00d97c0 опубликован и проверен на www.hr-ai.tech09.11.2026. Production initial JS11 resources/1133517 bytes: -16.4% к исходному измерению. Новый favicon действительно указан в HTML. Логотип слева; на production desktop,390×844 и820×1180 проверены4 filters/8 real hot jobs и отсутствие горизонтального overflow (client widths375/805 совпадают со scroll widths). Language flag доступен. Поиск «נתניה» вернул35 результатов из365 доступных ролей. Preview проверен также в English с правильным направлением головы. Доказательство UI: локальный output/public-speed-logo-live.jpg.
+
+Первый browser run после релиза: TTFB1102ms,DCL1529ms,load2123ms,LCP2392ms,CLS0,longTasks2. Повторный:245/398/408/1632ms,CLS0,longTasks1. Эти разные cache/network условия не доказывают улучшения LCP относительно первого baseline964ms; не выдавать снижение bytes за фиксированный процент ускорения или успешный полевой Core Web Vitals аудит. Исправлены подтверждённые лишние downloads и повторные вычисления; влияние на реальные пользовательские устройства требует дальнейших полевых измерений. Закрытые account/org workflows без реального входа в этой задаче не проверялись.
+
+Дополнительно прошёл active-job-visibility regression: всего15 целевых проверок. БД не менялась.
