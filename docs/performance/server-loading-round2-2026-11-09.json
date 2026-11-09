@@ -1,0 +1,1284 @@
+{
+  "baseline": "303bcbb",
+  "candidateBuildId": "Tfr385HyEHynlWhM-vLfi",
+  "sourceManifest": [
+    {
+      "path": "app/home.tsx",
+      "sha256": "576152a2f0cd58b6928abffc39a8c0f76bb172853f39dd1914461f8d3e91054f"
+    },
+    {
+      "path": "app/landing-precision.css",
+      "sha256": "cd6854e5cfe375d8c1c440dbac2d26abb1900a0852cca9a12c24a6b0567ddf79"
+    },
+    {
+      "path": "app/performance-diagnostics.tsx",
+      "sha256": "11a2c669bd1f02add72033494406e89caa3a41f16d9d51d14d9bc5bcd5621946"
+    },
+    {
+      "path": "app/public-discovery.tsx",
+      "sha256": "b758c6002b616c71a23d9bcb0ff14d30e319901ea2c9fed3d195ea87250d35d2"
+    },
+    {
+      "path": "app/root-shell.tsx",
+      "sha256": "c59fbed8c5f5ed2cbbe78473096d9619684693fb001c38377d93a8016f5fe413"
+    },
+    {
+      "path": "app/dynamic-root.tsx",
+      "sha256": "c4ac73bbd2309de76dd3710b20f52573f947019783c846b7bb1614c675cf9298"
+    },
+    {
+      "path": "app/dynamic-home.tsx",
+      "sha256": "7a609615efd141bba6ca42390e0b0b3dfe29c109ef52da17f96312af6930d5d6"
+    },
+    {
+      "path": "app/public-catalog-preload.tsx",
+      "sha256": "1302c121a315182e919164a66ddfc84c66949ad958dfcf759eaf719105101cab"
+    },
+    {
+      "path": "app/(dynamic)/layout.tsx",
+      "sha256": "c610a7a9ce0fd9c1827c144d789add857a17b3c6b54288a2c50778d35edba21d"
+    },
+    {
+      "path": "app/(dynamic)/page.tsx",
+      "sha256": "0e44d13f5a9a0110e4c8eeb459200c4796d433725db3a1e69557faff473669b9"
+    },
+    {
+      "path": "app/(public)/[lang]/layout.tsx",
+      "sha256": "6ba04ab3006dfbed5a9d23eb269e7cea8ce5b11d2387cc90eb754ea2d9856436"
+    },
+    {
+      "path": "app/(public)/[lang]/page.tsx",
+      "sha256": "b42dbf99984a23d517fe6e99124ca5e9d1292cdae1dd79e7e5268b94c364bade"
+    },
+    {
+      "path": "app/client-portal/layout.tsx",
+      "sha256": "c610a7a9ce0fd9c1827c144d789add857a17b3c6b54288a2c50778d35edba21d"
+    },
+    {
+      "path": "app/review/layout.tsx",
+      "sha256": "c610a7a9ce0fd9c1827c144d789add857a17b3c6b54288a2c50778d35edba21d"
+    },
+    {
+      "path": "lib/catalog-preload.mjs",
+      "sha256": "46e522fc22c0d946fb0ba14b5cdc5063f3669fd15d81c37b6aaf9890ee7cf1a9"
+    },
+    {
+      "path": "lib/public-catalog.ts",
+      "sha256": "638f675cad188f54f608ce8ceb070169a74949f49c93fba8fe7955942b26605c"
+    },
+    {
+      "path": "lib/career-taxonomy.mjs",
+      "sha256": "d0034f8abf1597cee4d6bffca94d440ea50ec0c1a820bc79c4571aafac89c718"
+    },
+    {
+      "path": "lib/israel-geography.mjs",
+      "sha256": "c93e91a5db4dfcc74182bf78d9eec4554cd5623dc2e6ce7fe173ec0d3def4104"
+    },
+    {
+      "path": "proxy.ts",
+      "sha256": "eafc067e026cbe6ed9293736c3b0a194d6d0eb9b06f4b1b2d8cd8e51d65253d3"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "12211cd854556531f327b58cdcca1fa3b18027276a54a174b52a3d2878a18de2"
+    }
+  ],
+  "gate": {
+    "baseline": "303bcbb",
+    "gate": {
+      "baseline": "303bcbb",
+      "samplesPerVersionPerViewport": 5,
+      "minMedianTtfbReduction": 0.1,
+      "minMedianJobsReadyReduction": 0.1,
+      "minPairedJobsWins": 4,
+      "maxMedianLcpRegression": 0.1,
+      "maxMedianLoadRegression": 0.1,
+      "requiresEightCardsAndSameLanguage": true
+    },
+    "groups": [
+      {
+        "profile": "desktop",
+        "n": 5,
+        "metrics": {
+          "ttfbMs": {
+            "before": 29,
+            "after": 13,
+            "reduction": 0.5517241379310345,
+            "beforeRange": [
+              25,
+              77
+            ],
+            "afterRange": [
+              11,
+              18
+            ]
+          },
+          "loadMs": {
+            "before": 235,
+            "after": 182,
+            "reduction": 0.225531914893617,
+            "beforeRange": [
+              200,
+              353
+            ],
+            "afterRange": [
+              175,
+              192
+            ]
+          },
+          "lcpMs": {
+            "before": 1604,
+            "after": 1700,
+            "reduction": -0.059850374064837904,
+            "beforeRange": [
+              1128,
+              1872
+            ],
+            "afterRange": [
+              1260,
+              2036
+            ]
+          },
+          "jobsReadyMs": {
+            "before": 1632,
+            "after": 1134,
+            "reduction": 0.30514705882352944,
+            "beforeRange": [
+              1621,
+              1781
+            ],
+            "afterRange": [
+              1082,
+              1392
+            ]
+          },
+          "catalogStartMs": {
+            "before": 256,
+            "after": 63,
+            "reduction": 0.75390625,
+            "beforeRange": [
+              221,
+              381
+            ],
+            "afterRange": [
+              61,
+              103
+            ]
+          },
+          "cls": {
+            "before": 0.0033,
+            "after": 0,
+            "reduction": 1,
+            "beforeRange": [
+              0.0033,
+              0.0033
+            ],
+            "afterRange": [
+              0,
+              0
+            ]
+          }
+        },
+        "pairedJobsWins": 5,
+        "passed": true
+      },
+      {
+        "profile": "phone",
+        "n": 5,
+        "metrics": {
+          "ttfbMs": {
+            "before": 20,
+            "after": 12,
+            "reduction": 0.4,
+            "beforeRange": [
+              17,
+              27
+            ],
+            "afterRange": [
+              10,
+              13
+            ]
+          },
+          "loadMs": {
+            "before": 215,
+            "after": 184,
+            "reduction": 0.14418604651162792,
+            "beforeRange": [
+              176,
+              273
+            ],
+            "afterRange": [
+              163,
+              215
+            ]
+          },
+          "lcpMs": {
+            "before": 2024,
+            "after": 1384,
+            "reduction": 0.31620553359683795,
+            "beforeRange": [
+              1424,
+              2060
+            ],
+            "afterRange": [
+              1248,
+              2056
+            ]
+          },
+          "jobsReadyMs": {
+            "before": 1613,
+            "after": 1116,
+            "reduction": 0.30812151270923743,
+            "beforeRange": [
+              1607,
+              1750
+            ],
+            "afterRange": [
+              1099,
+              1706
+            ]
+          },
+          "catalogStartMs": {
+            "before": 236,
+            "after": 65,
+            "reduction": 0.7245762711864406,
+            "beforeRange": [
+              216,
+              297
+            ],
+            "afterRange": [
+              56,
+              107
+            ]
+          },
+          "cls": {
+            "before": 0.0047,
+            "after": 0,
+            "reduction": 1,
+            "beforeRange": [
+              0.0047,
+              0.0047
+            ],
+            "afterRange": [
+              0,
+              0
+            ]
+          }
+        },
+        "pairedJobsWins": 4,
+        "passed": true
+      },
+      {
+        "profile": "ipad",
+        "n": 5,
+        "metrics": {
+          "ttfbMs": {
+            "before": 21,
+            "after": 11,
+            "reduction": 0.47619047619047616,
+            "beforeRange": [
+              18,
+              24
+            ],
+            "afterRange": [
+              9,
+              11
+            ]
+          },
+          "loadMs": {
+            "before": 226,
+            "after": 200,
+            "reduction": 0.11504424778761062,
+            "beforeRange": [
+              193,
+              272
+            ],
+            "afterRange": [
+              162,
+              207
+            ]
+          },
+          "lcpMs": {
+            "before": 1552,
+            "after": 1556,
+            "reduction": -0.002577319587628866,
+            "beforeRange": [
+              364,
+              1900
+            ],
+            "afterRange": [
+              1292,
+              1928
+            ]
+          },
+          "jobsReadyMs": {
+            "before": 1631,
+            "after": 1129,
+            "reduction": 0.3077866339668915,
+            "beforeRange": [
+              1569,
+              1672
+            ],
+            "afterRange": [
+              1074,
+              1152
+            ]
+          },
+          "catalogStartMs": {
+            "before": 249,
+            "after": 65,
+            "reduction": 0.7389558232931727,
+            "beforeRange": [
+              215,
+              290
+            ],
+            "afterRange": [
+              51,
+              82
+            ]
+          },
+          "cls": {
+            "before": 0.1566,
+            "after": 0.0001,
+            "reduction": 0.9993614303959132,
+            "beforeRange": [
+              0.1566,
+              0.1566
+            ],
+            "afterRange": [
+              0.0001,
+              0.0001
+            ]
+          }
+        },
+        "pairedJobsWins": 5,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "evaluatedAt": "2026-11-09T12:18:49.105Z"
+  },
+  "pairedSamples": [
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 29,
+      "domContentLoadedMs": 250,
+      "loadMs": 269,
+      "lcpMs": 1872,
+      "jobsReadyMs": 1624,
+      "catalogStartMs": 306,
+      "catalogEndMs": 1211,
+      "cls": 0.0033,
+      "longTasks": 2,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5295,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:09:38.880Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 11,
+      "domContentLoadedMs": 167,
+      "loadMs": 182,
+      "lcpMs": 1260,
+      "jobsReadyMs": 1145,
+      "catalogStartMs": 64,
+      "catalogEndMs": 1038,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5205,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:09:55.698Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 40,
+      "domContentLoadedMs": 222,
+      "loadMs": 235,
+      "lcpMs": 1128,
+      "jobsReadyMs": 1632,
+      "catalogStartMs": 256,
+      "catalogEndMs": 1174,
+      "cls": 0.0033,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5262,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:10:10.154Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 2,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 179,
+      "loadMs": 192,
+      "lcpMs": 1900,
+      "jobsReadyMs": 1122,
+      "catalogStartMs": 103,
+      "catalogEndMs": 1020,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5217,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:10:24.568Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 3,
+      "ttfbMs": 28,
+      "domContentLoadedMs": 184,
+      "loadMs": 200,
+      "lcpMs": 1856,
+      "jobsReadyMs": 1679,
+      "catalogStartMs": 221,
+      "catalogEndMs": 1128,
+      "cls": 0.0033,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5222,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:10:38.848Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 3,
+      "ttfbMs": 12,
+      "domContentLoadedMs": 155,
+      "loadMs": 175,
+      "lcpMs": 1700,
+      "jobsReadyMs": 1392,
+      "catalogStartMs": 61,
+      "catalogEndMs": 1286,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5205,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:11:09.468Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 4,
+      "ttfbMs": 25,
+      "domContentLoadedMs": 195,
+      "loadMs": 211,
+      "lcpMs": 1412,
+      "jobsReadyMs": 1621,
+      "catalogStartMs": 235,
+      "catalogEndMs": 1144,
+      "cls": 0.0033,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5236,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:11:24.037Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 4,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 161,
+      "loadMs": 182,
+      "lcpMs": 2036,
+      "jobsReadyMs": 1082,
+      "catalogStartMs": 63,
+      "catalogEndMs": 966,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5199,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:11:39.606Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 5,
+      "ttfbMs": 77,
+      "domContentLoadedMs": 333,
+      "loadMs": 353,
+      "lcpMs": 1604,
+      "jobsReadyMs": 1781,
+      "catalogStartMs": 381,
+      "catalogEndMs": 1279,
+      "cls": 0.0033,
+      "longTasks": 2,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5387,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:11:55.074Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 5,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 153,
+      "loadMs": 179,
+      "lcpMs": 1456,
+      "jobsReadyMs": 1134,
+      "catalogStartMs": 62,
+      "catalogEndMs": 1014,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5214,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:12:13.363Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 20,
+      "domContentLoadedMs": 237,
+      "loadMs": 273,
+      "lcpMs": 1460,
+      "jobsReadyMs": 1750,
+      "catalogStartMs": 297,
+      "catalogEndMs": 1223,
+      "cls": 0.0047,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 22,
+      "sampledAtMs": 5297,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:12:28.689Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 201,
+      "loadMs": 215,
+      "lcpMs": 1384,
+      "jobsReadyMs": 1145,
+      "catalogStartMs": 107,
+      "catalogEndMs": 1025,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 23,
+      "sampledAtMs": 5242,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:12:45.960Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 21,
+      "domContentLoadedMs": 145,
+      "loadMs": 176,
+      "lcpMs": 2056,
+      "jobsReadyMs": 1612,
+      "catalogStartMs": 216,
+      "catalogEndMs": 1152,
+      "cls": 0.0047,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5215,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:12:59.525Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 2,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 175,
+      "loadMs": 189,
+      "lcpMs": 1248,
+      "jobsReadyMs": 1706,
+      "catalogStartMs": 93,
+      "catalogEndMs": 1600,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 23,
+      "sampledAtMs": 5220,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:13:15.004Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 3,
+      "ttfbMs": 20,
+      "domContentLoadedMs": 200,
+      "loadMs": 215,
+      "lcpMs": 2024,
+      "jobsReadyMs": 1607,
+      "catalogStartMs": 236,
+      "catalogEndMs": 1139,
+      "cls": 0.0047,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 22,
+      "sampledAtMs": 5233,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:13:28.458Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 3,
+      "ttfbMs": 12,
+      "domContentLoadedMs": 134,
+      "loadMs": 163,
+      "lcpMs": 1408,
+      "jobsReadyMs": 1099,
+      "catalogStartMs": 59,
+      "catalogEndMs": 968,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 22,
+      "sampledAtMs": 5188,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:13:46.239Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 4,
+      "ttfbMs": 27,
+      "domContentLoadedMs": 202,
+      "loadMs": 216,
+      "lcpMs": 1424,
+      "jobsReadyMs": 1630,
+      "catalogStartMs": 240,
+      "catalogEndMs": 1141,
+      "cls": 0.0047,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 22,
+      "sampledAtMs": 5239,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:13:59.508Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 4,
+      "ttfbMs": 12,
+      "domContentLoadedMs": 143,
+      "loadMs": 172,
+      "lcpMs": 1248,
+      "jobsReadyMs": 1110,
+      "catalogStartMs": 65,
+      "catalogEndMs": 1002,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 22,
+      "sampledAtMs": 5200,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:14:12.844Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 5,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 135,
+      "loadMs": 181,
+      "lcpMs": 2060,
+      "jobsReadyMs": 1613,
+      "catalogStartMs": 231,
+      "catalogEndMs": 1141,
+      "cls": 0.0047,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5217,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:14:26.278Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 5,
+      "ttfbMs": 10,
+      "domContentLoadedMs": 151,
+      "loadMs": 184,
+      "lcpMs": 2056,
+      "jobsReadyMs": 1116,
+      "catalogStartMs": 56,
+      "catalogEndMs": 977,
+      "cls": 0,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 22,
+      "sampledAtMs": 5229,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:14:41.663Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 24,
+      "domContentLoadedMs": 252,
+      "loadMs": 272,
+      "lcpMs": 364,
+      "jobsReadyMs": 1672,
+      "catalogStartMs": 290,
+      "catalogEndMs": 1187,
+      "cls": 0.1566,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5293,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:14:58.388Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 10,
+      "domContentLoadedMs": 194,
+      "loadMs": 207,
+      "lcpMs": 1556,
+      "jobsReadyMs": 1112,
+      "catalogStartMs": 65,
+      "catalogEndMs": 1009,
+      "cls": 0.0001,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5227,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:15:14.822Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 221,
+      "loadMs": 236,
+      "lcpMs": 1128,
+      "jobsReadyMs": 1631,
+      "catalogStartMs": 256,
+      "catalogEndMs": 1169,
+      "cls": 0.1566,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5259,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:15:28.499Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 2,
+      "ttfbMs": 11,
+      "domContentLoadedMs": 187,
+      "loadMs": 200,
+      "lcpMs": 1928,
+      "jobsReadyMs": 1152,
+      "catalogStartMs": 79,
+      "catalogEndMs": 1050,
+      "cls": 0.0001,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5229,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:15:59.132Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 3,
+      "ttfbMs": 21,
+      "domContentLoadedMs": 151,
+      "loadMs": 193,
+      "lcpMs": 1900,
+      "jobsReadyMs": 1569,
+      "catalogStartMs": 215,
+      "catalogEndMs": 1099,
+      "cls": 0.1566,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 19,
+      "sampledAtMs": 5224,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:16:28.569Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 3,
+      "ttfbMs": 9,
+      "domContentLoadedMs": 138,
+      "loadMs": 166,
+      "lcpMs": 1292,
+      "jobsReadyMs": 1129,
+      "catalogStartMs": 51,
+      "catalogEndMs": 1009,
+      "cls": 0.0001,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5192,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:16:42.358Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 4,
+      "ttfbMs": 21,
+      "domContentLoadedMs": 211,
+      "loadMs": 226,
+      "lcpMs": 1552,
+      "jobsReadyMs": 1671,
+      "catalogStartMs": 249,
+      "catalogEndMs": 1167,
+      "cls": 0.1566,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5253,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:16:59.423Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 4,
+      "ttfbMs": 11,
+      "domContentLoadedMs": 191,
+      "loadMs": 203,
+      "lcpMs": 1544,
+      "jobsReadyMs": 1148,
+      "catalogStartMs": 82,
+      "catalogEndMs": 1007,
+      "cls": 0.0001,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5240,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:17:15.683Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 5,
+      "ttfbMs": 21,
+      "domContentLoadedMs": 202,
+      "loadMs": 216,
+      "lcpMs": 1852,
+      "jobsReadyMs": 1623,
+      "catalogStartMs": 232,
+      "catalogEndMs": 1141,
+      "cls": 0.1566,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 20,
+      "sampledAtMs": 5241,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:17:30.625Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 5,
+      "ttfbMs": 11,
+      "domContentLoadedMs": 142,
+      "loadMs": 162,
+      "lcpMs": 1616,
+      "jobsReadyMs": 1074,
+      "catalogStartMs": 59,
+      "catalogEndMs": 952,
+      "cls": 0.0001,
+      "longTasks": 1,
+      "initialVisibility": "visible",
+      "visibility": "visible",
+      "initialResources": 21,
+      "sampledAtMs": 5195,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:17:47.096Z"
+    }
+  ],
+  "liveBefore": [
+    {
+      "profile": "desktop",
+      "version": "live-before",
+      "run": 1,
+      "ttfbMs": 736,
+      "domContentLoadedMs": 1076,
+      "loadMs": 1151,
+      "lcpMs": 2232,
+      "cls": 0.0033,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 6195,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:18:02.731Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "live-before",
+      "run": 2,
+      "ttfbMs": 287,
+      "domContentLoadedMs": 444,
+      "loadMs": 456,
+      "lcpMs": 2144,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 22,
+      "sampledAtMs": 5474,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:19:03.038Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "live-before",
+      "run": 3,
+      "ttfbMs": 318,
+      "domContentLoadedMs": 504,
+      "loadMs": 515,
+      "lcpMs": 2032,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 22,
+      "sampledAtMs": 5526,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:19:31.701Z"
+    },
+    {
+      "profile": "phone",
+      "version": "live-before",
+      "run": 1,
+      "ttfbMs": 369,
+      "domContentLoadedMs": 561,
+      "loadMs": 572,
+      "lcpMs": 1924,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 24,
+      "sampledAtMs": 5585,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:19:46.600Z"
+    },
+    {
+      "profile": "phone",
+      "version": "live-before",
+      "run": 2,
+      "ttfbMs": 253,
+      "domContentLoadedMs": 396,
+      "loadMs": 412,
+      "lcpMs": 2068,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 24,
+      "sampledAtMs": 5444,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:20:01.443Z"
+    },
+    {
+      "profile": "phone",
+      "version": "live-before",
+      "run": 3,
+      "ttfbMs": 281,
+      "domContentLoadedMs": 437,
+      "loadMs": 448,
+      "lcpMs": 2032,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 24,
+      "sampledAtMs": 5458,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T12:20:19.809Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "live-before",
+      "run": 1,
+      "ttfbMs": 239,
+      "domContentLoadedMs": 400,
+      "loadMs": 410,
+      "lcpMs": 2000,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5423,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:20:34.557Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "live-before",
+      "run": 2,
+      "ttfbMs": 217,
+      "domContentLoadedMs": 377,
+      "loadMs": 387,
+      "lcpMs": 2084,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5391,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:20:51.284Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "live-before",
+      "run": 3,
+      "ttfbMs": 222,
+      "domContentLoadedMs": 377,
+      "loadMs": 387,
+      "lcpMs": 2088,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5393,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T12:21:07.683Z"
+    }
+  ],
+  "excludedEarlierCandidateAttempt": [
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 109,
+      "loadMs": 176,
+      "lcpMs": 1716,
+      "jobsReadyMs": 1336,
+      "catalogStartMs": 242,
+      "catalogEndMs": 1134,
+      "cls": 0.0033,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5244,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:03:20.877Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 147,
+      "loadMs": 182,
+      "lcpMs": 2048,
+      "jobsReadyMs": 1464,
+      "catalogStartMs": 64,
+      "catalogEndMs": 959,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 21,
+      "sampledAtMs": 5208,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:03:34.773Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 23,
+      "domContentLoadedMs": 143,
+      "loadMs": 171,
+      "lcpMs": 1760,
+      "jobsReadyMs": 1545,
+      "catalogStartMs": 192,
+      "catalogEndMs": 1087,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5189,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T12:03:50.176Z"
+    }
+  ],
+  "method": "5 paired alternating visible IAB Chromium runs/version/viewport, Hebrew, eight cards, Production builds, warm assets, same Windows CPU/network, no device CPU/network emulation. Identical opt-in timing instrumentation in baseline and candidate. Live baseline uses older production instrumentation and lacks jobsReady.",
+  "createdBeforePublication": "2026-11-09T12:24:28.604Z"
+}

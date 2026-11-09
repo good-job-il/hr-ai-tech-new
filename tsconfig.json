@@ -25,22 +25,17 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "lib/**/*.ts",
+    "proxy.ts",
+    "next.config.ts",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    ".next-pilot/types/**/*.ts",
-    ".next-pilot/dev/types/**/*.ts",
-    ".next-local/types/**/*.ts",
-    ".next-local/dev/types/**/*.ts",
-    ".next-recovery/types/**/*.ts",
-    ".next-recovery/dev/types/**/*.ts",
-    "work/pilot-build-034/types/**/*.ts",
-    "work/pilot-build-034/dev/types/**/*.ts",
-    ".next-commercial/types/**/*.ts",
-    ".next-commercial/dev/types/**/*.ts"
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "output",
+    "work"
   ]
 }

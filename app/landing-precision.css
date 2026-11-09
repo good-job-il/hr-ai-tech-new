@@ -259,3 +259,9 @@ body .landingTech.landingPrecision .publicHeader.publicHeaderTech{direction:ltr}
 body .landingTech.landingPrecision .publicHeaderTech .publicBrand{direction:ltr}
 body .landingTech.landingPrecision .publicHeader.publicHeaderTech .publicActions{direction:inherit}
 body .landingTech.landingPrecision .publicHeaderTech .publicActions:dir(rtl){direction:rtl}
+
+/* Reserve the real eight-card grid during loading, preventing lower sections from jumping. */
+body .landingTech.landingPrecision .hotJobsRefined .sectionHead{min-height:61px}
+body .landingTech.landingPrecision .hotJobsRefined[aria-busy=true] .hotJobsEmpty{min-height:534px;align-items:flex-start}
+@media(max-width:1099px){body .landingTech.landingPrecision .hotJobsRefined[aria-busy=true] .hotJobsEmpty{min-height:1082px}}
+@media(max-width:599px){body .landingTech.landingPrecision .hotJobsRefined[aria-busy=true] .hotJobsEmpty{min-height:1978px}}
