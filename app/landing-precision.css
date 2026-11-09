@@ -229,3 +229,21 @@ body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions .gradient
 body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions button[aria-pressed=true]{background:#efecfc;color:#6041cb;border-color:#c7bbef}
 @media(max-width:1099px){body .landingTech.landingPrecision .hotJobsRefined .featuredJobGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:599px){body .landingTech.landingPrecision .hotJobsRefined{padding:20px 16px;margin-block:24px;border-radius:14px}body .landingTech.landingPrecision .hotJobsRefined .sectionHead{margin-bottom:18px;align-items:flex-start}body .landingTech.landingPrecision .hotJobsRefined .sectionHead h2{font-size:23px}body .landingTech.landingPrecision .hotJobsRefined .hotJobsAll{font-size:12px;padding:5px 0}body .landingTech.landingPrecision .hotJobsEmpty{align-items:flex-start;flex-direction:column;gap:15px;padding:22px 18px}body .landingTech.landingPrecision .hotJobsEmpty h3{font-size:17px}body .landingTech.landingPrecision .hotJobsEmpty p{font-size:13px}body .landingTech.landingPrecision .hotJobsRefined .featuredJobGrid{grid-template-columns:1fr}body .landingTech.landingPrecision .hotJobsRefined .detailPanel{min-height:235px}}
+
+/* Approved four-step copy and restrained semantic icon colours. */
+body .landingTech.landingPrecision .howItWorksClear{height:auto;margin-block:32px 0;padding:0}
+body .landingTech.landingPrecision .howItWorksClear>h2{height:auto;font-size:27px;line-height:1.4;margin:0 0 30px}
+body .landingTech.landingPrecision .howItWorksClear .steps{height:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding:14px 0 0;margin:0;align-items:stretch}
+body .landingTech.landingPrecision .howItWorksClear .steps>article{position:relative;box-sizing:border-box;height:auto;min-height:272px;padding:33px 18px 24px;border:1px solid #e6e7f0;border-radius:16px;background:#fff;text-align:center}
+body .landingTech.landingPrecision .howItWorksClear .steps>article:after{display:none}
+body .landingTech.landingPrecision .howItWorksClear .stepNumber{inset-inline-start:auto;inset-inline-end:auto;left:50%;right:auto;top:-15px;transform:translateX(-50%);width:30px;height:30px;display:grid;place-items:center;font-size:14px;line-height:1;color:#fff;background:#7944e8;box-shadow:0 3px 8px #7944e81a}
+body .landingTech.landingPrecision .howItWorksClear .stepIcon{width:56px;height:56px;display:grid;place-items:center;margin:0 auto 17px;border-radius:16px;background:var(--step-bg);color:var(--step-color)}
+body .landingTech.landingPrecision .howItWorksClear .stepIcon .uiIcon{width:28px;height:28px;color:var(--step-color);filter:none;transform:none}
+body .landingTech.landingPrecision .howItWorksClear .stepTone-purple{--step-color:#7540ef;--step-bg:#f2edff}
+body .landingTech.landingPrecision .howItWorksClear .stepTone-blue{--step-color:#286fff;--step-bg:#edf3ff}
+body .landingTech.landingPrecision .howItWorksClear .stepTone-teal{--step-color:#0b8d91;--step-bg:#e9f8f7}
+body .landingTech.landingPrecision .howItWorksClear .stepTone-green{--step-color:#16804a;--step-bg:#edf8f0}
+body .landingTech.landingPrecision .howItWorksClear .steps h3{min-height:54px;font-size:18px;line-height:1.5;font-weight:750;color:#17213d;margin:0 0 10px}
+body .landingTech.landingPrecision .howItWorksClear .steps p{font-size:15px;line-height:1.75;font-weight:400;color:#4b5870;margin:0;max-width:32ch;margin-inline:auto}
+@media(max-width:959px){body .landingTech.landingPrecision .howItWorksClear .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px}body .landingTech.landingPrecision .howItWorksClear .steps>article{min-height:248px}body .landingTech.landingPrecision .howItWorksClear .steps h3{min-height:0}}
+@media(max-width:599px){body .landingTech.landingPrecision .howItWorksClear>h2{font-size:25px}body .landingTech.landingPrecision .howItWorksClear .steps{grid-template-columns:1fr;gap:30px}body .landingTech.landingPrecision .howItWorksClear .steps>article{min-height:230px;padding:32px 24px 24px}}

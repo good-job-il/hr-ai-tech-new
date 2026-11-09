@@ -32,10 +32,10 @@ export default function Landing({lang,heroSearch,featured,onAuth,onTab,onLanguag
   ['mine','violet','שדרוג קורות חיים','Improve your CV','כלים לשיפור קורות החיים והצגת הניסיון המקצועי שלך.','Tools to improve your CV and present your experience.','לכלי השדרוג','Improve your CV'],
  ];
  const steps=[
-  ['person-plus','יוצרים פרופיל','Create a profile','מעלים קורות חיים וממלאים פרטים בסיסיים.','Upload your CV and add your basic details.'],
-  ['brain','התאמה עבורך','Find your match','מגדירים תחומי עניין ובוחרים משרות מתאימות.','Set your interests and choose suitable opportunities.'],
-  ['send','מגישים בקליק','Apply with a click','שולחים מועמדות למשרות שבחרת ועוקבים אחריהן.','Apply to your chosen roles and follow your applications.'],
-  ['rocket','מתקדמים לקריירה','Move your career forward','עוקבים אחר ההתקדמות ומתקדמים לתפקיד הבא שלך.','Follow your progress towards your next role.'],
+  ['person-plus','purple','יוצרים פרופיל','Create a profile','מוסיפים פרטים מקצועיים ומעלים קורות חיים.','Add your professional details and upload your CV.'],
+  ['search','blue','מוצאים משרות מתאימות','Find suitable roles','מחפשים לפי תחום, תפקיד ומיקום.','Search by field, role and location.'],
+  ['send','teal','מגישים מועמדות','Submit an application','בוחרים משרה ושולחים מועמדות דרך האתר.','Choose a role and submit your application through the site.'],
+  ['tasks','green','עוקבים אחר ההתקדמות','Track your progress','רואים עדכוני סטטוס, הודעות וראיונות באזור האישי.','View status updates, messages and interviews in your account.'],
  ];
  const metrics=[['team','—','מועמדים פעילים','Active candidates'],['employers','—','חברות מגייסות','Hiring companies'],['jobs',connected?jobCount.toLocaleString(lang==='he'?'he-IL':'en-US'):'—','משרות פתוחות','Open positions'],['trophy','—','שביעות רצון מועמדים','Candidate satisfaction']];
  return <div className="landing landingV2 landingTech landingPrecision" dir={siteLanguageCopy(lang).direction}>
@@ -53,7 +53,7 @@ export default function Landing({lang,heroSearch,featured,onAuth,onTab,onLanguag
    {featured}
    <section id="career" className="careerTools"><div className="careerIntro"><span className="planned">{tr('בקרוב','Coming soon')}</span><h2>{tr('מרכז לקריירה','Career center')}</h2><p>{tr('סט כלים חכמים לשדרוג הסיכויים שלך לקבל את העבודה הבאה.','Smart tools to help you prepare for your next opportunity.')}</p><button className="gradientButton" onClick={()=>onTab('career')}><UiIcon name="career"/>{tr('למרכז הקריירה','Explore career tools')}</button></div>{tools.map(([icon,tint,he,en,descriptionHe,descriptionEn,actionHe,actionEn])=><article className={'tint-'+tint} key={he}><span className="featureIcon"><ReferenceIcon name={'tool-'+icon}/></span><h3>{tr(he,en)}</h3><p>{tr(descriptionHe,descriptionEn)}</p><button className="toolLink" onClick={()=>onTab('career')}>{tr(actionHe,actionEn)}<UiIcon name="arrow-forward" size={13}/></button><small>{tr('בקרוב','Coming soon')}</small></article>)}</section>
    <section className="platformMetrics" aria-label={tr('נתוני הפלטפורמה','Platform figures')}>{metrics.map(([icon,value,he,en])=><article key={icon}><ReferenceIcon name={'metric-'+icon}/><strong dir="ltr" aria-label={value==='—'?tr('נתון טרם פורסם','Figure not published yet'):undefined}>{value}</strong><span>{tr(he,en)}</span></article>)}</section>
-   <section id="how" className="howItWorks"><h2>{tr('איך זה עובד?','How does it work?')}</h2><div className="steps">{steps.map(([icon,he,en,descriptionHe,descriptionEn],i)=><article key={icon}><span className="stepNumber">{i+1}</span><ReferenceIcon name={'step-'+icon}/><h3>{tr(he,en)}</h3><p>{tr(descriptionHe,descriptionEn)}</p></article>)}</div></section>
+   <section id="how" className="howItWorks howItWorksClear"><h2>{tr('איך זה עובד?','How does it work?')}</h2><div className="steps">{steps.map(([icon,tint,he,en,descriptionHe,descriptionEn],i)=><article key={icon} className={'stepTone-'+tint}><span className="stepNumber">{i+1}</span><span className="stepIcon"><UiIcon name={icon} size={28}/></span><h3>{tr(he,en)}</h3><p>{tr(descriptionHe,descriptionEn)}</p></article>)}</div></section>
    <section className="joinBanner"><div><h2>{tr('מוכן לעשות את הצעד הבא בקריירה שלך?','Ready for the next step in your career?')}</h2><p>{tr('ההזדמנות הבאה שלך מתחילה כאן, דרך hr-ai.tech.','Your next opportunity starts here, with hr-ai.tech.')}</p></div><button className="outlineButton" onClick={onAuth}><UiIcon name="person-plus"/>{signedIn?tr('לחשבון שלי','My account'):tr('הרשמה כמועמד חדש','Register as a candidate')}</button></section>
   </div>
   <footer className="publicFooter"><div className="footerTop">
