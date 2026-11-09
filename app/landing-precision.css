@@ -203,3 +203,29 @@ body .landingTech.landingPrecision .benefitsBrandPhrase .benefitsQuestion{color:
 
 body .landingTech.landingPrecision .benefitsBrandPhrase[dir=rtl]{gap:0}
 body .landingTech.landingPrecision .benefitsBrandPhrase[dir=rtl] .benefitsQuestion{margin-inline-start:.13em}
+
+/* A quiet editorial frame for real roles, including a deliberate empty state. */
+body .landingTech.landingPrecision .hotJobsRefined{padding:26px;border:1px solid #e4e7ef;border-radius:18px;background:#fff;box-shadow:none;margin-block:32px}
+body .landingTech.landingPrecision .hotJobsRefined .sectionHead{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px}
+body .landingTech.landingPrecision .hotJobsRefined .sectionHead h2{font-size:25px;line-height:1.35;letter-spacing:0;margin:0;color:#11173f}
+body .landingTech.landingPrecision .hotJobsRefined .sectionHead .muted{font-size:13px;line-height:1.6;margin:5px 0 0;color:#68738b}
+body .landingTech.landingPrecision .hotJobsRefined .hotJobsAll{display:inline-flex;align-items:center;gap:9px;flex:none;padding:8px 12px;border:0;background:transparent;color:#5140b0;font-size:13px;font-weight:600}
+body .landingTech.landingPrecision .hotJobsRefined .hotJobsAll .uiIcon:dir(rtl){transform:scaleX(-1)}
+body .landingTech.landingPrecision .hotJobsEmpty{display:flex;align-items:center;gap:20px;padding:27px 24px;border:1px solid #e9ecf3;border-radius:12px;background:#f8f9fc;text-align:start}
+body .landingTech.landingPrecision .hotJobsEmptyIcon{display:grid;place-items:center;flex:none;width:54px;height:54px;border:1px solid #e2e5ef;border-radius:12px;background:#fff;color:#6458a5}
+body .landingTech.landingPrecision .hotJobsEmpty h3{font-size:18px;font-weight:650;line-height:1.5;color:#27314a;margin:0 0 5px}
+body .landingTech.landingPrecision .hotJobsEmpty p{font-size:14px;line-height:1.7;color:#68738b;margin:0;max-width:60ch}
+body .landingTech.landingPrecision .hotJobsRefined .featuredJobGrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+body .landingTech.landingPrecision .hotJobsRefined .detailPanel{min-height:260px;padding:20px 17px 16px;border:1px solid #e5e8f0;border-radius:12px;background:#fff;box-shadow:none;gap:0}
+body .landingTech.landingPrecision .hotJobsRefined .detailPanel:hover{border-color:#b6b0d9}
+body .landingTech.landingPrecision .hotJobsRefined .detailPanel>p.hotJobCompany{font-size:12px;font-weight:500;line-height:1.5;color:#68738b;margin:0 0 9px}
+body .landingTech.landingPrecision .hotJobsRefined .jobTitleButton h3{font-size:18px;line-height:1.5;font-weight:700;color:#17213d;margin:0 0 14px}
+body .landingTech.landingPrecision .hotJobsRefined .detailPanel>p.hotJobLocation{display:flex;align-items:flex-start;gap:6px;font-size:13px;line-height:1.65;color:#68738b;margin:0 0 18px}
+body .landingTech.landingPrecision .hotJobLocation .uiIcon{flex:none;margin-top:3px}
+body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions{margin-top:auto;padding-top:16px;border-top:1px solid #edf0f5;display:flex;gap:7px;flex-wrap:nowrap}
+body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions button{font-size:12px;min-height:38px;padding:8px;border-radius:8px;box-shadow:none}
+body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions button:not(:first-child){width:38px;min-width:38px;padding:8px}
+body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions .gradientButton{margin-inline-end:auto}
+body .landingTech.landingPrecision .hotJobsRefined .featuredJobActions button[aria-pressed=true]{background:#efecfc;color:#6041cb;border-color:#c7bbef}
+@media(max-width:1099px){body .landingTech.landingPrecision .hotJobsRefined .featuredJobGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:599px){body .landingTech.landingPrecision .hotJobsRefined{padding:20px 16px;margin-block:24px;border-radius:14px}body .landingTech.landingPrecision .hotJobsRefined .sectionHead{margin-bottom:18px;align-items:flex-start}body .landingTech.landingPrecision .hotJobsRefined .sectionHead h2{font-size:23px}body .landingTech.landingPrecision .hotJobsRefined .hotJobsAll{font-size:12px;padding:5px 0}body .landingTech.landingPrecision .hotJobsEmpty{align-items:flex-start;flex-direction:column;gap:15px;padding:22px 18px}body .landingTech.landingPrecision .hotJobsEmpty h3{font-size:17px}body .landingTech.landingPrecision .hotJobsEmpty p{font-size:13px}body .landingTech.landingPrecision .hotJobsRefined .featuredJobGrid{grid-template-columns:1fr}body .landingTech.landingPrecision .hotJobsRefined .detailPanel{min-height:235px}}
