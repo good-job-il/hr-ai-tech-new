@@ -195,3 +195,8 @@ body .landingTech.landingPrecision .approvedSearch .heroSearchForm input::placeh
 body .landingTech.landingPrecision .approvedSearch :is(.fieldPicker>ul,.locationMenu){min-width:min(240px,75vw);inset-inline-start:0;inset-inline-end:auto;line-height:1.5;text-align:start}
 body .landingTech.landingPrecision .approvedSearch :is(.fieldPicker>ul,.locationMenu>ul){overflow-x:hidden}
 body .landingTech.landingPrecision .approvedSearch li bdi{min-width:0;overflow-wrap:anywhere}
+
+/* Keep the approved words and brand colours; separate the mixed-direction runs. */
+body .landingTech.landingPrecision .benefits>h2{letter-spacing:0}
+body .landingTech.landingPrecision .benefitsBrandPhrase{display:inline-flex;align-items:baseline;gap:.13em;white-space:nowrap;unicode-bidi:isolate;vertical-align:baseline}
+body .landingTech.landingPrecision .benefitsBrandPhrase .benefitsQuestion{color:#101127}
