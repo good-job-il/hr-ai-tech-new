@@ -8,7 +8,7 @@ import UiIcon from './ui-icon';
 import ReferenceIcon from './reference-icon';
 import {CandidateFAQ} from './public-discovery';
 import {siteLanguageCopy} from '../lib/site-language.mjs';
-import {loadRegisteredCandidateCount} from '../lib/public-candidate-count';
+import {loadCandidatePopulationCount} from '../lib/public-candidate-count';
 import type {ReactNode} from 'react';
 
 export default function Landing({lang,heroSearch,featured,onAuth,onHelp,onTab,onLanguage,signedIn,accountView='dashboard',jobCount,connected}:{
@@ -16,8 +16,8 @@ export default function Landing({lang,heroSearch,featured,onAuth,onHelp,onTab,on
  onAuth:()=>void;onHelp:()=>void;onTab:(tab:string)=>void;onLanguage:()=>void;signedIn:boolean;jobCount:number;connected:boolean;
 }){
  const tr=(he:string,en:string)=>lang==='he'?he:en;
- const [registeredCandidates,setRegisteredCandidates]=useState<number|null>(null);
- useEffect(()=>{let alive=true,sequence=0;const refresh=async()=>{const request=++sequence;const count=await loadRegisteredCandidateCount();if(alive&&request===sequence)setRegisteredCandidates(count)};void refresh();window.addEventListener('focus',refresh);return()=>{alive=false;window.removeEventListener('focus',refresh)}},[signedIn]);
+ const [candidatePopulation,setCandidatePopulation]=useState<number|null>(null);
+ useEffect(()=>{let alive=true,sequence=0;const refresh=async()=>{const request=++sequence;const count=await loadCandidatePopulationCount();if(alive&&request===sequence)setCandidatePopulation(count)};void refresh();window.addEventListener('focus',refresh);return()=>{alive=false;window.removeEventListener('focus',refresh)}},[signedIn]);
  const faq=useRef<HTMLDialogElement>(null);const [helpReady,setHelpReady]=useState(false);useEffect(()=>setHelpReady(true),[]);
  const help=onHelp;
  const unavailable=(he:string,en:string)=><span className="unpublishedLink" aria-disabled="true" title={tr('טרם פורסם','Not published yet')}>{tr(he,en)}</span>;
@@ -40,7 +40,7 @@ export default function Landing({lang,heroSearch,featured,onAuth,onHelp,onTab,on
   ['send','teal','מגישים מועמדות','Submit an application','בוחרים משרה ושולחים מועמדות דרך האתר.','Choose a role and submit your application through the site.'],
   ['tasks','green','עוקבים אחר ההתקדמות','Track your progress','רואים עדכוני סטטוס, הודעות וראיונות באזור האישי.','View status updates, messages and interviews in your account.'],
  ];
- const metrics=[['team',registeredCandidates===null?'—':registeredCandidates.toLocaleString(lang==='he'?'he-IL':'en-US'),'מועמדים רשומים','Registered candidates'],['employers','—','חברות מגייסות','Hiring companies'],['jobs',connected?jobCount.toLocaleString(lang==='he'?'he-IL':'en-US'):'—','משרות פתוחות','Open positions'],['trophy','—','שביעות רצון מועמדים','Candidate satisfaction']];
+ const metrics=[['team',candidatePopulation===null?'—':candidatePopulation.toLocaleString(lang==='he'?'he-IL':'en-US'),'מועמדים במאגר','Candidates in our database'],['employers','—','חברות מגייסות','Hiring companies'],['jobs',connected?jobCount.toLocaleString(lang==='he'?'he-IL':'en-US'):'—','משרות פתוחות','Open positions'],['trophy','—','שביעות רצון מועמדים','Candidate satisfaction']];
  return <div className="landing landingV2 landingTech landingPrecision" dir={siteLanguageCopy(lang).direction}>
   <PublicHeader variant="tech" accountView={accountView} lang={lang} signedIn={signedIn} onTab={onTab} onAuth={onAuth} onLanguage={onLanguage}/>
   <section className="careerHero">
