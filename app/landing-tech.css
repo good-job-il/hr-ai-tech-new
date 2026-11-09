@@ -21,7 +21,7 @@ body .landingTech .heroButtons :is(a,button){min-width:0;min-height:39px;flex:no
 body .landingTech .heroButtons .uiIcon{width:14px;height:14px}
 body .landingTech .heroCommunity{display:flex;align-items:center;gap:10px;flex-direction:row;margin-top:25px;font-size:10px;color:#4d465e}
 body .landingTech .communityPortraits{display:flex;direction:ltr;align-items:center;flex-shrink:0}
-body .landingTech .communityPortraits i{width:25px;height:25px;border:2px solid white;border-radius:50%;margin-inline-start:-4px;background-image:url('/design-reference.png');background-size:726px 1536px;background-position:-549px -320px;background-color:#eee4fc}
+body .landingTech .communityPortraits i{width:25px;height:25px;border:2px solid white;border-radius:50%;margin-inline-start:-4px;background-image:url('/design-reference.webp');background-size:726px 1536px;background-position:-549px -320px;background-color:#eee4fc}
 body .landingTech .communityPortraits i:nth-child(2){background-position:-572px -320px}
 body .landingTech .communityPortraits i:nth-child(3){background-position:-596px -320px}
 body .landingTech .communityPortraits i:nth-child(4){background-position:-622px -320px}
@@ -44,7 +44,7 @@ body .landingTech .careerProfileGroup{z-index:3;min-width:0;align-self:center}
 body .landingTech .careerProfileCard{min-height:0;padding:17px 14px 13px;border:1px solid #eeeafb;border-radius:18px;box-shadow:0 13px 30px #8b6ed317;background:#ffffffdb;transform:none;text-align:start}
 body .landingTech .careerProfileCard:dir(ltr){transform:none}
 body .landingTech .careerProfileTop{display:flex;flex-direction:row-reverse;align-items:center;gap:8px;padding:0;border:0}
-body .landingTech .careerAvatar{width:43px;height:43px;border:1px solid #e3d9f3;background-image:url('/design-reference.png');background-size:726px 1536px;background-position:-53px -86px;border-radius:50%;flex:none}
+body .landingTech .careerAvatar{width:43px;height:43px;border:1px solid #e3d9f3;background-image:url('/design-reference.webp');background-size:726px 1536px;background-position:-53px -86px;border-radius:50%;flex:none}
 body .landingTech .careerProfileTop>div{flex:1;min-width:0}
 body .landingTech .careerProfileTop strong{font-size:12px;white-space:normal;color:#111222}
 body .landingTech .careerProfileTop div>span{display:block;font-size:8px;color:#6f6988;margin-top:3px;direction:ltr;white-space:nowrap}
