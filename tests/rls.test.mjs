@@ -6,7 +6,7 @@ test('PostgreSQL RLS: tenant isolation, roles, private pools, access, merge, CV 
  const pg=new PGlite();
  try{
  await pg.exec(`create role anon;create role authenticated;create role service_role;create schema auth;create schema storage;
- create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz,raw_user_meta_data jsonb not null default '{"contact_phone":"+12025550101"}');
+ create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz,raw_user_meta_data jsonb not null default '{"contact_phone":"+12025550101"}',raw_app_meta_data jsonb not null default '{}',deleted_at timestamptz);
  create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
  create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);
  create table storage.objects(id uuid primary key default gen_random_uuid(),bucket_id text,name text);alter table storage.objects enable row level security;
