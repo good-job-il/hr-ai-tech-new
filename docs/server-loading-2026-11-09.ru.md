@@ -37,3 +37,19 @@ Gate PASS во всех3 размерах до публикации. TTFB −40�
 Production build/TypeScript passed,14 focused tests на новые routing/preload/counting, существующие язык/SEO/ниqqud/cache/geography. Отдельно проверяются sharing,account contact,public catalog и active lifecycle. Preview English после reload: правильные lang/dir,head-facing-card,brand-left; после загрузки8 карточек. Shared job HTTP200/dynamic/no-store с title,client-portal dynamic200,review404,unknown path404,private query noindex. Реальные отклики, сообщения и приватные аккаунты для проверки не создавались.
 
 На момент этого checkpoint публикация ещё не выполнялась. Решение о публикации основано на PASS выше; успешный live rollout,фактические cache headers и последовательные live-after timings фиксируются дополнением. Изменений БД нет.
+
+## Подтверждение production после2a77e4e
+
+Обычный push выполнен только после PASS30-run gate,20 targeted tests,production build/TypeScript и проверки SHA-256 неизменности измеренного кода. На www.hr-ai.tech подтверждены public static shell,правильный html he/rtl и en/ltr при чередовании cookies,production index/follow и cache HIT/PRERENDER. Public catalogue206,count365; все browser snapshots содержат8 карточек/4 фильтра,brand-left,без горизонтального overflow phone/iPad. Preview English reload/head direction и динамические детали/portal проверены отдельно. Данные вакансий не попали в static build.
+
+Сначала снято3 live-after/размер. В этой короткой серии iPad load/TTFB были хуже baseline. Этот факт не скрыт: до дополнительных измерений зафиксировано расширение **всех** трёх групп ровно до5 after, без удаления прежних samples и без изменения кода. Это исследовательская проверка при вариативности сети, не заранее спланированный статистический тест. Before остаётся3/размер,after5/размер; запросы последовательные, cache conditions не идентичны и старый deployment недоступен для alternating cloud A/B. Проценты — наблюдаемые изменения медиан, не population p75 или доказательство ускорения на физических устройствах.
+
+| Размер | Live TTFB до→после,ms | Live load до→после,ms | Live LCP до→после,ms |
+|---|---:|---:|---:|
+| Desktop |318→139|515→435|2144→2064|
+| Phone viewport |281→130|448→285|2032→2052|
+| iPad viewport |222→139|387→314|2084→2028|
+
+Live median TTFB −37…56%,load −16…36% в этой серии. LCP почти прежний:desktop −3.7%,phone +1%,iPad −2.7%; **не заявлять ускорение каждого показателя**. iPad CLS0.1551→0.0001. Медленные after samples остаются:desktop load1239ms, iPad469/478ms и др.; полный диапазон находится в raw report. Cold-first-load гарантия не получена. JobsReady live-after medians1581/1298/1278ms,но cloud-before не был инструментирован на jobsReady — для этого показателя сравнение только локальное paired (около30% улучшения).
+
+[24 live raw samples,все диапазоны,решение о расширении серии](performance/server-loading-live-2026-11-09.json). Вместе с30 финальными paired samples это54 итоговых измерения;3 samples раннего незавершённого кандидата сохранены отдельно,не включены в итоговую серию. Screenshot: локальный output/server-loading-live-after.jpg. Production код2a77e4e; последующий docs commit содержит только этот readback. Настройки региона/пароли/права/БД не менялись. Исследование middleware runtime не привело к изменению Proxy или использованию deprecated middleware.
