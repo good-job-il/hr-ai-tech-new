@@ -1,0 +1,1064 @@
+{
+  "date": "2026-11-09",
+  "baseline": "11c85c2",
+  "after": "00d97c0 (web code identical to d9ebb7f)",
+  "environment": "Production builds on same Windows machine, same IAB Chromium browser; viewport simulation only; no mobile CPU/network emulation; previously visited/cache-warmed assets; alternating before/after; opt-in diagnostics sampled 5 seconds after hydration; server HTML and public Supabase catalogue dynamic",
+  "cloudBaseline": "Vercel old deployment located via GitHub status but unavailable to connected account; not measured side-by-side in cloud",
+  "samples": [
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 22,
+      "domContentLoadedMs": 136,
+      "loadMs": 191,
+      "lcpMs": 292,
+      "cls": 0.0033,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5258,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:40:18.207Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 39,
+      "domContentLoadedMs": 229,
+      "loadMs": 243,
+      "lcpMs": 328,
+      "cls": 0.0033,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5263,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:40:30.441Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 22,
+      "domContentLoadedMs": 87,
+      "loadMs": 123,
+      "lcpMs": 204,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5167,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:40:42.184Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 2,
+      "ttfbMs": 21,
+      "domContentLoadedMs": 115,
+      "loadMs": 140,
+      "lcpMs": 212,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5159,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:40:53.718Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 3,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 86,
+      "loadMs": 143,
+      "lcpMs": 204,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5168,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:41:06.466Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 3,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 112,
+      "loadMs": 137,
+      "lcpMs": 208,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5156,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:41:22.099Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 4,
+      "ttfbMs": 19,
+      "domContentLoadedMs": 109,
+      "loadMs": 133,
+      "lcpMs": 192,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5152,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:41:34.159Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 4,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 83,
+      "loadMs": 119,
+      "lcpMs": 212,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5164,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:41:47.565Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "before",
+      "run": 5,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 115,
+      "loadMs": 140,
+      "lcpMs": 192,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5165,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:41:59.236Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "run": 5,
+      "ttfbMs": 15,
+      "domContentLoadedMs": 108,
+      "loadMs": 133,
+      "lcpMs": 204,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5161,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:42:12.251Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 15,
+      "domContentLoadedMs": 120,
+      "loadMs": 193,
+      "lcpMs": 224,
+      "cls": 0,
+      "longTasks": 3,
+      "initialResources": 23,
+      "sampledAtMs": 5236,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:42:27.006Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 81,
+      "loadMs": 138,
+      "lcpMs": 172,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5153,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:42:38.790Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 116,
+      "loadMs": 144,
+      "lcpMs": 216,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 23,
+      "sampledAtMs": 5167,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:42:50.841Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 2,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 91,
+      "loadMs": 143,
+      "lcpMs": 224,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5178,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:43:05.675Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 3,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 109,
+      "loadMs": 133,
+      "lcpMs": 204,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 23,
+      "sampledAtMs": 5150,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:43:17.064Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 3,
+      "ttfbMs": 19,
+      "domContentLoadedMs": 124,
+      "loadMs": 151,
+      "lcpMs": 216,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5172,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:43:30.524Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 4,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 108,
+      "loadMs": 137,
+      "lcpMs": 208,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 23,
+      "sampledAtMs": 5162,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:43:42.989Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 4,
+      "ttfbMs": 20,
+      "domContentLoadedMs": 85,
+      "loadMs": 115,
+      "lcpMs": 208,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5164,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:43:55.686Z"
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "run": 5,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 80,
+      "loadMs": 116,
+      "lcpMs": 204,
+      "cls": 0,
+      "longTasks": 2,
+      "initialResources": 23,
+      "sampledAtMs": 5165,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:44:07.409Z"
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "run": 5,
+      "ttfbMs": 15,
+      "domContentLoadedMs": 113,
+      "loadMs": 141,
+      "lcpMs": 204,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5163,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:44:22.986Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 1,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 237,
+      "loadMs": 255,
+      "lcpMs": 316,
+      "cls": 0.1566,
+      "longTasks": 2,
+      "initialResources": 23,
+      "sampledAtMs": 5300,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:44:36.811Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 1,
+      "ttfbMs": 15,
+      "domContentLoadedMs": 119,
+      "loadMs": 148,
+      "lcpMs": 216,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5175,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:44:48.366Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 2,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 124,
+      "loadMs": 158,
+      "lcpMs": 220,
+      "cls": 0.1551,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5176,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:44:59.878Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 2,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 144,
+      "loadMs": 175,
+      "lcpMs": 256,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5207,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:45:13.157Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 3,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 152,
+      "loadMs": 178,
+      "lcpMs": 248,
+      "cls": 0.1551,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5210,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:45:27.399Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 3,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 128,
+      "loadMs": 156,
+      "lcpMs": 220,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5174,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:45:39.974Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 4,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 118,
+      "loadMs": 144,
+      "lcpMs": 224,
+      "cls": 0.1551,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5176,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:45:51.654Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 4,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 116,
+      "loadMs": 146,
+      "lcpMs": 216,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 19,
+      "sampledAtMs": 5163,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:46:03.483Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "run": 5,
+      "ttfbMs": 14,
+      "domContentLoadedMs": 121,
+      "loadMs": 150,
+      "lcpMs": 204,
+      "cls": 0.1551,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 5166,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:46:17.260Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "run": 5,
+      "ttfbMs": 16,
+      "domContentLoadedMs": 160,
+      "loadMs": 174,
+      "lcpMs": 236,
+      "cls": 0.1566,
+      "longTasks": 1,
+      "initialResources": 20,
+      "sampledAtMs": 5194,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:46:29.703Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "live-after",
+      "run": 1,
+      "ttfbMs": 1543,
+      "domContentLoadedMs": 1891,
+      "loadMs": 1976,
+      "lcpMs": 1892,
+      "cls": 0.0144,
+      "longTasks": 2,
+      "initialResources": 22,
+      "sampledAtMs": 7036,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:46:45.588Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "live-after",
+      "run": 2,
+      "ttfbMs": 291,
+      "domContentLoadedMs": 427,
+      "loadMs": 438,
+      "lcpMs": 500,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 22,
+      "sampledAtMs": 5459,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:47:06.288Z"
+    },
+    {
+      "profile": "desktop",
+      "version": "live-after",
+      "run": 3,
+      "ttfbMs": 243,
+      "domContentLoadedMs": 379,
+      "loadMs": 391,
+      "lcpMs": 432,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 22,
+      "sampledAtMs": 5403,
+      "height": 900,
+      "jobs": 8,
+      "lang": "he",
+      "width": 1351,
+      "timestamp": "2026-11-09T11:47:18.346Z"
+    },
+    {
+      "profile": "phone",
+      "version": "live-after",
+      "run": 1,
+      "ttfbMs": 229,
+      "domContentLoadedMs": 332,
+      "loadMs": 368,
+      "lcpMs": 408,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 22,
+      "sampledAtMs": 5374,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:47:31.823Z"
+    },
+    {
+      "profile": "phone",
+      "version": "live-after",
+      "run": 2,
+      "ttfbMs": 255,
+      "domContentLoadedMs": 384,
+      "loadMs": 398,
+      "lcpMs": 460,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 24,
+      "sampledAtMs": 5414,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:47:45.843Z"
+    },
+    {
+      "profile": "phone",
+      "version": "live-after",
+      "run": 3,
+      "ttfbMs": 222,
+      "domContentLoadedMs": 313,
+      "loadMs": 335,
+      "lcpMs": 400,
+      "cls": 0,
+      "longTasks": 1,
+      "initialResources": 22,
+      "sampledAtMs": 5351,
+      "height": 844,
+      "jobs": 8,
+      "lang": "he",
+      "width": 375,
+      "timestamp": "2026-11-09T11:47:59.120Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "live-after",
+      "run": 1,
+      "ttfbMs": 225,
+      "domContentLoadedMs": 325,
+      "loadMs": 349,
+      "lcpMs": 408,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5363,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:48:11.260Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "live-after",
+      "run": 2,
+      "ttfbMs": 224,
+      "domContentLoadedMs": 326,
+      "loadMs": 355,
+      "lcpMs": 408,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5367,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:48:24.309Z"
+    },
+    {
+      "profile": "ipad",
+      "version": "live-after",
+      "run": 3,
+      "ttfbMs": 216,
+      "domContentLoadedMs": 370,
+      "loadMs": 385,
+      "lcpMs": 476,
+      "cls": 0.1551,
+      "longTasks": 1,
+      "initialResources": 23,
+      "sampledAtMs": 5410,
+      "height": 1180,
+      "jobs": 8,
+      "lang": "he",
+      "width": 805,
+      "timestamp": "2026-11-09T11:48:36.436Z"
+    }
+  ],
+  "groups": [
+    {
+      "profile": "desktop",
+      "version": "before",
+      "n": 5,
+      "width": 1351,
+      "height": 900,
+      "metrics": {
+        "ttfbMs": {
+          "median": 19,
+          "min": 16,
+          "max": 22
+        },
+        "domContentLoadedMs": {
+          "median": 109,
+          "min": 86,
+          "max": 136
+        },
+        "loadMs": {
+          "median": 140,
+          "min": 123,
+          "max": 191
+        },
+        "lcpMs": {
+          "median": 204,
+          "min": 192,
+          "max": 292
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0.0033
+        },
+        "longTasks": {
+          "median": 2,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    {
+      "profile": "desktop",
+      "version": "after",
+      "n": 5,
+      "width": 1351,
+      "height": 900,
+      "metrics": {
+        "ttfbMs": {
+          "median": 18,
+          "min": 15,
+          "max": 39
+        },
+        "domContentLoadedMs": {
+          "median": 112,
+          "min": 83,
+          "max": 229
+        },
+        "loadMs": {
+          "median": 137,
+          "min": 119,
+          "max": 243
+        },
+        "lcpMs": {
+          "median": 212,
+          "min": 204,
+          "max": 328
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0.0033
+        },
+        "longTasks": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    {
+      "profile": "desktop",
+      "version": "live-after",
+      "n": 3,
+      "width": 1351,
+      "height": 900,
+      "metrics": {
+        "ttfbMs": {
+          "median": 291,
+          "min": 243,
+          "max": 1543
+        },
+        "domContentLoadedMs": {
+          "median": 427,
+          "min": 379,
+          "max": 1891
+        },
+        "loadMs": {
+          "median": 438,
+          "min": 391,
+          "max": 1976
+        },
+        "lcpMs": {
+          "median": 500,
+          "min": 432,
+          "max": 1892
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0.0144
+        },
+        "longTasks": {
+          "median": 1,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    {
+      "profile": "phone",
+      "version": "before",
+      "n": 5,
+      "width": 375,
+      "height": 844,
+      "metrics": {
+        "ttfbMs": {
+          "median": 17,
+          "min": 15,
+          "max": 18
+        },
+        "domContentLoadedMs": {
+          "median": 109,
+          "min": 80,
+          "max": 120
+        },
+        "loadMs": {
+          "median": 137,
+          "min": 116,
+          "max": 193
+        },
+        "lcpMs": {
+          "median": 208,
+          "min": 204,
+          "max": 224
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "longTasks": {
+          "median": 2,
+          "min": 2,
+          "max": 3
+        }
+      }
+    },
+    {
+      "profile": "phone",
+      "version": "after",
+      "n": 5,
+      "width": 375,
+      "height": 844,
+      "metrics": {
+        "ttfbMs": {
+          "median": 17,
+          "min": 15,
+          "max": 20
+        },
+        "domContentLoadedMs": {
+          "median": 91,
+          "min": 81,
+          "max": 124
+        },
+        "loadMs": {
+          "median": 141,
+          "min": 115,
+          "max": 151
+        },
+        "lcpMs": {
+          "median": 208,
+          "min": 172,
+          "max": 224
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "longTasks": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    {
+      "profile": "phone",
+      "version": "live-after",
+      "n": 3,
+      "width": 375,
+      "height": 844,
+      "metrics": {
+        "ttfbMs": {
+          "median": 229,
+          "min": 222,
+          "max": 255
+        },
+        "domContentLoadedMs": {
+          "median": 332,
+          "min": 313,
+          "max": 384
+        },
+        "loadMs": {
+          "median": 368,
+          "min": 335,
+          "max": 398
+        },
+        "lcpMs": {
+          "median": 408,
+          "min": 400,
+          "max": 460
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "longTasks": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    {
+      "profile": "ipad",
+      "version": "before",
+      "n": 5,
+      "width": 805,
+      "height": 1180,
+      "metrics": {
+        "ttfbMs": {
+          "median": 16,
+          "min": 14,
+          "max": 18
+        },
+        "domContentLoadedMs": {
+          "median": 124,
+          "min": 118,
+          "max": 237
+        },
+        "loadMs": {
+          "median": 158,
+          "min": 144,
+          "max": 255
+        },
+        "lcpMs": {
+          "median": 224,
+          "min": 204,
+          "max": 316
+        },
+        "cls": {
+          "median": 0.1551,
+          "min": 0.1551,
+          "max": 0.1566
+        },
+        "longTasks": {
+          "median": 2,
+          "min": 2,
+          "max": 2
+        }
+      }
+    },
+    {
+      "profile": "ipad",
+      "version": "after",
+      "n": 5,
+      "width": 805,
+      "height": 1180,
+      "metrics": {
+        "ttfbMs": {
+          "median": 16,
+          "min": 15,
+          "max": 18
+        },
+        "domContentLoadedMs": {
+          "median": 128,
+          "min": 116,
+          "max": 160
+        },
+        "loadMs": {
+          "median": 156,
+          "min": 146,
+          "max": 175
+        },
+        "lcpMs": {
+          "median": 220,
+          "min": 216,
+          "max": 256
+        },
+        "cls": {
+          "median": 0.1551,
+          "min": 0.1551,
+          "max": 0.1566
+        },
+        "longTasks": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    {
+      "profile": "ipad",
+      "version": "live-after",
+      "n": 3,
+      "width": 805,
+      "height": 1180,
+      "metrics": {
+        "ttfbMs": {
+          "median": 224,
+          "min": 216,
+          "max": 225
+        },
+        "domContentLoadedMs": {
+          "median": 326,
+          "min": 325,
+          "max": 370
+        },
+        "loadMs": {
+          "median": 355,
+          "min": 349,
+          "max": 385
+        },
+        "lcpMs": {
+          "median": 408,
+          "min": 408,
+          "max": 476
+        },
+        "cls": {
+          "median": 0.1551,
+          "min": 0.1551,
+          "max": 0.1551
+        },
+        "longTasks": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  ]
+}
