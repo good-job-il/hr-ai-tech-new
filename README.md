@@ -1,48 +1,43 @@
-HeadHunter — isolated staging implementation
+# hr-ai.tech / HeadHunter
 
-Continue the existing project in this folder. Do not create another copy or connect production.
-Runtime: Next.js / TypeScript / Supabase (PostgreSQL + Auth + private Storage).
+Публичные вакансии и рабочие пространства агентств/работодателей. Источник требований: docs/project-overview.ru.md, docs/project-documentation.pdf, актуальные задачи Linear и решения владельца. Исторические паспорта не являются текущей приёмкой облака.
 
-Run:
-  pnpm install --frozen-lockfile
-  pnpm test
-  pnpm typecheck
-  pnpm build
-  pnpm dev
+## Локальная работа
 
-Staging setup:
-1. Use the new Supabase organization HeadHunter Preview (free), organization ID erditxxumjnppvsluhqm.
-2. Complete creation of the headhunter-preview project. The user sets and retains its database password.
-3. Apply migrations 001_initial.sql then 002_workspace.sql ONLY to that empty staging project.
-4. Configure the two public variables from .env.example in .env.local and Vercel Preview only.
-5. Keep email confirmation enabled. Configure exact redirect URLs for local and Preview origins.
-6. Deploy to a NEW Vercel project using a Preview deployment, with protection enabled. Do not configure custom domains or production variables.
-7. Run real Supabase/Auth/Storage/browser acceptance tests before calling the platform active.
+Node.js 24 и npm, зависимости фиксируются package-lock.json.
 
-Implemented:
-- Hebrew RTL / English LTR, persisted language, white / blue-purple design with an original SVG AI head and candidate-card illustration based on the user's textual description.
-- Public open jobs, search, application and recruiter pipeline.
-- Separate employer / agency organizations; owner/admin/recruiter/viewer/finance memberships.
-- Candidate profile and private PDF CVs up to 5MB; expiring signed links.
-- Agency personal / shared pools. Shared-only pool for employers. Email uniqueness within organization, normalized by trim/lowercase.
-- Access requests approved/denied by owner/admin; authorized canonical merge retaining source and audit. Source grants never broaden target access.
-- Interviews with local-time entry and UTC storage; candidate-visible details; no calendar or email invitation is sent.
-- Reward policy text restricted to owner/admin/finance; only owner/admin can write. No invented rates or payments.
-- Basic counts limited to rows accessible under RLS. Team additions use an existing user's ID; no invitation email is sent.
+```sh
+npm ci --no-audit --no-fund
+npm run typecheck
+npm test
+npm run build
+npm run dev
+```
 
-Verification:
-- Node domain tests and PostgreSQL RLS integration test use `pnpm test`.
-- RLS tests run actual SQL in PGlite's embedded PostgreSQL engine, with synthetic auth/storage schema shims and six synthetic identities. This is NOT a full Supabase cloud test.
-- TypeScript and optimized Next build were executed successfully during this continuation.
-- Local browser verified language switching/persistence, disabled data submission without connection, desktop and 390px mobile layout without horizontal overflow.
+Скопировать .env.example в .env.local и настроить нужное окружение. NEXT_PUBLIC_SUPABASE_URL и NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY доступны браузеру; серверные ключи/пароли не должны иметь NEXT_PUBLIC_ префикс. NEXT_PUBLIC_SITE_URL — точный HTTPS origin. Без Supabase UI собирается offline; это не проверка Auth/Storage.
 
-Open acceptance work:
-- Cloud signup/email confirmation, real JWT/PostgREST, real Storage uploads/signed links, multi-user browser flows and Vercel Preview protection/URL.
-- Authenticated workspace UI and file-upload behavior have code and database tests but await connected browser end-to-end verification.
-- Email-only deduplication; phone/ID matching is not implemented.
-- Merge retains source in archive and its audit; no automatic contact-field reconciliation.
-- A user belongs to one organization in the initial creation flow. Switching organizations and account recovery UI are not included.
-- Marketplace, hiring-manager role, AI matching, SMTP/calendar integrations and payments are deferred.
-- The referenced ChatGPT source exposed only five recent user turns and reference placeholders, not the full design or reward-policy specification. Nothing beyond the current user's explicit requirements is claimed as recovered.
+## CI и Preview
 
-No production data, DNS, or hr-ai.tech configuration was accessed or changed.
+.github/workflows/checks.yml выполняет чистую установку, TypeScript, Node/PGlite tests и build на push main/codex/** и pull_request. CI не получает .env, production secrets или подключение к базе. Проверять результат конкретного SHA в GitHub Actions; локальный PASS его не заменяет.
+
+Preview требует отдельного Supabase-проекта и отдельного URL/переменных. Рабочие данные и привилегированные credentials автоматически не копировать.
+
+```sh
+npm run check:preview -- path/to/preview.env
+```
+
+Указать PREVIEW_SUPABASE_PROJECT_REF и соответствующие URL/publishable key отдельного проекта, а также NEXT_PUBLIC_SITE_URL или VERCEL_URL Preview. Build с VERCEL_ENV=preview отклоняет рабочие refs, официальный origin и унаследованные привилегированные credentials. PASS этой проверки подтверждает только конфигурацию, не наличие проекта, RLS, защиту URL и облачную работоспособность. HR-14 остаётся открытой до фактической Preview-приёмки. Production build не запускает SQL-миграции.
+
+## Миграции
+
+SQL — supabase/migrations. Пустой тестовой базе нужен проверенный полный порядок, не только001/002. До изменения существующей среды сверить supabase_migrations.schema_migrations с файлами и веткой; не запускать db push вслепую и не переименовывать занятые версии.
+
+Состояние на10.11.2026: рабочее облако содержит059storage_download_permissions,060active-job-lifecycle,062–064агрегаты и065исправление кода импортированного текста; CV061остаётся отдельной заблокированной работой. Историческая059восстановлена из read-only облачного журнала, без повторного применения. Схема источников сверена; отдельный полный cloud bootstrap пока не принят. Чужой local draft059featured не является облачной059. Не включать061до server-only настройки и фактической проверки выдачи PDF (HR-8/12/21). Новые миграции не заменяют проверку облачного применения.
+
+Активные опубликованные вакансии не исчезают по7-day cutoff: docs/active-job-lifecycle-2026-11-09.ru.md. Публичные счётчики дают только агрегаты, не доступ к фондам.
+
+## Приёмка и выпуск
+
+git status/remote/pull, изолированная ветка/worktree, проверки/build, diff без секретов/PII, обычный commit/push; после deployment отдельно проверить URL и записать SHA/результат в Linear. Непроверенный CV-релиз не смешивать с UI. .env*, output, work, сборки и supabase/.temp/.branches не коммитятся.
+
+Для пилота нужны реальные Auth JWT/PostgREST/Storage/UI проверки ролей, полный кандидатский/клиентский путь, отзыв CV, восстановление в отдельный проект и решение владельца. PGlite использует synthetic Auth/Storage и не заменяет облако/CDN. Передача исходного PDF браузеру не гарантирует запрет сохранения байтов. Результаты HR-9/HR-14 фиксируются без контактов, PDF, ключей и токенов.

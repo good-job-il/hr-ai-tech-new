@@ -3,6 +3,11 @@ node_modules/
 .env*
 !.env.example
 *.tsbuildinfo
+supabase/.temp/
+supabase/.branches/
+/output/
+/work/
+/performance/
 
 .next-commercial/
 .next-local/

@@ -29,7 +29,8 @@ test('PostgreSQL RLS: tenant isolation, roles, private pools, access, merge, CV 
  await pg.query("insert into public.candidate_profiles values($1,'Synthetic','','')",[ids[3]]);await as(0);await pg.query('select assign_application($1,$2)',[app,ids[1]]);await as(3);
  await pg.query("insert into storage.objects(bucket_id,name) values('candidate-cvs',$1)",[ids[3]+'/test.pdf']);
  await as(2);assert.equal((await pg.query('select * from public.applications')).rows.length,0);assert.equal((await pg.query('select * from public.candidate_profiles')).rows.length,0);assert.equal((await pg.query('select * from storage.objects')).rows.length,0);
- await as(1);assert.equal((await pg.query('select * from public.applications')).rows.length,1);assert.equal((await pg.query('select * from storage.objects')).rows.length,1);
+ await as(1);assert.equal((await pg.query('select * from public.applications')).rows.length,1);assert.equal((await pg.query('select * from storage.objects')).rows.length,0);
+ await as(0);await pg.query("select public.set_member_permission($1,$2,'cv.download',true)",[org,ids[1]]);await as(1);assert.equal((await pg.query('select * from storage.objects')).rows.length,1);
  await pg.query("insert into public.interviews(application_id,starts_at) values($1,now()+interval '1 day')",[app]);
  await pg.query("update public.applications set status='interview' where id=$1",[app]);
  await assert.rejects(pg.query("update public.applications set candidate_id=$1 where id=$2",[ids[1],app]));
