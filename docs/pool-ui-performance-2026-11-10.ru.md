@@ -18,4 +18,21 @@ Desktop1280×900, phone390×844, iPad768×1024 — размеры Chromium в IA
 
 ## Приёмка
 
-Окончательные замеры после client fix и SHA записываются в Linear и итоговую таблицу этого документа. HR-9 не закрывается целиком: независимая CV/revocation приёмка остаётся HR-8/12/21.
+SQL066 уже активна. Client fix опубликован в main27cb5e1245d18b668dd26bfa98392eb8eac500f5, но НЕ подтверждён в Production: DOM data-pool-status отсутствует. Владелец10.11.2026 явно оставил эту Vercel deployment разработчику в HR-21. Текущая браузерная Vercel session возвращает404для нужного team/project. Проверка сохранённых credentials через локальный скрипт отклонена auto-review и не выполнялась; дальнейшего чтения credentials не было. HR-21 configuration/CV работа не выполнялась.
+
+Реальный GitHub CI для27cb5e1: SUCCESS, npm ci/typecheck/all tests/build,1m34s: https://github.com/good-job-il/hr-ai-tech-new/actions/runs/42719167134 . До публикации локально86SQL/прочих tests PASS и новая retry/cancel проверка PASS, typecheck/build PASS.
+
+Повторная проверка ниже относится к активной SQL066 и прежнему клиенту, а не к неопубликованному retry. Медианы секунд: baseline по2замера, повтор desktop/phone по3успешных, iPad только1успешный плюс ошибка; iPad-приёмка не завершена. Ошибки из расчёта median исключены, но сохранены отдельно и НЕ объявлены успехом.
+
+| Размер | Открытие до→после | Поиск до→после | Город до→после | Страница до→после |
+|---|---|---|---|---|
+
+|Desktop|5.91→1.34|3.36→1.03|2.59→0.73|4.08→1.27|
+|Phone|3.46→1.24|3.10→1.15|2.69→1.03|3.65→1.40|
+|iPad|3.20→1.25|2.71→1.29|2.11→1.43|3.28→2.09|
+
+В финальной серии desktop максимум open1.686/search1.079/filter1.139/page1.593s; phone1.634/1.596/1.328/1.808s. Все эти успешные измерения в пределах. На iPad page2.090s превышает предел2s; следующая open завершилась generic load error, поэтому серия остановлена, а не дополнена выборочно удачными повторами. Ранее после066также были phone generic error и open4.854s. Это оставшиеся дефекты, а не готовый PASS всех устройств. Значение elapsedBoundMs25000 в raw failed samples — предел ожидания наблюдателя при error status, не измеренная длительность HTTP-запроса.
+
+RLS cloud с обычными QA JWT: authorized pool читается; outsider RPC denied и SELECTчужого фонда0rows. Профилирование того же плана в read-only транзакции показало вариативность server execution101–2202ms; дополнительная проверка JIT default101/off90ms без JIT compilation не доказала JIT-причину. Никакие глобальные settings/timeout не менялись; существующий authenticated timeout8s сохранён. Точный HTTP-код старых generic ошибок не виден; после client deployment снять data-pool-status/error-code/request-ms, затем исправить установленную причину и повторить все3размера. Не увеличивать timeout и не ослаблять RLS ради зелёной проверки.
+
+В phone-проверке не было горизонтального overflow страницы. Незавершённая iPad-серия не объявляется полной responsive-приёмкой. Полные обезличенные наблюдения: [JSON](pool-ui-performance-measurements-2026-11-10.json). Итог: подтверждён значительный speedup, но performance acceptance и HR-9 остаются In Progress; CV/revocation отдельно HR-8/12/21.

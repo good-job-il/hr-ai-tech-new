@@ -1,0 +1,1013 @@
+{
+  "date": "2026-11-10",
+  "origin": "https://www.hr-ai.tech/",
+  "sourceCommit": "27cb5e1245d18b668dd26bfa98392eb8eac500f5",
+  "activeServerMigration": "066",
+  "clientDeployment": "deferred to developer by owner; new DOM instrumentation absent on official site",
+  "poolRows": 51364,
+  "pageSize": 25,
+  "method": "Driver elapsed from click/fill until loading hidden and25DOM rows/count/page verified; includes driver overhead, not precise Event Timing",
+  "viewports": {
+    "desktop": [
+      1280,
+      900
+    ],
+    "phone": [
+      390,
+      844
+    ],
+    "ipad": [
+      768,
+      1024
+    ]
+  },
+  "mobileDevices": "Chromium viewport emulation on same network; no physical mobile/iPad or mobile network",
+  "personalDataExported": false,
+  "samples": {
+    "before": [
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 7220
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 2807
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 2283
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 4139
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 3080,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 2652,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 2866,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "filter",
+        "milliseconds": 2134,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 2549,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "page",
+        "milliseconds": 3425,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "open",
+        "milliseconds": 3279,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "search",
+        "milliseconds": 2627,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 2943,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "filter",
+        "milliseconds": 2179,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 2689,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "page",
+        "milliseconds": 3325,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 4606,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 3912,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 3329,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 2890,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 3004,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 4023,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 3845,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 3555,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 3328,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "filter",
+        "milliseconds": 3245,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 3082,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "page",
+        "milliseconds": 3871,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "open",
+        "milliseconds": 3122,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "search",
+        "milliseconds": 2784,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 2931,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "filter",
+        "milliseconds": 2047,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 2676,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "page",
+        "milliseconds": 3239,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      }
+    ],
+    "after": [
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 1713,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 830,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 1033,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 598,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 644,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 1487,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 917,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 831,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 1011,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "filter",
+        "milliseconds": 821,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 657,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "page",
+        "milliseconds": 1232,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "open",
+        "milliseconds": 984,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "search",
+        "milliseconds": 840,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 919,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "filter",
+        "milliseconds": 595,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 575,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "page",
+        "milliseconds": 1234,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 1000,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 913,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 961,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 569,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 592,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 1263,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 1057,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 908,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 745,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 586,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 748,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 1357,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "failed": true,
+        "observedError": "Unable to load candidate pool",
+        "elapsedBoundMs": 25000
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 4854,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 843,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "deployment_probe",
+        "milliseconds": 1126,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      }
+    ],
+    "verification": [
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 1686,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 941,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 931,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 649,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 988,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 1593,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 1161,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 1027,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 1039,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 728,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 620,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 1274,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "open",
+        "milliseconds": 1338,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "search",
+        "milliseconds": 1079,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 1324,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "filter",
+        "milliseconds": 1139,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "clear",
+        "milliseconds": 632,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "desktop",
+        "scenario": "page",
+        "milliseconds": 1253,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 1243,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 1146,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 1165,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "filter",
+        "milliseconds": 1328,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 519,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "page",
+        "milliseconds": 1240,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 1634,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 1596,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 772,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "filter",
+        "milliseconds": 597,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 865,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "page",
+        "milliseconds": 1808,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "open",
+        "milliseconds": 1189,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "search",
+        "milliseconds": 1072,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 1154,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "filter",
+        "milliseconds": 1032,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "clear",
+        "milliseconds": 599,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "phone",
+        "scenario": "page",
+        "milliseconds": 1404,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "open",
+        "milliseconds": 1254,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "search",
+        "milliseconds": 1294,
+        "count": "26,373 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 1055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 1214,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "filter",
+        "milliseconds": 1426,
+        "count": "1,595 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 64",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "clear",
+        "milliseconds": 624,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "1 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "page",
+        "milliseconds": 2090,
+        "count": "51,364 רשומות נגישות בתוצאות",
+        "loading": false,
+        "page": "2 / 2055",
+        "rows": 25
+      },
+      {
+        "device": "ipad",
+        "scenario": "open",
+        "failed": true,
+        "observedError": "Unable to load candidate pool",
+        "elapsedBoundMs": 25000
+      }
+    ]
+  }
+}
