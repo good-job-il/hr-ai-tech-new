@@ -200,3 +200,6 @@ body .landingTech.landingPrecision .approvedSearch li bdi{min-width:0;overflow-w
 body .landingTech.landingPrecision .benefits>h2{letter-spacing:0}
 body .landingTech.landingPrecision .benefitsBrandPhrase{display:inline-flex;align-items:baseline;gap:.13em;white-space:nowrap;unicode-bidi:isolate;vertical-align:baseline}
 body .landingTech.landingPrecision .benefitsBrandPhrase .benefitsQuestion{color:#101127}
+
+body .landingTech.landingPrecision .benefitsBrandPhrase[dir=rtl]{gap:0}
+body .landingTech.landingPrecision .benefitsBrandPhrase[dir=rtl] .benefitsQuestion{margin-inline-start:.13em}
