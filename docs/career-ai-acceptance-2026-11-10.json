@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-10",
+  "environment": "Local optimized Next.js server, live OpenAI Responses API, real Supabase Auth",
+  "syntheticOnly": true,
+  "provider": "OpenAI",
+  "model": "gpt-6.1-sol",
+  "apiResults": [
+    {
+      "task": "cv-improvement",
+      "language": "he",
+      "passed": true,
+      "milliseconds": 10985,
+      "suggestions": 5,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "job-matching",
+      "language": "he",
+      "passed": true,
+      "milliseconds": 11570,
+      "suggestions": 5,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "interview-preparation",
+      "language": "he",
+      "passed": true,
+      "milliseconds": 17451,
+      "suggestions": 6,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "career-insights",
+      "language": "he",
+      "passed": true,
+      "milliseconds": 11247,
+      "suggestions": 5,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "cv-improvement",
+      "language": "en",
+      "passed": true,
+      "milliseconds": 8774,
+      "suggestions": 6,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "job-matching",
+      "language": "en",
+      "passed": true,
+      "milliseconds": 8991,
+      "suggestions": 5,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "interview-preparation",
+      "language": "en",
+      "passed": true,
+      "milliseconds": 10794,
+      "suggestions": 6,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    },
+    {
+      "task": "career-insights",
+      "language": "en",
+      "passed": true,
+      "milliseconds": 8863,
+      "suggestions": 5,
+      "technicalNamesPreserved": true,
+      "hebrewPointsAbsent": true
+    }
+  ],
+  "securityChecks": [
+    {
+      "name": "anonymous",
+      "status": 401
+    },
+    {
+      "name": "invalid token",
+      "status": 401
+    },
+    {
+      "name": "no consent",
+      "status": 400
+    },
+    {
+      "name": "job required",
+      "status": 400
+    },
+    {
+      "name": "short profile",
+      "status": 400
+    }
+  ],
+  "clientBundleSecretMatches": 0,
+  "production": {
+    "endpointStatus": 200,
+    "available": false,
+    "acceptance": "pending server configuration and real production checks"
+  },
+  "browserChecks": [
+    {
+      "task": "cv-improvement",
+      "language": "he",
+      "viewport": "desktop default",
+      "liveAnswerDisplayed": true
+    },
+    {
+      "task": "job-matching",
+      "language": "he",
+      "viewport": "390x844",
+      "liveAnswerDisplayed": true,
+      "horizontalOverflow": false,
+      "textareaFontPixels": 16
+    },
+    {
+      "task": "interview-preparation",
+      "language": "en",
+      "viewport": "820x1180",
+      "liveAnswerDisplayed": true,
+      "horizontalOverflow": false,
+      "textareaFontPixels": 16
+    },
+    {
+      "task": "career-insights",
+      "language": "en",
+      "viewport": "desktop default",
+      "liveAnswerDisplayed": true
+    }
+  ],
+  "physicalDevicesTested": false,
+  "signOutClearsDisplayedResults": true,
+  "validation": {
+    "targetedTestsPassed": 9,
+    "targetedTestsFailed": 0,
+    "typeScript": "pass",
+    "optimizedBuild": "pass"
+  }
+}

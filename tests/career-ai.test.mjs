@@ -18,7 +18,7 @@ test('real API contract: fixed endpoint/model, no store, bounded output, no tool
  let calls=0;
  const actual=await runOpenAICareer({...input,language:'he'},{env,fetcher:async(url,options)=>{
   calls++;assert.equal(url,'https://api.openai.com/v1/responses');assert.equal(options.headers.Authorization,'Bearer synthetic-key');
-  const body=JSON.parse(options.body);assert.equal(body.store,false);assert.equal(body.model,'gpt-6.1-sol');assert.equal(body.max_output_tokens,3000);assert.equal(body.tools,undefined);assert.equal(body.text.format.strict,true);assert.match(body.instructions,/untrusted data/);assert.match(body.instructions,/Hebrew without niqqud/);
+  const body=JSON.parse(options.body);assert.equal(body.store,false);assert.equal(body.model,'gpt-6.1-sol');assert.equal(body.max_output_tokens,3000);assert.equal(body.tools,undefined);assert.equal(body.text.format.strict,true);assert.match(body.instructions,/untrusted data/);assert.match(body.instructions,/Hebrew without niqqud/);assert.match(body.instructions,/technical skill\/tool names exactly as provided/);
   return completed({...result,summary:'שָׁלוֹם'});
  }});assert.equal(actual.summary,'שלום');assert.equal(calls,1);
 });
