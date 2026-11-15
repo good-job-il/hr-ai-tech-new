@@ -2,6 +2,7 @@ import {useId} from 'react';
 export default function UiIcon({name,size=21,tone}:{name:string;size?:number;tone?:'brand'}){
 const gradient='icon-'+useId().replace(/:/g,'');
 const paths:Record<string,React.ReactNode>={
+ flame:<path d="M12 3c1 5-4 6-4 10 0 2 1 3 2 4-1-4 3-4 4-7 3 3 5 5 5 8a7 7 0 0 1-14 0c0-5 5-7 7-15Z"/>,
  robot:<><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M2 11v5m20-5v5M8 20v2m8-2v2M8 16h8"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/><circle cx="12" cy="2" r="1"/></>,
  chat:<><path d="M4 3h16a1 1 0 0 1 1 1v13H9l-6 5V4a1 1 0 0 1 1-1Z"/><path d="M7 9h1m4 0h1m4 0h1M7 13h9"/></>,
  brain:<><path d="M12 5c-1-4-7-3-7 1-4 0-4 6-1 7-3 3 0 7 3 6 0 4 5 4 5 0V5Zm0 0c1-4 7-3 7 1 4 0 4 6 1 7 3 3 0 7-3 6 0 4-5 4-5 0M8 7v4H5m3 4h4m4-8v4h3m-3 4h-4"/></>,
