@@ -45,11 +45,21 @@ npm run check:supabase -- --config .env --probe
 npm run check:supabase -- --probe && npm run build
 ```
 
-Сначала выполнить обычные проверки исходников. После успешной проверки вернуть штатную Build Command `npm run build`. Такой probe подтверждает build environment, не serverless runtime. Не использовать команду в Preview. Сохранить deployment URL, Git SHA, оба `passed:true`/`cleanup:true` и подтверждённые team/project/domain без ключей. Для применения изменённых env нужен новый deployment. Публикация main допустима отдельно от неподтверждённой CV061; в текущем main этой миграции и нового CV UI нет.
+Сначала выполнить обычные проверки исходников. После проверки, включая отказ, вернуть исходную настройку Build Command: в этом проекте это **Override OFF** (автоматическая команда framework). Такой probe подтверждает build environment, не serverless runtime. Не использовать команду в Preview. Сохранить deployment URL, Git SHA, оба `passed:true`/`cleanup:true` и подтверждённые team/project/domain без ключей. Для применения изменённых env нужен новый deployment. Публикация main допустима отдельно от неподтверждённой CV061; в текущем main этой миграции и нового CV UI нет.
+
+## Фактическая попытка Production-проверки 15.11.2026
+
+Владелец сохранил `SUPABASE_SECRET_KEY`: в Vercel подтверждены имя, тип **Secret** и окружение **Production**, значение не открывалось. После отдельного разрешения владельца временно настроена команда с probe только при `VERCEL_ENV=production`; Preview выполняет обычную сборку. Владелец самостоятельно подтвердил Vercel email verification.
+
+Одна согласованная пересборка [ACxbcNq4ENCWf7unUv4GHz9u7wPf](https://vercel.com/hr-ai-tech/hr-ai-tech-new/ACxbcNq4ENCWf7unUv4GHz9u7wPf), source `main7e524ce6a494133930d7b34f0eb4b0d83870e38c`, остановилась за12с с `FAIL: NEXT_PUBLIC_SITE_URL must be https://www.hr-ai.tech.`. Проверка конфигурации выполняется до создания Supabase client: **Storage запросов не было, QA-файлы не создавались, ключ ещё не проверен**. Эта сборка не стала рабочей публикацией.
+
+В Vercel Project environment variables поиск `NEXT_PUBLIC_SITE_URL` вернул No Results Found. Недостающая публичная переменная добавлена как **Config**, только **Production**, со значением `https://www.hr-ai.tech`. Это документированный официальный origin; Preview не менялся. Изменение начинает действовать при следующей сборке.
+
+Временная команда удалена: **Override Build Command OFF**, Save выполнен; состояние подтверждено повторным открытием страницы. Probe не включён в будущие автоматические сборки. Для новой попытки QA-проверки требуется ещё одна согласованная временная сборка; успешность ключа по одному наличию переменной не заявляется.
 
 ## Что остаётся до закрытия
 
-- Владелец сохраняет ключ; затем выполняются фактические локальная и Production проверки. Наличие кода/зелёные mock tests их не заменяют.
+- Ключ сохранён в Vercel, но фактические локальная и Production Storage проверки ещё не прошли. Наличие кода/зелёные mock tests их не заменяет.
 - Доступ к правильным Supabase/Vercel и серверный runtime должны быть подтверждены отдельно. В main нет подготовленного `POST /api/cv`, поэтому нельзя проверить будущую выдачу через несуществующий endpoint.
 - Упомянутые в тикете `codex/cv-access-revocation`, `ba55179` и `docs/cv-access-revocation-2026-11-09.ru.md` отсутствуют в текущем checkout и доступных remote heads на 15.11.2026. Потребуется восстановить исходную работу с компьютера автора и сверить её с main. Не подменять восстановление вымышленным успешным cherry-pick.
 - Не применять 061 и не включать CV UI до приёмки HR-8/HR-12: сохранение байтов/ссылок при смене путей, старые authenticated/signed URL, CDN, права обеих групп файлов и браузерный PDF на desktop/phone/iPad.
