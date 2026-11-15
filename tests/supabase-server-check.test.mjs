@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 import {probeServerStorage, serverConfigurationErrors, syntheticPdf} from '../scripts/supabase-server-check.mjs';
 
 const valid = {
@@ -96,7 +97,7 @@ test('PDF fixture xref offsets and stream length are consistent', () => {
 test('CLI returns failure without request details for missing configuration or env file', () => {
  const cli = new URL('../scripts/check-supabase-server.mjs', import.meta.url);
  for (const args of [[], ['--config', '/nonexistent/hr-21-private-sentinel.env'], ['--invalid-private-sentinel']]) {
-  const result = spawnSync(process.execPath, [cli.pathname, ...args], {env:{}, encoding:'utf8'});
+  const result = spawnSync(process.execPath, [fileURLToPath(cli), ...args], {env:{}, encoding:'utf8'});
   assert.equal(result.status, 1);
   assert.doesNotMatch(result.stdout + result.stderr, /private-sentinel|Error:|at file:/);
  }
