@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/prepare-pdf-worker.mjs",
     "dev": "next dev --hostname localhost",
+    "prebuild": "node scripts/prepare-pdf-worker.mjs",
     "build": "next build --webpack",
     "start": "next start --hostname localhost",
     "typecheck": "tsc --noEmit",
