@@ -22,7 +22,7 @@ test('Client queue hides every answered referral, enforces agency reasons and re
  await actAs(pg,other);const foreignOrg=(await pg.query("select create_organization('Other inbox QA','agency') id")).rows[0].id;await pg.exec('reset role');
  const foreign=(await pg.query("insert into organization_rejection_reasons(organization_id,label) values($1,'Other reason') returning id",[foreignOrg])).rows[0].id;
  await actAs(pg,clientUser);let portal=(await pg.query('select client_portal_data() d')).rows[0].d;
- assert.equal(portal.schema_version,2);assert.equal(portal.presentations.length,1);assert.deepEqual(portal.clients[0].rejection_reasons.map(r=>r.id),[approved]);
+ assert.equal(portal.schema_version,3);assert.equal(portal.presentations.length,1);assert.deepEqual(portal.clients[0].rejection_reasons.map(r=>r.id),[approved]);
  const revision=portal.presentations[0].share_revision;
  assert.ok(!JSON.stringify(portal).includes('INTERNAL MUST STAY PRIVATE'));assert.ok(!JSON.stringify(portal).includes('private-inbox@example.invalid'));
  await assert.rejects(pg.query('select client_portal_data_before_inbox()'),/permission denied/);

@@ -9,3 +9,5 @@
 .cpDetailTop>.cpJump{margin-inline-start:auto;margin-inline-end:12px;width:auto;height:auto;border:0;background:#f2edfc;border-radius:7px;padding:8px 13px;color:#7048cd;font-size:12px}.cpIntro h1:focus{outline:0}
 
 .cpUpdates{border:1px solid #e8ecf3;border-radius:9px;padding:15px 17px}.cpUpdates>p{font-size:12px;display:flex;gap:8px;align-items:center}.cpStageDot{height:6px;width:6px;background:#8a6bc8;border-radius:50%;display:inline-block;flex-shrink:0}
+
+.cpStatusSection form{display:grid;gap:12px}.cpStatusSection label{display:grid;gap:7px;font-size:13px;font-weight:600}.cpStatusSection select,.cpStatusSection textarea{width:100%;box-sizing:border-box;border:1px solid #dce2ec;border-radius:8px;background:white;color:#24354b;padding:12px;font:inherit}.cpStatusSection .cpUpdateSave{justify-self:start;padding:10px 15px;background:#eef3ff;color:#3155a0;border:1px solid #d9e3f5;border-radius:7px}.cpStatusEntry{padding:10px 0;border-bottom:1px solid #e5eaf2}.cpStatusEntry time{display:block;color:#617086;font-size:12px}.cpAuthHint{font-size:13px!important}.cpStatusSection button:disabled{opacity:.5;cursor:not-allowed}
