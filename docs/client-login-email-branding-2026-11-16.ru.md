@@ -34,3 +34,11 @@ Read-only DNS lookup16.11: authoritative NS `hassan.ns.cloudflare.com`, `melody.
 6. Проверить фактическое письмо на согласованном адресе: From, subject, Hebrew, логотип и CTA; подтвердить доставку, SPF/DKIM/DMARC по доступным заголовкам. Пройти одноразовую ссылку, отклонение повторного использования, expiry/error handling, целевую страницу и сохранение account-scoped permissions. Для нового portal schema3 сначала требуются облачные067–068 и прежние gates HR-8/12/31; подключённый SMTP не отменяет их.
 
 Публичный логотип https://www.hr-ai.tech/brand-hr-v1.png проверен16.11: HTTP200, image/png. Новый branded email в этом этапе не отправлялся. Реальная доставка/вход с новым sender всё ещё НЕ PASS.
+
+## После входа владельца16.11.2026
+
+Resend авторизован: workspace r.rodion2802, Transactional/Marketing/Team Free; платные Pay-as-you-go switches выключены/недоступны. В Resend добавлен hr-ai.tech, region Tokyo ap-northeast-1, domain ID `104c7b81-cd0f-4bb7-8f01-1d4474e0f81b`. Это pending setup, не подтверждённая отправка. Receiving выключен, tracking не включён; API key не создан. Сохранены полные публичные DNS copy labels и скриншот вне Git: `output/resend-setup-20261116` в корне проекта.
+
+Точные предлагаемые записи: TXT `resend._domainkey` (полный public key перечитать в Resend), CNAME `rsend` → `rsend-apne1.forge.rmta.net`, CNAME `send` → `send.forge.rmta.net`, оба DNS Only. Read-only DNS lookup показал NXDOMAIN для этих трёх имён и `_dmarc`. DNS не менялся. Нельзя создавать новый аккаунт Cloudflare/переносить зону или менять старые подключения ради обхода доступа.
+
+Cloudflare login успешен, но единственный account c370cc2260e9e23a9493ef8d91d43d5f не содержит доменов. Supabase всё ещё показывает только Preview; целевой ref недоступен. Владелец поручил создать задачу Реувену о доступе и замене старого display name на hr-ai.tech. Создана и назначена Reuven Yaron [HR-33](https://linear.app/hr-ai-tech/issue/HR-33/dat-dostup-k-cloudflare-i-supabase-dlya-besplatnogo-resend-i-obnovit), High, подзадача HR-32 и её blocker. Она требует фактический DNS Edit нужной зоны и Auth SMTP/template management нужного проекта, проверку имени без смены ref/API URL/данных. HR-31 с отдельным CV/server-secret scope не дублируется. Подключение SMTP, новое branded email и фактический login по-прежнему не выполнены.
