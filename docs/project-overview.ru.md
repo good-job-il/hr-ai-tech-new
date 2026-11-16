@@ -1,5 +1,7 @@
 # HeadHunter: устройство продукта и логика проекта
 
+Письмо входа hr-ai.tech, Hebrew/RTL, предложение sender и условия custom SMTP: [HR-32 email branding](client-login-email-branding-2026-11-16.ru.md). Шаблон подготовлен; облачная настройка ещё не выполнена.
+
 Дата разбора: 4 ноября 2026 года.
 
 Независимая приёмка15.11.2026: [36 реальных UI-замеров полного фонда в пределах SLA и синтетический agency/client workflow без CV](pilot-independent-acceptance-2026-11-15.ru.md). Performance-часть HR-9 принята; полные HR-9/HR-11 и пилот не закрыты.
