@@ -16,6 +16,14 @@ HR-21 остаётся Done по актуальному Production scope вла�
 
 Остаются фактическая проверка обеих групп файлов и свежих/старых точных URL, сохранность при rotation/purge, реальный JWT grant/revoke/representative regression и браузерная приёмка PDF; лишь затем выпуск и повтор публичных проверок. Оба тикета HR-8/HR-12 остаются In Progress и связаны с HR-31.
 
+## Перепроверка доступа 16.11.2026
+
+По новому сообщению владельца проверено содержимое доступного Supabase, а не только название. Под текущим Apple private-relay аккаунтом доступен `ruejyiromtthygqtpcsy` (HeadHunter Preview): read-only SQL вернул candidates=51364, organizations=1, jobs=12, CV Storage objects=0, server-only policy=0. Это данные платформы, но отдельный проект. Второй проект `hegfwnvxfrorvbknusej` приостановлен. Публичные JS chunks `www.hr-ai.tech/client-portal` в тот же день содержат только ref `rnstsczayhzrxzcstzpr`. URL Production-проекта в текущей dashboard-сессии возвращает к Organizations. Переименование не меняет ref.
+
+Доступ к копии не использовался для изменения рабочего сайта. Server key Production по-прежнему не сохранён локально; Vercel OIDC из прежнего env истёк. В HR-31 добавлены проверенные ref и количества, исправлен путь на `C:/Users/Родион/Desktop/hr-ai.tech/work/cv-release-20261115/.env.local` (с разделителем перед именем файла). Нужен доступ именно к Production для server key, миграции и согласованной legacy rotation/CDN.
+
+Актуальный main `313bdcc` интегрирован в ветку CV. Конфликт портала разрешён с сохранением серверного CvDocumentViewer и новой клиентской помощи; сохранён versioned PDF worker. TypeScript и107/107 локальных tests PASS. Попытка новой baseline-проверки старых URL остановлена на prerequisite signing (`NoSuchKey`) синтетического fixture: это **не PASS и не доказательство отсутствия утечки**. Временные permissions/portal policy восстановлены, новый синтетический candidate-CV оставлен только как QA fixture для дальнейшей приёмки. Реальные CV не читались и не менялись.061, rotation/purge и release остаются непройденными; main не обновляется CV-кодом до cloud PASS.
+
 ## Подтверждённая проблема в текущем облаке
 
 Проверен Supabase `rnstsczayhzrxzcstzpr`, настоящие Auth JWT четырёх новых синтетических пользователей, отдельная is_test организация, непубличная QA-вакансия и синтетический файл. Привилегированное соединение применялось только для создания тестовых аккаунтов и маркировки точного QA UUID; проверки доступа выполнялись обычными JWT. Новые platform_admin не создавались.
