@@ -11,7 +11,8 @@ assert.equal((await pg.query('select has_client_portal($1) ok',[client])).rows[0
 assert.equal((await pg.query('select count(*) n from support_tickets where id=$1',[request])).rows[0].n,1);
 await actAs(pg,clientUser);assert.equal((await pg.query('select count(*) n from support_tickets where id=$1',[request])).rows[0].n,0);
 await actAs(pg,clientUser);await pg.query("select submit_client_feedback($1,'note','Test person private history')",[share]);
-await assert.rejects(pg.query("select submit_client_feedback($1,'interview_scheduled','',now()+interval '2 days')",[share]),/INVALID_INTERVIEW/);
+await assert.rejects(pg.query("select submit_client_feedback($1,'interview_scheduled','',now()+interval '2 days')",[share]),/Not permitted/);
+await actAs(pg,manager);await pg.query("select share_candidate_portal($1,'Approved professional summary',$2)",[submission,doc]);await actAs(pg,clientUser);await assert.rejects(pg.query("select submit_client_feedback($1,'interview_scheduled','',now()+interval '2 days')",[share]),/INVALID_INTERVIEW/);
 await assert.rejects(pg.query("select set_client_sharing_policy($1,true,'client')",[client]),/Not permitted/);
 await actAs(pg,manager);await pg.query("select set_client_sharing_policy($1,true,'client')",[client]);
 await actAs(pg,clientUser);assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.presentations.length,0);
@@ -30,7 +31,7 @@ assert.equal(portal.presentations[0].feedback.length,0);for(const value of ['Tes
 await assert.rejects(pg.query('select client_presentation_document($1)',[share]));
 assert.equal((await pg.query("select count(*) n from storage.objects where bucket_id='organization-cvs'")).rows[0].n,0);
 await pg.query("select submit_client_feedback($1,'interview_scheduled','Confirmed',now()+interval '2 days')",[share]);
-portal=(await pg.query('select client_portal_data() d')).rows[0].d;assert.equal(portal.presentations[0].feedback[0].action,'interview_scheduled');
+portal=(await pg.query('select client_portal_data() d')).rows[0].d;assert.equal(portal.presentations.length,0);
 await actAs(pg,manager);assert.equal((await pg.query('select count(*) n from placement_interviews where placement_id=$1',[placement])).rows[0].n,1);
 await actAs(pg,outsider);await assert.rejects(pg.query('select client_sharing_policy($1)',[client]),/Not permitted/);
 }finally{await pg.close()}});
