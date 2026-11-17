@@ -1,0 +1,65 @@
+{
+  "method": "Language changed through the visible switch, verified by actual label and dir. Chromium viewports, not physical devices.",
+  "checks": [
+    {
+      "size": "desktop",
+      "language": "he",
+      "direction": "rtl",
+      "documentWidth": 1292,
+      "filters": 4,
+      "hotJobs": 8,
+      "metric": "51,367\nמועמדים במאגר",
+      "width": 1307
+    },
+    {
+      "size": "desktop",
+      "language": "en",
+      "direction": "ltr",
+      "documentWidth": 1292,
+      "filters": 4,
+      "hotJobs": 8,
+      "metric": "51,367\nCandidates in our database",
+      "width": 1307
+    },
+    {
+      "size": "phone",
+      "language": "he",
+      "direction": "rtl",
+      "documentWidth": 375,
+      "filters": 4,
+      "hotJobs": 8,
+      "metric": "51,367\nמועמדים במאגר",
+      "width": 390
+    },
+    {
+      "size": "phone",
+      "language": "en",
+      "direction": "ltr",
+      "documentWidth": 375,
+      "filters": 4,
+      "hotJobs": 8,
+      "metric": "51,367\nCandidates in our database",
+      "width": 390
+    },
+    {
+      "size": "ipad",
+      "language": "he",
+      "direction": "rtl",
+      "documentWidth": 753,
+      "filters": 4,
+      "hotJobs": 8,
+      "metric": "51,367\nמועמדים במאגר",
+      "width": 768
+    },
+    {
+      "size": "ipad",
+      "language": "en",
+      "direction": "ltr",
+      "documentWidth": 753,
+      "filters": 4,
+      "hotJobs": 8,
+      "metric": "51,367\nCandidates in our database",
+      "width": 768
+    }
+  ]
+}

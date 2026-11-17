@@ -1,0 +1,1000 @@
+{
+  "at": "2026-11-17T10:09:23.542Z",
+  "issue": "HR-19",
+  "originalEvidence": "pilot-source-acceptance-2026-11-17.json",
+  "scope": "Every one of the 51 previously unresolved rows rechecked; uncertain status remains public rather than inferred closed",
+  "summary": {
+    "reviewed": 51,
+    "additionallyConfirmed": 15,
+    "titlesCorrectedInProduction": 6,
+    "totalPassedSourceChecks": 328,
+    "statusUnconfirmed": 36,
+    "activePublishedAfter": 364,
+    "removed": 0
+  },
+  "cloudVerification": {
+    "committed": true,
+    "changedTitles": 6,
+    "activePublished": 364,
+    "otherRowsUnchanged": true,
+    "sourceStatusPublicationVerifiedAtUnchanged": true,
+    "localizedContentUnchanged": true,
+    "publicAnonTitlesVerified": true,
+    "anonRest": {
+      "status": 200,
+      "rows": 6,
+      "allSixTitlesMatch": true
+    }
+  },
+  "limits": [
+    "The 36 unresolved rows are not marked closed or accepted active. HR-19 remains In Progress.",
+    "Job presence/control checks do not prove delivery of an application. No real or test application was sent to an external employer.",
+    "No source URL was replaced with a guessed or merely similar job; status, publication, verified_at and localized content were preserved.",
+    "The missing Maccabi5926 URL was additionally searched on the official board by exact requisition5926: no results; not treated as closure.",
+    "This report records cloud title-data changes; the separate count UI recovery fix requires an application release."
+  ],
+  "results": [
+    {
+      "id": "03ed6e0e-eba0-4252-b499-3d5e4daf214c",
+      "company": "Riskified",
+      "previousTitle": "Account Executive",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:14.520Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.riskified.com/careers/",
+        "observedTitle": null,
+        "headings": [
+          "Join us in unleashing ecommerce growth by minimizing risk",
+          "Careers",
+          "Life at Riskified",
+          "Join our team",
+          "We’ve got you covered"
+        ],
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "0e70ff93-6b58-498d-ab91-68833771300e",
+      "company": "Riskified",
+      "previousTitle": "Data Scientist",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8653104002",
+      "result": "TITLE_CORRECTED_CONFIRMED_ACTIVE",
+      "currentTitle": "Junior Data Scientist",
+      "observedAt": "2026-11-17T10:01:21.258Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.riskified.com/job-description/?gh_jid=8653104002",
+        "observedTitle": "Junior Data Scientist",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply now",
+          "Apply",
+          "Apply"
+        ],
+        "descriptionLength": 4960,
+        "cloudTitleVerifiedByAnonRest": true
+      }
+    },
+    {
+      "id": "52fe17fe-ec22-4b3b-a36d-ab3094905326",
+      "company": "Riskified",
+      "previousTitle": "Integration Engineer",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:16.084Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.riskified.com/careers/",
+        "observedTitle": null,
+        "headings": [
+          "Join us in unleashing ecommerce growth by minimizing risk",
+          "Careers",
+          "Life at Riskified",
+          "Join our team",
+          "We’ve got you covered"
+        ],
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "023de8be-a1db-4508-bfd4-d68ac5a789aa",
+      "company": "Similarweb",
+      "previousTitle": "Product Designer, Growth-Maternity Leave Replacement",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8152015",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:17.296Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at Similarweb",
+          "62 jobs"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "09e02b7d-844c-48d5-bfb7-497c0f77a096",
+      "company": "Similarweb",
+      "previousTitle": "Product Analyst",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7548388",
+      "result": "TITLE_CORRECTED_CONFIRMED_ACTIVE",
+      "currentTitle": "Senior Product Analyst",
+      "observedAt": "2026-11-17T10:01:22.521Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/similarweb/jobs/7548388",
+        "observedTitle": "Senior Product Analyst",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply",
+          "Submit application"
+        ],
+        "descriptionLength": 4319,
+        "cloudTitleVerifiedByAnonRest": true
+      }
+    },
+    {
+      "id": "0d12c953-693f-4836-908c-cd579349aa1c",
+      "company": "Similarweb",
+      "previousTitle": "Data Engineer – Applied ML",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239378",
+      "result": "TITLE_CORRECTED_CONFIRMED_ACTIVE",
+      "currentTitle": "Senior Data Engineer – Applied ML",
+      "observedAt": "2026-11-17T10:01:23.305Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239378",
+        "observedTitle": "Senior Data Engineer – Applied ML",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply",
+          "Submit application"
+        ],
+        "descriptionLength": 6680,
+        "cloudTitleVerifiedByAnonRest": true
+      }
+    },
+    {
+      "id": "0dd55a3f-451d-4600-a8fc-eac6cbd5f9ac",
+      "company": "monday.com",
+      "previousTitle": "Engineering Team Lead- Agentic Surfaces",
+      "sourceURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:51.942Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Engineering Team Lead- Agentic Surfaces",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "0fd5b63a-9ad5-4af4-9986-14ec24285fcb",
+      "company": "monday.com",
+      "previousTitle": "Senior Product Designer - Harmony AI",
+      "sourceURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:52.596Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior Product Designer - Harmony AI",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "09b75aef-d252-4bb8-ace8-a72296906e05",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "מנהל/ת חשבונות בצוות לעמותה מובילה בת”א",
+      "sourceURL": "https://www.manpower.co.il/job/244908",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:21.290Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/search",
+        "observedTitle": null,
+        "headings": [
+          "הכלים שלכם למציאת עבודה",
+          "מרכז העדפת פרטיות"
+        ],
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "16b7c16a-f525-4d46-a2cd-aa68f5362f75",
+      "company": "monday.com",
+      "previousTitle": "AI Knowledge & Intelligence Specialist",
+      "sourceURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:53.358Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "AI Knowledge & Intelligence Specialist",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "198ee088-48c5-48a6-9941-c00b9de51a9a",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "DFT Engineer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/dft-engineer/69.E61",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T09:57:51.468Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/dft-engineer/69.E61",
+        "observedTitle": "DFT Engineer @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 1981
+      }
+    },
+    {
+      "id": "1ec0a6fe-3272-4dd9-8d4d-d77547115b07",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "מחסנאי/ת ממוחשב",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/92.D6F",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T09:57:59.570Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/92.D6F",
+        "observedTitle": "מחסנאי/ת ממוחשב @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 1405
+      }
+    },
+    {
+      "id": "3ca7c435-317a-4db6-bc6c-e1f2695436ef",
+      "company": "Similarweb",
+      "previousTitle": "Senior Backend Engineer, Platform Foundations",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7962665",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:22.986Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at Similarweb",
+          "62 jobs"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "4193010e-e66b-4216-b9ac-c210cfb13067",
+      "company": "QuantHealth",
+      "previousTitle": "Bookkeeper",
+      "sourceURL": "https://job-boards.eu.greenhouse.io/quanthealth/jobs/4956767101",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:23.759Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.eu.greenhouse.io/quanthealth?error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at QuantHealth",
+          "Вакансий: 1"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "4232e059-3957-4efc-b9d7-46ec6afc8044",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "Purchasing Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/purchasing-buyer/BE.07D",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:25.684Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+        "observedTitle": null,
+        "headings": [
+          "Orbit Communication Systems - Careers",
+          "Euclid",
+          "Facilities",
+          "Finance",
+          "Operations"
+        ],
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply",
+          "Apply"
+        ],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "4b3bdf44-8ecc-4ba4-b2bb-f32d3261dafa",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "Operation Quality Team Leader",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/operation-quality-team-leader/3D.B67",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T09:58:07.637Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/operation-quality-team-leader/3D.B67",
+        "observedTitle": "Operation Quality Team Leader @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 2207
+      }
+    },
+    {
+      "id": "4c26e78b-302b-4a8a-ad3b-16d816d7dce7",
+      "company": "monday.com",
+      "previousTitle": "AI Research Scientist (Harmony)",
+      "sourceURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:53.847Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "AI Research Scientist (Harmony)",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "4f79184e-12b5-4ef3-8b36-7de3a89fe9b1",
+      "company": "Similarweb",
+      "previousTitle": "Product Data Scientist (Customer-facing)",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239121",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:27.212Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at Similarweb",
+          "62 jobs"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "540e1226-be8c-4329-b5db-476ac08d4266",
+      "company": "AppsFlyer",
+      "previousTitle": "Senior Backend Software Engineer - 2943",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8899639002",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:28.532Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at AppsFlyer",
+          "55 jobs"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "54f85a13-b601-4ddd-a1d8-046a3927be73",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "Electro-Mechanical Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electro-mechanical-buyer/9E.B6E",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:29.966Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+        "observedTitle": null,
+        "headings": [
+          "Orbit Communication Systems - Careers",
+          "Euclid",
+          "Facilities",
+          "Finance",
+          "Operations"
+        ],
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply",
+          "Apply"
+        ],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "57073f6a-1ccb-450c-ab6c-78be092b8d37",
+      "company": "monday.com",
+      "previousTitle": "Senior AI Partner Program Manager",
+      "sourceURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:54.542Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior AI Partner Program Manager",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "5e18375b-3141-403f-9596-27dcaaec9123",
+      "company": "monday.com",
+      "previousTitle": "Channel Partner Manager - Middle East",
+      "sourceURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:55.069Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Channel Partner Manager - Middle East",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "6cf4da4a-3440-4943-8937-f5e5663c1d6d",
+      "company": "monday.com",
+      "previousTitle": "Platform & Knowledge Team Lead",
+      "sourceURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:55.694Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Platform & Knowledge Team Lead",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "7354c081-b1e7-447e-82d8-5c6c74ad6857",
+      "company": "מכבי שירותי בריאות",
+      "previousTitle": "סטודנט/ית לאחיות בנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:40.692Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+        "observedTitle": null,
+        "headings": [
+          "",
+          "אופס, נראה שהעמוד שחיפשת כבר לא קיים.מזמינים אותך לעיין במשרות הפתוחות ולהגיש מועמדות.",
+          "הגעת לאתר החדש של מכבי"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source page unavailable/not found; closure not assumed"
+    },
+    {
+      "id": "6f605fa1-158f-42f8-8a0d-2bbda78f9e44",
+      "company": "טבע",
+      "previousTitle": "Global Program Associate Director (GPAD), Innovative Medicines Global Program leadership",
+      "sourceURL": "https://www.careers.teva/careers/job/563602813284632",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T10:01:26.024Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.careers.teva/careers/job/563602813284632",
+        "observedTitle": "Global Program Associate Director (GPAD), Innovative Medicines Global Program leadership",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": 8353
+      }
+    },
+    {
+      "id": "69a21bb3-bf50-4d19-98c1-e34a8d0bf799",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "מנהל/ת חשבונות לחברה מובילה",
+      "sourceURL": "https://www.manpower.co.il/job/244923",
+      "result": "TITLE_CORRECTED_CONFIRMED_ACTIVE",
+      "currentTitle": "מנהל/ת חשבונות לחברה מובילה+יום עבודה מהבית!",
+      "observedAt": "2026-11-17T10:01:29.149Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/job/244923",
+        "observedTitle": "מנהל/ת חשבונות לחברה מובילה+יום עבודה מהבית!",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "הגשת מועמדות",
+          "הגשת מועמדות"
+        ],
+        "descriptionLength": 992,
+        "cloudTitleVerifiedByAnonRest": true
+      }
+    },
+    {
+      "id": "845b24c7-4cd3-4af5-ba91-7a1f9c6ea82e",
+      "company": "AppsFlyer",
+      "previousTitle": "Backend Software Engineer- 2938",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8897823002",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:42.320Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at AppsFlyer",
+          "55 jobs"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "7c2f70f1-2d99-4430-8861-c2541ba7be74",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "איש/אשת אחזקה",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/3D.B60",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T09:59:13.594Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/3D.B60",
+        "observedTitle": "איש/אשת אחזקה @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 1139
+      }
+    },
+    {
+      "id": "88225928-a7a2-4fe5-bc6c-f749961daaf3",
+      "company": "אלביט מערכות",
+      "previousTitle": "NPI Product Expert Team Leader",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20754",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:43.547Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://elbitsystemscareer.com/job/?jid=20754",
+        "observedTitle": null,
+        "headings": [],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Official source says Job not found; closure not assumed"
+    },
+    {
+      "id": "893950e5-e4da-45db-aa3b-8e821d1e3bb6",
+      "company": "monday.com",
+      "previousTitle": "Senior Customer Enablement AI Builder",
+      "sourceURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:56.371Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior Customer Enablement AI Builder",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "7ec05657-d051-4e87-abb5-5f59ac3c687b",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "עוזר.ת חשב לחברה בנוף הגליל – 80% משרה",
+      "sourceURL": "https://www.manpower.co.il/job/244933",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:46.662Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/search",
+        "observedTitle": null,
+        "headings": [
+          "הכלים שלכם למציאת עבודה"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "8af8f0ff-a7ca-4c9b-8004-f8417151606d",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "Electromechanical R&D TL",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electromechanical-rd-tl/FE.077",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T09:59:19.290Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electromechanical-rd-tl/FE.077",
+        "observedTitle": "Electromechanical R&D TL @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 1880
+      }
+    },
+    {
+      "id": "90646d1c-6188-424a-b535-2af1fd54f211",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "Senior System Engineer AMS",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/senior-system-engineer-ams/2D.B6F",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T09:59:25.128Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/senior-system-engineer-ams/2D.B6F",
+        "observedTitle": "Senior System Engineer AMS @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 1424
+      }
+    },
+    {
+      "id": "922be198-95d1-405d-98fc-ae2628e0133d",
+      "company": "חברת החשמל",
+      "previousTitle": "מהנדס.ת / הנדסאי.ת חשמל להדרכת קורסים לעבודה בחדרה",
+      "sourceURL": "https://careers.iec.co.il/order/14921/",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:46.973Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": null,
+        "observedTitle": null,
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": null,
+        "descriptionLength": null,
+        "errorClass": "BROWSER_HTTP_RESPONSE_CODE_FAILURE"
+      },
+      "reason": "Source returned an HTTP failure"
+    },
+    {
+      "id": "98ad523e-aa30-448c-aad9-14ad8f7c82eb",
+      "company": "monday.com",
+      "previousTitle": "Strategic Project Manager (InTECH)",
+      "sourceURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:57.026Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Strategic Project Manager (InTECH)",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "a216de4f-2f30-4e00-994a-c8d84714bfbd",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "גזבר/ית לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244962",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:50.474Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/search",
+        "observedTitle": null,
+        "headings": [
+          "הכלים שלכם למציאת עבודה"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "b70d82fd-b70e-427e-ba12-2faa5856992d",
+      "company": "Orbit Communication Systems",
+      "previousTitle": "מנהל/ת חשבונות ראשי/ת וגזבר/ית",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/---/6D.379",
+      "result": "TITLE_CORRECTED_CONFIRMED_ACTIVE",
+      "currentTitle": "מנהל/ת חשבונות ראשי/ת",
+      "observedAt": "2026-11-17T09:59:30.946Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/---/6D.379",
+        "observedTitle": "מנהל/ת חשבונות ראשי/ת @ Orbit Communication Systems",
+        "headings": null,
+        "applicationForm": true,
+        "applicationControls": null,
+        "descriptionLength": 1231,
+        "cloudTitleVerifiedByAnonRest": true
+      }
+    },
+    {
+      "id": "b43f32bb-8b45-49b2-bb32-cc680787969c",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "חשב/ת לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244961",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:53.212Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/search",
+        "observedTitle": null,
+        "headings": [
+          "הכלים שלכם למציאת עבודה",
+          "מרכז העדפת פרטיות"
+        ],
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "bb50378e-2bc7-4b29-bd3c-273cfd70bb4b",
+      "company": "monday.com",
+      "previousTitle": "Senior Marketing Automation Manager",
+      "sourceURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:57.533Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior Marketing Automation Manager",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "c97f386b-3a56-4959-bb52-5ab2f6c1a7e0",
+      "company": "monday.com",
+      "previousTitle": "Senior Enablement Business Partner",
+      "sourceURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:58.037Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior Enablement Business Partner",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "cee4c1da-6353-45f5-9d16-0b96690034d5",
+      "company": "monday.com",
+      "previousTitle": "Senior AI Engineer – Agentic Marketing",
+      "sourceURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:58.813Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior AI Engineer – Agentic Marketing",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "d57cc4d0-06ba-472e-a44b-a121a2f6bdae",
+      "company": "monday.com",
+      "previousTitle": "Total Rewards Partner",
+      "sourceURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:00:59.507Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Total Rewards Partner",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "de369eec-d377-4238-9fad-ef7fb76b6069",
+      "company": "monday.com",
+      "previousTitle": "Software Engineering Tech Lead - AI Project Management",
+      "sourceURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:01:00.061Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Software Engineering Tech Lead - AI Project Management",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "e4808e22-0e59-40f7-8e27-b83a5ac5c942",
+      "company": "monday.com",
+      "previousTitle": "Assistant Controller",
+      "sourceURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:01:00.558Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Assistant Controller",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "e710d128-bbab-41e7-8b6f-1948e277ac52",
+      "company": "monday.com",
+      "previousTitle": "Senior Lifecycle Marketing Operations Manager",
+      "sourceURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:01:01.210Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior Lifecycle Marketing Operations Manager",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "ed3f13b7-7713-42ba-92e8-559c35511762",
+      "company": "טבע",
+      "previousTitle": "Senior Manager, Medical Writing",
+      "sourceURL": "https://www.careers.teva/careers/job/563602813593113",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T10:01:31.421Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.careers.teva/careers/job/563602813593113",
+        "observedTitle": "Senior Manager, Medical Writing",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": 8220
+      }
+    },
+    {
+      "id": "edb76af5-093f-44bb-b926-5e8100a434c2",
+      "company": "טבע",
+      "previousTitle": "Senior Manager, DMPK Project Leader",
+      "sourceURL": "https://www.careers.teva/careers/job/563602813749170",
+      "result": "CONFIRMED_ACTIVE",
+      "observedAt": "2026-11-17T10:01:33.357Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.careers.teva/careers/job/563602813749170",
+        "observedTitle": "Senior Manager, DMPK Project Leader",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "Apply"
+        ],
+        "descriptionLength": 6719
+      }
+    },
+    {
+      "id": "f12d7d7b-4cdd-4023-baa6-7bc713d7bc8a",
+      "company": "AppsFlyer",
+      "previousTitle": "Salary Controller",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8809604002",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:54.187Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+        "observedTitle": null,
+        "headings": [
+          "Current openings at AppsFlyer",
+          "55 jobs"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "f7d94b35-0f69-4141-9f88-85894342886c",
+      "company": "monday.com",
+      "previousTitle": "Senior AI Enablement Solutions Builder",
+      "sourceURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:01:01.908Z",
+      "evidence": {
+        "method": "Official employer search after each exact stored title",
+        "searchQuery": "Senior AI Enablement Solutions Builder",
+        "noResults": true,
+        "matchingLinks": 0
+      },
+      "reason": "Source role showed generic error in earlier pass and was not found by the official search; no explicit closure confirmation"
+    },
+    {
+      "id": "f8825612-80b4-45c9-880e-9797f5bf4ca1",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "מנהל/ת חשבונות ספקים לחברת הפצה באיירפורט סיטי",
+      "sourceURL": "https://www.manpower.co.il/job/244922",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC",
+      "observedAt": "2026-11-17T10:02:58.116Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/search",
+        "observedTitle": null,
+        "headings": [
+          "הכלים שלכם למציאת עבודה"
+        ],
+        "applicationForm": null,
+        "applicationControls": [],
+        "descriptionLength": null
+      },
+      "reason": "Source redirects to a general listing; no equivalent replacement ID proven"
+    },
+    {
+      "id": "ff67ae31-d488-49af-8bc6-8fe3845d530a",
+      "company": "Manpower — מקור גיוס",
+      "previousTitle": "מנהלת חשבונות",
+      "sourceURL": "https://www.manpower.co.il/job/244547",
+      "result": "TITLE_CORRECTED_CONFIRMED_ACTIVE",
+      "currentTitle": "מנהל/ת חשבונות – קיבוץ נחשונים",
+      "observedAt": "2026-11-17T10:01:37.378Z",
+      "evidence": {
+        "method": "Rendered exact stored source URL, title/content and role application control/form",
+        "observedURL": "https://www.manpower.co.il/job/244547",
+        "observedTitle": "מנהל/ת חשבונות – קיבוץ נחשונים",
+        "headings": null,
+        "applicationForm": null,
+        "applicationControls": [
+          "הגשת מועמדות",
+          "הגשת מועמדות"
+        ],
+        "descriptionLength": 947,
+        "cloudTitleVerifiedByAnonRest": true
+      }
+    }
+  ]
+}

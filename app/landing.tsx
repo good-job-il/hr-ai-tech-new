@@ -19,7 +19,18 @@ export default function Landing({lang,heroSearch,featured,onAuth,onHelp,onTab,on
  const [candidatePopulation,setCandidatePopulation]=useState<number|null>(null);
  const [careerAvailable,setCareerAvailable]=useState(false);
  useEffect(()=>{const controller=new AbortController();fetch('/api/career',{signal:controller.signal}).then(r=>r.ok?r.json():null).then(r=>{if(!controller.signal.aborted)setCareerAvailable(r?.available===true)}).catch(()=>{});return()=>controller.abort()},[]);
- useEffect(()=>{let alive=true,sequence=0;const refresh=async()=>{const request=++sequence;const count=await loadCandidatePopulationCount();if(alive&&request===sequence)setCandidatePopulation(count)};void refresh();window.addEventListener('focus',refresh);return()=>{alive=false;window.removeEventListener('focus',refresh)}},[signedIn]);
+ useEffect(()=>{
+  let alive=true,sequence=0,retry:ReturnType<typeof setTimeout>|undefined;
+  const refresh=async()=>{
+   clearTimeout(retry);
+   const request=++sequence,count=await loadCandidatePopulationCount();
+   if(!alive||request!==sequence)return;
+   if(count!==null)setCandidatePopulation(count);
+   else retry=setTimeout(()=>void refresh(),15000);
+  };
+  void refresh();window.addEventListener('focus',refresh);window.addEventListener('online',refresh);
+  return()=>{alive=false;clearTimeout(retry);window.removeEventListener('focus',refresh);window.removeEventListener('online',refresh)};
+ },[signedIn]);
  const faq=useRef<HTMLDialogElement>(null);const [helpReady,setHelpReady]=useState(false);useEffect(()=>setHelpReady(true),[]);
  const help=onHelp;
  const unavailable=(he:string,en:string)=><span className="unpublishedLink" aria-disabled="true" title={tr('טרם פורסם','Not published yet')}>{tr(he,en)}</span>;
