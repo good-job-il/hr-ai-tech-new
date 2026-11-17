@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Jerusalem",
+  "issue": "HR-15",
+  "repositoryBaseCommit": "313bdcc7448f329a4a7f78cac5231d3b5cdef96d",
+  "decision": "EXTERNAL_PILOT_NOT_APPROVED_BY_THIS_AUDIT",
+  "scope": "Internal readiness and recovery evidence; no outbound email, referral, permission change or production deployment",
+  "items": [
+    {
+      "issue": "HR-8 / HR-12",
+      "result": "OPEN_CRITICAL",
+      "accepted": "Local CV server/revocation code and scoped regression tests prepared",
+      "remaining": "Correct-project server key; actual cloud checks of both buckets, grant/revoke, legacy exact URLs and CDN; deploy/live acceptance",
+      "dependsOn": [
+        "HR-31"
+      ],
+      "evidence": "Latest Linear HR-8/12 comments, 16.11.2026; local branch codex/cv-release-20261115 @19d6c41ce6456c2aa4e9e27929befebd3aeffd2a"
+    },
+    {
+      "issue": "HR-9",
+      "result": "PARTIAL_ACCEPTED",
+      "accepted": "Full-pool UI performance 36/36 within owner SLA on15.11; quality stage documented",
+      "remaining": "Document and revocation acceptance remains tied to HR-8/12",
+      "dependsOn": [
+        "HR-8",
+        "HR-12"
+      ],
+      "evidence": "https://github.com/good-job-il/hr-ai-tech-new/commit/2dc314a72c90fa3b48dec8b305fcb9ec1f85c371"
+    },
+    {
+      "issue": "HR-10",
+      "result": "RELEASE_AND_LIVE_ACCEPTANCE_PENDING",
+      "accepted": "Hosted synthetic candidate flow/profile/PDF/relogin; six header viewport/language combinations on prepared build",
+      "remaining": "Publish corrected iPad header/security release and verify on www",
+      "dependsOn": [
+        "HR-34",
+        "HR-35"
+      ],
+      "evidence": "Latest HR-10 comment17.11; codex/pilot-acceptance-20261117 @706aae220fa7a0dbcc0e58eca0f0e5cfa78c29a9"
+    },
+    {
+      "issue": "HR-11",
+      "result": "PARTIAL_ACCEPTED",
+      "accepted": "Synthetic agency approval/share/feedback cycle and published PDF/account/help UI correction",
+      "remaining": "Secure CV/revocation and approved real Oren/client acceptance",
+      "dependsOn": [
+        "HR-8",
+        "HR-12",
+        "HR-16"
+      ],
+      "evidence": "Latest HR-11 comment16.11; main313bdcc"
+    },
+    {
+      "issue": "HR-7",
+      "result": "OPEN",
+      "accepted": "Previously verified signup/confirmation/login and role checks",
+      "remaining": "Owner-controlled password recovery/relogin, redirects and mail limits; do not automate a password change",
+      "dependsOn": [
+        "Owner handoff"
+      ],
+      "evidence": "HR-7 description; prior signup is not requested again as if untested"
+    },
+    {
+      "issue": "HR-13",
+      "result": "PARTIAL_ACCEPTED",
+      "accepted": "Fresh encrypted snapshot75tables/1090955rows/65migrations; decrypt/hash PASS; actual local restore75tables/154FK/outsiderRLS PASS,28.567seconds",
+      "remaining": "Separate Supabase restore with real Auth login and Storage bytes, controlled separate archive/key storage, owner/rotation",
+      "dependsOn": [
+        "Approved isolated restore environment",
+        "HR-31",
+        "Owner storage decisions"
+      ],
+      "evidence": "pilot-backup-recovery-2026-11-17.json"
+    },
+    {
+      "issue": "HR-14",
+      "result": "PARTIAL_ACCEPTED",
+      "accepted": "Clean CI install/typecheck/tests/build, README and Preview guard already in main",
+      "remaining": "Successful isolated cloud Preview acceptance",
+      "dependsOn": [
+        "HR-35"
+      ],
+      "evidence": "HR-14 description and latest comments; local build is not Preview proof"
+    },
+    {
+      "issue": "HR-19",
+      "result": "PARTIAL_ACCEPTED",
+      "accepted": "All51exceptions rechecked;15additional passes;6titles corrected in cloud;328of364passed source checks;0jobs removed",
+      "remaining": "36source statuses unconfirmed:16general redirects,17monday not found in official search,3source errors; retain active jobs until closure proven",
+      "dependsOn": [
+        "Authoritative source confirmation"
+      ],
+      "evidence": "https://github.com/good-job-il/hr-ai-tech-new/blob/7edfdf70651595d81ba94618acace517ad21ca1e/docs/pilot-source-followup-2026-11-17.json"
+    },
+    {
+      "issue": "HR-32",
+      "result": "TECHNICAL_AND_OWNER_HOLD",
+      "accepted": "Client inbox/rejection/update UI and Hebrew branded email draft prepared",
+      "remaining": "CV gates, branded SMTP/DNS delivery, approved content/recipient/branding; no contact with Oren while owner hold applies",
+      "dependsOn": [
+        "HR-31",
+        "HR-33",
+        "Owner message approval"
+      ],
+      "evidence": "codex/client-portal-inbox-20261116 @d3f4cf4a7c2cc4c489081fa9c50dd725160f23b8; owner hold17.11"
+    },
+    {
+      "issue": "HR-34",
+      "result": "RELEASE_BLOCKED",
+      "accepted": "Security upgrade16.4.5 and header correction prepared; local and GitHub CI PASS",
+      "remaining": "Successful Preview, production release and public acceptance",
+      "dependsOn": [
+        "HR-35"
+      ],
+      "evidence": "706aae220fa7a0dbcc0e58eca0f0e5cfa78c29a9; failed deployment9We6pd2tPzayVXcEjqjiBJFqpwkW"
+    },
+    {
+      "issue": "HR-36",
+      "result": "RELEASE_BLOCKED",
+      "accepted": "Count recovery code,108tests,GitHubCI,production local build and6HE/EN viewport cases PASS",
+      "remaining": "Successful Preview, release and actual public recovery acceptance",
+      "dependsOn": [
+        "HR-35",
+        "HR-34"
+      ],
+      "evidence": "7edfdf70651595d81ba94618acace517ad21ca1e; GitHub run44062551978; failed deployment6VEQWLinEY5G4c2h7JQ33ifQYZFm"
+    },
+    {
+      "issue": "HR-29",
+      "result": "PRODUCTION_CONFIGURATION_PENDING",
+      "accepted": "Four career tools previously passed real local HE/EN synthetic API/UI acceptance on10.11",
+      "remaining": "Correct Vercel server configuration/deploy and real production acceptance of all four tools, within approved credit-only limit30USD and no extra purchase or auto reload",
+      "dependsOn": [
+        "HR-35"
+      ],
+      "evidence": "Latest HR-29 comments; fresh public /api/career HTTP200 available:false on17.11. No new AI request, spending or billing change in this audit"
+    },
+    {
+      "issue": "HR-16",
+      "result": "OWNER_DECISIONS_PENDING",
+      "accepted": "Agency/employer representatives, owner as operational contact, Reuven as technical escalation, existing Help and outbound hold confirmed",
+      "remaining": "Schedule, approved contact publication, recipient/branding and remaining documented business/retention decisions",
+      "dependsOn": [
+        "Owner decisions"
+      ],
+      "evidence": "pilot-decisions-2026-11-17.json"
+    },
+    {
+      "issue": "HR-15",
+      "result": "INTERNAL_REPORT_PREPARED_REAL_ACCEPTANCE_PENDING",
+      "accepted": "Current evidence matrix and next actions prepared",
+      "remaining": "Critical gates above; agreed first real referral and client feedback; explicit owner pilot go/no-go",
+      "dependsOn": [
+        "HR-8",
+        "HR-12",
+        "HR-13",
+        "HR-16",
+        "Owner and Oren acceptance"
+      ],
+      "evidence": "This dated matrix is not approval to invite or launch"
+    }
+  ],
+  "reuvenPrerequisites": [
+    {
+      "issue": "HR-31",
+      "status": "Backlog",
+      "assignedTo": "Reuven Yaron",
+      "need": "Securely save the current project server key in the named ignored local file; then synthetic access check",
+      "actualCheck": "Server key presence=false in root .env and work/cv-release-20261115/.env.local on17.11; no values logged"
+    },
+    {
+      "issue": "HR-33",
+      "status": "Backlog",
+      "assignedTo": "Reuven Yaron",
+      "need": "Correct Cloudflare zone and Supabase Auth SMTP/template management access; rename only the verified current display name",
+      "actualCheck": "Required mail DNS records not found; domain NS resolves normally. No DNS/SMTP or paid changes performed"
+    },
+    {
+      "issue": "HR-35",
+      "status": "Backlog",
+      "assignedTo": "Reuven Yaron",
+      "need": "Correct HR-AI Tech/hr-ai-tech-new access and actual failed Preview build logs; solve and prove Preview success",
+      "actualCheck": "Both prepared release commit statuses remain Vercel failure on17.11"
+    }
+  ],
+  "nextOrder": [
+    "Reuven supplies HR-31 and HR-35 access/evidence; HR-33 can proceed independently",
+    "Complete cloud CV/revocation tests before any CV release",
+    "Complete successful isolated Preview/security/header/count release and www acceptance",
+    "Finish isolated recovery including Auth/Storage and separate controlled backup custody",
+    "Approve mail content/recipient/branding before a real client email; test only allowed QA during hold",
+    "Resolve owner operations decisions, then agree real client acceptance and explicit go/no-go"
+  ],
+  "limits": [
+    "Historical tests are attributed to their dates/versions, not rerun here without need",
+    "No personal records, keys, passwords, signed CV links or private email addresses included",
+    "Outstanding business decisions are not inferred from implemented SQL or UI"
+  ],
+  "freshPublicEvidence": "pilot-live-probes-2026-11-17.json"
+}

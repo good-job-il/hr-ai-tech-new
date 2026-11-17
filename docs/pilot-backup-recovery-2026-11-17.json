@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Jerusalem",
+  "issue": "HR-13",
+  "result": "PASS_LOCAL_APPLICATION_RESTORE_CLOUD_ACCEPTANCE_PENDING",
+  "projectRef": "rnstsczayhzrxzcstzpr",
+  "snapshotAtUtc": "2026-11-17 14:34:56.683839+00",
+  "snapshotAtJerusalem": "17/11/2026, 16:34:56",
+  "backup": {
+    "consistentTransaction": "REPEATABLE READ READ ONLY",
+    "tables": 75,
+    "rows": 1090955,
+    "migrations": 65,
+    "migrationsWithStatements": 65,
+    "authAccounts": 23,
+    "storageObjectInventory": 13,
+    "storageFileBytesBackedUp": false,
+    "encryptedBytes": 59597516,
+    "encryptedSha256": "883ab8ea1bf485cf46460ca41f0a6653fe61fc00fa23b0d10e4cb40643605855",
+    "encryption": "Fernet/AES-128-CBC+HMAC-SHA256",
+    "integrity": "PASS",
+    "elapsedSeconds": 808.94,
+    "archiveAndKeyIgnored": true,
+    "previousBackupPreserved": true
+  },
+  "restore": {
+    "result": "PASS_LOCAL_APPLICATION_RESTORE",
+    "at": "2026-11-17T14:49:03.873Z",
+    "project": "rnstsczayhzrxzcstzpr",
+    "snapshotAt": "2026-11-17 14:34:56.683839+00",
+    "tables": 75,
+    "rows": 1090955,
+    "migrations": 65,
+    "foreignKeysRevalidated": 154,
+    "elapsedSeconds": 28.567,
+    "cloudRestore": false,
+    "authLoginTested": false,
+    "storageBytesRestored": false,
+    "limitations": [
+      "Disposable local PGlite, not a separate Supabase project.",
+      "Auth user metadata/IDs modeled for FK/RLS; Auth service, credentials, sessions and actual login not restored/tested.",
+      "Storage file bytes and service configuration excluded."
+    ],
+    "reportDoesNotContainPrivateRecordValues": true
+  },
+  "guardChecks": {
+    "result": "PASS",
+    "checks": [
+      "wrong project refused without private output",
+      "changed archive refused before reading a key",
+      "invalid decrypted format refused without record output",
+      "report cannot overwrite the encrypted archive"
+    ],
+    "actualProductionDataUsed": false
+  },
+  "firstAttempt": {
+    "result": "FAILED_NO_ACCEPTED_ARCHIVE",
+    "sqlstate": "57014",
+    "reason": "Large SELECT exceeded the existing database statement timeout",
+    "remedy": "Read server cursor batches of1000 inside a new consistent read-only snapshot; global/session protection limits not disabled"
+  },
+  "limits": [
+    "A local PGlite application restore is not a separate Supabase cloud restore.",
+    "Auth IDs/metadata are modeled for relationships and RLS; real Auth login/credentials/service configuration are not restored.",
+    "13Storage object entries are inventory only; actual CV/avatar file bytes are not in this archive.",
+    "Archive and key remain separate files on the same owner computer; approved off-device custody, owner and rotation remain pending.",
+    "Snapshot covers the recorded transaction point; later writes are not part of this backup.",
+    "Schema is reconstructed from stored applied migration statements; this is not a full-service pg_dump or independent byte-for-byte audit of all deployed manual DDL.",
+    "No real candidate record, credential, backup/key contents or private object path is included in this public report."
+  ]
+}

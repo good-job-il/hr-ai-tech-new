@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-17T14:37:14.831Z",
+  "checks": [
+    {
+      "endpoint": "https://www.hr-ai.tech/api/career",
+      "status": 200,
+      "elapsedMs": 389,
+      "available": false
+    },
+    {
+      "endpoint": "https://www.hr-ai.tech/api/cv",
+      "status": 404,
+      "elapsedMs": 337
+    },
+    {
+      "rpc": "public_candidate_population_count",
+      "status": 200,
+      "count": 51367,
+      "elapsedMs": 2662
+    },
+    {
+      "resource": "public_job_catalog",
+      "status": 206,
+      "total": 364
+    },
+    {
+      "commit": "706aae220fa7a0dbcc0e58eca0f0e5cfa78c29a9",
+      "httpStatus": 200,
+      "commitState": "failure",
+      "statuses": [
+        {
+          "context": "Vercel",
+          "state": "failure",
+          "url": "https://vercel.com/hr-ai-tech/hr-ai-tech-new/9We6pd2tPzayVXcEjqjiBJFqpwkW"
+        }
+      ]
+    },
+    {
+      "commit": "7edfdf70651595d81ba94618acace517ad21ca1e",
+      "httpStatus": 200,
+      "commitState": "failure",
+      "statuses": [
+        {
+          "context": "Vercel",
+          "state": "failure",
+          "url": "https://vercel.com/hr-ai-tech/hr-ai-tech-new/6VEQWLinEY5G4c2h7JQ33ifQYZFm"
+        }
+      ]
+    }
+  ],
+  "limits": "Read-only public health/aggregate requests. Empty CV POST does not test authorized document delivery. No outbound email/referral."
+}

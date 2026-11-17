@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Jerusalem",
+  "issue": "HR-16",
+  "status": "AWAITING_OWNER_DECISIONS",
+  "confirmed": [
+    {
+      "item": "Participants",
+      "decision": "Owner's employees and employer representatives receiving referrals",
+      "source": "Explicit owner reply, 09.11.2026"
+    },
+    {
+      "item": "Agency representative",
+      "decision": "The owner represents תעסוקה טובה",
+      "source": "Explicit owner reply, 15.11.2026"
+    },
+    {
+      "item": "Employer representative",
+      "decision": "Oren represents חצי חינם",
+      "source": "Explicit owner reply, 15.11.2026"
+    },
+    {
+      "item": "Help entry point",
+      "decision": "Existing internal help form; no support email delivery is claimed",
+      "source": "HR-23 and HR-16"
+    },
+    {
+      "item": "Outbound communication hold",
+      "decision": "Send nothing to Oren until the owner reviews content, recipient and branding",
+      "source": "Explicit owner reply, 17.11.2026"
+    },
+    {
+      "item": "Client queue",
+      "decision": "Show referrals awaiting the client's response; rejected candidates disappear from the client's queue",
+      "source": "HR-32 and explicit owner instructions"
+    },
+    {
+      "item": "Client login and rejection",
+      "decision": "One-time email link; professional Civi rejection reasons; updates kept separate; no age or sector reasons",
+      "source": "HR-32 and explicit owner instructions"
+    },
+    {
+      "item": "Operational support ownership",
+      "decision": "The owner is Oren's primary operational contact; Reuven handles technical escalation; existing Help centralizes requests",
+      "source": "Owner explicitly agreed17.11.2026 after the proposed split was explained",
+      "boundary": "Documentation/operating responsibility only; no permission grants or contact publication"
+    }
+  ],
+  "open": [
+    {
+      "id": "support_contact",
+      "decisionNeeded": "Approved displayed support contact/address and final wording, if an external email address is to be published",
+      "status": "Operational owner is confirmed; no new email address has been approved or published",
+      "boundary": "The operating split is approved, but access/routing of actual Help tickets to that operator has not been accepted by this documentation step; no new privilege is granted by assumption"
+    },
+    {
+      "id": "schedule",
+      "decisionNeeded": "Pilot start/end dates and completion criterion",
+      "status": "Not supplied"
+    },
+    {
+      "id": "recipient",
+      "decisionNeeded": "Oren's current email/account and approved referral email recipient",
+      "status": "Owner requested a hold; historical addresses will not be substituted"
+    },
+    {
+      "id": "message",
+      "decisionNeeded": "Final Hebrew email content, sender display name and logo presentation",
+      "status": "Draft only; no sending or invitation authorized"
+    },
+    {
+      "id": "commercial",
+      "decisionNeeded": "Approve the pilot account's trial/commercial mode",
+      "boundary": "No payments, automatic charges or billing activation are being performed"
+    },
+    {
+      "id": "ownership",
+      "decisionNeeded": "Candidate-card ownership, process responsibility and first-referral attribution",
+      "boundary": "Existing RLS and demonstration calculations do not establish a commercial agreement"
+    },
+    {
+      "id": "hours",
+      "decisionNeeded": "Calendar boundaries and the person approving actual work hours",
+      "boundary": "The documented 22%-per-month model is distinct from approval of the timesheet procedure"
+    },
+    {
+      "id": "retention",
+      "decisionNeeded": "Retention/deletion procedure, operator and approved backup storage/rotation",
+      "boundary": "No retention duration or deletion policy is invented by the agent"
+    },
+    {
+      "id": "acceptance",
+      "decisionNeeded": "Agreed first real referral, Oren's feedback and owner's final go/no-go",
+      "boundary": "Internal QA does not count as real client acceptance"
+    }
+  ],
+  "actionsNotPerformed": [
+    "No email, invitation or magic link sent to Oren",
+    "No real candidate referral sent",
+    "No account permission granted",
+    "No billing or payment enabled"
+  ]
+}

@@ -1,4 +1,6 @@
 node_modules/
+__pycache__/
+*.pyc
 /public/pdf.worker.*.min.mjs
 .next/
 .env*
