@@ -1,0 +1,15 @@
+'use client';
+import {useState} from 'react';
+import Link from 'next/link';
+import WorkspaceShell from '../workspace-shell';
+import UiIcon from '../../ui-icon';
+export default function SignInHelp(){
+ const [lang,L]=useState<'he'|'en'>('he');const t=(a:string,b:string)=>lang==='he'?a:b;
+ const entries=[
+  [t('לא הגיע קישור הכניסה למייל','The sign-in email did not arrive'),t('יש לבדוק את כתובת המייל ואת תיקיית הספאם. השתמש בכתובת שהעברת לחברת ההשמה. אם כבר ביקשת קישור, המתן לפני בקשה נוספת לפי הזמן שמוצג במסך הכניסה.','Check the email address and spam folder. Use the address you shared with the agency. If you already requested a link, wait for the resend timer shown on the sign-in screen.')],
+  [t('הקישור לא עובד או שכבר השתמשתי בו','The link does not work or was already used'),t('קישור הכניסה הוא אישי וחד פעמי. חזור למסך הכניסה ובקש קישור חדש. אין להעביר את הקישור לאדם אחר.','The sign-in link is personal and single-use. Return to sign-in and request a new link. Do not forward your link to anyone else.')],
+  [t('נכנסתי, אבל אין לי גישה להפניות','I signed in but cannot access referrals'),t('כניסה לחשבון אינה מעניקה הרשאה למועמדים. יש לוודא מול הנציג שלך בחברת ההשמה שהגישה נפתחה לכתובת המייל הנכונה.','Signing in does not grant candidate access. Ask your agency contact to confirm that access was enabled for the correct email address.')],
+  [t('אני צריך עזרה אישית','I need personal assistance'),t('פנה לנציג חברת ההשמה שאתה כבר בקשר איתו וציין מה קרה, באיזה שלב ובאיזו כתובת מייל ניסית להיכנס. אין לשלוח סיסמה, קוד או קישור כניסה. לאחר הכניסה אפשר לפתוח פנייה מתוך ״עזרה ותמיכה״.','Contact the agency representative you already work with. Describe what happened, which step failed and the email address you used. Do not send passwords, codes or sign-in links. Once signed in, you can submit a request through Help & support.')]
+ ];
+ return <WorkspaceShell lang={lang} onLanguage={()=>L(lang==='he'?'en':'he')}><section className="cpHelpPage cpPublicHelp"><p className="cpEyebrow">{t('עזרה לסביבת הלקוח','CLIENT WORKSPACE HELP')}</p><h1>{t('לא מצליחים להיכנס?','Having trouble signing in?')}</h1><p className="cpPageDescription">{t('אפשר לקרוא את ההסברים כאן גם בלי להתחבר לחשבון.','You can read these instructions without signing in.')}</p><div className="cpHelpGrid"><div className="cpHelpAnswers"><h2>{t('עזרה בכניסה','Sign-in help')}</h2>{entries.map(([question,answer])=><details key={question}><summary>{question}<UiIcon name="arrow-forward" size={17}/></summary><p>{answer}</p></details>)}</div><div className="cpHelpContact"><span className="cpHelpSymbol"><UiIcon name="login" size={28}/></span><h2>{t('חזרה לסביבת הלקוח','Back to your workspace')}</h2><p>{t('התחבר באמצעות כתובת המייל שהעברת לחברת ההשמה. אין צורך בסיסמה לכניסה לפורטל.','Sign in with the email address you shared with the agency. No password is needed to enter the portal.')}</p><Link className="cpPrimary" href="/client-portal">{t('למסך הכניסה','Go to sign-in')}<UiIcon name="arrow-forward" size={17}/></Link></div></div></section></WorkspaceShell>;
+}
