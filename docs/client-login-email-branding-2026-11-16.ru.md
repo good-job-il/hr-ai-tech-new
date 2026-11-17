@@ -1,0 +1,44 @@
+# HR-32: брендинг письма входа
+
+Владелец16.11.2026 подтвердил получение проверочного письма: sender Supabase, текст английский. Это подтверждает доставку одного письма, но не успешную авторизацию в новом портале. Запрошен бренд hr-ai.tech и Hebrew для пилота.
+
+Подготовлены `supabase/templates/magic-link-he.html` и `magic-link-he.subject.txt`: актуальный логотип, navy/purple, RTL, один CTA, нейтральное описание входа без обещания наличия кандидатов или доступа. Текст без niqqud. Тело использует стандартную переменную Supabase `{{ .ConfirmationURL }}`; не подменять её постоянной ссылкой на сайт и не сохранять реальные токены в preview/Git. Письмо не содержит CV, персональных данных или рекрутерских заметок.
+
+Рекомендуемый sender name: `hr-ai.tech`. Предложенный From: `login@hr-ai.tech` — пока не подтверждённый/не созданный адрес. Это предложение, не факт настроенного почтового ящика. Ответный адрес поддержки ещё не определён; не указывать выдуманный Reply-To.
+
+## Условия облачного подключения
+
+Нужны существующий либо отдельно выбранный SMTP-провайдер, подтверждение отправки от hr-ai.tech и необходимые записи DNS от этого провайдера. Не создавать платную подписку и не менять DNS без конкретных проверенных значений. Пароли/ключи хранить только в защищённых настройках. Не копировать их в чат, Linear или репозиторий.
+
+На правильном Supabase `rnstsczayhzrxzcstzpr` отдельно настроить custom SMTP (`smtp_sender_name`, `smtp_admin_email`, host/port/user/password), затем Magic Link subject/content. Не менять подтверждение email, expiry, redirect allowlist и другие auth templates одним общим config push. Шаблон Magic Link является настройкой всего проекта: его текст намеренно подходит любому существующему аккаунту, а не только представителю клиента. Другие типы писем не переведены этой задачей. Автоматическая локализация будущих языков пока не реализована.
+
+Проверить ограничения провайдера, SPF/DKIM/DMARC и отключить переписывание/tracking auth-ссылок. До выпуска: readback настроек без секретов; тест доставки на согласованную почту, фактические From и тема, Hebrew/RTL на телефоне/iPad/Outlook, вход в нужный портал, повторное использование/expiry, отсутствие нового доступа чужому аккаунту. Браузерный HTML preview не является проверкой Outlook/email delivery.
+
+Статус: шаблон подготовлен локально. Проверка Hebrew:3/3 PASS, placeholder/отсутствие niqqud в HTML проверены; браузерный preview проверен на desktop,390×844 и768×1024 без горизонтального overflow. Скриншоты вне Git: `output/client-login-email-20261116`. Это не реальная проверка Outlook. SMTP, DNS и cloud template не изменены; повторное письмо владельцу не отправлялось. HR-31/доступ к правильному проекту остаётся условием облачного выпуска. Отдельно ожидается ответ владельца, существует ли SMTP-провайдер.
+
+Источники: https://supabase.com/docs/guides/auth/auth-smtp и https://supabase.com/docs/guides/auth/auth-email-templates .
+
+## Подключение бесплатного сервиса: поручение16.11.2026
+
+Владелец разрешил бесплатное подключение и фактическую проверку брендированного письма/входа, без дополнительных платежей. Выбран кандидат Resend Free: официальная pricing page подтверждает Free-forever, SMTP relay, custom domains и лимит100 сообщений в день. Не включать paid plan, Transactional Overages, add-ons и не вводить платёжные реквизиты. Если Free недоступен либо появляется обязательный платёж — остановиться, не выбирать платный fallback. Источники: https://resend.com/pricing и https://resend.com/docs/send-with-supabase-smtp . Подключение не выполнено.
+
+Read-only DNS lookup16.11: authoritative NS `hassan.ns.cloudflare.com`, `melody.ns.cloudflare.com`. Значит, нужны права на зону hr-ai.tech в Cloudflare; это не доказательство доступа к зоне. В браузере Cloudflare показывает login, Resend показывает login. Supabase project rnstsczayhzrxzcstzpr снова перенаправляет на список организаций, где доступна только HeadHunter Preview. Локальных SMTP/Resend credentials нет. Владельцу оставлены соответствующие login tabs, запрошен вход без отправки паролей/ключей в чат. Аккаунты не созданы, условия сервиса не приняты от имени владельца, ключи не созданы, DNS/SMTP не менялись.
+
+После восстановления доступа выполнить последовательно:
+
+1. Подтвердить владельца Resend workspace и Free plan с отключёнными платными overages; сохранить подтверждение без финансовых/секретных данных.
+2. Добавить домен hr-ai.tech для отправки. Внести только точные verification/DKIM/SPF/bounce-records, выданные Resend. Не менять nameservers, сайт, существующие root MX/SPF и не включать входящий email без необходимости. DNS-записи не угадывать. Проверить Verified и authentication readback.
+3. Создать минимально необходимый sending-only key с ограничением на этот домен, если поддерживается выбранной конфигурацией. Сохранить только в защищённой SMTP-настройке Supabase; никакого NEXT_PUBLIC, Git, чата, логов или скриншотов с ключом. Перед security-sensitive сохранением/выдачей доступа соблюдать подтверждение действия.
+4. В правильном Supabase включить custom SMTP: `smtp.resend.com`,465, user `resend`, password — ключ. Sender name `hr-ai.tech`, sender email `login@hr-ai.tech`. From-адрес является отправителем; он не доказывает наличие принимающего почтового ящика. Не выдумывать Reply-To.
+5. Установить только Magic Link subject/content из подготовленных файлов. Отключить click/open tracking для auth-писем. Не приобретать платный custom Auth domain ради скрытия технического Supabase URL.
+6. Проверить фактическое письмо на согласованном адресе: From, subject, Hebrew, логотип и CTA; подтвердить доставку, SPF/DKIM/DMARC по доступным заголовкам. Пройти одноразовую ссылку, отклонение повторного использования, expiry/error handling, целевую страницу и сохранение account-scoped permissions. Для нового portal schema3 сначала требуются облачные067–068 и прежние gates HR-8/12/31; подключённый SMTP не отменяет их.
+
+Публичный логотип https://www.hr-ai.tech/brand-hr-v1.png проверен16.11: HTTP200, image/png. Новый branded email в этом этапе не отправлялся. Реальная доставка/вход с новым sender всё ещё НЕ PASS.
+
+## После входа владельца16.11.2026
+
+Resend авторизован: workspace r.rodion2802, Transactional/Marketing/Team Free; платные Pay-as-you-go switches выключены/недоступны. В Resend добавлен hr-ai.tech, region Tokyo ap-northeast-1, domain ID `104c7b81-cd0f-4bb7-8f01-1d4474e0f81b`. Это pending setup, не подтверждённая отправка. Receiving выключен, tracking не включён; API key не создан. Сохранены полные публичные DNS copy labels и скриншот вне Git: `output/resend-setup-20261116` в корне проекта.
+
+Точные предлагаемые записи: TXT `resend._domainkey` (полный public key перечитать в Resend), CNAME `rsend` → `rsend-apne1.forge.rmta.net`, CNAME `send` → `send.forge.rmta.net`, оба DNS Only. Read-only DNS lookup показал NXDOMAIN для этих трёх имён и `_dmarc`. DNS не менялся. Нельзя создавать новый аккаунт Cloudflare/переносить зону или менять старые подключения ради обхода доступа.
+
+Cloudflare login успешен, но единственный account c370cc2260e9e23a9493ef8d91d43d5f не содержит доменов. Supabase всё ещё показывает только Preview; целевой ref недоступен. Владелец поручил создать задачу Реувену о доступе и замене старого display name на hr-ai.tech. Создана и назначена Reuven Yaron [HR-33](https://linear.app/hr-ai-tech/issue/HR-33/dat-dostup-k-cloudflare-i-supabase-dlya-besplatnogo-resend-i-obnovit), High, подзадача HR-32 и её blocker. Она требует фактический DNS Edit нужной зоны и Auth SMTP/template management нужного проекта, проверку имени без смены ref/API URL/данных. HR-31 с отдельным CV/server-secret scope не дублируется. Подключение SMTP, новое branded email и фактический login по-прежнему не выполнены.
