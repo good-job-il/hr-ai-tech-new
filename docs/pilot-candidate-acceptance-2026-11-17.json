@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-17T00:42:12.356Z",
+  "syntheticOnly": true,
+  "checks": {
+    "publicApplicationPersisted": true,
+    "duplicateApplicationRejected": true,
+    "savedJobPersisted": true,
+    "duplicateSaveRejected": true,
+    "unrelatedClientCannotReadApplication": true,
+    "unrelatedClientCannotReadProfile": true,
+    "profilePhonePersisted": true,
+    "newSyntheticPDFUploadPersisted": true,
+    "unrelatedClientCannotReadCandidatePDF": true,
+    "publicAliasClientBundlesMatch": true
+  },
+  "clientBundleCount": 13
+}

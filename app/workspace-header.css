@@ -1,9 +1,9 @@
-body .shell:not(.publicMode)>main>header.workspaceTopbar,body header.workspaceTopbar{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:88px;height:auto;margin:18px 28px 0;padding:17px 21px;border:1px solid #e6e3f3;border-radius:15px;background:#fff;box-shadow:0 5px 18px #42297b06;position:relative;z-index:2;text-align:start}
-body .workspaceTopbarHeading{display:flex;align-items:center;gap:13px;min-width:0}
+body .shell:not(.publicMode)>main>header.workspaceTopbar,body header.workspaceTopbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px;min-height:88px;height:auto;margin:18px 28px 0;padding:17px 21px;border:1px solid #e6e3f3;border-radius:15px;background:#fff;box-shadow:0 5px 18px #42297b06;position:relative;z-index:2;text-align:start}
+body .workspaceTopbarHeading{display:flex;align-items:center;gap:13px;min-width:0;flex:1 1 240px}
 body .workspaceTopbarIcon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#f1ebff;color:#7648eb;flex-shrink:0}
 body .workspaceTopbarTitles{min-width:0;display:grid;gap:3px}
 body .workspaceTopbarScope{font-size:12px;line-height:1.5;color:#81869c;overflow-wrap:anywhere}
-body .workspaceTopbarTitle{font-size:21px;font-weight:650;letter-spacing:-.3px;line-height:1.4;color:#202444;overflow-wrap:anywhere}
+body .workspaceTopbarTitle{font-size:21px;font-weight:650;letter-spacing:-.3px;line-height:1.4;color:#202444;overflow-wrap:break-word}
 body .workspaceTopbarActions{display:flex;align-items:center;justify-content:flex-end;gap:18px;min-width:0}
 body .workspaceTopbarUtilities{display:flex;align-items:center;gap:10px;border-inline-start:1px solid #e8e6f1;padding-inline-start:17px;flex-wrap:wrap}
 body .workspaceTopbarUtilities button,body .workspaceTopbarUtilities a{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:39px;padding:8px 11px;border:1px solid #e6e5f0;border-radius:10px;background:#fff;color:#454866;font-size:12px;line-height:1.4;text-decoration:none;white-space:nowrap}

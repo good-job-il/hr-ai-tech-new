@@ -1,0 +1,297 @@
+{
+  "at": "2026-11-17T00:41:26.399Z",
+  "initialPublishedActive": 365,
+  "checkedSourceURLs": 365,
+  "exceptions": [
+    {
+      "jobId": "03699dea-7c9c-4a2b-ad15-34e97897a797",
+      "title": "Product Sales Specialist",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8882899002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8882899002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "03ed6e0e-eba0-4252-b499-3d5e4daf214c",
+      "title": "Account Executive",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "023de8be-a1db-4508-bfd4-d68ac5a789aa",
+      "title": "Product Designer, Growth-Maternity Leave Replacement",
+      "company": "Similarweb",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8152015",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "0e70ff93-6b58-498d-ab91-68833771300e",
+      "title": "Data Scientist",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8653104002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8653104002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "09b75aef-d252-4bb8-ace8-a72296906e05",
+      "title": "מנהל/ת חשבונות בצוות לעמותה מובילה בת”א",
+      "company": "Manpower — מקור גיוס",
+      "sourceURL": "https://www.manpower.co.il/job/244908",
+      "httpStatus": 200,
+      "finalURL": "https://www.manpower.co.il/search",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "310bd494-7cce-41a3-af16-cb4d7151e278",
+      "title": "Staff Growth Product Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8905019002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8905019002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "2f1850db-a89d-4b54-9e40-48e70ca1c6e7",
+      "title": "Assistant Controller – Jerusalem",
+      "company": "נישה — מקור גיוס",
+      "sourceURL": "https://www.nisha.co.il/job/12809/",
+      "httpStatus": 200,
+      "finalURL": "https://www.nisha.co.il/?notify=closed-job",
+      "result": "CONFIRMED_CLOSED_AND_HIDDEN"
+    },
+    {
+      "jobId": "3ca7c435-317a-4db6-bc6c-e1f2695436ef",
+      "title": "Senior Backend Engineer, Platform Foundations",
+      "company": "Similarweb",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7962665",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "4193010e-e66b-4216-b9ac-c210cfb13067",
+      "title": "Bookkeeper",
+      "company": "QuantHealth",
+      "sourceURL": "https://job-boards.eu.greenhouse.io/quanthealth/jobs/4956767101",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.eu.greenhouse.io/quanthealth?error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "4232e059-3957-4efc-b9d7-46ec6afc8044",
+      "title": "Purchasing Buyer",
+      "company": "Orbit Communication Systems",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/purchasing-buyer/BE.07D",
+      "httpStatus": 200,
+      "finalURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "470e58c3-7d40-404a-8a6c-7dcc82e8493e",
+      "title": "Security Engineer",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8805509002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8805509002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "4f79184e-12b5-4ef3-8b36-7de3a89fe9b1",
+      "title": "Product Data Scientist (Customer-facing)",
+      "company": "Similarweb",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239121",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "52fe17fe-ec22-4b3b-a36d-ab3094905326",
+      "title": "Integration Engineer",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "540e1226-be8c-4329-b5db-476ac08d4266",
+      "title": "Senior Backend Software Engineer - 2943",
+      "company": "AppsFlyer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8899639002",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "54f85a13-b601-4ddd-a1d8-046a3927be73",
+      "title": "Electro-Mechanical Buyer",
+      "company": "Orbit Communication Systems",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electro-mechanical-buyer/9E.B6E",
+      "httpStatus": 200,
+      "finalURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "6894ef6e-712c-4a41-a65a-9fe155dc93d0",
+      "title": "Payment Fraud Product Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8591838002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8591838002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "7354c081-b1e7-447e-82d8-5c6c74ad6857",
+      "title": "סטודנט/ית לאֲחָיוּת בנתניה",
+      "company": "מכבי שירותי בריאות",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "httpStatus": 404,
+      "finalURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "7561e7ec-2881-47f0-b481-7c85082f5d04",
+      "title": "Software Engineering Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8885153002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8885153002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "845b24c7-4cd3-4af5-ba91-7a1f9c6ea82e",
+      "title": "Backend Software Engineer- 2938",
+      "company": "AppsFlyer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8897823002",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "8a8e0f8e-5793-4bef-bc63-9f80fc8214e6",
+      "title": "Sales Engineer",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8888283002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8888283002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "7ec05657-d051-4e87-abb5-5f59ac3c687b",
+      "title": "עוזר.ת חשב לחברה בנוף הגליל – 80% משרה",
+      "company": "Manpower — מקור גיוס",
+      "sourceURL": "https://www.manpower.co.il/job/244933",
+      "httpStatus": 200,
+      "finalURL": "https://www.manpower.co.il/search",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "922be198-95d1-405d-98fc-ae2628e0133d",
+      "title": "מהנדס.ת / הנדסאי.ת חשמל להדרכת קורסים לעבודה בחדרה",
+      "company": "חברת החשמל",
+      "sourceURL": "https://careers.iec.co.il/order/14921/",
+      "httpStatus": 500,
+      "finalURL": "https://careers.iec.co.il/order/14921/",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "a216de4f-2f30-4e00-994a-c8d84714bfbd",
+      "title": "גזבר/ית לחברה פרטית ביקום",
+      "company": "Manpower — מקור גיוס",
+      "sourceURL": "https://www.manpower.co.il/job/244962",
+      "httpStatus": 200,
+      "finalURL": "https://www.manpower.co.il/search",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "b43f32bb-8b45-49b2-bb32-cc680787969c",
+      "title": "חשב/ת לחברה פרטית ביקום",
+      "company": "Manpower — מקור גיוס",
+      "sourceURL": "https://www.manpower.co.il/job/244961",
+      "httpStatus": 200,
+      "finalURL": "https://www.manpower.co.il/search",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "c0caa435-4e41-483f-8139-b14297662df9",
+      "title": "Product Marketing Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8878437002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8878437002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "c7a988cb-8876-4731-bb59-18f481333233",
+      "title": "Application Security Architect",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8891146002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8891146002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "ce6e36b6-3392-4182-b9ee-4454736906cd",
+      "title": "Growth Marketing Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8878439002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8878439002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "cfc64a9c-fb70-4173-846c-98b73fede6af",
+      "title": "Payments Product Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8874141002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8874141002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "d38e6a7f-b66b-4533-9a1c-e02fad708668",
+      "title": "Staff Data Scientist",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8786543002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8786543002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "f12d7d7b-4cdd-4023-baa6-7bc713d7bc8a",
+      "title": "Salary Controller",
+      "company": "AppsFlyer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8809604002",
+      "httpStatus": 200,
+      "finalURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "fa2578b9-a454-4ef7-bfc8-ce116e9849f2",
+      "title": "Partnership Manager",
+      "company": "Riskified",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8882911002",
+      "httpStatus": 403,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8882911002",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "jobId": "f8825612-80b4-45c9-880e-9797f5bf4ca1",
+      "title": "מנהל/ת חשבונות ספקים לחברת הפצה באיירפורט סיטי",
+      "company": "Manpower — מקור גיוס",
+      "sourceURL": "https://www.manpower.co.il/job/244922",
+      "httpStatus": 200,
+      "finalURL": "https://www.manpower.co.il/search",
+      "result": "MANUAL_CONTENT_REVIEW_REQUIRED"
+    }
+  ],
+  "remainingPublishedActive": 364,
+  "limitation": "Direct HTTP200 alone does not establish that a position remains open. 333 unredirected HTTP200 pages still require content acceptance. No dates were refreshed to keep jobs public."
+}
