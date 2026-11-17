@@ -1,0 +1,4065 @@
+{
+  "checkedAt": "2026-11-17T03:21:06.069Z",
+  "issue": "HR-19",
+  "scope": "One-off read-only source acceptance of the current 364 published/active records; independent of HR-35",
+  "method": "Fresh read-only TLS production snapshot; 349 HTTP content checks; 15 Riskified browser checks; 63 other browser checks with explicit readiness recheck for Elbit and two observed Orbit embedded forms. Only exact stored source URLs were used.",
+  "limits": [
+    "No application submitted to an employer. An application control being present does not verify successful delivery.",
+    "286 passes are automated heading/content/control checks, not manual semantic review of every field or employment terms.",
+    "Only 2 Orbit forms have retained conclusive evidence. The other Orbit form batch timed out and is not counted as passed.",
+    "HTTP errors, missing job, redirects and generic error pages are not treated as confirmed closure.",
+    "No vacancy status, publication, verified_at, RLS, application code, secret, deployment or real-person record changed.",
+    "Current public UI was checked after data loading; no new mobile/iPad design acceptance is claimed by this data-only audit.",
+    "Previous 31 URL exceptions and current 51 content/source exceptions use different criteria; this is not evidence of 20 newly closed roles."
+  ],
+  "summary": {
+    "total": 364,
+    "passed": 313,
+    "reviewRequired": 51,
+    "byCompany": {
+      "Riskified": {
+        "total": 15,
+        "passed": 12,
+        "review": 3
+      },
+      "נישה — מקור גיוס": {
+        "total": 25,
+        "passed": 25,
+        "review": 0
+      },
+      "Made Finance": {
+        "total": 5,
+        "passed": 5,
+        "review": 0
+      },
+      "GotFriends — מקור גיוס": {
+        "total": 150,
+        "passed": 150,
+        "review": 0
+      },
+      "Similarweb": {
+        "total": 26,
+        "passed": 21,
+        "review": 5
+      },
+      "AppsFlyer": {
+        "total": 23,
+        "passed": 20,
+        "review": 3
+      },
+      "monday.com": {
+        "total": 63,
+        "passed": 46,
+        "review": 17
+      },
+      "Elementor": {
+        "total": 1,
+        "passed": 1,
+        "review": 0
+      },
+      "Orbit Communication Systems": {
+        "total": 11,
+        "passed": 2,
+        "review": 9
+      },
+      "אלביט מערכות": {
+        "total": 12,
+        "passed": 11,
+        "review": 1
+      },
+      "Manpower — מקור גיוס": {
+        "total": 16,
+        "passed": 9,
+        "review": 7
+      },
+      "מכבי שירותי בריאות": {
+        "total": 8,
+        "passed": 7,
+        "review": 1
+      },
+      "NiCE": {
+        "total": 2,
+        "passed": 2,
+        "review": 0
+      },
+      "QuantHealth": {
+        "total": 1,
+        "passed": 0,
+        "review": 1
+      },
+      "טבע": {
+        "total": 3,
+        "passed": 0,
+        "review": 3
+      },
+      "חברת החשמל": {
+        "total": 3,
+        "passed": 2,
+        "review": 1
+      }
+    }
+  },
+  "publicUi": {
+    "at": "2026-11-17T03:21:06.069Z",
+    "hotJobCards": 8,
+    "openJobs": 364,
+    "hiringCompaniesOrSources": 16,
+    "candidates": 51367
+  },
+  "results": [
+    {
+      "id": "03699dea-7c9c-4a2b-ad15-34e97897a797",
+      "company": "Riskified",
+      "title": "Product Sales Specialist",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8882899002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "03ed6e0e-eba0-4252-b499-3d5e4daf214c",
+      "company": "Riskified",
+      "title": "Account Executive",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_TO_GENERAL_BOARD",
+      "observedSourceTitle": "Join us in unleashing ecommerce growth by minimizing risk",
+      "observedURL": "https://www.riskified.com/careers/"
+    },
+    {
+      "id": "0e70ff93-6b58-498d-ab91-68833771300e",
+      "company": "Riskified",
+      "title": "Data Scientist",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8653104002",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS",
+      "observedSourceTitle": "Junior Data Scientist",
+      "observedURL": "https://www.riskified.com/job-description/?gh_jid=8653104002"
+    },
+    {
+      "id": "310bd494-7cce-41a3-af16-cb4d7151e278",
+      "company": "Riskified",
+      "title": "Staff Growth Product Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8905019002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "470e58c3-7d40-404a-8a6c-7dcc82e8493e",
+      "company": "Riskified",
+      "title": "Security Engineer",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8805509002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "52fe17fe-ec22-4b3b-a36d-ab3094905326",
+      "company": "Riskified",
+      "title": "Integration Engineer",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_TO_GENERAL_BOARD",
+      "observedSourceTitle": "Join us in unleashing ecommerce growth by minimizing risk",
+      "observedURL": "https://www.riskified.com/careers/"
+    },
+    {
+      "id": "6894ef6e-712c-4a41-a65a-9fe155dc93d0",
+      "company": "Riskified",
+      "title": "Payment Fraud Product Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8591838002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "7561e7ec-2881-47f0-b481-7c85082f5d04",
+      "company": "Riskified",
+      "title": "Software Engineering Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8885153002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "8a8e0f8e-5793-4bef-bc63-9f80fc8214e6",
+      "company": "Riskified",
+      "title": "Sales Engineer",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8888283002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "c0caa435-4e41-483f-8139-b14297662df9",
+      "company": "Riskified",
+      "title": "Product Marketing Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8878437002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "c7a988cb-8876-4731-bb59-18f481333233",
+      "company": "Riskified",
+      "title": "Application Security Architect",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8891146002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "ce6e36b6-3392-4182-b9ee-4454736906cd",
+      "company": "Riskified",
+      "title": "Growth Marketing Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8878439002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "cfc64a9c-fb70-4173-846c-98b73fede6af",
+      "company": "Riskified",
+      "title": "Payments Product Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8874141002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "d38e6a7f-b66b-4533-9a1c-e02fad708668",
+      "company": "Riskified",
+      "title": "Staff Data Scientist",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8786543002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "fa2578b9-a454-4ef7-bfc8-ce116e9849f2",
+      "company": "Riskified",
+      "title": "Partnership Manager",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8882911002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered official Riskified role: exact normalized heading, role description and Apply control",
+        "at": "2026-11-17T03:15:41.061Z"
+      }
+    },
+    {
+      "id": "039c7f60-fe3a-4786-8e28-c742430460ee",
+      "company": "נישה — מקור גיוס",
+      "title": "Bookkeeper",
+      "sourceURL": "https://www.nisha.co.il/job/11862/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.350Z"
+      }
+    },
+    {
+      "id": "00594cda-3cd9-4e6b-88ba-3f4a298aa900",
+      "company": "Made Finance",
+      "title": "Controller",
+      "sourceURL": "https://www.made.co.il/made-careers/controller/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.333Z"
+      }
+    },
+    {
+      "id": "04b8da8b-4d33-41f0-8f24-43d46c204adc",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head Of R&D בחברת Fintech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/144536/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.352Z"
+      }
+    },
+    {
+      "id": "06542277-45b0-4897-94f8-ed53acba6a26",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of Backend לסטארט-אפ ידוע ומוביל בתחום הGaming",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/head-of-backend-%D7%9C%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%99%D7%93%D7%95%D7%A2-%D7%95%D7%9E%D7%95%D7%91%D7%99%D7%9C-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94gaming/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.646Z"
+      }
+    },
+    {
+      "id": "068984ee-5434-44eb-8104-45fecc05c807",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ בתחום ה-AI",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/144449/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.680Z"
+      }
+    },
+    {
+      "id": "023de8be-a1db-4508-bfd4-d68ac5a789aa",
+      "company": "Similarweb",
+      "title": "Product Designer, Growth-Maternity Leave Replacement",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8152015",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at Similarweb",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true"
+    },
+    {
+      "id": "068f719d-d166-4afc-b70d-4574f524c0c1",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת Bootstrap בתחום ה-Cyber ההגנתי",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/149331/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.938Z"
+      }
+    },
+    {
+      "id": "075714c7-985f-425a-968a-e685187d4c3a",
+      "company": "AppsFlyer",
+      "title": "Senior FP&A Business Partner",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8611961002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.955Z"
+      }
+    },
+    {
+      "id": "078a19ee-9eaf-4bb2-874d-5ce9bd316ba3",
+      "company": "AppsFlyer",
+      "title": "Senior Support Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8535473002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.997Z"
+      }
+    },
+    {
+      "id": "08527ecf-cbe6-4110-a983-f4880fbc78e0",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Manager בחברת סטארט-אפ בתחום ה-AI וה-Digital Health",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/151360/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:37.245Z"
+      }
+    },
+    {
+      "id": "085ba901-3827-4760-8e06-615c30685ef0",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Of Software Engineering בחברת סטארט-אפ חדשנית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-software-engineering-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%97%D7%93%D7%A9%D7%A0%D7%99%D7%AA/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:37.254Z"
+      }
+    },
+    {
+      "id": "050a66b5-92c8-45f5-a79b-fe5f4390f140",
+      "company": "monday.com",
+      "title": "Experienced IT Security Engineer",
+      "sourceURL": "https://monday.com/careers/edd6b552-9b8e-4caf-bb29-a17372cdb2cc",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:36.610Z"
+      }
+    },
+    {
+      "id": "089f76bd-a98b-445b-8536-6623946aadfc",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of Backend לסטארט-אפ ידוע ומוביל בתחום הData",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/head-of-backend-%D7%9C%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%99%D7%93%D7%95%D7%A2-%D7%95%D7%9E%D7%95%D7%91%D7%99%D7%9C-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94data/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:37.662Z"
+      }
+    },
+    {
+      "id": "079420ba-f836-4b8e-aa31-21047e3f458f",
+      "company": "Elementor",
+      "title": "Senior DevOps Engineer",
+      "sourceURL": "https://elementor.careers/explore/co/rd/C5.47C/senior-devops-engineer/all/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:37.201Z"
+      }
+    },
+    {
+      "id": "0b15f7f5-2942-499c-a5b3-c9c146939e34",
+      "company": "נישה — מקור גיוס",
+      "title": "senior controller",
+      "sourceURL": "https://www.nisha.co.il/job/11951/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:38.014Z"
+      }
+    },
+    {
+      "id": "09e02b7d-844c-48d5-bfb7-497c0f77a096",
+      "company": "Similarweb",
+      "title": "Product Analyst",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7548388",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "Senior Product Analyst",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb/jobs/7548388"
+    },
+    {
+      "id": "0bcbd6f2-4901-49a5-8153-52077e722a4e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Engineering בחברת הייטק בתחום ה-DevSecOps ו-MLOps",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/150811/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:38.109Z"
+      }
+    },
+    {
+      "id": "08e65482-19eb-41b8-aa5f-2046d910f538",
+      "company": "Orbit Communication Systems",
+      "title": "חווט/ת תעופתית",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/58.371",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Orbit role with title, description, embedded Resume field and Submit Application observed in accessibility tree",
+        "at": "2026-11-17T03:21:06.069Z"
+      }
+    },
+    {
+      "id": "0d12c953-693f-4836-908c-cd579349aa1c",
+      "company": "Similarweb",
+      "title": "Data Engineer – Applied ML",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239378",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "Senior Data Engineer – Applied ML",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239378"
+    },
+    {
+      "id": "0e8ad477-2b8e-4eba-b9bb-98b79041cdfc",
+      "company": "אלביט מערכות",
+      "title": "ראש צוות הדרכה והטמעה למערכות שליטה ובקרה",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=21010",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "0bff0bec-16ff-4510-87dc-eda7afef2953",
+      "company": "AppsFlyer",
+      "title": "Head of Pricing- Maternity Cover",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8921994002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:38.165Z"
+      }
+    },
+    {
+      "id": "0f676183-3241-469c-874f-d9688b8796c5",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Manager בחברת Data בתחום ה-Construction Tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/148320/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:38.937Z"
+      }
+    },
+    {
+      "id": "0dd55a3f-451d-4600-a8fc-eac6cbd5f9ac",
+      "company": "monday.com",
+      "title": "Engineering Team Lead- Agentic Surfaces",
+      "sourceURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd"
+    },
+    {
+      "id": "0f60c910-3056-461c-bdb7-ae6af2341c7a",
+      "company": "monday.com",
+      "title": "Deployment Strategist",
+      "sourceURL": "https://monday.com/careers/a2419fe8-1b49-4659-b8d9-cdb2ab724130",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:38.741Z"
+      }
+    },
+    {
+      "id": "0fd5b63a-9ad5-4af4-9986-14ec24285fcb",
+      "company": "monday.com",
+      "title": "Senior Product Designer - Harmony AI",
+      "sourceURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f"
+    },
+    {
+      "id": "09b75aef-d252-4bb8-ace8-a72296906e05",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות בצוות לעמותה מובילה בת”א",
+      "sourceURL": "https://www.manpower.co.il/job/244908",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "הכלים שלכם למציאת עבודה",
+      "observedURL": "https://www.manpower.co.il/search"
+    },
+    {
+      "id": "0fb0c771-a95a-4623-a538-09d34bd0762c",
+      "company": "AppsFlyer",
+      "title": "Senior Data Scientist",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8884649002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:39.144Z"
+      }
+    },
+    {
+      "id": "102fcd98-77a2-49c2-b13a-ea0b29b77a45",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of Engineering בחברת סטארט-אפ בתחום ה-Cyber Security",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/149783/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:39.923Z"
+      }
+    },
+    {
+      "id": "12d0e3d9-1fc9-431c-927d-3282daf55279",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בסטארט-אפ בתחום הרפואה האסתטית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/143746/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.023Z"
+      }
+    },
+    {
+      "id": "13775d20-382d-49fd-98d6-2ec5f40e1923",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Infra Group Manager לחברת Fintech גלובלית בפתח תקווה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/123770/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.071Z"
+      }
+    },
+    {
+      "id": "1403efcd-acc2-4a51-83a3-54f5e91a3f55",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP Product בחברת הייטק",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/155217/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.132Z"
+      }
+    },
+    {
+      "id": "146144a8-5fc4-4656-a38a-46affcadcfb2",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager בחברת סטארט-אפ בתחום הסייבר לרכב",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/142936/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.246Z"
+      }
+    },
+    {
+      "id": "10186738-9aaf-4199-affe-0a1ab4b08984",
+      "company": "monday.com",
+      "title": "Business Systems Engineer",
+      "sourceURL": "https://monday.com/careers/09885bdb-33ab-4980-998a-e56e2a93995f",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:39.822Z"
+      }
+    },
+    {
+      "id": "167343a4-5875-4219-b418-81b3c9cc5d26",
+      "company": "AppsFlyer",
+      "title": "Senior FP&A Analyst",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8611963002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.336Z"
+      }
+    },
+    {
+      "id": "16b7c16a-f525-4d46-a2cd-aa68f5362f75",
+      "company": "monday.com",
+      "title": "AI Knowledge & Intelligence Specialist",
+      "sourceURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931"
+    },
+    {
+      "id": "1591d866-0634-4e73-852e-53c95cb39129",
+      "company": "monday.com",
+      "title": "MM Account Executive - Israel Market",
+      "sourceURL": "https://monday.com/careers/d8e1cd08-bd82-4045-a8c0-a64a30f771e2",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.298Z"
+      }
+    },
+    {
+      "id": "175c4ab1-fa8d-4064-a710-c875b41899a6",
+      "company": "monday.com",
+      "title": "DevOps Tech Lead (BigBrain)",
+      "sourceURL": "https://monday.com/careers/6b945ea6-f095-42b4-a83d-b9b5f407feae",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:40.805Z"
+      }
+    },
+    {
+      "id": "198ee088-48c5-48a6-9941-c00b9de51a9a",
+      "company": "Orbit Communication Systems",
+      "title": "DFT Engineer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/dft-engineer/69.E61",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "DFT Engineer @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/dft-engineer/69.E61"
+    },
+    {
+      "id": "1b57d817-d655-436e-99d2-0761f8a4bbf9",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברת Gambling",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/144384/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:41.818Z"
+      }
+    },
+    {
+      "id": "188fd591-3d52-40dc-ab3b-c692106eaa96",
+      "company": "monday.com",
+      "title": "Design Operations Lead, AI Enablement",
+      "sourceURL": "https://monday.com/careers/a1c969cc-a35f-472f-a994-e44170f1d1ff",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:41.114Z"
+      }
+    },
+    {
+      "id": "1bb02e64-91cd-42f4-a4ea-ab12c8206d76",
+      "company": "AppsFlyer",
+      "title": "Senior IT Infrastructure Operations",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8882905002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:42.020Z"
+      }
+    },
+    {
+      "id": "1ba3b8cc-fbd5-485e-a33d-dcbcfd933b49",
+      "company": "monday.com",
+      "title": "Senior Software Engineer, Funnel Fighters",
+      "sourceURL": "https://monday.com/careers/4543af91-161f-4302-a0a4-97ffd020cc1b",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:41.838Z"
+      }
+    },
+    {
+      "id": "1cd87d95-7939-4868-87b8-6c471166f4fe",
+      "company": "GotFriends — מקור גיוס",
+      "title": "4D Software Group Manager בחברה אמריקאית מובילה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/141525/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:42.629Z"
+      }
+    },
+    {
+      "id": "1c57a1bc-1c1f-4883-96d7-2aaaec6256f7",
+      "company": "monday.com",
+      "title": "Growth Product Manager",
+      "sourceURL": "https://monday.com/careers/99f55839-e6b8-41e4-8c86-0f3e1082c256",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:42.103Z"
+      }
+    },
+    {
+      "id": "1e784faf-cae9-4130-9780-1cab3711fd8d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Group Leader בחברת סטארט-אפ מולטי-דיסציפלינרית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/147118/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:42.928Z"
+      }
+    },
+    {
+      "id": "1ec0a6fe-3272-4dd9-8d4d-d77547115b07",
+      "company": "Orbit Communication Systems",
+      "title": "מחסנאי/ת ממוחשב",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/92.D6F",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "מחסנאי/ת ממוחשב @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/92.D6F"
+    },
+    {
+      "id": "1afe2ec4-5b8f-4d59-aa3f-42c579699c42",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות לקוחות לחברת הפצה באיירפורט סיטי",
+      "sourceURL": "https://www.manpower.co.il/job/244921",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:41.606Z"
+      }
+    },
+    {
+      "id": "1e1a3af5-4d6f-4c49-bf0f-cc011d45194d",
+      "company": "monday.com",
+      "title": "AI Software Engineer Team Lead – RevAI (BigBrain)",
+      "sourceURL": "https://monday.com/careers/1dfcd997-9afd-41e2-bce3-94dba5a74abd",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:42.834Z"
+      }
+    },
+    {
+      "id": "1ef82369-e513-4b61-880f-2d386ecc9c24",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Development חברת סטארטאפ בתחום ה Health Care",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-development-%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98%D7%90%D7%A4-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94-health-care/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:43.605Z"
+      }
+    },
+    {
+      "id": "214e262d-64e4-4e8c-8f7d-b80c524eadca",
+      "company": "Made Finance",
+      "title": "VP Finance",
+      "sourceURL": "https://www.made.co.il/made-careers/controller-3/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:43.710Z"
+      }
+    },
+    {
+      "id": "23697962-129a-4db3-a84f-1b9ff59d68dd",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager בחברה בתחום ה-Ad-tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/147408/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:43.824Z"
+      }
+    },
+    {
+      "id": "23d14976-b027-4cfd-a6e0-0cd0c9ca85da",
+      "company": "Similarweb",
+      "title": "Product Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8273657",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:43.833Z"
+      }
+    },
+    {
+      "id": "26c64e69-73a1-433d-be2b-46810d08abcd",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP Product לחברת Fintech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/120816/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.078Z"
+      }
+    },
+    {
+      "id": "24afe791-a4d2-44bc-ae72-10010f0f9234",
+      "company": "Similarweb",
+      "title": "ML & Big Data Analyst",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8124606",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.065Z"
+      }
+    },
+    {
+      "id": "24058b32-f2af-4580-943b-8d24be72f8ec",
+      "company": "monday.com",
+      "title": "Personal Assistant - CEO's office",
+      "sourceURL": "https://monday.com/careers/510f75b9-2775-4b53-89c6-7316c2fded75",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:43.841Z"
+      }
+    },
+    {
+      "id": "26d7c149-606b-42d8-8e2c-36d95f976918",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP of Software Engineering בסטארט-אפ Early-Stage בתחום ה-AI Computing",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/155266/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.278Z"
+      }
+    },
+    {
+      "id": "2704f2c9-901c-4687-be98-915b429ddbb6",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Business Application בחברת הייטק ישראלית בתחום ה-DevOps",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/143360/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.319Z"
+      }
+    },
+    {
+      "id": "1c7d21ba-5eb9-4bfb-888e-41e608804914",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות מנוסה למשרה חלקית בבני ברק! קו רכבת קלה!",
+      "sourceURL": "https://www.manpower.co.il/job/244920",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:42.395Z"
+      }
+    },
+    {
+      "id": "27c56a02-0ab6-4313-8432-573e0771ddc9",
+      "company": "אלביט מערכות",
+      "title": "Product Manager / System Engineer",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20080",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "27fc3a42-08b2-4792-b2af-dba07559c576",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Group Leader בחברת סטארט-אפ מולטי-דיסציפלינרית מדהימה!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/software-group-leader/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.610Z"
+      }
+    },
+    {
+      "id": "28039a3f-c406-4a0b-be49-6b9c4f54761f",
+      "company": "נישה — מקור גיוס",
+      "title": "חשב",
+      "sourceURL": "https://www.nisha.co.il/job/11960/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.704Z"
+      }
+    },
+    {
+      "id": "2c1c674c-6ed4-4f8b-b2a4-e6fd681b4f5f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Data לחברת סייבר מצליחה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/120554/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.823Z"
+      }
+    },
+    {
+      "id": "2c88d7fd-dfe1-4f77-acc8-fb09f3b1b4c0",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ מדהימה!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/141594/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.059Z"
+      }
+    },
+    {
+      "id": "278f7872-18fe-4558-8af0-4b992cae4d1d",
+      "company": "מכבי שירותי בריאות",
+      "title": "עובד/ת סוציאלי/ת לבריאות הנפש - מחוז שרון",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A1%D7%99%D7%9B%D7%95%D7%AA%D7%A8%D7%A4%D7%99%D7%A1%D7%98%D7%99%D7%AA-%D7%A2%D7%95%D7%A1-3705/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.413Z"
+      }
+    },
+    {
+      "id": "2ca4f55e-3396-43ad-99ad-17fc2091df51",
+      "company": "נישה — מקור גיוס",
+      "title": "הנה״ח וחשב/ת שכר",
+      "sourceURL": "https://www.nisha.co.il/job/12232/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.283Z"
+      }
+    },
+    {
+      "id": "27aba588-2b07-4d9e-9c57-c2653e5cd484",
+      "company": "monday.com",
+      "title": "Executive Assistant",
+      "sourceURL": "https://monday.com/careers/84a4004a-3de3-4207-92d7-617049ec6f9d",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.475Z"
+      }
+    },
+    {
+      "id": "2d80cbfc-b9fb-45cb-9b1b-215dac25022c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Team Leader",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/rd-team-leader/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.367Z"
+      }
+    },
+    {
+      "id": "2dc1a936-eeb1-4e64-aba5-fd05ecdef777",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Senior R&D Director בחברת סטארט-אפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/144660/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.558Z"
+      }
+    },
+    {
+      "id": "2ec7f980-86d4-415b-b9e9-e2edaf1b948b",
+      "company": "Similarweb",
+      "title": "Data Analyst- Product Data & AI Quality",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8284137",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.568Z"
+      }
+    },
+    {
+      "id": "30c57d87-0347-4c52-85fd-51556e898aff",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לחברת חקלאות חכמה הממוקמת ביקנעם",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%97%D7%A7%D7%9C%D7%90%D7%95%D7%AA-%D7%97%D7%9B%D7%9E%D7%94-%D7%94%D7%9E%D7%9E%D7%95%D7%A7%D7%9E%D7%AA-%D7%91%D7%99%D7%A7%D7%A0%D7%A2%D7%9D/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.831Z"
+      }
+    },
+    {
+      "id": "2d4b8629-bfe6-4303-bd13-38ef6a2ce1ee",
+      "company": "AppsFlyer",
+      "title": "Senior Software Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8852064002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.335Z"
+      }
+    },
+    {
+      "id": "2ae89915-70e1-49cc-baf5-6b11c1ecdb87",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל.ת חשבונות לקוחות לחברת יבוא בראשלצ",
+      "sourceURL": "https://www.manpower.co.il/job/244937",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:44.803Z"
+      }
+    },
+    {
+      "id": "34280c1b-454f-424e-ad19-fee76c145ee3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לחברה העוסקת בCyber Intelligence ברעננה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%94%D7%A2%D7%95%D7%A1%D7%A7%D7%AA-%D7%91cyber-intelligence-%D7%91%D7%A8%D7%A2%D7%A0%D7%A0%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:46.637Z"
+      }
+    },
+    {
+      "id": "30cd8a2a-60ec-4c82-a588-c672a85756dc",
+      "company": "monday.com",
+      "title": "Director of Global IT",
+      "sourceURL": "https://monday.com/careers/526bbd9d-2c2a-454a-821c-9fe1c7826f45",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:45.927Z"
+      }
+    },
+    {
+      "id": "355adc30-371b-4270-b085-e48860f4b5b4",
+      "company": "אלביט מערכות",
+      "title": "מהנדס.ת IT",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20716",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "32cde87c-2ba2-4e4b-aa0f-d2f3689dd8e0",
+      "company": "Similarweb",
+      "title": "Sales Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7894254",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:46.129Z"
+      }
+    },
+    {
+      "id": "362a752f-7d49-4ace-bd24-5624a05508e3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ בתחום ה-AI",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/146790/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:46.919Z"
+      }
+    },
+    {
+      "id": "37cd8d08-e331-4e0e-895f-c6bd57b1866e",
+      "company": "אלביט מערכות",
+      "title": "מומחה.ית סייבר בעולמות שרשרת האספקה",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=21076",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "35fe9eea-0c8d-4fed-936a-e2640568e155",
+      "company": "מכבי שירותי בריאות",
+      "title": "מרפא/ה בעיסוק עצמאי/ת התפתחות הילד - מחוז שרון",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%9E%D7%A8%D7%A4%D7%90%D7%94-%D7%91%D7%A2%D7%99%D7%A1%D7%95%D7%A7-%D7%94%D7%AA%D7%A4%D7%AA%D7%97%D7%95%D7%AA-%D7%94%D7%99%D7%9C%D7%93-2145/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:46.898Z"
+      }
+    },
+    {
+      "id": "38a434de-0280-49ec-a868-d93c554c5bf1",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Team Leader לחברה מובילה בתחום הFintech בפתח תקווה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/rd-team-leader-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%9E%D7%95%D7%91%D7%99%D7%9C%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94fintech-%D7%91%D7%A4%D7%AA%D7%97-%D7%AA%D7%A7%D7%95%D7%95%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:47.189Z"
+      }
+    },
+    {
+      "id": "3b513a03-463d-4c83-a088-571a4bbe1760",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Director",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/rd-director/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:47.385Z"
+      }
+    },
+    {
+      "id": "3574f859-ca8a-456f-b7e0-2fa7521ce436",
+      "company": "monday.com",
+      "title": "Agent Engineer, Luna",
+      "sourceURL": "https://monday.com/careers/0b0b653c-2d75-4bbb-aea1-1a805620b740",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:46.871Z"
+      }
+    },
+    {
+      "id": "3a8cf510-e688-40b2-a0d8-75ba9b15a5a7",
+      "company": "NiCE",
+      "title": "FP&A Analyst",
+      "sourceURL": "https://job-boards.eu.greenhouse.io/nice/jobs/5010848101?gh_jid=5010848101",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:47.202Z"
+      }
+    },
+    {
+      "id": "3bb39c4d-66c0-457e-af0e-a329f2f99881",
+      "company": "AppsFlyer",
+      "title": "Application Security Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8394076002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:47.582Z"
+      }
+    },
+    {
+      "id": "3c17970a-66e6-4294-8fd2-7e9ffd3e66c8",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Devops Manager בחברה מובילה בתחום אבטחת מידע",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/142359/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:47.807Z"
+      }
+    },
+    {
+      "id": "3e596d5f-cb1a-41fc-8a54-9b28e02bece7",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/141476/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:47.833Z"
+      }
+    },
+    {
+      "id": "31108adb-1379-43dd-b421-dac148cb3299",
+      "company": "Manpower — מקור גיוס",
+      "title": "רכז/ת שכר החלפה לחל”ד",
+      "sourceURL": "https://www.manpower.co.il/job/244907",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:46.028Z"
+      }
+    },
+    {
+      "id": "40712b7e-d790-4c48-a6b5-bef73663c6a2",
+      "company": "Similarweb",
+      "title": "DevOps Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7938197",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.097Z"
+      }
+    },
+    {
+      "id": "3ca7c435-317a-4db6-bc6c-e1f2695436ef",
+      "company": "Similarweb",
+      "title": "Senior Backend Engineer, Platform Foundations",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7962665",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at Similarweb",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true"
+    },
+    {
+      "id": "3ed1f0f6-7a28-4b2c-9d09-519d077e7e7a",
+      "company": "monday.com",
+      "title": "Lead Product Designer - CRM",
+      "sourceURL": "https://monday.com/careers/fd555fbd-9527-43cf-affb-cb053ce2fc25",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.011Z"
+      }
+    },
+    {
+      "id": "4193010e-e66b-4216-b9ac-c210cfb13067",
+      "company": "QuantHealth",
+      "title": "Bookkeeper",
+      "sourceURL": "https://job-boards.eu.greenhouse.io/quanthealth/jobs/4956767101",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at QuantHealth",
+      "observedURL": "https://job-boards.eu.greenhouse.io/quanthealth?error=true"
+    },
+    {
+      "id": "3f2027f0-fdc4-4f89-80e4-143038deed12",
+      "company": "AppsFlyer",
+      "title": "Senior Data Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8693284002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.035Z"
+      }
+    },
+    {
+      "id": "4380744e-68cf-46ad-aede-cd96d469ea64",
+      "company": "אלביט מערכות",
+      "title": "Executive Assistant",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20728",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "45a463f7-56a9-4dd1-b39f-72fb6663ab5c",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות",
+      "sourceURL": "https://www.nisha.co.il/job/11964/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.825Z"
+      }
+    },
+    {
+      "id": "4670a9b3-6d5b-4d9c-86af-16365f10bb05",
+      "company": "נישה — מקור גיוס",
+      "title": "עוזר/ת חשב למחלקת הכספים",
+      "sourceURL": "https://www.nisha.co.il/job/11942/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.914Z"
+      }
+    },
+    {
+      "id": "46768dbb-32e7-4b30-9fff-581974daa20f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Director בחברת סטארט-אפ ריווחית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/142365/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.996Z"
+      }
+    },
+    {
+      "id": "42ae898c-284c-4544-9377-5efc37390104",
+      "company": "Similarweb",
+      "title": "Data Scientist Team Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8222946",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.815Z"
+      }
+    },
+    {
+      "id": "45b011f2-cc0d-4549-88f9-ae6b8703a529",
+      "company": "monday.com",
+      "title": "Senior AI Software Engineer- People & Interactions",
+      "sourceURL": "https://monday.com/careers/5ecc498e-a92f-46fe-ab8c-5669c64f5ff2",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:48.883Z"
+      }
+    },
+    {
+      "id": "4232e059-3957-4efc-b9d7-46ec6afc8044",
+      "company": "Orbit Communication Systems",
+      "title": "Purchasing Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/purchasing-buyer/BE.07D",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Orbit Communication Systems - Careers",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008"
+    },
+    {
+      "id": "477fe11c-7a83-40ba-b5ed-a990cf0a6374",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Manager בחברת סטארט-אפ ישראלית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/154348/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:49.670Z"
+      }
+    },
+    {
+      "id": "4769b3b4-c979-4477-8d0c-5cc4b6e757e1",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Research And Development Manager במרכז פיתוח של חברה גלובלית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/research-and-development-manager-%D7%91%D7%9E%D7%A8%D7%9B%D7%96-%D7%A4%D7%99%D7%AA%D7%95%D7%97-%D7%A9%D7%9C-%D7%97%D7%91%D7%A8%D7%94-%D7%92%D7%9C%D7%95%D7%91%D7%9C%D7%99%D7%AA/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:49.664Z"
+      }
+    },
+    {
+      "id": "4a36ec32-e66d-4af2-ab7f-fbe848b99d4d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Of Product בחברת Start Up בתחום ה-AI",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-product-%D7%91%D7%97%D7%91%D7%A8%D7%AA-start-up-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94-ai/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:49.867Z"
+      }
+    },
+    {
+      "id": "4a5c07b1-e308-4167-a7b6-3d8aa32295ad",
+      "company": "monday.com",
+      "title": "Senior Product Manager BigBrain AI Foundations",
+      "sourceURL": "https://monday.com/careers/37e52aff-e766-4cd0-b220-8c87a04ca8a9",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:49.880Z"
+      }
+    },
+    {
+      "id": "46f868cc-57ee-43f2-b1ba-d0c0dd7adac4",
+      "company": "monday.com",
+      "title": "Senior Software Engineer, AI Foundations (BigBrain)",
+      "sourceURL": "https://monday.com/careers/4593c8be-6387-4a61-b498-22997c3090e2",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:49.574Z"
+      }
+    },
+    {
+      "id": "4aedeb65-9e0e-43d7-82e0-fae06257a86e",
+      "company": "Similarweb",
+      "title": "Enterprise Account Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8312125",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:50.122Z"
+      }
+    },
+    {
+      "id": "4b3bdf44-8ecc-4ba4-b2bb-f32d3261dafa",
+      "company": "Orbit Communication Systems",
+      "title": "Operation Quality Team Leader",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/operation-quality-team-leader/3D.B67",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "Operation Quality Team Leader @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/operation-quality-team-leader/3D.B67"
+    },
+    {
+      "id": "4694578f-52c5-42ed-ba22-a5aa7976d9b4",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנה”ח וחשב/ת שכר לארגון בקריית אונו",
+      "sourceURL": "https://www.manpower.co.il/job/244872",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:49.224Z"
+      }
+    },
+    {
+      "id": "4c66594a-7702-491f-9cfd-335bb431dc09",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Manager לחברה מצליחה ברמת החייל בתחום הSmart Mobility",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/rd-group-manager-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%9E%D7%A6%D7%9C%D7%99%D7%97%D7%94-%D7%91%D7%A8%D7%9E%D7%AA-%D7%94%D7%97%D7%99%D7%99%D7%9C-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94smart-mobility/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:50.960Z"
+      }
+    },
+    {
+      "id": "4c5932f1-08a8-4cd2-ae13-d93e9473cdf6",
+      "company": "Similarweb",
+      "title": "Senior Backend Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8299494",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:50.902Z"
+      }
+    },
+    {
+      "id": "4c6d2d42-ae15-4c58-a02a-1ccc72fb5175",
+      "company": "AppsFlyer",
+      "title": "Senior PR&D Program Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8855377002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:51.139Z"
+      }
+    },
+    {
+      "id": "4f58fc00-db02-411d-b32c-ea7c5190fc34",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Lead בחברת סטארט-אפ מצליחה!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/group-lead-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%9E%D7%A6%D7%9C%D7%99%D7%97%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:51.256Z"
+      }
+    },
+    {
+      "id": "4c26e78b-302b-4a8a-ad3b-16d816d7dce7",
+      "company": "monday.com",
+      "title": "AI Research Scientist (Harmony)",
+      "sourceURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3"
+    },
+    {
+      "id": "4fe1d63a-30f7-4b43-973e-10fd3fcc534e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Manager בחברת סטארט-אפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/147171/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:51.482Z"
+      }
+    },
+    {
+      "id": "5112e5b4-0662-454f-81d3-1d194554a0eb",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט אפ בתחום ה-Cyber",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/142274/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:51.845Z"
+      }
+    },
+    {
+      "id": "4ea2eb33-f25c-48cd-ba13-bc4472b8b22a",
+      "company": "monday.com",
+      "title": "Sales Development Representative - Israel Market",
+      "sourceURL": "https://monday.com/careers/21230208-e381-45f0-bbca-50b351c6e8ba",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:51.169Z"
+      }
+    },
+    {
+      "id": "513fb698-1c4b-47cf-9aec-5852a131487e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Manager בחברה בתחום ה-Digital Industries Operations Software",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/155076/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:52.045Z"
+      }
+    },
+    {
+      "id": "4f79184e-12b5-4ef3-8b36-7de3a89fe9b1",
+      "company": "Similarweb",
+      "title": "Product Data Scientist (Customer-facing)",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239121",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at Similarweb",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true"
+    },
+    {
+      "id": "528745b8-990b-4a7c-91df-6a7724bfeefe",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת Blockchain",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/144788/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:52.190Z"
+      }
+    },
+    {
+      "id": "52e6b4bc-9592-4d19-a246-3a971d2f2f64",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Senior Director בחברת סטארט-אפ עוסקים בתחום ה-Security",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/142768/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:52.250Z"
+      }
+    },
+    {
+      "id": "538e9ca7-1732-4a14-bb65-f9059ecb3295",
+      "company": "AppsFlyer",
+      "title": "Software Team Leader- Domain Team",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8868191002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:52.256Z"
+      }
+    },
+    {
+      "id": "541dec92-1d0e-4a3c-9d27-7e4ac1986c6b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Manager",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/121055/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:52.449Z"
+      }
+    },
+    {
+      "id": "540e1226-be8c-4329-b5db-476ac08d4266",
+      "company": "AppsFlyer",
+      "title": "Senior Backend Software Engineer - 2943",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8899639002",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at AppsFlyer",
+      "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true"
+    },
+    {
+      "id": "54f85a13-b601-4ddd-a1d8-046a3927be73",
+      "company": "Orbit Communication Systems",
+      "title": "Electro-Mechanical Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electro-mechanical-buyer/9E.B6E",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Orbit Communication Systems - Careers",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008"
+    },
+    {
+      "id": "544a590b-6e12-4de8-b854-76d9e8d208b2",
+      "company": "monday.com",
+      "title": "Creative Marketing Designer",
+      "sourceURL": "https://monday.com/careers/63cc635b-1ef0-4573-a1a2-f3d712c3a5af",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:52.557Z"
+      }
+    },
+    {
+      "id": "554584d3-d1ce-47d5-94fd-dca9152b8062",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Product בחברת SU בתחום ה-AI & Health Care",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/143416/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.365Z"
+      }
+    },
+    {
+      "id": "5522ad0f-e229-4ed6-9e01-760bc5f9ece3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of R&D בחברת סטארט-אפ רווחית בתחום ה-C2B",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/154321/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.351Z"
+      }
+    },
+    {
+      "id": "561a9ade-8e57-4133-b512-d58961bd2ad9",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ מרשימה!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%9E%D7%A8%D7%A9%D7%99%D7%9E%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.569Z"
+      }
+    },
+    {
+      "id": "567ccc75-bffc-4069-ba45-6aa61e37e973",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Senior Director Of Product Management בחברת הייטק מצליחה בתחום ה-Ad Tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/senior-director-of-product-management-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%94%D7%99%D7%99%D7%98%D7%A7-%D7%9E%D7%A6%D7%9C%D7%99%D7%97%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94-ad-tech/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.577Z"
+      }
+    },
+    {
+      "id": "5580f8cc-1860-49e8-976b-9c5d7df43be0",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לסטארט-אפ ממומן עם לקוחות משלמים",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%9E%D7%9E%D7%95%D7%9E%D7%9F-%D7%A2%D7%9D-%D7%9C%D7%A7%D7%95%D7%97%D7%95%D7%AA-%D7%9E%D7%A9%D7%9C%D7%9E%D7%99%D7%9D/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.554Z"
+      }
+    },
+    {
+      "id": "57309e6f-2bc4-4366-b35b-745dcd5b374f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Lead בחברה מצליחה המפתחת מערכת לסוחרים",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/144105/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.779Z"
+      }
+    },
+    {
+      "id": "569bc926-173b-41f9-a55d-1b28e1834b87",
+      "company": "AppsFlyer",
+      "title": "Senior Product Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8874566002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.761Z"
+      }
+    },
+    {
+      "id": "5a2f65e6-fce7-46ac-b27d-054f15b9b445",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Group Lead בחברת סטארט-אפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/148552/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.006Z"
+      }
+    },
+    {
+      "id": "50aa85bf-661a-4a88-b74d-06b4b030bb10",
+      "company": "Manpower — מקור גיוס",
+      "title": "דרוש/ה כלכלן/ית תקציב ובקרה לחברה מובילה באזור הדרום!",
+      "sourceURL": "https://www.manpower.co.il/job/244837",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:51.522Z"
+      }
+    },
+    {
+      "id": "5ab6cae4-4a88-4244-81a6-de1beb66ec23",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Mobile Developer Group Leader בסטארט-אפ בתחום הבריאות הדיגיטלית- Bio-Tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/146899/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.230Z"
+      }
+    },
+    {
+      "id": "57073f6a-1ccb-450c-ab6c-78be092b8d37",
+      "company": "monday.com",
+      "title": "Senior AI Partner Program Manager",
+      "sourceURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c"
+    },
+    {
+      "id": "5b31b5e2-0dbe-4f83-8fcd-0b68fa60d46b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Team Leader בחברה בתחום ה-Fintech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/142411/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.441Z"
+      }
+    },
+    {
+      "id": "5b7a7531-ec78-4b45-9245-93d0fbd6fb5c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Manager בחברת סטארט-אפ בתחום ה-Cyber בעולמות ה-IT",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/149068/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.494Z"
+      }
+    },
+    {
+      "id": "5e04d989-d884-463c-a432-5b9b1d724302",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Engineering לחברה בתחום האלגוטריידינג!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/119099/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.688Z"
+      }
+    },
+    {
+      "id": "5ad4edf1-8e0d-4225-91ec-7e9ff848429a",
+      "company": "AppsFlyer",
+      "title": "IT Service Desk Team Leader",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8874236002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.429Z"
+      }
+    },
+    {
+      "id": "58c8c705-93aa-4179-b727-c5fed610fea5",
+      "company": "monday.com",
+      "title": "Maintenance & Operations Technician",
+      "sourceURL": "https://monday.com/careers/95f547f4-285a-48db-a396-fae0cecf8f41",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:53.996Z"
+      }
+    },
+    {
+      "id": "5e356eb6-72e3-43d7-b989-759de2280846",
+      "company": "נישה — מקור גיוס",
+      "title": "חשב/ת",
+      "sourceURL": "https://www.nisha.co.il/job/12122/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.986Z"
+      }
+    },
+    {
+      "id": "5c31bd5b-953e-44eb-85ac-88e8e982527b",
+      "company": "monday.com",
+      "title": "Senior Product Manager – CRM Sales",
+      "sourceURL": "https://monday.com/careers/d2048fbf-6fdf-43a6-adbf-66586f6eeaf2",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.660Z"
+      }
+    },
+    {
+      "id": "5e1459dc-a632-48b1-9d85-993bce7624e4",
+      "company": "AppsFlyer",
+      "title": "Assistant Controller - Corporate Team- 2908",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8816216002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:54.885Z"
+      }
+    },
+    {
+      "id": "5f402408-9fc3-4371-b2b7-6847f4382538",
+      "company": "נישה — מקור גיוס",
+      "title": "חשב/ת",
+      "sourceURL": "https://www.nisha.co.il/job/11945/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.159Z"
+      }
+    },
+    {
+      "id": "5e4b9c7b-c56a-46e2-82dc-05b32efe43b3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Engineering לחברה בתחום האלגוטריידינג!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/119098/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.101Z"
+      }
+    },
+    {
+      "id": "60b8d326-7d02-4eba-93af-c74c142164cd",
+      "company": "נישה — מקור גיוס",
+      "title": "Controller",
+      "sourceURL": "https://www.nisha.co.il/job/11849/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.299Z"
+      }
+    },
+    {
+      "id": "6068adfc-fce0-4c1a-a44a-8968a9b4c715",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D/CTO בחברת סטארט-אפ בתחום ה-Data Marketing",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/144703/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.164Z"
+      }
+    },
+    {
+      "id": "607bde15-8a23-488a-9d26-83a02a98236d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Product Management בחברת סטארט אפ מצליחה בתחום הSecurity",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-product-management-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%9E%D7%A6%D7%9C%D7%99%D7%97%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94security/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.237Z"
+      }
+    },
+    {
+      "id": "60eb5298-7a0d-4b43-b02b-1a13849c8378",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of R&D בחברת סטארט-אפ בתחום Creative Technology",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/151221/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.379Z"
+      }
+    },
+    {
+      "id": "62619c98-c9e9-42be-896e-3d986523d1dc",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Research Infrastructure בחברת סטארט-אפ בתחום ה-Cyber",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/150118/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.393Z"
+      }
+    },
+    {
+      "id": "5e18375b-3141-403f-9596-27dcaaec9123",
+      "company": "monday.com",
+      "title": "Channel Partner Manager - Middle East",
+      "sourceURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57"
+    },
+    {
+      "id": "6357c30e-2e73-4c9d-8b77-304a4f0ba19b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director, Software Engineering בחברת Consumer-Tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/151081/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.478Z"
+      }
+    },
+    {
+      "id": "64df3b3c-113d-4e79-9040-a019f470ff09",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager Software Engineering בחברת סטארט-אפ בתחום ה-High-Performance Computing",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/150249/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.584Z"
+      }
+    },
+    {
+      "id": "67a7bcdf-cb7f-4ab7-99fa-54795b5cb27b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Director לחברת סטארט-אפ בתחום הGaming",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/rd-director-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94gaming/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.633Z"
+      }
+    },
+    {
+      "id": "688cd3a9-e891-4de3-b018-59fcf0456a51",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Group Leader בחברת סטארט-אפ בתחום המחשוב הקוונטי",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/153916/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.676Z"
+      }
+    },
+    {
+      "id": "6a936bb5-cf45-4599-a335-f36c0ecea00e",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל.ת כספים",
+      "sourceURL": "https://www.nisha.co.il/job/11944/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.839Z"
+      }
+    },
+    {
+      "id": "6a8cb37a-abc0-4dc3-bcdb-8d000ab6c326",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת Fintech בצמיחה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/154730/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.785Z"
+      }
+    },
+    {
+      "id": "6afb0bd0-13b7-4b52-bdf0-3d1acaf289fc",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברה טכנולוגית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/146802/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.904Z"
+      }
+    },
+    {
+      "id": "6c48a5cb-7a6c-42fd-bd9f-17ecd9483dfa",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לסטארטאפ בתחום ה-Cyber Security",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%A1%D7%98%D7%90%D7%A8%D7%98%D7%90%D7%A4-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94-cyber-security/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.924Z"
+      }
+    },
+    {
+      "id": "6cd55f77-b52f-44a1-81ef-0e4c95ca9787",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Director בחברה בתחום הבינה המלאכותית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/rd-director-%D7%91%D7%97%D7%91%D7%A8%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94%D7%91%D7%99%D7%A0%D7%94-%D7%94%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:55.978Z"
+      }
+    },
+    {
+      "id": "6d3acf5d-75d5-4831-bd4d-fa6a0372a400",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager לחברת סטארטאפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/group-manager-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98%D7%90%D7%A4/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:56.138Z"
+      }
+    },
+    {
+      "id": "6d7727f2-dba6-4427-ab37-7bdee81e19d2",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head Of Engineering בחברת סטארט-אפ בתחום Security",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/151042/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:56.175Z"
+      }
+    },
+    {
+      "id": "707d5509-27a5-4fe1-9bd3-8c085d3ad687",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of R&D (Founding Team) בחברת סטארט-אפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/155322/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:56.405Z"
+      }
+    },
+    {
+      "id": "711fecd5-367c-486c-920e-c746ec139ef8",
+      "company": "Similarweb",
+      "title": "Senior BI Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8312429",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:56.603Z"
+      }
+    },
+    {
+      "id": "6cf4da4a-3440-4943-8937-f5e5663c1d6d",
+      "company": "monday.com",
+      "title": "Platform & Knowledge Team Lead",
+      "sourceURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f"
+    },
+    {
+      "id": "7354c081-b1e7-447e-82d8-5c6c74ad6857",
+      "company": "מכבי שירותי בריאות",
+      "title": "סטודנט/ית לאחיות בנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_HTTP_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/"
+    },
+    {
+      "id": "6f605fa1-158f-42f8-8a0d-2bbda78f9e44",
+      "company": "טבע",
+      "title": "Global Program Associate Director (GPAD), Innovative Medicines Global Program leadership",
+      "sourceURL": "https://www.careers.teva/careers/job/563602813284632",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "Privacy Preference Center",
+      "observedURL": "https://www.careers.teva/careers/job/563602813284632"
+    },
+    {
+      "id": "73874ff3-a9f9-459a-b283-df4f3f857f0c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "מנהל/ת צוות פיתוח לחברת סטארט-אפ בצמיחה מתמדת!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/115700-1/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:57.332Z"
+      }
+    },
+    {
+      "id": "740ff539-afb5-4635-8e87-6dd679d9fc7c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "לחברת Cyber בתל אביב דרוש/ה Group Manager",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/%D7%9C%D7%97%D7%91%D7%A8%D7%AA-cyber-%D7%91%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%93%D7%A8%D7%95%D7%A9%D7%94-group-manager/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:57.468Z"
+      }
+    },
+    {
+      "id": "72c09fab-19c3-4597-97ee-34be0c62165c",
+      "company": "monday.com",
+      "title": "Customer Success Manager - Israel Market",
+      "sourceURL": "https://monday.com/careers/71b6d5a7-0d18-4de1-87a9-05d049b0cbc6",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:56.840Z"
+      }
+    },
+    {
+      "id": "74a45333-1406-4a2e-8e47-6b9c0374959d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager בחברת סטארט-אפ בתחום הסייבר לרכב",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/143232/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:57.674Z"
+      }
+    },
+    {
+      "id": "759913a9-dd7e-4cb1-aacd-51322de2b53d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת Gaming",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/150797/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:57.814Z"
+      }
+    },
+    {
+      "id": "7634d202-82c5-4faa-a5a5-4aa1305539d7",
+      "company": "אלביט מערכות",
+      "title": "Subcontractor Manager - Strategic Procurement and Project Management",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=19994",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "76760a87-3122-448e-af04-e3d8ef6a4e84",
+      "company": "נישה — מקור גיוס",
+      "title": "חשב/ת חברה",
+      "sourceURL": "https://www.nisha.co.il/job/12278/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:58.272Z"
+      }
+    },
+    {
+      "id": "69a21bb3-bf50-4d19-98c1-e34a8d0bf799",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות לחברה מובילה",
+      "sourceURL": "https://www.manpower.co.il/job/244923",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "מנהל/ת חשבונות לחברה מובילה+יום עבודה מהבית!",
+      "observedURL": "https://www.manpower.co.il/job/244923"
+    },
+    {
+      "id": "74331050-0d5d-4295-b130-2676b5b4a7c8",
+      "company": "monday.com",
+      "title": "Applied AI Engineer – Sidekick",
+      "sourceURL": "https://monday.com/careers/ee992d8d-635c-4ee7-ac06-7b945d4da54a",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:57.552Z"
+      }
+    },
+    {
+      "id": "7b05ba45-39e1-4e17-afd5-4b143c32263a",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager בתחום ה- סקיוריטי",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/141171/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:58.484Z"
+      }
+    },
+    {
+      "id": "7b39331b-7b1a-4fcd-acca-60081bad4c21",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברה טכנולוגית אזרחית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/146943/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:58.695Z"
+      }
+    },
+    {
+      "id": "75ce5d17-b212-4ec9-a16c-e58c02a8f8cf",
+      "company": "monday.com",
+      "title": "Renewal Manager",
+      "sourceURL": "https://monday.com/careers/558c0289-be2f-4bd5-b6d5-71f09bc7c394",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:58.049Z"
+      }
+    },
+    {
+      "id": "7c0b7816-3919-4a80-8304-1d056d2ff9a5",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Engineering לחברת סטארט אפ בתחום הAI ממומנת היטב!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-engineering-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94ai-%D7%9E%D7%9E%D7%95%D7%9E%D7%A0%D7%AA-%D7%94%D7%99%D7%98%D7%91/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:59.092Z"
+      }
+    },
+    {
+      "id": "78c3b424-ace6-4469-a4da-e950b00f1e26",
+      "company": "monday.com",
+      "title": "GTM Engineer - RevAI",
+      "sourceURL": "https://monday.com/careers/34f4e8f4-59a7-412b-b540-f9fc44c0916f",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:58.374Z"
+      }
+    },
+    {
+      "id": "778d432c-a8f0-4e6c-a5ab-42faea70fd28",
+      "company": "monday.com",
+      "title": "Senior AI Software Engineer - AI Engineering",
+      "sourceURL": "https://monday.com/careers/356f3223-798f-4f54-84a5-bac75f869ef7",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:58.364Z"
+      }
+    },
+    {
+      "id": "7c29fbc1-45a4-4dd2-a48a-0b4ac2c4deeb",
+      "company": "GotFriends — מקור גיוס",
+      "title": "DSP Group Leader בחברת סטארט-אפ בתחום הסייבר ההגנתי",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/148325/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:59.264Z"
+      }
+    },
+    {
+      "id": "7ec498eb-c5a3-44a7-b487-1d7a3a1b85ee",
+      "company": "אלביט מערכות",
+      "title": "Technical Product Manager \\ Systems Engineer - AI And Innovation",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=19310",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "7e788a0e-48f7-4a3e-803e-b2b8fcc9f032",
+      "company": "Similarweb",
+      "title": "Principal Tech Lead (Backend oriented)",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8041082",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:59.368Z"
+      }
+    },
+    {
+      "id": "845b24c7-4cd3-4af5-ba91-7a1f9c6ea82e",
+      "company": "AppsFlyer",
+      "title": "Backend Software Engineer- 2938",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8897823002",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at AppsFlyer",
+      "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true"
+    },
+    {
+      "id": "7c2f70f1-2d99-4430-8861-c2541ba7be74",
+      "company": "Orbit Communication Systems",
+      "title": "איש/אשת אחזקה",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/3D.B60",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "איש/אשת אחזקה @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/None/3D.B60"
+    },
+    {
+      "id": "8792b68f-96c9-470f-a4cc-e4a91193ae36",
+      "company": "נישה — מקור גיוס",
+      "title": "חשב/ת הקבוצה ויד ימינו של סמנכ״ל הכספים.",
+      "sourceURL": "https://www.nisha.co.il/job/12087/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:00.073Z"
+      }
+    },
+    {
+      "id": "7f2b95cc-b08a-47b5-a5f2-3ff3aaae3383",
+      "company": "monday.com",
+      "title": "Data Scientist– AI Infra & Evaluation Foundations",
+      "sourceURL": "https://monday.com/careers/c63d83ff-8462-48f6-8c27-692f903c28a5",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:59.528Z"
+      }
+    },
+    {
+      "id": "88225928-a7a2-4fe5-bc6c-f749961daaf3",
+      "company": "אלביט מערכות",
+      "title": "NPI Product Expert Team Leader",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20754",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_JOB_NOT_FOUND_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://elbitsystemscareer.com/job/?jid=20754"
+    },
+    {
+      "id": "88cd1def-b254-4d4e-a935-5bdac105d7f1",
+      "company": "אלביט מערכות",
+      "title": "Senior mechanical engineer",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=19890",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "881f3d06-2fe5-4c95-a068-5d14fbab0c94",
+      "company": "Similarweb",
+      "title": "Employee Experience Specialist- Part Time",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8303116",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:00.188Z"
+      }
+    },
+    {
+      "id": "89387586-7fed-417c-9145-28b5211ab462",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D & Software Architect (AI/Machine Learning) בחברת מוצר",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/153419/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:00.480Z"
+      }
+    },
+    {
+      "id": "893950e5-e4da-45db-aa3b-8e821d1e3bb6",
+      "company": "monday.com",
+      "title": "Senior Customer Enablement AI Builder",
+      "sourceURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931"
+    },
+    {
+      "id": "855bd266-4f1d-4d92-a12f-c59e4636a715",
+      "company": "monday.com",
+      "title": "Equity manager",
+      "sourceURL": "https://monday.com/careers/7dfc9f36-1eab-42aa-b9c8-56e1d7b7bbb6",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:12:59.994Z"
+      }
+    },
+    {
+      "id": "89ebfe60-196e-4a73-a25e-bd1d7b918bc7",
+      "company": "חברת החשמל",
+      "title": "מהנדס/ת מכונות להדרכת קורסים לעבודה בחדרה",
+      "sourceURL": "https://careers.iec.co.il/order/15447/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered IEC: exact normalized heading, description and application control",
+        "at": "2026-11-17T03:13:20.049Z"
+      }
+    },
+    {
+      "id": "8ad67dac-e291-4e32-9a47-1319781722ee",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Engineering- Consumer Applications בחברת טכנולוגיה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/152907/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:00.886Z"
+      }
+    },
+    {
+      "id": "8aeb8b56-8e03-440c-a5d5-41abb7a0bd7c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Leader בחברת גלובאלית ורווחית בעולמות ה- Security!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/rd-group-leader-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%92%D7%9C%D7%95%D7%91%D7%90%D7%9C%D7%99%D7%AA-%D7%95%D7%A8%D7%95%D7%95%D7%97%D7%99%D7%AA-%D7%91%D7%A2%D7%95%D7%9C%D7%9E%D7%95%D7%AA-%D7%94-security/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.001Z"
+      }
+    },
+    {
+      "id": "8bc926fe-969b-45f3-81d9-12e62b75849d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Engineering בחברת הייטק מצליחה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/154145/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.088Z"
+      }
+    },
+    {
+      "id": "8c3136df-7c2a-4e53-91ed-68c60c444e8d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Algorithms Group Manager בחברה בתחום ה-Automotive",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/147778/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.250Z"
+      }
+    },
+    {
+      "id": "7ec05657-d051-4e87-abb5-5f59ac3c687b",
+      "company": "Manpower — מקור גיוס",
+      "title": "עוזר.ת חשב לחברה בנוף הגליל – 80% משרה",
+      "sourceURL": "https://www.manpower.co.il/job/244933",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "הכלים שלכם למציאת עבודה",
+      "observedURL": "https://www.manpower.co.il/search"
+    },
+    {
+      "id": "8d249015-0af0-48d0-9a43-fa77b14cded4",
+      "company": "GotFriends — מקור גיוס",
+      "title": "משרת Research Group Lead בחברת Fintech מובילה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/%D7%9E%D7%A9%D7%A8%D7%AA-research-group-lead-%D7%91%D7%97%D7%91%D7%A8%D7%AA-fintech-%D7%9E%D7%95%D7%91%D7%99%D7%9C%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.296Z"
+      }
+    },
+    {
+      "id": "8af8f0ff-a7ca-4c9b-8004-f8417151606d",
+      "company": "Orbit Communication Systems",
+      "title": "Electromechanical R&D TL",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electromechanical-rd-tl/FE.077",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "Electromechanical R&D TL @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electromechanical-rd-tl/FE.077"
+    },
+    {
+      "id": "8e4c1ffa-fc35-4ca9-a0f6-28c2a07e66f8",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Manager בחברת סטארט-אפ בתחום ה-AI",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/144765/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.458Z"
+      }
+    },
+    {
+      "id": "903f2ed9-dba5-41a2-a449-687e5d81cea1",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager לחברה יציבה וממומנת",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/group-manager-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%99%D7%A6%D7%99%D7%91%D7%94-%D7%95%D7%9E%D7%9E%D7%95%D7%9E%D7%A0%D7%AA/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.487Z"
+      }
+    },
+    {
+      "id": "8fc2cf3a-fe14-4a27-b6f5-ab23de6f98a7",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברת סטארט-אפ בתחום ה-Food-tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/146224/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.472Z"
+      }
+    },
+    {
+      "id": "91c18b36-ad76-4f4d-b00b-0a7526815704",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of Software Department בחברה מובילה בתחום ה-Defense,",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/154728/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.661Z"
+      }
+    },
+    {
+      "id": "90646d1c-6188-424a-b535-2af1fd54f211",
+      "company": "Orbit Communication Systems",
+      "title": "Senior System Engineer AMS",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/senior-system-engineer-ams/2D.B6F",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "Senior System Engineer AMS @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/senior-system-engineer-ams/2D.B6F"
+    },
+    {
+      "id": "922be198-95d1-405d-98fc-ae2628e0133d",
+      "company": "חברת החשמל",
+      "title": "מהנדס.ת / הנדסאי.ת חשמל להדרכת קורסים לעבודה בחדרה",
+      "sourceURL": "https://careers.iec.co.il/order/14921/",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_HTTP_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://careers.iec.co.il/order/14921/"
+    },
+    {
+      "id": "92ba0e62-10de-4d2c-be7f-d86d1b8e66c2",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Group Manager לחברת סטארט-אפ אחרי Round B",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/engineering-group-manager-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%90%D7%97%D7%A8%D7%99-round-b/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.195Z"
+      }
+    },
+    {
+      "id": "92b1f1b4-451e-43f1-92f5-dca7942840d8",
+      "company": "AppsFlyer",
+      "title": "Bookkeeper - 2942",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8899626002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.142Z"
+      }
+    },
+    {
+      "id": "9497cf43-1bd7-49ee-baf3-cadad65e1be4",
+      "company": "נישה — מקור גיוס",
+      "title": "Assistant Controller",
+      "sourceURL": "https://www.nisha.co.il/job/12792/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.421Z"
+      }
+    },
+    {
+      "id": "92038bcb-227d-4fe5-92c6-f95c5a9c1413",
+      "company": "monday.com",
+      "title": "Enterprise Account Executive",
+      "sourceURL": "https://monday.com/careers/7ee5ff16-c36f-4653-87e7-859f87173e60",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.695Z"
+      }
+    },
+    {
+      "id": "972a9081-32dc-4eda-b2b6-26a89390603e",
+      "company": "נישה — מקור גיוס",
+      "title": "Assistant Controller",
+      "sourceURL": "https://www.nisha.co.il/job/12771/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.634Z"
+      }
+    },
+    {
+      "id": "96c351c8-d139-4030-8751-649f5119325b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of R&D",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/head-of-rd/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.515Z"
+      }
+    },
+    {
+      "id": "9741eaf9-4b6d-47cd-a3fe-eb9797695497",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהלת חשבונות – פונקציה יחידה",
+      "sourceURL": "https://www.nisha.co.il/job/12301/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.712Z"
+      }
+    },
+    {
+      "id": "957be164-902e-4db7-a79a-0cb34bbcad6f",
+      "company": "Similarweb",
+      "title": "Director of Procurement & Travel",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8312341",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.429Z"
+      }
+    },
+    {
+      "id": "981017cf-0263-4c8d-896b-6e0463a51f4f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Development Director בחברת סטארט-אפ טכנולוגית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/144649/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.720Z"
+      }
+    },
+    {
+      "id": "9b420a04-5507-4c38-b475-9119744b1bd1",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Director לחברה מובילה בתחום הDigital Health בקיסריה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/rd-director-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%9E%D7%95%D7%91%D7%99%D7%9C%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94digital-health-%D7%91%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.796Z"
+      }
+    },
+    {
+      "id": "9b89f30d-2c2c-47df-9513-8d86a4df75ec",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברה העוסקת בתחום ה-Performance Marketing",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/151787/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:02.937Z"
+      }
+    },
+    {
+      "id": "98ad523e-aa30-448c-aad9-14ad8f7c82eb",
+      "company": "monday.com",
+      "title": "Strategic Project Manager (InTECH)",
+      "sourceURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0"
+    },
+    {
+      "id": "9c67b349-b5e1-4a10-8813-e601d5fc9b4b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Manager בחברה שנמצאת לפני הנפקה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/146632/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.001Z"
+      }
+    },
+    {
+      "id": "9e3ff953-73c6-4d3a-8b82-9b823189f0b4",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Research & Development Team leader בחברת Start Up נחשקת בקרב קרנות הון סיכון",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/research-development-team-leader-%D7%91%D7%97%D7%91%D7%A8%D7%AA-start-up-%D7%A0%D7%97%D7%A9%D7%A7%D7%AA-%D7%91%D7%A7%D7%A8%D7%91-%D7%A7%D7%A8%D7%A0%D7%95%D7%AA-%D7%94%D7%95%D7%9F-%D7%A1%D7%99%D7%9B%D7%95%D7%9F/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.160Z"
+      }
+    },
+    {
+      "id": "9e93fa0a-0bdb-4eb4-91aa-1b389faa479f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Software Engineering בחברת סטארט-אפ בתחום הFintech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-software-engineering-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94fintech/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.202Z"
+      }
+    },
+    {
+      "id": "9efa3aa3-2b13-4a38-9a16-2ec917482e7d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Leader לחברה מובילה בתחום הפורנזיקה הדיגיטלית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/120216/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.405Z"
+      }
+    },
+    {
+      "id": "9ef04186-263c-4d22-8397-b4bb1a93d9cf",
+      "company": "מכבי שירותי בריאות",
+      "title": "פיזיותרפיסט/ית להתפתחות הילד נתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%99%D7%96%D7%99%D7%95%D7%AA%D7%A8%D7%A4%D7%99%D7%A1%D7%98%D7%99%D7%AA-1687/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.385Z"
+      }
+    },
+    {
+      "id": "a02bd196-152d-4270-b4ce-89e2790b15e2",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות",
+      "sourceURL": "https://www.nisha.co.il/job/11963/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.785Z"
+      }
+    },
+    {
+      "id": "a00b9a64-85ea-41e3-a350-fb5f8cb040a9",
+      "company": "AppsFlyer",
+      "title": "Product Partnerships Lead- 2930",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8883285002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.619Z"
+      }
+    },
+    {
+      "id": "a1f2a7df-683c-41fe-af6d-0d4e68a42888",
+      "company": "נישה — מקור גיוס",
+      "title": "Controller",
+      "sourceURL": "https://www.nisha.co.il/job/11888/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.870Z"
+      }
+    },
+    {
+      "id": "920372d1-0cd1-4237-88af-35e5498aa54f",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות עד מאזן | רמת גן (קו רכבת קלה)",
+      "sourceURL": "https://www.manpower.co.il/job/244905",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:01.687Z"
+      }
+    },
+    {
+      "id": "a24fa387-fea7-4758-991b-5a3aabf60e5d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Of Engineering בסטארט-אפ בתחום ה־Cloud Cost Governance",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/150637/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.946Z"
+      }
+    },
+    {
+      "id": "a474a2db-0fad-4be9-a487-2a0f0b0b39c3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Development Lead/ VP R&D בחברת סטארט-אפ בתחום ה-AI Machine Learning",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/144833/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.953Z"
+      }
+    },
+    {
+      "id": "9cfc9536-53b4-49e5-b7b5-de5bc19bb1bc",
+      "company": "monday.com",
+      "title": "Technical Support Engineer",
+      "sourceURL": "https://monday.com/careers/23ffcb8e-5ca5-48f5-8cb4-6a21baf27c66",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:03.143Z"
+      }
+    },
+    {
+      "id": "a5b216e7-09fd-4f58-8748-16cf7be3dec7",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Data Infra Engineering Team Leader",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/data-infra-engineering-team-leader/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.208Z"
+      }
+    },
+    {
+      "id": "a594ed9e-03f2-4969-b7e8-4d50cb81094a",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברת סטארט-אפ בתחום הסייבר",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/142718/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.179Z"
+      }
+    },
+    {
+      "id": "a52332db-caea-40fc-a061-e5409124f6b1",
+      "company": "Similarweb",
+      "title": "Senior Product Manager, AI-Native Platform",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8281070",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.167Z"
+      }
+    },
+    {
+      "id": "a6078a03-94d4-4898-b55d-edf1512d603f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP Application בחברת Start Up בתחום הוידאו",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/vp-application-%D7%91%D7%97%D7%91%D7%A8%D7%AA-start-up-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94%D7%95%D7%99%D7%93%D7%90%D7%95/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.435Z"
+      }
+    },
+    {
+      "id": "a5bd73b5-0230-4965-843d-311a37af646c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Of Engineering בחברת סייבר בתחום ה-Network Visibility",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/146068/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.417Z"
+      }
+    },
+    {
+      "id": "a5b21c90-cf2d-4605-b277-780e02321458",
+      "company": "AppsFlyer",
+      "title": "Bookkeeper - temporary position (Herzliya)- 2904",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8813084002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.408Z"
+      }
+    },
+    {
+      "id": "a82b6096-a7c5-47dd-9168-362b42964d2e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of R&D בחברת סטארט-אפ B2D ישראלי",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/155184/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.644Z"
+      }
+    },
+    {
+      "id": "a86b94e4-5b6f-419d-a702-56d97473a4a3",
+      "company": "Similarweb",
+      "title": "Finance Operation specialist",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8330601",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.671Z"
+      }
+    },
+    {
+      "id": "aa3a64f3-2420-4d2b-8381-854723c675ab",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברת סטארט-אפ ישראלית מרשימה!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/cto-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA-%D7%9E%D7%A8%D7%A9%D7%99%D7%9E%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.709Z"
+      }
+    },
+    {
+      "id": "ab8faeaf-ddf8-4e74-8e51-136898dd33bb",
+      "company": "אלביט מערכות",
+      "title": "Strategic Programs and Subcontractors Manager",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20703",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "ad47b250-cc36-4c74-baf6-cd2ee6eba5cd",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בסטארט-אפ בתחום ה-Video Analytics",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/154106/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:04.910Z"
+      }
+    },
+    {
+      "id": "adb140ce-9c15-4bd3-bd2d-3bd471201e42",
+      "company": "חברת החשמל",
+      "title": "מפקח/ת מערכות מיזוג אוויר לתחנת הכוח בחדרה",
+      "sourceURL": "https://careers.iec.co.il/order/15437/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered IEC: exact normalized heading, description and application control",
+        "at": "2026-11-17T03:13:20.049Z"
+      }
+    },
+    {
+      "id": "ade70dfb-2714-47cd-9ac2-0bda4bf5f12a",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Development Manager",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/software-development-manager-1/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.056Z"
+      }
+    },
+    {
+      "id": "b1be9bf0-a2cd-4bf7-806e-815cbe44436e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of Engineering בחברת סטארט-אפ בתחום תשתיות תקשורת לעולם ה-AI",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/151527/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.215Z"
+      }
+    },
+    {
+      "id": "b2e5e3aa-f6da-4228-8b12-c97543a5cad0",
+      "company": "Similarweb",
+      "title": "Data Scientist",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/6829705",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.259Z"
+      }
+    },
+    {
+      "id": "a216de4f-2f30-4e00-994a-c8d84714bfbd",
+      "company": "Manpower — מקור גיוס",
+      "title": "גזבר/ית לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244962",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "הכלים שלכם למציאת עבודה",
+      "observedURL": "https://www.manpower.co.il/search"
+    },
+    {
+      "id": "af73ae85-82ea-4b97-bf4a-f42bce0d6330",
+      "company": "monday.com",
+      "title": "Senior Software Engineer (render.ai)",
+      "sourceURL": "https://monday.com/careers/b980719c-fdfe-4055-9326-55466ee9f1be",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.132Z"
+      }
+    },
+    {
+      "id": "b3a4bba0-9cca-4e14-a487-f8bfba951e0e",
+      "company": "AppsFlyer",
+      "title": "Product Partnerships Manager",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8509670002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.996Z"
+      }
+    },
+    {
+      "id": "b37c4ec4-ee52-43ee-b1a8-ba14d1d284b3",
+      "company": "AppsFlyer",
+      "title": "Commission Analyst",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8805502002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.488Z"
+      }
+    },
+    {
+      "id": "b3752bd9-b8cd-43e5-a01a-0322e10ade4f",
+      "company": "monday.com",
+      "title": "Senior Legal Counsel - AI and Technology",
+      "sourceURL": "https://monday.com/careers/db8fac75-7d90-4a2a-82af-db7cca37b0fc",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:05.439Z"
+      }
+    },
+    {
+      "id": "b5455f4c-a5c2-40f0-9d82-451bd5df1ed1",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Mobile Group Manager בחברת סטארט-אפ בתחום ה-Digital Accessibility",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/148885/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:06.225Z"
+      }
+    },
+    {
+      "id": "b59348ee-9fb5-4d56-9cf8-af13c6dcbb82",
+      "company": "מכבי שירותי בריאות",
+      "title": "לוקח/ת דם לנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%9C%D7%95%D7%A7%D7%97%D7%AA-%D7%93%D7%9D-%D7%95%D7%A8%D7%99%D7%93%D7%99-%D7%91%D7%A9%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%A2%D7%91%D7%93%D7%94-%D7%A1%D7%A0%D7%99%D7%A4%D7%99-5918/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:06.303Z"
+      }
+    },
+    {
+      "id": "b677f6c0-b9b1-4753-92d5-b40a7fb97515",
+      "company": "GotFriends — מקור גיוס",
+      "title": "משרת VP R&D בחברה בתחום Digital Health",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/%D7%9E%D7%A9%D7%A8%D7%AA-vp-rd-%D7%91%D7%97%D7%91%D7%A8%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-digital-health/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:06.514Z"
+      }
+    },
+    {
+      "id": "b6fa05f2-e902-4190-874d-e29ccd229cb3",
+      "company": "אלביט מערכות",
+      "title": "רכז.ת תכנון ובקרת מלאי ונתונים",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=21034",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "b5cc845a-a462-48e1-8964-a9a2eea627ee",
+      "company": "monday.com",
+      "title": "Head of Data Science",
+      "sourceURL": "https://monday.com/careers/e1d11734-5707-43ef-b0d2-b682a273791c",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:06.400Z"
+      }
+    },
+    {
+      "id": "b70d82fd-b70e-427e-ba12-2faa5856992d",
+      "company": "Orbit Communication Systems",
+      "title": "מנהל/ת חשבונות ראשי/ת וגזבר/ית",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/---/6D.379",
+      "result": "REVIEW_REQUIRED",
+      "reason": "DYNAMIC_CONTENT_OR_EMBEDDED_APPLICATION_UNCONFIRMED",
+      "observedSourceTitle": "מנהל/ת חשבונות ראשי/ת @ Orbit Communication Systems",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/---/6D.379"
+    },
+    {
+      "id": "b7cc562b-df89-4482-ab29-0a4882af2ab9",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת AdTech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/146602/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:07.498Z"
+      }
+    },
+    {
+      "id": "b89e26c7-526f-4a55-b97a-3e5fa4d3c2fa",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Engineering Group Manager לחברת Fintech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/engineering-group-manager-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-fintech/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:07.717Z"
+      }
+    },
+    {
+      "id": "b7c67e10-746e-4a2c-9663-caf4c172e99a",
+      "company": "monday.com",
+      "title": "Talent Acquisition Partner",
+      "sourceURL": "https://monday.com/careers/4c1db053-0ea2-49c4-b901-e8ed57afba92",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:07.376Z"
+      }
+    },
+    {
+      "id": "b8abd612-a829-4037-8db4-02a4dfd99bc6",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Manager",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/rd-group-manager-2/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.053Z"
+      }
+    },
+    {
+      "id": "b965bd22-b305-47a0-9dec-9da5c9ceb733",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות עד מאזן",
+      "sourceURL": "https://www.nisha.co.il/job/12926/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.181Z"
+      }
+    },
+    {
+      "id": "ba14ece2-307a-4abe-bfe6-db435a451e35",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Of Data בסטארט-אפ יוניקורן",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/144656/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.247Z"
+      }
+    },
+    {
+      "id": "ba46995f-4159-4056-9b43-d77968a8355f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Product Management בחברת הייטק ישראלית בתחום ה-DevOps",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/143359/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.287Z"
+      }
+    },
+    {
+      "id": "b43f32bb-8b45-49b2-bb32-cc680787969c",
+      "company": "Manpower — מקור גיוס",
+      "title": "חשב/ת לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244961",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "הכלים שלכם למציאת עבודה",
+      "observedURL": "https://www.manpower.co.il/search"
+    },
+    {
+      "id": "bb50378e-2bc7-4b29-bd3c-273cfd70bb4b",
+      "company": "monday.com",
+      "title": "Senior Marketing Automation Manager",
+      "sourceURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065"
+    },
+    {
+      "id": "b74ce726-a5ef-4d87-a236-47f934d54d69",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנה”ח בצוות לחברת נדל”ן – בני ברק 8 שעות",
+      "sourceURL": "https://www.manpower.co.il/job/244944",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:06.748Z"
+      }
+    },
+    {
+      "id": "bb9013c4-a80d-4075-8aa3-639f3777177f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "לחברת סייבר בתל אביב (קו רכבת) דרוש/ה Fullstack Group Leader",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%99%D7%99%D7%91%D7%A8-%D7%91%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%A7%D7%95-%D7%A8%D7%9B%D7%91%D7%AA-%D7%93%D7%A8%D7%95%D7%A9%D7%94-fullstack-group-leader/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.836Z"
+      }
+    },
+    {
+      "id": "bdf56a06-0850-4501-8ed2-14003be0e193",
+      "company": "Similarweb",
+      "title": "Big Data Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7972320",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.013Z"
+      }
+    },
+    {
+      "id": "bec4e0fd-6972-4f01-9d71-d37774256509",
+      "company": "Similarweb",
+      "title": "Director of Product Management -Sales Intelligence",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8258464",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.042Z"
+      }
+    },
+    {
+      "id": "bb32ee79-0a6e-4343-b5ad-28e647cda42d",
+      "company": "monday.com",
+      "title": "Software Engineer - Agentic Solutions (CCO)",
+      "sourceURL": "https://monday.com/careers/6707c169-a14d-4179-8bd0-736af4cced47",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.467Z"
+      }
+    },
+    {
+      "id": "bf297975-4b4c-4362-849b-3f7b01508f07",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Leader לחברה יציבה שמפתחת מוצר שתורם לאנושות!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/rd-group-leader-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%99%D7%A6%D7%99%D7%91%D7%94-%D7%A9%D7%9E%D7%A4%D7%AA%D7%97%D7%AA-%D7%9E%D7%95%D7%A6%D7%A8-%D7%A9%D7%AA%D7%95%D7%A8%D7%9D-%D7%9C%D7%90%D7%A0%D7%95%D7%A9%D7%95%D7%AA/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.245Z"
+      }
+    },
+    {
+      "id": "bb638dfc-2ccb-4ded-9dd5-5799f687d3bd",
+      "company": "monday.com",
+      "title": "Senior Lifecycle Marketing Manager",
+      "sourceURL": "https://monday.com/careers/7ce6af01-f32c-457c-9ed2-d9c41a8e1d65",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:08.560Z"
+      }
+    },
+    {
+      "id": "c143fed4-e2f0-4fc9-9bfb-85b2be573b15",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות",
+      "sourceURL": "https://www.nisha.co.il/job/9822/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.546Z"
+      }
+    },
+    {
+      "id": "c0e5a0f2-1c54-45cc-ab0f-3dc5ef0cedf2",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Manager בחברת סטארט-אפ מדהימה!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/rd-manager-%D7%91%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%9E%D7%93%D7%94%D7%99%D7%9E%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.459Z"
+      }
+    },
+    {
+      "id": "c11963a5-287d-4132-bcef-096176a43f0e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager בחברת הייטק רווחית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/141968/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.468Z"
+      }
+    },
+    {
+      "id": "c267d056-6d6c-40cb-b012-e38f2d180d4b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברת סטארט-אפ בתחום האונקולוגיה המדויקת",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/152238/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.661Z"
+      }
+    },
+    {
+      "id": "c16bdadf-228b-4ecf-b1ef-30a003dfadc9",
+      "company": "מכבי שירותי בריאות",
+      "title": "מזכיר/ה רפואי/ת למכון התפתחות הילד בנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%9E%D7%96%D7%9B%D7%99%D7%A8%D7%94-%D7%A8%D7%A4%D7%95%D7%90%D7%99%D7%AA-6000/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.639Z"
+      }
+    },
+    {
+      "id": "c453910a-6075-46ad-b7c0-acd563a8bef2",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Manager בחברת הייטק בתחום הספנות",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/152067/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.861Z"
+      }
+    },
+    {
+      "id": "c48485fe-2bad-4f1d-9b75-d0857abedf0b",
+      "company": "Made Finance",
+      "title": "Bookkeeper",
+      "sourceURL": "https://www.made.co.il/made-careers/bookkeeper-2/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.023Z"
+      }
+    },
+    {
+      "id": "bfee3be8-2875-4c83-8705-cd74f6b01bd6",
+      "company": "monday.com",
+      "title": "Senior AI Software Engineer - Internal AI",
+      "sourceURL": "https://monday.com/careers/9b0ac730-cce6-402d-bf3d-3713bcaf9488",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.279Z"
+      }
+    },
+    {
+      "id": "c4fd7349-e4b2-41ea-b32f-ef1df5e8f8d3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Product Group Manager בחברת Fintech מצליחה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/product-group-manager-%D7%91%D7%97%D7%91%D7%A8%D7%AA-fintech-%D7%9E%D7%A6%D7%9C%D7%99%D7%97%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.066Z"
+      }
+    },
+    {
+      "id": "c52bff04-7401-4799-99cd-be4e5895eb16",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ בתחום ה- AD-tech!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/141150/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.115Z"
+      }
+    },
+    {
+      "id": "c6a33249-8118-460d-97ad-426893fd2f69",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head Of Software Engineering בחברת סטארט-אפ",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/146956/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.270Z"
+      }
+    },
+    {
+      "id": "c290a057-2a55-4905-ad50-965615096950",
+      "company": "monday.com",
+      "title": "Product Design Lead (render.ai)",
+      "sourceURL": "https://monday.com/careers/c001d437-7f8e-4c97-a64a-016d639084b7",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:09.688Z"
+      }
+    },
+    {
+      "id": "ca26e4a4-c886-4634-87e4-67eafbb7c3cf",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ בתחום ה-HR-Tech",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/154474/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.484Z"
+      }
+    },
+    {
+      "id": "c55c958c-c45d-4953-8a79-cddc76e9b881",
+      "company": "NiCE",
+      "title": "Payroll Accountant part-time",
+      "sourceURL": "https://job-boards.eu.greenhouse.io/nice/jobs/5010070101?gh_jid=5010070101",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.243Z"
+      }
+    },
+    {
+      "id": "c97f386b-3a56-4959-bb52-5ab2f6c1a7e0",
+      "company": "monday.com",
+      "title": "Senior Enablement Business Partner",
+      "sourceURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454"
+    },
+    {
+      "id": "cba75e33-37f2-40d2-bdaf-f8304fbe8342",
+      "company": "Similarweb",
+      "title": "Senior Data Engineer (Infrastructure)",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7556162",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.736Z"
+      }
+    },
+    {
+      "id": "cbb54ead-5ed3-422a-a7a5-6001afe1c8a3",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director Of Engineering בחברת Start Up מצליחה",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/director-of-engineering-%D7%91%D7%97%D7%91%D7%A8%D7%AA-start-up-%D7%9E%D7%A6%D7%9C%D7%99%D7%97%D7%94/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.741Z"
+      }
+    },
+    {
+      "id": "cc161235-f5ba-4810-93fd-11745555bfea",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director, Software Engineering לחברה בתחום החשמל האלחוטי",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/120048/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.903Z"
+      }
+    },
+    {
+      "id": "cdc8a35c-457d-44f0-9541-bd0d413313e4",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO לחברת סטארט-אפ צעירה בתחום ה-Agriculture",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/cto-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%A6%D7%A2%D7%99%D7%A8%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94-agriculture/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.983Z"
+      }
+    },
+    {
+      "id": "cfd93db8-89f0-4344-ba37-63c9948a79d3",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות",
+      "sourceURL": "https://www.nisha.co.il/job/11863/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:11.181Z"
+      }
+    },
+    {
+      "id": "cfe5f8f4-3483-4e60-a985-ac4dddfc9772",
+      "company": "Similarweb",
+      "title": "Big Data Analyst",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/6897277",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:11.273Z"
+      }
+    },
+    {
+      "id": "cee4c1da-6353-45f5-9d16-0b96690034d5",
+      "company": "monday.com",
+      "title": "Senior AI Engineer – Agentic Marketing",
+      "sourceURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76"
+    },
+    {
+      "id": "d0632fd8-f78a-4115-9685-ddce9560fa09",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברה טכנולוגית",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/147067/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:11.633Z"
+      }
+    },
+    {
+      "id": "ccf5ce28-539f-48c6-9b13-0eba297a3542",
+      "company": "monday.com",
+      "title": "Product Lead - External Agents",
+      "sourceURL": "https://monday.com/careers/d3b553d9-c29e-467c-8df9-a0c2bda4056a",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.967Z"
+      }
+    },
+    {
+      "id": "d16bce4b-f188-4261-ab10-10fd093efe75",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Research And Development Director בחברה שעובדת במתווה של Start Up",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/research-and-development-director-%D7%91%D7%97%D7%91%D7%A8%D7%94-%D7%A9%D7%A2%D7%95%D7%91%D7%93%D7%AA-%D7%91%D7%9E%D7%AA%D7%95%D7%95%D7%94-%D7%A9%D7%9C-start-up/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:11.851Z"
+      }
+    },
+    {
+      "id": "d1eb979a-f6df-4f29-9635-bc7929133dc6",
+      "company": "GotFriends — מקור גיוס",
+      "title": "לסטארטאפ בעולמות הAD Tech דרוש/ה VP R&D",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/%D7%9C%D7%A1%D7%98%D7%90%D7%A8%D7%98%D7%90%D7%A4-%D7%91%D7%A2%D7%95%D7%9C%D7%9E%D7%95%D7%AA-%D7%94ad-tech-%D7%93%D7%A8%D7%95%D7%A9%D7%94-vp-rd/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:11.860Z"
+      }
+    },
+    {
+      "id": "d3bc9b6a-374e-4602-82a1-25008c83971e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D בחברת סטארט-אפ בתחום ה-Data Marketing",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/147247/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.107Z"
+      }
+    },
+    {
+      "id": "cb4a6469-18f7-45c0-ae13-d8d3e816eefc",
+      "company": "Manpower — מקור גיוס",
+      "title": "חשב/ת ראשי/ת לחברת אחזקות – ת”א",
+      "sourceURL": "https://www.manpower.co.il/job/244979",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:10.728Z"
+      }
+    },
+    {
+      "id": "d76a302e-8c4a-4f7d-a26e-2127f67db1d2",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Development Group Manager לחברת הייטק בירושלים",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/122833/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.359Z"
+      }
+    },
+    {
+      "id": "d7ab6503-abb3-4b14-82c3-c8bdf9e34b11",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Lead בחברת סטארט-אפ בתחום ה-Cyber Security",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/155300/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.571Z"
+      }
+    },
+    {
+      "id": "d2beac58-f37d-4200-a9fa-6728b534077a",
+      "company": "monday.com",
+      "title": "Senior Product Manager - monday agents",
+      "sourceURL": "https://monday.com/careers/cca7782a-621d-4d1a-bb58-55204cf80456",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.094Z"
+      }
+    },
+    {
+      "id": "d886e04b-49c6-453d-a7f7-25565c1b7dba",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לחברת תרגום אונליין הגדולה בעולם!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%AA%D7%A8%D7%92%D7%95%D7%9D-%D7%90%D7%95%D7%A0%D7%9C%D7%99%D7%99%D7%9F-%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94-%D7%91%D7%A2%D7%95%D7%9C%D7%9D/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.941Z"
+      }
+    },
+    {
+      "id": "da436bc3-0514-4e82-8d45-a2843ea0d95c",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of R&D לחברת סטארט-אפ מתחת לרדאר",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/head-of-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%9E%D7%AA%D7%97%D7%AA-%D7%9C%D7%A8%D7%93%D7%90%D7%A8/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.997Z"
+      }
+    },
+    {
+      "id": "daf854a9-1a31-425b-971e-6a3312a075cc",
+      "company": "נישה — מקור גיוס",
+      "title": "חשב/ת שכר",
+      "sourceURL": "https://www.nisha.co.il/job/12186/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:13.194Z"
+      }
+    },
+    {
+      "id": "d82224b6-6e86-4af5-963c-bb5ede60eb66",
+      "company": "monday.com",
+      "title": "Senior Platform Engineer (Infra Platform)",
+      "sourceURL": "https://monday.com/careers/11914b7f-cc0f-4290-a1b5-c25f4e52ab80",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:12.584Z"
+      }
+    },
+    {
+      "id": "d57cc4d0-06ba-472e-a44b-a121a2f6bdae",
+      "company": "monday.com",
+      "title": "Total Rewards Partner",
+      "sourceURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554"
+    },
+    {
+      "id": "ddef0ca7-7b9b-4c92-9642-2c64968f41db",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of Engineering לחברת Social Gaming מהמובילות בעולם!",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/121315/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:13.300Z"
+      }
+    },
+    {
+      "id": "da9c22b1-7160-45a5-9c34-b47e997ed24a",
+      "company": "monday.com",
+      "title": "Senior Marketing Analytics",
+      "sourceURL": "https://monday.com/careers/26d533de-1cd7-403d-a1ec-7424252b025f",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:13.164Z"
+      }
+    },
+    {
+      "id": "de369eec-d377-4238-9fad-ef7fb76b6069",
+      "company": "monday.com",
+      "title": "Software Engineering Tech Lead - AI Project Management",
+      "sourceURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3"
+    },
+    {
+      "id": "e4808e22-0e59-40f7-8e27-b83a5ac5c942",
+      "company": "monday.com",
+      "title": "Assistant Controller",
+      "sourceURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011"
+    },
+    {
+      "id": "e483e8ed-3234-4444-b69e-ead9ddf00d6e",
+      "company": "אלביט מערכות",
+      "title": "Employee Experience Specialist",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20562",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Elbit after exact heading became visible: description and application control",
+        "recordedAt": "2026-11-17T03:18:41.619Z"
+      }
+    },
+    {
+      "id": "e4f4efca-7dea-44d4-9c03-43e8ef530d8f",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Software Development Manager לעבודה עצמאית מהבית/משרדי We work",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/software-development-manager-%D7%9C%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%A2%D7%A6%D7%9E%D7%90%D7%99%D7%AA-%D7%9E%D7%94%D7%91%D7%99%D7%AA%D7%9E%D7%A9%D7%A8%D7%93%D7%99-we-work/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:14.286Z"
+      }
+    },
+    {
+      "id": "e614da8e-2d72-4246-b450-3bba34f146c7",
+      "company": "Similarweb",
+      "title": "Senior Data Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7911963",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:14.308Z"
+      }
+    },
+    {
+      "id": "e4b83035-96fa-4bca-a628-66e10d2d8f74",
+      "company": "מכבי שירותי בריאות",
+      "title": "קלינאי/ת תקשורת התפתחות הילד - מחוז שרון",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A7%D7%9C%D7%99%D7%A0%D7%90%D7%99%D7%AA-%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA-2152/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:14.160Z"
+      }
+    },
+    {
+      "id": "e2ef7602-385c-4e8b-830a-d6ef04fe5791",
+      "company": "monday.com",
+      "title": "Lead Product Designer - AI Workflows",
+      "sourceURL": "https://monday.com/careers/fee48786-19a6-452e-afef-9301f26bf4f2",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:13.442Z"
+      }
+    },
+    {
+      "id": "e78a897f-bf30-430a-9619-8623f4e63b4b",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of Security Research בחברת סטארט־אפ בתחום ה־Cyber Intelligence",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/150942/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:14.937Z"
+      }
+    },
+    {
+      "id": "e7c5da09-65e5-43c6-8c9f-86465113a70f",
+      "company": "Made Finance",
+      "title": "Payroll Administrator",
+      "sourceURL": "https://www.made.co.il/made-careers/payroll-administrator/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:15.215Z"
+      }
+    },
+    {
+      "id": "e6e8c903-56d8-4160-b082-b116965dc45b",
+      "company": "monday.com",
+      "title": "Senior AI Software Engineer- Work Experience",
+      "sourceURL": "https://monday.com/careers/70a5729c-99c1-4285-8f78-ec9395c39b63",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:14.492Z"
+      }
+    },
+    {
+      "id": "e710d128-bbab-41e7-8b6f-1948e277ac52",
+      "company": "monday.com",
+      "title": "Senior Lifecycle Marketing Operations Manager",
+      "sourceURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4"
+    },
+    {
+      "id": "ede88ae9-ef5e-4d89-898a-e4c42b441343",
+      "company": "GotFriends — מקור גיוס",
+      "title": "CTO בחברה חדשה שהוקמה כחלק מקבוצת חברות פעילות",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/cto-jobs/151528/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:15.613Z"
+      }
+    },
+    {
+      "id": "ef85c6a3-0d33-4885-9193-ab8b41294d0a",
+      "company": "נישה — מקור גיוס",
+      "title": "Financial Controller",
+      "sourceURL": "https://www.nisha.co.il/job/11965/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:15.843Z"
+      }
+    },
+    {
+      "id": "f0c60a80-747c-4f04-b031-85743fe9895d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לחברת סטארטאפ מתחת לרדאר לאחר שלב הSeed",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98%D7%90%D7%A4-%D7%9E%D7%AA%D7%97%D7%AA-%D7%9C%D7%A8%D7%93%D7%90%D7%A8-%D7%9C%D7%90%D7%97%D7%A8-%D7%A9%D7%9C%D7%91-%D7%94seed/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:15.933Z"
+      }
+    },
+    {
+      "id": "ed3f13b7-7713-42ba-92e8-559c35511762",
+      "company": "טבע",
+      "title": "Senior Manager, Medical Writing",
+      "sourceURL": "https://www.careers.teva/careers/job/563602813593113",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "Privacy Preference Center",
+      "observedURL": "https://www.careers.teva/careers/job/563602813593113"
+    },
+    {
+      "id": "e7ae9b51-e61e-4dce-8978-182564b0e1ad",
+      "company": "monday.com",
+      "title": "AI Engineer (render.ai)",
+      "sourceURL": "https://monday.com/careers/077675a8-bfb6-47f4-a466-347561c26258",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:15.183Z"
+      }
+    },
+    {
+      "id": "edb76af5-093f-44bb-b926-5e8100a434c2",
+      "company": "טבע",
+      "title": "Senior Manager, DMPK Project Leader",
+      "sourceURL": "https://www.careers.teva/careers/job/563602813749170",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "Privacy Preference Center",
+      "observedURL": "https://www.careers.teva/careers/job/563602813749170"
+    },
+    {
+      "id": "f14a96e0-ecae-4a47-a7ac-409f1b45673c",
+      "company": "מכבי שירותי בריאות",
+      "title": "לוקח/ת דם פול בשירות מעבדה לנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%9C%D7%95%D7%A7%D7%97%D7%AA-%D7%93%D7%9D-%D7%95%D7%A8%D7%99%D7%93%D7%99-%D7%91%D7%A9%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%A2%D7%91%D7%93%D7%94-%D7%A1%D7%A0%D7%99%D7%A4%D7%99-3808/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:16.450Z"
+      }
+    },
+    {
+      "id": "f2ba9377-d0fc-4127-aa50-bbe61ad83c7d",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head of R&D לחברת סטארט-אפ קטנה בתל אביב",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/head-of-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%A7%D7%98%D7%A0%D7%94-%D7%91%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:16.476Z"
+      }
+    },
+    {
+      "id": "f12d7d7b-4cdd-4023-baa6-7bc713d7bc8a",
+      "company": "AppsFlyer",
+      "title": "Salary Controller",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8809604002",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "Current openings at AppsFlyer",
+      "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true"
+    },
+    {
+      "id": "f60bb20d-9367-4bb6-8bf8-97bcb28940c5",
+      "company": "Made Finance",
+      "title": "CFO",
+      "sourceURL": "https://www.made.co.il/made-careers/controller-2/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:16.621Z"
+      }
+    },
+    {
+      "id": "f656a002-b7f2-41a7-a754-602772901284",
+      "company": "GotFriends — מקור גיוס",
+      "title": "R&D Group Manager לחברה עולמית העוסקת באבטחת מידע",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/rd-group-manager-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%A2%D7%95%D7%9C%D7%9E%D7%99%D7%AA-%D7%94%D7%A2%D7%95%D7%A1%D7%A7%D7%AA-%D7%91%D7%90%D7%91%D7%98%D7%97%D7%AA-%D7%9E%D7%99%D7%93%D7%A2/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:16.628Z"
+      }
+    },
+    {
+      "id": "f7d94b35-0f69-4141-9f88-85894342886c",
+      "company": "monday.com",
+      "title": "Senior AI Enablement Solutions Builder",
+      "sourceURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_AUTO_CLOSED",
+      "observedSourceTitle": "",
+      "observedURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e"
+    },
+    {
+      "id": "f7111270-df78-4d4f-a980-b6f2d449d6f1",
+      "company": "Orbit Communication Systems",
+      "title": "EO Solutions Engineer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/eo-solutions-engineer/3D.B6F",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "Rendered Orbit role with title, description, embedded Resume field and Submit Application observed in accessibility tree",
+        "at": "2026-11-17T03:21:06.069Z"
+      }
+    },
+    {
+      "id": "f7dfd09d-a597-4258-bfff-ab23c7229a2d",
+      "company": "monday.com",
+      "title": "Procurement Specialist",
+      "sourceURL": "https://monday.com/careers/847d35b4-3fe5-4404-a2ac-1b0c1a6e1f41",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:16.696Z"
+      }
+    },
+    {
+      "id": "f927d612-6a09-49a4-a23f-eef0ee7af8c3",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות",
+      "sourceURL": "https://www.nisha.co.il/job/11820/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.499Z"
+      }
+    },
+    {
+      "id": "f8d314fd-bc32-41b2-b5af-80989e619de6",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Group Leader בחברת הייטק מצליחה בתחום ה-Digital Experience Management",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/group-manager/143847/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.408Z"
+      }
+    },
+    {
+      "id": "fd07e928-97c4-42cf-bec9-694908b49379",
+      "company": "נישה — מקור גיוס",
+      "title": "מנהל/ת חשבונות",
+      "sourceURL": "https://www.nisha.co.il/job/11962/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.712Z"
+      }
+    },
+    {
+      "id": "fb7e60ba-ac4d-467b-9333-56c1f6bd67a4",
+      "company": "AppsFlyer",
+      "title": "DevOps Platform Engineer",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8695882002",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.630Z"
+      }
+    },
+    {
+      "id": "fbdc99a9-6e69-4cf6-9169-d612576e54ea",
+      "company": "Similarweb",
+      "title": "Product Designer - Maternity Leave",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8260908",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.683Z"
+      }
+    },
+    {
+      "id": "fd9eae29-0ed0-4d35-a472-aa35259da0d0",
+      "company": "נישה — מקור גיוס",
+      "title": "עוזר/ת חשב/חשב/ת",
+      "sourceURL": "https://www.nisha.co.il/job/11941/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.899Z"
+      }
+    },
+    {
+      "id": "fd8a3465-c0dd-4755-9f4e-89c7741dd3c5",
+      "company": "GotFriends — מקור גיוס",
+      "title": "VP R&D לחברת סטארט-אפ בתחום הE-commerce",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/vp-rd/vp-rd-%D7%9C%D7%97%D7%91%D7%A8%D7%AA-%D7%A1%D7%98%D7%90%D7%A8%D7%98-%D7%90%D7%A4-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94e-commerce/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.813Z"
+      }
+    },
+    {
+      "id": "fe3ce3c3-fb28-4bac-bfd7-3188aa971b22",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Director of AI Engineering בחברת הייטק ישראלית מצליחה בתחום ה-DevSecOps ו-MLOps.",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-executive/154390/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.922Z"
+      }
+    },
+    {
+      "id": "fe9a3512-7a8b-4aad-92fc-3c654783f11e",
+      "company": "GotFriends — מקור גיוס",
+      "title": "Head Of Engineering בחברת הייטק",
+      "sourceURL": "https://www.gotfriends.co.il/jobslobby/executive-position/development-manager-jobs/150857/",
+      "result": "PASSED_SOURCE_CHECKS",
+      "evidence": {
+        "method": "HTTP HTML: exact normalized title, content >=80 chars, application control/form, unchanged exact source URL, no detected closed phrase",
+        "at": "2026-11-17T03:13:17.983Z"
+      }
+    },
+    {
+      "id": "f8825612-80b4-45c9-880e-9797f5bf4ca1",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות ספקים לחברת הפצה באיירפורט סיטי",
+      "sourceURL": "https://www.manpower.co.il/job/244922",
+      "result": "REVIEW_REQUIRED",
+      "reason": "REDIRECT_OR_GENERAL_BOARD_REQUIRES_REVIEW",
+      "observedSourceTitle": "הכלים שלכם למציאת עבודה",
+      "observedURL": "https://www.manpower.co.il/search"
+    },
+    {
+      "id": "ff67ae31-d488-49af-8bc6-8fe3845d530a",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהלת חשבונות",
+      "sourceURL": "https://www.manpower.co.il/job/244547",
+      "result": "REVIEW_REQUIRED",
+      "reason": "SOURCE_TITLE_DIFFERS_OR_ROLE_FORM_UNCONFIRMED",
+      "observedSourceTitle": "מנהל/ת חשבונות – קיבוץ נחשונים",
+      "observedURL": "https://www.manpower.co.il/job/244547"
+    }
+  ],
+  "repositoryBaseCommit": "313bdcc7448f329a4a7f78cac5231d3b5cdef96d"
+}
