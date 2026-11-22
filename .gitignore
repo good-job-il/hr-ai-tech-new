@@ -21,3 +21,6 @@ supabase/.branches/
 work/pilot-build-*
 /outputs.zip
 /data.sql
+
+/public/ocr/
+/public/pdf-fonts.*/

@@ -1,4 +1,5 @@
 import './globals.css';
+import './cv-autofill.css';
 import './commercial-workspace.css';
 import './help-chat.css';
 import './account-center.css';
