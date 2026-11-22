@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-22",
+  "issue": "HR-13",
+  "project": "rnstsczayhzrxzcstzpr",
+  "snapshotAt": "2026-11-22 17:02:32.454573+00",
+  "backup": {
+    "method": "REPEATABLE READ READ ONLY; COPY SELECT to memory, count(*) per table in same snapshot; gzip then Fernet encryption; no plaintext file",
+    "tables": 75,
+    "totalApplicationRows": 1090962,
+    "authAccountsEncrypted": 23,
+    "storageInventoryObjects": 13,
+    "migrations": 65,
+    "encryptedBytes": 59601444,
+    "elapsedSeconds": 386.62,
+    "integrityDecrypt": "PASS",
+    "archiveAndKeyGitIgnored": true,
+    "storageFileBytesBackedUp": false
+  },
+  "restore": {
+    "result": "PASS_LOCAL_APPLICATION_RESTORE",
+    "at": "2026-11-22T17:10:03.241Z",
+    "project": "rnstsczayhzrxzcstzpr",
+    "snapshotAt": "2026-11-22 17:02:32.454573+00",
+    "tables": 75,
+    "rows": 1090962,
+    "migrations": 65,
+    "foreignKeysRevalidated": 154,
+    "elapsedSeconds": 52.304,
+    "cloudRestore": false,
+    "authLoginTested": false,
+    "storageBytesRestored": false,
+    "limitations": [
+      "Disposable local PGlite, not a separate Supabase project.",
+      "Auth user metadata/IDs modeled for FK/RLS; Auth service, credentials, sessions and actual login not restored/tested.",
+      "Storage file bytes and service configuration excluded."
+    ]
+  },
+  "earlierAttempts": [
+    "Cursor export failed on network read; no valid new archive produced.",
+    "Slow cursor retry interrupted; old17.11 backup preserved.",
+    "COPY export completed and current snapshot restored successfully."
+  ],
+  "realDatabaseWrites": 0,
+  "cloudRecoveryComplete": false,
+  "fullIssueComplete": false,
+  "remaining": [
+    "Restore into separate Supabase with actual Auth login and Storage file bytes.",
+    "Separate controlled storage for archive and key; operator and periodicity decisions.",
+    "Vercel rollback remains separate from database recovery."
+  ]
+}
