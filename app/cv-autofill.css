@@ -1,0 +1,7 @@
+.cvAutofill{margin-block:20px;padding:22px;border:1px solid #dcd6ef;border-radius:16px;background:#faf9ff;min-width:0;overflow-wrap:anywhere}
+.cvAutofillHeading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.cvAutofillHeading h3{margin:0;color:#202640}
+.cvAutofill>p{color:#47516b;line-height:1.7}.cvAutofillField{display:grid;grid-template-columns:minmax(140px,1fr) minmax(0,2fr);gap:8px 18px;padding-block:14px;border-top:1px solid #e6e1f1;align-items:start}
+.cvAutofill .cvAutofillChoice{display:flex;align-items:center;gap:9px;color:#232c47;font-weight:600;min-width:0}.cvAutofillChoice input[type=checkbox]{width:18px;height:18px;flex:0 0 18px;accent-color:#7545d8}
+.cvAutofillField textarea{width:100%;box-sizing:border-box;min-height:74px;resize:vertical;line-height:1.6;max-width:100%;font:inherit;background:#fff;color:#222c44}.cvAutofillField textarea[readonly]{background:#f1f2f7;color:#46506a}.cvAutofillField small{grid-column:2;color:#525d76;line-height:1.6}
+.cvAutofill [role=alert]{color:#a32d38}.cvAutofill button{white-space:normal;min-height:44px;max-width:100%}
+@media(max-width:600px){.cvAutofill{padding:16px}.cvAutofillField{grid-template-columns:minmax(0,1fr);gap:9px}.cvAutofillField small{grid-column:1}.cvAutofill>button{width:100%}}
