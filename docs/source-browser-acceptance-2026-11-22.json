@@ -1,0 +1,598 @@
+{
+  "date": "2026-11-22",
+  "issue": "HR-19",
+  "baseCommit": "313bdcc7448f329a4a7f78cac5231d3b5cdef96d",
+  "method": "Every one of36 exact stored official source URLs opened in the browser; rendered DOM/AX reviewed. Elbit loading indicator awaited. IEC navigation failed and is not counted as a successfully rendered source. Exact ATS no-longer-available notification retained separately from a redirect.",
+  "summary": {
+    "checked": 36,
+    "sourcePagesLoaded": 35,
+    "sourceNavigationFailures": 1,
+    "confirmedUnavailableCorrected": 7,
+    "statusUnconfirmedKeptActive": 29,
+    "recordsDeleted": 0,
+    "otherRowsUnchanged": true,
+    "catalogBefore": 364,
+    "catalogAfter": 357
+  },
+  "explicitUnavailableNotice": "Вакансия, которую вы ищете, больше не доступна.",
+  "cloudCorrection": {
+    "committed": true,
+    "sourceTitlePublicationVerifiedAtUnchanged": true,
+    "otherRowsUnchanged": true,
+    "recordsDeleted": 0
+  },
+  "publicVerification": {
+    "at": "2026-11-22T15:58:06.450Z",
+    "anonymousTargetsVisible": 0,
+    "anonymousCatalogCount": 357,
+    "unresolved29StillVisible": true,
+    "recordsDeleted": 0,
+    "checks": "PASS"
+  },
+  "publicBrowser": {
+    "at": "2026-11-22T15:59:03.561Z",
+    "url": "https://www.hr-ai.tech/",
+    "hotCards": 8,
+    "openJobs": 357,
+    "hiringCompanies": 15,
+    "teamButton": "סביבת גיוס"
+  },
+  "headerRelease": {
+    "branch": "codex/public-label-job-title-20261122",
+    "sha": "b0c83d613d315622998e4b5c35e60537233d73c7",
+    "pullRequest": "https://github.com/good-job-il/hr-ai-tech-new/pull/2",
+    "published": false,
+    "githubValidate": "PASS",
+    "vercelPreview": "FAILURE",
+    "deploymentDashboardAccess": "404"
+  },
+  "limits": [
+    "No active job was inferred closed from a generic error, redirect, HTTP status, age or absence in search.",
+    "Rows are retained; only7 confirmed-unavailable source records changed active to closed.",
+    "No replacement URL or similar job substituted, no title/content/date changed.",
+    "Remaining29 need authoritative status confirmation; HR-19 remains In Progress.",
+    "No employer contacted or application sent. No candidate data, secrets, permissions or site deployment changed.",
+    "The team button still uses the old live label; local code/CI is not publication."
+  ],
+  "rows": [
+    {
+      "id": "023de8be-a1db-4508-bfd4-d68ac5a789aa",
+      "company": "Similarweb",
+      "title": "Product Designer, Growth-Maternity Leave Replacement",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8152015",
+      "observedAt": "2026-11-22T15:55:30.983Z",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at Similarweb",
+        "58 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "03ed6e0e-eba0-4252-b499-3d5e4daf214c",
+      "company": "Riskified",
+      "title": "Account Executive",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "observedAt": "2026-11-22T15:53:29.758Z",
+      "observedURL": "https://www.riskified.com/careers/",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "Join us in unleashing ecommerce growth\nby minimizing risk",
+        "Careers",
+        "Life at Riskified",
+        "Join our team",
+        "We’ve got you covered",
+        "We’re proud to be known as a great place to work"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "09b75aef-d252-4bb8-ace8-a72296906e05",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות בצוות לעמותה מובילה בת”א",
+      "sourceURL": "https://www.manpower.co.il/job/244908",
+      "observedAt": "2026-11-22T15:53:32.681Z",
+      "observedURL": "https://www.manpower.co.il/search",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "הכלים שלכם למציאת עבודה"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "0dd55a3f-451d-4600-a8fc-eac6cbd5f9ac",
+      "company": "monday.com",
+      "title": "Engineering Team Lead- Agentic Surfaces",
+      "sourceURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "observedAt": "2026-11-22T15:53:34.634Z",
+      "observedURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "0fd5b63a-9ad5-4af4-9986-14ec24285fcb",
+      "company": "monday.com",
+      "title": "Senior Product Designer - Harmony AI",
+      "sourceURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "observedAt": "2026-11-22T15:53:36.441Z",
+      "observedURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "16b7c16a-f525-4d46-a2cd-aa68f5362f75",
+      "company": "monday.com",
+      "title": "AI Knowledge & Intelligence Specialist",
+      "sourceURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "observedAt": "2026-11-22T15:53:41.947Z",
+      "observedURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "3ca7c435-317a-4db6-bc6c-e1f2695436ef",
+      "company": "Similarweb",
+      "title": "Senior Backend Engineer, Platform Foundations",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/7962665",
+      "observedAt": "2026-11-22T15:53:42.897Z",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at Similarweb",
+        "58 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "4193010e-e66b-4216-b9ac-c210cfb13067",
+      "company": "QuantHealth",
+      "title": "Bookkeeper",
+      "sourceURL": "https://job-boards.eu.greenhouse.io/quanthealth/jobs/4956767101",
+      "observedAt": "2026-11-22T15:53:43.668Z",
+      "observedURL": "https://job-boards.eu.greenhouse.io/quanthealth?error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at QuantHealth",
+        "2 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "4232e059-3957-4efc-b9d7-46ec6afc8044",
+      "company": "Orbit Communication Systems",
+      "title": "Purchasing Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/purchasing-buyer/BE.07D",
+      "observedAt": "2026-11-22T15:53:45.748Z",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "Careers",
+        "EUCLID",
+        "FACILITIES",
+        "FINANCE",
+        "OPERATIONS",
+        "PROGRAM",
+        "QUALITY",
+        "R&D",
+        "SALES",
+        "SOLUTIONS",
+        "TALENT POOL"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "4c26e78b-302b-4a8a-ad3b-16d816d7dce7",
+      "company": "monday.com",
+      "title": "AI Research Scientist (Harmony)",
+      "sourceURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "observedAt": "2026-11-22T15:53:47.001Z",
+      "observedURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "4f79184e-12b5-4ef3-8b36-7de3a89fe9b1",
+      "company": "Similarweb",
+      "title": "Product Data Scientist (Customer-facing)",
+      "sourceURL": "https://job-boards.greenhouse.io/similarweb/jobs/8239121",
+      "observedAt": "2026-11-22T15:53:57.313Z",
+      "observedURL": "https://job-boards.greenhouse.io/similarweb?error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at Similarweb",
+        "58 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "52fe17fe-ec22-4b3b-a36d-ab3094905326",
+      "company": "Riskified",
+      "title": "Integration Engineer",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "observedAt": "2026-11-22T15:53:59.322Z",
+      "observedURL": "https://www.riskified.com/careers/",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "Join us in unleashing ecommerce growth\nby minimizing risk",
+        "Careers",
+        "Life at Riskified",
+        "Join our team",
+        "We’ve got you covered",
+        "We’re proud to be known as a great place to work"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "540e1226-be8c-4329-b5db-476ac08d4266",
+      "company": "AppsFlyer",
+      "title": "Senior Backend Software Engineer - 2943",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8899639002",
+      "observedAt": "2026-11-22T15:54:00.925Z",
+      "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at AppsFlyer",
+        "56 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "54f85a13-b601-4ddd-a1d8-046a3927be73",
+      "company": "Orbit Communication Systems",
+      "title": "Electro-Mechanical Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electro-mechanical-buyer/9E.B6E",
+      "observedAt": "2026-11-22T15:54:02.946Z",
+      "observedURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "Careers",
+        "EUCLID",
+        "FACILITIES",
+        "FINANCE",
+        "OPERATIONS",
+        "PROGRAM",
+        "QUALITY",
+        "R&D",
+        "SALES",
+        "SOLUTIONS",
+        "TALENT POOL"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "57073f6a-1ccb-450c-ab6c-78be092b8d37",
+      "company": "monday.com",
+      "title": "Senior AI Partner Program Manager",
+      "sourceURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "observedAt": "2026-11-22T15:54:04.542Z",
+      "observedURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "5e18375b-3141-403f-9596-27dcaaec9123",
+      "company": "monday.com",
+      "title": "Channel Partner Manager - Middle East",
+      "sourceURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "observedAt": "2026-11-22T15:54:11.449Z",
+      "observedURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "6cf4da4a-3440-4943-8937-f5e5663c1d6d",
+      "company": "monday.com",
+      "title": "Platform & Knowledge Team Lead",
+      "sourceURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "observedAt": "2026-11-22T15:54:12.647Z",
+      "observedURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "7354c081-b1e7-447e-82d8-5c6c74ad6857",
+      "company": "מכבי שירותי בריאות",
+      "title": "סטודנט/ית לאחיות בנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "observedAt": "2026-11-22T15:54:14.604Z",
+      "observedURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "reason": "SOURCE_PAGE_NOT_FOUND_NOT_CLOSURE",
+      "observedHeadings": [
+        "אופס, נראה שהעמוד שחיפשת כבר לא קיים.\nמזמינים אותך לעיין במשרות הפתוחות\nולהגיש מועמדות."
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "7ec05657-d051-4e87-abb5-5f59ac3c687b",
+      "company": "Manpower — מקור גיוס",
+      "title": "עוזר.ת חשב לחברה בנוף הגליל – 80% משרה",
+      "sourceURL": "https://www.manpower.co.il/job/244933",
+      "observedAt": "2026-11-22T15:54:17.324Z",
+      "observedURL": "https://www.manpower.co.il/search",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "הכלים שלכם למציאת עבודה"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "845b24c7-4cd3-4af5-ba91-7a1f9c6ea82e",
+      "company": "AppsFlyer",
+      "title": "Backend Software Engineer- 2938",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8897823002",
+      "observedAt": "2026-11-22T15:54:18.310Z",
+      "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at AppsFlyer",
+        "56 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "88225928-a7a2-4fe5-bc6c-f749961daaf3",
+      "company": "אלביט מערכות",
+      "title": "NPI Product Expert Team Leader",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20754",
+      "observedAt": "2026-11-22T15:55:52.598Z",
+      "observedURL": "https://elbitsystemscareer.com/job/?jid=20754",
+      "reason": "SOURCE_JOB_NOT_FOUND_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "893950e5-e4da-45db-aa3b-8e821d1e3bb6",
+      "company": "monday.com",
+      "title": "Senior Customer Enablement AI Builder",
+      "sourceURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "observedAt": "2026-11-22T15:54:25.878Z",
+      "observedURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "922be198-95d1-405d-98fc-ae2628e0133d",
+      "company": "חברת החשמל",
+      "title": "מהנדס.ת / הנדסאי.ת חשמל להדרכת קורסים לעבודה בחדרה",
+      "sourceURL": "https://careers.iec.co.il/order/14921/",
+      "observedAt": "2026-11-22T15:54:38.940Z",
+      "observedURL": "https://careers.iec.co.il/order/14921/",
+      "reason": "SOURCE_BROWSER_NAVIGATION_FAILED",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "98ad523e-aa30-448c-aad9-14ad8f7c82eb",
+      "company": "monday.com",
+      "title": "Strategic Project Manager (InTECH)",
+      "sourceURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "observedAt": "2026-11-22T15:54:54.985Z",
+      "observedURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "a216de4f-2f30-4e00-994a-c8d84714bfbd",
+      "company": "Manpower — מקור גיוס",
+      "title": "גזבר/ית לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244962",
+      "observedAt": "2026-11-22T15:54:57.590Z",
+      "observedURL": "https://www.manpower.co.il/search",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "הכלים שלכם למציאת עבודה"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "b43f32bb-8b45-49b2-bb32-cc680787969c",
+      "company": "Manpower — מקור גיוס",
+      "title": "חשב/ת לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244961",
+      "observedAt": "2026-11-22T15:55:01.020Z",
+      "observedURL": "https://www.manpower.co.il/search",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "הכלים שלכם למציאת עבודה"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "bb50378e-2bc7-4b29-bd3c-273cfd70bb4b",
+      "company": "monday.com",
+      "title": "Senior Marketing Automation Manager",
+      "sourceURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "observedAt": "2026-11-22T15:55:02.427Z",
+      "observedURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "c97f386b-3a56-4959-bb52-5ab2f6c1a7e0",
+      "company": "monday.com",
+      "title": "Senior Enablement Business Partner",
+      "sourceURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "observedAt": "2026-11-22T15:55:03.694Z",
+      "observedURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "cee4c1da-6353-45f5-9d16-0b96690034d5",
+      "company": "monday.com",
+      "title": "Senior AI Engineer – Agentic Marketing",
+      "sourceURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "observedAt": "2026-11-22T15:55:05.039Z",
+      "observedURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "d57cc4d0-06ba-472e-a44b-a121a2f6bdae",
+      "company": "monday.com",
+      "title": "Total Rewards Partner",
+      "sourceURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "observedAt": "2026-11-22T15:55:09.398Z",
+      "observedURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "de369eec-d377-4238-9fad-ef7fb76b6069",
+      "company": "monday.com",
+      "title": "Software Engineering Tech Lead - AI Project Management",
+      "sourceURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "observedAt": "2026-11-22T15:55:10.560Z",
+      "observedURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "e4808e22-0e59-40f7-8e27-b83a5ac5c942",
+      "company": "monday.com",
+      "title": "Assistant Controller",
+      "sourceURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "observedAt": "2026-11-22T15:55:11.375Z",
+      "observedURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "e710d128-bbab-41e7-8b6f-1948e277ac52",
+      "company": "monday.com",
+      "title": "Senior Lifecycle Marketing Operations Manager",
+      "sourceURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "observedAt": "2026-11-22T15:55:12.140Z",
+      "observedURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "f12d7d7b-4cdd-4023-baa6-7bc713d7bc8a",
+      "company": "AppsFlyer",
+      "title": "Salary Controller",
+      "sourceURL": "https://job-boards.greenhouse.io/embed/job_app?for=appsflyer&token=8809604002",
+      "observedAt": "2026-11-22T15:55:13.079Z",
+      "observedURL": "https://job-boards.greenhouse.io/embed/job_board?for=appsflyer&error=true",
+      "reason": "OFFICIAL_ATS_EXPLICITLY_NO_LONGER_AVAILABLE",
+      "observedHeadings": [
+        "Current openings at AppsFlyer",
+        "56 jobs"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "closed",
+      "result": "CONFIRMED_UNAVAILABLE_CORRECTED"
+    },
+    {
+      "id": "f7d94b35-0f69-4141-9f88-85894342886c",
+      "company": "monday.com",
+      "title": "Senior AI Enablement Solutions Builder",
+      "sourceURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "observedAt": "2026-11-22T15:55:14.271Z",
+      "observedURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "reason": "SOURCE_GENERIC_ERROR_NOT_CLOSURE",
+      "observedHeadings": [],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    },
+    {
+      "id": "f8825612-80b4-45c9-880e-9797f5bf4ca1",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות ספקים לחברת הפצה באיירפורט סיטי",
+      "sourceURL": "https://www.manpower.co.il/job/244922",
+      "observedAt": "2026-11-22T15:55:16.969Z",
+      "observedURL": "https://www.manpower.co.il/search",
+      "reason": "REDIRECT_TO_GENERAL_BOARD_NOT_CLOSURE",
+      "observedHeadings": [
+        "הכלים שלכם למציאת עבודה"
+      ],
+      "stateBefore": "active",
+      "stateAfter": "active",
+      "result": "STATUS_UNCONFIRMED_KEPT_PUBLIC"
+    }
+  ]
+}
