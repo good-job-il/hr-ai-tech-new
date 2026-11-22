@@ -1,5 +1,7 @@
 # HeadHunter: устройство продукта и логика проекта
 
+Фактические access gaps22.11: [владелец org_admin не имеет support triage; recovery target возобновлён, но содержит старые43таблицы; HR-38/39 назначены Reuven](pilot-access-gaps-2026-11-22.ru.md). Свежий cloud restore/login/file не объявляются пройденными.
+
 Свежая копия22.11: [75таблиц/1 090 962строки, шифрование и фактический локальный restore PASS; Auth/Storage cloud recovery ещё не завершён](pilot-fresh-recovery-2026-11-22.ru.md).
 
 Проверка помощи пилота22.11: [6 публичных HE/EN viewport-проверок и9 cloud SQL проверок изоляции обращений с ROLLBACK](pilot-support-acceptance-2026-11-22.ru.md). Реальные права оператора и полная HR-16 остаются открытыми.

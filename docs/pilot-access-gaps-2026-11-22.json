@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-22",
+  "issues": [
+    "HR-13",
+    "HR-16",
+    "HR-38",
+    "HR-39"
+  ],
+  "ownerSupport": {
+    "checkedAt": "2026-11-22T17:39:36.573677+00:00",
+    "realPermissionsChanged": false,
+    "emailsSent": false,
+    "ownerPlatformAdmin": false,
+    "ownerOrganizationRoles": [
+      "org_admin"
+    ],
+    "otherAccountsTicketCount": 0,
+    "ownerTicketCount": 0,
+    "effectivePlatformAdmin": false,
+    "visibleOtherTicketsUnderOwnerRole": 0,
+    "result": "PASS_CURRENT_ACCESS_FACTS",
+    "canTriageOtherUsersTickets": false
+  },
+  "browser": {
+    "currentAccountIdentityMatched": true,
+    "organizationRole": "org_admin",
+    "ownRequestsFormVisible": true,
+    "administrativeSupportQueueVisible": false,
+    "requestSubmitted": false,
+    "roleChanged": false
+  },
+  "recovery": {
+    "target": "hegfwnvxfrorvbknusej",
+    "existingProjectResumed": true,
+    "freePlan": true,
+    "healthyObserved": true,
+    "actualReadOnlySQL": {
+      "applicationTables": 43,
+      "rlsTables": 43,
+      "authAccounts": 3,
+      "identities": 3,
+      "externalJobRows": 330,
+      "publishedExternalJobs": 328,
+      "storageObjects": 0,
+      "oldStagingRemoved": true
+    },
+    "targetEmpty": false,
+    "currentBackupImported": false,
+    "restoredAccountLoginTested": false,
+    "restoredFileOpened": false,
+    "sourceDashboardAccessible": false,
+    "sourceServerKeyPresentLocally": false,
+    "targetConnectionConfiguredLocally": false,
+    "productionChanged": false,
+    "note": "Supabase resume restores the paused target only; existing query result RECOVERY_VERIFIED is a literal and does not verify importing the22.11 backup."
+  },
+  "unblockTasks": {
+    "recovery": "HR-38",
+    "ownerSupport": "HR-39",
+    "sourceServerKeyExistingTask": "HR-31"
+  },
+  "credentialsPublished": false,
+  "orenContacted": false,
+  "newChargesAuthorized": false,
+  "anyWholeIssueClosed": false
+}
