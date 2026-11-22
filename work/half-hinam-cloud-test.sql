@@ -5,7 +5,7 @@ insert into auth.users(id,email) values
 ('a5110000-0000-4000-8000-000000000002','pilot-b@example.invalid');
 set local role authenticated;
 select set_config('request.jwt.claim.sub','a5110000-0000-4000-8000-000000000001',true);
-select set_config('hh.pilot_org',public.create_organization('ISOLATED PILOT CHECK','agency')::text,true);
+select set_config('hh.pilot_org',public.create_organization_with_contact('ISOLATED PILOT CHECK','agency','+12025550101')::text,true);
 reset role;
 update public.organizations set is_test=true where id=current_setting('hh.pilot_org')::uuid;
 set local role authenticated;
