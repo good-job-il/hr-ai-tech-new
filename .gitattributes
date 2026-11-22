@@ -1,0 +1,2 @@
+# PDF xref offsets must retain the exact fixture bytes on every platform.
+tests/fixtures/cv-autofill/*.pdf binary
