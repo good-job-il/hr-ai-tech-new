@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/prepare-pdf-worker.mjs",
+    "predev": "node scripts/prepare-pdf-worker.mjs && node scripts/prepare-ocr.mjs",
     "dev": "next dev --hostname localhost",
-    "prebuild": "node scripts/prepare-pdf-worker.mjs",
+    "prebuild": "node scripts/prepare-pdf-worker.mjs && node scripts/prepare-ocr.mjs",
     "build": "next build --webpack",
     "start": "next start --hostname localhost",
     "typecheck": "tsc --noEmit",
@@ -16,12 +16,15 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "2.118.0",
+    "@tesseract.js-data/eng": "1.0.0",
+    "@tesseract.js-data/heb": "1.0.0",
     "cheerio": "^1.2.0",
     "exceljs": "4.4.0",
     "next": "16.4.5",
     "pdfjs-dist": "^6.4.299",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "tesseract.js": "7.0.0"
   },
   "devDependencies": {
     "@electric-sql/pglite": "^0.5.13",
