@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-22",
+  "issues": [
+    "HR-16"
+  ],
+  "publicHelpUI": {
+    "result": "PASS",
+    "cases": [
+      {
+        "lang": "he",
+        "viewportWidth": 1280,
+        "viewportHeight": 900,
+        "panelWidth": 400,
+        "formPresent": true,
+        "fields": 3,
+        "submitPresent": true,
+        "horizontalOverflow": false,
+        "panelWithinViewport": true
+      },
+      {
+        "lang": "he",
+        "viewportWidth": 390,
+        "viewportHeight": 844,
+        "panelWidth": 360,
+        "formPresent": true,
+        "fields": 3,
+        "submitPresent": true,
+        "horizontalOverflow": false,
+        "panelWithinViewport": true
+      },
+      {
+        "lang": "he",
+        "viewportWidth": 768,
+        "viewportHeight": 1024,
+        "panelWidth": 400,
+        "formPresent": true,
+        "fields": 3,
+        "submitPresent": true,
+        "horizontalOverflow": false,
+        "panelWithinViewport": true
+      },
+      {
+        "lang": "en",
+        "viewportWidth": 1280,
+        "viewportHeight": 900,
+        "panelWidth": 400,
+        "formPresent": true,
+        "fields": 3,
+        "submitPresent": true,
+        "horizontalOverflow": false,
+        "panelWithinViewport": true
+      },
+      {
+        "lang": "en",
+        "viewportWidth": 390,
+        "viewportHeight": 844,
+        "panelWidth": 360,
+        "formPresent": true,
+        "fields": 3,
+        "submitPresent": true,
+        "horizontalOverflow": false,
+        "panelWithinViewport": true
+      },
+      {
+        "lang": "en",
+        "viewportWidth": 768,
+        "viewportHeight": 1024,
+        "panelWidth": 400,
+        "formPresent": true,
+        "fields": 3,
+        "submitPresent": true,
+        "horizontalOverflow": false,
+        "panelWithinViewport": true
+      }
+    ],
+    "method": "Chromium viewport emulation on public www; existing signed-in organization account; no form submitted",
+    "physicalDevicesTested": false,
+    "formSubmitted": false
+  },
+  "supportPermissions": {
+    "checkedAt": "2026-11-22T16:50:00.147687+00:00",
+    "method": "cloud SQL authenticated role with simulated auth.uid; synthetic fixtures rolled back",
+    "emailSent": false,
+    "browserSubmissionTested": false,
+    "realOperatorQueuePermissionsTested": false,
+    "result": "PASS_CLOUD_SUPPORT_ROLLBACK",
+    "assertions": 9,
+    "rollbackVerified": true,
+    "syntheticUsersRemaining": 0,
+    "elapsedSeconds": 7.703
+  },
+  "realUserPermissionsChanged": false,
+  "sentToOren": false,
+  "productionCodeChanged": false,
+  "limitations": [
+    "No real operator or Oren permission grant/queue acceptance.",
+    "No email delivery, screenshot bytes or CV test.",
+    "Business decisions and external pilot acceptance remain open."
+  ]
+}
