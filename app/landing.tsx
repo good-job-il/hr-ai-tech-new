@@ -12,7 +12,7 @@ import {loadCandidatePopulationCount} from '../lib/public-candidate-count';
 import type {ReactNode} from 'react';
 
 export default function Landing({lang,heroSearch,featured,onAuth,onHelp,onTab,onLanguage,signedIn,accountView='dashboard',jobCount,hiringCompanyCount,connected}:{
- accountView?:'dashboard'|'team'|'admin';lang:'he'|'en';children:ReactNode;heroSearch?:ReactNode;featured?:ReactNode;fields?:ReactNode;companies?:ReactNode;
+ accountView?:'dashboard'|'team'|'admin'|'client';lang:'he'|'en';children:ReactNode;heroSearch?:ReactNode;featured?:ReactNode;fields?:ReactNode;companies?:ReactNode;
  onAuth:()=>void;onHelp:()=>void;onTab:(tab:string)=>void;onLanguage:()=>void;signedIn:boolean;jobCount:number;hiringCompanyCount:number;connected:boolean;
 }){
  const tr=(he:string,en:string)=>lang==='he'?he:en;
