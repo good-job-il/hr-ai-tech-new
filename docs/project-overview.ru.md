@@ -1,5 +1,7 @@
 # HeadHunter: устройство продукта и логика проекта
 
+Auth/recovery подготовка22.11: [4реальных QA API login/identity/logout/refresh checks, negative access checks и offline preflight текущего encrypted snapshot; cloud restore не выполнен](auth-recovery-preparation-2026-11-22.ru.md).
+
 Повторная проверка29источников22.11: [29live HTTP и29поисковых чтений; текущие статусы не доказаны, записи не менялись; access tasks остаются открытыми](source29-recheck-2026-11-22.ru.md).
 
 Фактические access gaps22.11: [владелец org_admin не имеет support triage; recovery target возобновлён, но содержит старые43таблицы; HR-38/39 назначены Reuven](pilot-access-gaps-2026-11-22.ru.md). Свежий cloud restore/login/file не объявляются пройденными.

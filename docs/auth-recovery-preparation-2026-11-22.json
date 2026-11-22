@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-22",
+  "issues": [
+    "HR-7",
+    "HR-38"
+  ],
+  "auth": {
+    "at": "2026-11-22T18:59:51.114Z",
+    "results": [
+      {
+        "role": "admin",
+        "method": "real Auth API existing QA credentials",
+        "login": true,
+        "logout": true,
+        "refreshRevoked": true,
+        "emailConfirmed": true,
+        "identityMatches": true,
+        "platformAdmin": false,
+        "contextError": null,
+        "membershipRoles": [
+          "org_admin"
+        ],
+        "membershipError": null,
+        "refreshError": "refresh_token_not_found"
+      },
+      {
+        "role": "recruiter",
+        "method": "real Auth API existing QA credentials",
+        "login": true,
+        "logout": true,
+        "refreshRevoked": true,
+        "emailConfirmed": true,
+        "identityMatches": true,
+        "platformAdmin": false,
+        "contextError": null,
+        "membershipRoles": [
+          "recruitment_coordinator"
+        ],
+        "membershipError": null,
+        "refreshError": "refresh_token_not_found"
+      },
+      {
+        "role": "client",
+        "method": "real Auth API existing QA credentials",
+        "login": true,
+        "logout": true,
+        "refreshRevoked": true,
+        "emailConfirmed": true,
+        "identityMatches": true,
+        "platformAdmin": false,
+        "contextError": null,
+        "membershipRoles": [],
+        "membershipError": null,
+        "refreshError": "refresh_token_not_found"
+      },
+      {
+        "role": "outsider",
+        "method": "real Auth API existing QA credentials",
+        "login": true,
+        "logout": true,
+        "refreshRevoked": true,
+        "emailConfirmed": true,
+        "identityMatches": true,
+        "platformAdmin": false,
+        "contextError": null,
+        "membershipRoles": [],
+        "membershipError": null,
+        "refreshError": "refresh_token_not_found"
+      }
+    ],
+    "credentialsPublished": false,
+    "rolesChanged": false,
+    "emailSent": false,
+    "ownerSessionUsed": false,
+    "browserTested": false,
+    "limitations": [
+      "Existing QA accounts only, not platform-owner recovery or five-role browser acceptance.",
+      "Logout revokes the refresh session; access JWT may remain valid until expiry.",
+      "No signup/recovery emails sent; disabled portal grants not re-enabled."
+    ]
+  },
+  "negative": {
+    "at": "2026-11-22T19:00:49.675Z",
+    "invalidPasswordRejected": true,
+    "invalidPasswordCode": "invalid_credentials",
+    "anonymousPrivateRowsExposed": 0,
+    "anonymousPrivateReadCode": "42501",
+    "anonymousAccessDenied": true,
+    "emailSent": false,
+    "rolesChanged": false
+  },
+  "preflight": {
+    "result": "BLOCKED_CLOUD_RECOVERY",
+    "sourceProject": "rnstsczayhzrxzcstzpr",
+    "targetProject": "hegfwnvxfrorvbknusej",
+    "snapshotAt": "2026-11-22 17:02:32.454573+00",
+    "tables": 75,
+    "rows": 1090962,
+    "authAccounts": 23,
+    "migrations": 65,
+    "storageInventoryObjects": 13,
+    "blockers": [
+      "CURRENT_TARGET_READBACK_REQUIRED",
+      "EMPTY_TARGET_REQUIRED",
+      "STORAGE_FILE_BYTES_REQUIRED"
+    ],
+    "cloudRestoreExecuted": false,
+    "authLoginTested": false,
+    "fileOpened": false,
+    "stages": [
+      "Verify current source configuration and file backup",
+      "Verify approved empty isolated target with live readback",
+      "Restore Auth records and applied schema preserving identifiers",
+      "Restore application data and validate counts and foreign keys",
+      "Restore private file bytes and policies",
+      "Test restored-account login, authorized file open and outsider denial"
+    ],
+    "limitations": [
+      "A caller-supplied target descriptor is not a live database check.",
+      "Passing preparation checks does not authorize execution, prove service compatibility, or establish cloud acceptance."
+    ]
+  },
+  "preflightRegressionTests": 7,
+  "preflightRegressionResult": "PASS",
+  "wholeIssuesCompleted": false,
+  "cloudRestoreExecuted": false,
+  "orenContacted": false
+}

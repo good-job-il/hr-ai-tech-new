@@ -1,0 +1,11 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {pilotRecoveryPreflight as check} from '../lib/pilot-recovery-preflight.mjs';
+const snapshot=()=>({format:'hr-ai-private-snapshot-v1',project_ref:'rnstsczayhzrxzcstzpr',snapshot_at:'2026-11-22',tables:{fixture:['{}']},auth:{users:['{}'],identities:['{}']},storage_inventory:[],migrations:[{statements:['select 1']}]});
+const target=()=>({projectRef:'hegfwnvxfrorvbknusej',liveEvidence:true,applicationTables:0,authAccounts:0,storageObjects:0});
+test('Current snapshot produces a private-data-free plan without claiming execution',()=>{let s=snapshot();s.tables.fixture=['{"private":"DO_NOT_LEAK"}'];let p=check(s,target());assert.equal(p.result,'PREPARATION_CHECKS_PASSED');assert.equal(p.cloudRestoreExecuted,false);assert.equal(p.authLoginTested,false);assert(!JSON.stringify(p).includes('DO_NOT_LEAK'));});
+test('Production, legacy preview and unknown target cannot pass',()=>{for(const projectRef of ['rnstsczayhzrxzcstzpr','ruejyiromtthygqtpcsy','unknown'])assert(check(snapshot(),{...target(),projectRef}).blockers.includes('TARGET_NOT_EXPLICITLY_APPROVED'));});
+test('Nonempty tables, Auth or Storage individually block preparation',()=>{for(const k of ['applicationTables','authAccounts','storageObjects'])assert(check(snapshot(),{...target(),[k]:1}).blockers.includes('EMPTY_TARGET_REQUIRED'));});
+test('Historical target observations are not live evidence',()=>{assert(check(snapshot(),{...target(),liveEvidence:false}).blockers.includes('CURRENT_TARGET_READBACK_REQUIRED'));});
+test('Inventory without verified file bytes blocks full recovery',()=>{const s=snapshot();s.storage_inventory=['{}'];assert(check(s,target()).blockers.includes('STORAGE_FILE_BYTES_REQUIRED'));});
+test('Legacy snapshot and missing migration statements fail closed',()=>{assert.throws(()=>check({...snapshot(),project_ref:'ruejyiromtthygqtpcsy'},target()),/UNSUPPORTED/);assert.throws(()=>check({...snapshot(),migrations:[{}]},target()),/MIGRATION/);});
+test('Missing or malformed metadata cannot imply an empty target',()=>{assert(check(snapshot(),{}).blockers.includes('EMPTY_TARGET_REQUIRED'));assert.throws(()=>check({...snapshot(),auth:null},target()),/INVALID/);});
