@@ -1,0 +1,644 @@
+{
+  "date": "2026-11-22",
+  "issue": "HR-19",
+  "checked": 29,
+  "sourceStatusUpdates": 0,
+  "confirmedCurrentActive": 0,
+  "confirmedCurrentClosed": 0,
+  "stillUnresolved": 29,
+  "httpStatusCounts": {
+    "200": 25,
+    "403": 2,
+    "404": 1,
+    "500": 1
+  },
+  "method": "Fresh exact-source HTTP reads (four concurrent) plus independent search-tool opens for all29; cached crawl timestamps preserved. CUA not available in this turn.",
+  "searchEvidence": [
+    {
+      "id": "03ed6e0e-eba0-4252-b499-3d5e4daf214c",
+      "url": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "crawl": "last week",
+      "unavailableNotice": true,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "09b75aef-d252-4bb8-ace8-a72296906e05",
+      "url": "https://www.manpower.co.il/job/244908",
+      "crawl": "2 weeks ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": true
+    },
+    {
+      "id": "0dd55a3f-451d-4600-a8fc-eac6cbd5f9ac",
+      "url": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "0fd5b63a-9ad5-4af4-9986-14ec24285fcb",
+      "url": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "crawl": "yesterday",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "16b7c16a-f525-4d46-a2cd-aa68f5362f75",
+      "url": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "crawl": "today",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "4232e059-3957-4efc-b9d7-46ec6afc8044",
+      "url": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/purchasing-buyer/BE.07D",
+      "crawl": "3 weeks ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "4c26e78b-302b-4a8a-ad3b-16d816d7dce7",
+      "url": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "crawl": "5 days ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "52fe17fe-ec22-4b3b-a36d-ab3094905326",
+      "url": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "crawl": "today",
+      "unavailableNotice": true,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "54f85a13-b601-4ddd-a1d8-046a3927be73",
+      "url": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electro-mechanical-buyer/9E.B6E",
+      "crawl": "last week",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "57073f6a-1ccb-450c-ab6c-78be092b8d37",
+      "url": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "crawl": "today",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "5e18375b-3141-403f-9596-27dcaaec9123",
+      "url": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "crawl": "2 days ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "6cf4da4a-3440-4943-8937-f5e5663c1d6d",
+      "url": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "7354c081-b1e7-447e-82d8-5c6c74ad6857",
+      "url": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "crawl": "last month",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": true
+    },
+    {
+      "id": "7ec05657-d051-4e87-abb5-5f59ac3c687b",
+      "url": "https://www.manpower.co.il/job/244933",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "88225928-a7a2-4fe5-bc6c-f749961daaf3",
+      "url": "https://elbitsystemscareer.com/job/?jid=20754",
+      "crawl": "3 weeks ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "893950e5-e4da-45db-aa3b-8e821d1e3bb6",
+      "url": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "crawl": "today",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "922be198-95d1-405d-98fc-ae2628e0133d",
+      "url": "https://careers.iec.co.il/order/14921/",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "98ad523e-aa30-448c-aad9-14ad8f7c82eb",
+      "url": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "crawl": "last week",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "a216de4f-2f30-4e00-994a-c8d84714bfbd",
+      "url": "https://www.manpower.co.il/job/244962",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "b43f32bb-8b45-49b2-bb32-cc680787969c",
+      "url": "https://www.manpower.co.il/job/244961",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "bb50378e-2bc7-4b29-bd3c-273cfd70bb4b",
+      "url": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "crawl": "last week",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "c97f386b-3a56-4959-bb52-5ab2f6c1a7e0",
+      "url": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "crawl": "today",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "cee4c1da-6353-45f5-9d16-0b96690034d5",
+      "url": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "crawl": "today",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "d57cc4d0-06ba-472e-a44b-a121a2f6bdae",
+      "url": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "crawl": "3 weeks ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": true
+    },
+    {
+      "id": "de369eec-d377-4238-9fad-ef7fb76b6069",
+      "url": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "crawl": "yesterday",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "e4808e22-0e59-40f7-8e27-b83a5ac5c942",
+      "url": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "crawl": "3 weeks ago",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": true
+    },
+    {
+      "id": "e710d128-bbab-41e7-8b6f-1948e277ac52",
+      "url": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "crawl": "last week",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": true
+    },
+    {
+      "id": "f7d94b35-0f69-4141-9f88-85894342886c",
+      "url": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "crawl": "today",
+      "unavailableNotice": false,
+      "readFailed": false,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    },
+    {
+      "id": "f8825612-80b4-45c9-880e-9797f5bf4ca1",
+      "url": "https://www.manpower.co.il/job/244922",
+      "crawl": null,
+      "unavailableNotice": false,
+      "readFailed": true,
+      "evidenceType": "SEARCH_TOOL_RESPONSE_NOT_LIVE_BROWSER_ACCEPTANCE",
+      "hasSpecificHeading": false
+    }
+  ],
+  "liveResults": [
+    {
+      "id": "03ed6e0e-eba0-4252-b499-3d5e4daf214c",
+      "company": "Riskified",
+      "title": "Account Executive",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "observedAt": "2026-11-22T18:38:53.284Z",
+      "httpStatus": 403,
+      "error": null,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8768908002",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "09b75aef-d252-4bb8-ace8-a72296906e05",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות בצוות לעמותה מובילה בת”א",
+      "sourceURL": "https://www.manpower.co.il/job/244908",
+      "observedAt": "2026-11-22T18:38:55.370Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.manpower.co.il/search",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "0dd55a3f-451d-4600-a8fc-eac6cbd5f9ac",
+      "company": "monday.com",
+      "title": "Engineering Team Lead- Agentic Surfaces",
+      "sourceURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "observedAt": "2026-11-22T18:38:53.859Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/124de3f6-da44-43de-9772-7354e09aa6bd",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "0fd5b63a-9ad5-4af4-9986-14ec24285fcb",
+      "company": "monday.com",
+      "title": "Senior Product Designer - Harmony AI",
+      "sourceURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "observedAt": "2026-11-22T18:38:54.017Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/a41b40da-19e3-4afe-b954-39bc26ebe66f",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "16b7c16a-f525-4d46-a2cd-aa68f5362f75",
+      "company": "monday.com",
+      "title": "AI Knowledge & Intelligence Specialist",
+      "sourceURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "observedAt": "2026-11-22T18:38:54.466Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/12decb01-3f19-4fe6-96b7-91b5dbdca931",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "4232e059-3957-4efc-b9d7-46ec6afc8044",
+      "company": "Orbit Communication Systems",
+      "title": "Purchasing Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/purchasing-buyer/BE.07D",
+      "observedAt": "2026-11-22T18:38:54.802Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "4c26e78b-302b-4a8a-ad3b-16d816d7dce7",
+      "company": "monday.com",
+      "title": "AI Research Scientist (Harmony)",
+      "sourceURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "observedAt": "2026-11-22T18:38:55.193Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/9de6a3e3-2b7d-4208-949f-b3b9de936bd3",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "52fe17fe-ec22-4b3b-a36d-ab3094905326",
+      "company": "Riskified",
+      "title": "Integration Engineer",
+      "sourceURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "observedAt": "2026-11-22T18:38:54.508Z",
+      "httpStatus": 403,
+      "error": null,
+      "finalURL": "https://www.riskified.com/job-description/?gh_jid=8859701002",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "54f85a13-b601-4ddd-a1d8-046a3927be73",
+      "company": "Orbit Communication Systems",
+      "title": "Electro-Mechanical Buyer",
+      "sourceURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008/electro-mechanical-buyer/9E.B6E",
+      "observedAt": "2026-11-22T18:38:56.156Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.comeet.com/jobs/orbit_communication_systems/2B.008",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "57073f6a-1ccb-450c-ab6c-78be092b8d37",
+      "company": "monday.com",
+      "title": "Senior AI Partner Program Manager",
+      "sourceURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "observedAt": "2026-11-22T18:38:55.541Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/a9455914-dc04-4b92-8b8b-50d6a6ed1c6c",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "5e18375b-3141-403f-9596-27dcaaec9123",
+      "company": "monday.com",
+      "title": "Channel Partner Manager - Middle East",
+      "sourceURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "observedAt": "2026-11-22T18:38:55.918Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/b11199f3-650a-4483-9960-9f2619731f57",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "6cf4da4a-3440-4943-8937-f5e5663c1d6d",
+      "company": "monday.com",
+      "title": "Platform & Knowledge Team Lead",
+      "sourceURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "observedAt": "2026-11-22T18:38:55.997Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/2f2102a6-df69-4456-8404-847a1b72884f",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "7354c081-b1e7-447e-82d8-5c6c74ad6857",
+      "company": "מכבי שירותי בריאות",
+      "title": "סטודנט/ית לאחיות בנתניה",
+      "sourceURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "observedAt": "2026-11-22T18:38:55.943Z",
+      "httpStatus": 404,
+      "error": null,
+      "finalURL": "https://www.maccabi4u.co.il/careers/all-positions/%D7%A4%D7%A8%D7%97-%D7%90%D7%97%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%AA%D7%AA-%D7%9E%D7%9B%D7%91%D7%99-5926/",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "7ec05657-d051-4e87-abb5-5f59ac3c687b",
+      "company": "Manpower — מקור גיוס",
+      "title": "עוזר.ת חשב לחברה בנוף הגליל – 80% משרה",
+      "sourceURL": "https://www.manpower.co.il/job/244933",
+      "observedAt": "2026-11-22T18:38:58.039Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.manpower.co.il/search",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "88225928-a7a2-4fe5-bc6c-f749961daaf3",
+      "company": "אלביט מערכות",
+      "title": "NPI Product Expert Team Leader",
+      "sourceURL": "https://elbitsystemscareer.com/job/?jid=20754",
+      "observedAt": "2026-11-22T18:38:56.162Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://elbitsystemscareer.com/job/?jid=20754",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "893950e5-e4da-45db-aa3b-8e821d1e3bb6",
+      "company": "monday.com",
+      "title": "Senior Customer Enablement AI Builder",
+      "sourceURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "observedAt": "2026-11-22T18:38:56.537Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/848f8d63-e680-433b-b266-c2bae8119931",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "922be198-95d1-405d-98fc-ae2628e0133d",
+      "company": "חברת החשמל",
+      "title": "מהנדס.ת / הנדסאי.ת חשמל להדרכת קורסים לעבודה בחדרה",
+      "sourceURL": "https://careers.iec.co.il/order/14921/",
+      "observedAt": "2026-11-22T18:38:56.579Z",
+      "httpStatus": 500,
+      "error": null,
+      "finalURL": "https://careers.iec.co.il/order/14921/",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "98ad523e-aa30-448c-aad9-14ad8f7c82eb",
+      "company": "monday.com",
+      "title": "Strategic Project Manager (InTECH)",
+      "sourceURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "observedAt": "2026-11-22T18:38:57.285Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/a26f9c07-1237-4763-a258-24897bb91db0",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "a216de4f-2f30-4e00-994a-c8d84714bfbd",
+      "company": "Manpower — מקור גיוס",
+      "title": "גזבר/ית לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244962",
+      "observedAt": "2026-11-22T18:38:58.773Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.manpower.co.il/search",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "b43f32bb-8b45-49b2-bb32-cc680787969c",
+      "company": "Manpower — מקור גיוס",
+      "title": "חשב/ת לחברה פרטית ביקום",
+      "sourceURL": "https://www.manpower.co.il/job/244961",
+      "observedAt": "2026-11-22T18:38:58.941Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.manpower.co.il/search",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "bb50378e-2bc7-4b29-bd3c-273cfd70bb4b",
+      "company": "monday.com",
+      "title": "Senior Marketing Automation Manager",
+      "sourceURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "observedAt": "2026-11-22T18:38:58.077Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/889c33d3-b05f-45d5-9f57-3b9f6da67065",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "c97f386b-3a56-4959-bb52-5ab2f6c1a7e0",
+      "company": "monday.com",
+      "title": "Senior Enablement Business Partner",
+      "sourceURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "observedAt": "2026-11-22T18:38:59.050Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/a25ae43b-0bd0-44a4-b1a3-0b18cc050454",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "cee4c1da-6353-45f5-9d16-0b96690034d5",
+      "company": "monday.com",
+      "title": "Senior AI Engineer – Agentic Marketing",
+      "sourceURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "observedAt": "2026-11-22T18:38:58.810Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/38ef4a0e-d2fb-4ade-87ae-2063f5f9ba76",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "d57cc4d0-06ba-472e-a44b-a121a2f6bdae",
+      "company": "monday.com",
+      "title": "Total Rewards Partner",
+      "sourceURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "observedAt": "2026-11-22T18:38:59.322Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/2ea50478-5d41-4005-a640-c00734c01554",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "de369eec-d377-4238-9fad-ef7fb76b6069",
+      "company": "monday.com",
+      "title": "Software Engineering Tech Lead - AI Project Management",
+      "sourceURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "observedAt": "2026-11-22T18:39:00.199Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/2aa6617b-29ed-4925-8452-d439278dc9a3",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "e4808e22-0e59-40f7-8e27-b83a5ac5c942",
+      "company": "monday.com",
+      "title": "Assistant Controller",
+      "sourceURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "observedAt": "2026-11-22T18:38:59.730Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/fa543cef-c790-4941-8a9e-181a772ee011",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "e710d128-bbab-41e7-8b6f-1948e277ac52",
+      "company": "monday.com",
+      "title": "Senior Lifecycle Marketing Operations Manager",
+      "sourceURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "observedAt": "2026-11-22T18:38:59.612Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/8e11e94f-0dfd-4552-930a-55f0cc5eadd4",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "f7d94b35-0f69-4141-9f88-85894342886c",
+      "company": "monday.com",
+      "title": "Senior AI Enablement Solutions Builder",
+      "sourceURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "observedAt": "2026-11-22T18:38:59.885Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://monday.com/careers/90467078-1be0-4714-94ca-4ae521b3675e",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    },
+    {
+      "id": "f8825612-80b4-45c9-880e-9797f5bf4ca1",
+      "company": "Manpower — מקור גיוס",
+      "title": "מנהל/ת חשבונות ספקים לחברת הפצה באיירפורט סיטי",
+      "sourceURL": "https://www.manpower.co.il/job/244922",
+      "observedAt": "2026-11-22T18:39:01.637Z",
+      "httpStatus": 200,
+      "error": null,
+      "finalURL": "https://www.manpower.co.il/search",
+      "exactHeading": false,
+      "result": "UNRESOLVED_KEPT_UNCHANGED"
+    }
+  ],
+  "limitations": [
+    "Search content with crawl dates is not proof of current source status.",
+    "403/404/500, generic errors, templates and redirects do not prove closure.",
+    "No current successful cloud row readback: SQL owner-access probe failed on network connection.",
+    "No changes to vacancies, verified_at, publication, candidate records, privileges, DNS, plans or messages."
+  ],
+  "accessTasks": {
+    "HR31": "Backlog; no new Reuven confirmation; source server key still absent in checked files",
+    "HR33": "Backlog; no new Reuven confirmation; dashboard/DNS not reverified this turn",
+    "HR35": "Backlog; no new Reuven confirmation; no connected Vercel tool/browser access available this turn",
+    "HR38": "Backlog; no Reuven comments; recovery connection not yet confirmed",
+    "HR39": "Backlog; no Reuven comments; latest owner role recheck failed on network, previous org_admin result not advertised as a new check"
+  },
+  "wholeIssuesClosed": 0,
+  "orenContacted": false
+}
