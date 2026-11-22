@@ -1,4 +1,6 @@
 /* Dimensions are measured in the approved 862px artwork's coordinate system. */
+/* Center only featured role titles; company, location and actions retain their alignment. */
+body .landingTech.landingPrecision .hotJobsRefined .jobTitleButton{width:100%;text-align:center}
 body .landingPrecision{container-type:inline-size;--u:1px}
 body .landingPrecision .referenceGlyph{display:block;flex:none;width:calc(var(--gw)*var(--u));height:calc(var(--gh)*var(--u));background-image:url('/landing-reference-atlas.webp');background-repeat:no-repeat;background-size:calc(862*var(--u)) calc(1824*var(--u));background-position:calc(-1*var(--gx)*var(--u)) calc(-1*var(--gy)*var(--u))}
 body .landingTech.landingPrecision .careerOrbImage{clip-path:ellipse(48% 48% at 50% 48%)}
