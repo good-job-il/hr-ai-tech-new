@@ -4,7 +4,7 @@ import BrandWordmark from './brand-wordmark';
 import {publicAccountNavigation} from '../lib/public-account-navigation.mjs';
 import LanguageLabel from './language-label';
 import UiIcon from './ui-icon';
-export default function PublicHeader({lang,signedIn,onTab,onAuth,onLanguage,accountView='dashboard',variant='default'}:{variant?:'default'|'mockup'|'tech';accountView?:'dashboard'|'team'|'admin';lang:'he'|'en';signedIn:boolean;onTab:(tab:string)=>void;onAuth:()=>void;onLanguage:()=>void}){
+export default function PublicHeader({lang,signedIn,onTab,onAuth,onLanguage,accountView='dashboard',variant='default'}:{variant?:'default'|'mockup'|'tech';accountView?:'dashboard'|'team'|'admin'|'client';lang:'he'|'en';signedIn:boolean;onTab:(tab:string)=>void;onAuth:()=>void;onLanguage:()=>void}){
  const he=lang==='he',actions=publicAccountNavigation(accountView),mockup=variant==='mockup',tech=variant==='tech';
  return <div className={'publicHeader'+(mockup?' publicHeaderMockup':tech?' publicHeaderTech':'')}>
   <a className="publicBrand" href="/" onClick={e=>{e.preventDefault();onTab('jobs')}} aria-label="hr-ai.tech"><BrandIcon/><BrandWordmark/></a>

@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-23",
+  "issue": "HR-40",
+  "environment": "Actual browser, production Home components, local synthetic fixture API",
+  "productionAuthAndRlsVerified": false,
+  "published": false,
+  "productionWrites": 0,
+  "cases": [
+    {
+      "role": "candidate",
+      "language": "he",
+      "direction": "rtl",
+      "width": 1307,
+      "height": 884,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "businessNavigation": false
+    },
+    {
+      "role": "candidate",
+      "language": "he",
+      "direction": "rtl",
+      "width": 390,
+      "height": 844,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "businessNavigation": false
+    },
+    {
+      "role": "candidate",
+      "language": "he",
+      "direction": "rtl",
+      "width": 768,
+      "height": 1024,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "businessNavigation": false
+    },
+    {
+      "role": "candidate",
+      "language": "en",
+      "direction": "ltr",
+      "width": 1307,
+      "height": 884,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "businessNavigation": false
+    },
+    {
+      "role": "candidate",
+      "language": "en",
+      "direction": "ltr",
+      "width": 390,
+      "height": 844,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "businessNavigation": false
+    },
+    {
+      "role": "candidate",
+      "language": "en",
+      "direction": "ltr",
+      "width": 768,
+      "height": 1024,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "businessNavigation": false
+    },
+    {
+      "role": "agency",
+      "language": "he",
+      "direction": "rtl",
+      "width": 1307,
+      "height": 884,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "poolOptions": 4,
+      "ownershipControl": true,
+      "clientsNavigation": true
+    },
+    {
+      "role": "agency",
+      "language": "he",
+      "direction": "rtl",
+      "width": 390,
+      "height": 844,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "poolOptions": 4,
+      "ownershipControl": true,
+      "clientsNavigation": true
+    },
+    {
+      "role": "agency",
+      "language": "he",
+      "direction": "rtl",
+      "width": 768,
+      "height": 1024,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "poolOptions": 4,
+      "ownershipControl": true,
+      "clientsNavigation": true
+    },
+    {
+      "role": "agency",
+      "language": "en",
+      "direction": "ltr",
+      "width": 1307,
+      "height": 884,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "poolOptions": 4,
+      "ownershipControl": true,
+      "clientsNavigation": true
+    },
+    {
+      "role": "agency",
+      "language": "en",
+      "direction": "ltr",
+      "width": 390,
+      "height": 844,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "poolOptions": 4,
+      "ownershipControl": true,
+      "clientsNavigation": true
+    },
+    {
+      "role": "agency",
+      "language": "en",
+      "direction": "ltr",
+      "width": 768,
+      "height": 1024,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "poolOptions": 4,
+      "ownershipControl": true,
+      "clientsNavigation": true
+    },
+    {
+      "role": "employer",
+      "language": "he",
+      "direction": "rtl",
+      "width": 1307,
+      "height": 884,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "personalPoolSelector": false,
+      "ownershipControl": false,
+      "clientsNavigation": false,
+      "sharedOrganizationLabel": true
+    },
+    {
+      "role": "employer",
+      "language": "he",
+      "direction": "rtl",
+      "width": 390,
+      "height": 844,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "personalPoolSelector": false,
+      "ownershipControl": false,
+      "clientsNavigation": false,
+      "sharedOrganizationLabel": true
+    },
+    {
+      "role": "employer",
+      "language": "he",
+      "direction": "rtl",
+      "width": 768,
+      "height": 1024,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "personalPoolSelector": false,
+      "ownershipControl": false,
+      "clientsNavigation": false,
+      "sharedOrganizationLabel": true
+    },
+    {
+      "role": "employer",
+      "language": "en",
+      "direction": "ltr",
+      "width": 1307,
+      "height": 884,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "personalPoolSelector": false,
+      "ownershipControl": false,
+      "clientsNavigation": false,
+      "sharedOrganizationLabel": true
+    },
+    {
+      "role": "employer",
+      "language": "en",
+      "direction": "ltr",
+      "width": 390,
+      "height": 844,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "personalPoolSelector": false,
+      "ownershipControl": false,
+      "clientsNavigation": false,
+      "sharedOrganizationLabel": true
+    },
+    {
+      "role": "employer",
+      "language": "en",
+      "direction": "ltr",
+      "width": 768,
+      "height": 1024,
+      "navigationMatchesRole": true,
+      "horizontalPageOverflow": false,
+      "personalPoolSelector": false,
+      "ownershipControl": false,
+      "clientsNavigation": false,
+      "sharedOrganizationLabel": true
+    }
+  ],
+  "directRoutes": [
+    {
+      "role": "candidate",
+      "requested": "org-clients",
+      "resolved": "dashboard"
+    },
+    {
+      "role": "employer",
+      "requested": "org-clients",
+      "resolved": "org-work"
+    },
+    {
+      "role": "employer",
+      "requested": "dashboard",
+      "resolved": "org-work"
+    },
+    {
+      "role": "limited employer",
+      "requested": "org-billing",
+      "resolved": "org-work"
+    },
+    {
+      "role": "limited employer",
+      "requested": "org-rewards",
+      "resolved": "org-work"
+    }
+  ],
+  "additionalChecks": {
+    "agencyAndLimitedHelpScoped": true,
+    "legacySavedPersonalFilterAppliedWithoutUiError": true,
+    "roleSignOutAndSignIn": true,
+    "candidateAndAgencyRetestedAfterCssChange": true
+  },
+  "automatedTests": {
+    "passed": 115,
+    "failed": 0
+  },
+  "limitations": [
+    "Synthetic API does not validate production permissions",
+    "Not all workspace workflows were exercised",
+    "No CV upload/revocation or email delivery acceptance",
+    "Unpublished; release depends on HR-35"
+  ],
+  "typeScript": "PASS",
+  "productionBuild": "PASS",
+  "fixtureScriptSyntax": "PASS"
+}
