@@ -1,0 +1,127 @@
+{
+  "candidateApi": {
+    "at": "2026-11-23T18:57:28.748Z",
+    "environment": "production Supabase, ordinary real QA Auth JWT, no privileged insert",
+    "checks": [
+      {
+        "client": "Mey Eden",
+        "submitted": true,
+        "duplicateRejected": true,
+        "unrelatedClientDenied": true
+      },
+      {
+        "client": "Half Free",
+        "submitted": true,
+        "duplicateRejected": true,
+        "unrelatedClientDenied": true
+      }
+    ],
+    "applicationsPersistAfterRelogin": true,
+    "result": "PASS_CANDIDATE_API",
+    "agencyReceiptNotYetChecked": true,
+    "noRealApplicant": true
+  },
+  "agencyReceipt": {
+    "at": "2026-11-23T18:58:16.010730+00:00",
+    "receivedInTaasukaTova": true,
+    "checks": [
+      {
+        "role": "org_admin",
+        "applicationsVisible": 2,
+        "newApplicationNotifications": 2
+      }
+    ],
+    "evidence": "actual production PostgreSQL RLS under existing member identity, NOT member Auth JWT or browser UI",
+    "candidateSubmissionsUsedRealQAAuthJWT": true,
+    "externalEmailSent": false
+  },
+  "employeeUi": {
+    "origin": "https://www.hr-ai.tech/",
+    "existingOrganizationAdmin": true,
+    "halfFreeCardOpened": true,
+    "meyEdenCardOpened": true,
+    "exactSyntheticRunMarkerMatched": true,
+    "afterCleanupSessionPreserved": true,
+    "afterCleanupTestRowAbsent": true
+  },
+  "cleanup": {
+    "onlyCurrentSyntheticRunRemoved": true,
+    "counts": {
+      "notifications": 2,
+      "application_activity": 2,
+      "recruitment_tasks": 0,
+      "applications": 2
+    },
+    "productionJobsAndRealApplicantsUnchanged": true
+  },
+  "cvCloud": {
+    "at": "2026-11-23T19:00:45.559Z",
+    "environment": "current production Supabase; synthetic QA only",
+    "results": [
+      {
+        "name": "organization signed before",
+        "status": 200,
+        "pdf": true,
+        "cache": "MISS"
+      },
+      {
+        "name": "organization authenticated before",
+        "status": 200,
+        "pdf": true,
+        "cache": "MISS"
+      },
+      {
+        "name": "candidate signed before",
+        "status": 200,
+        "pdf": true,
+        "cache": "MISS"
+      },
+      {
+        "name": "candidate authenticated before",
+        "status": 200,
+        "pdf": true,
+        "cache": "MISS"
+      },
+      {
+        "name": "organization RPC after revoke",
+        "denied": true
+      },
+      {
+        "name": "candidate signing after grant revoked",
+        "denied": true
+      },
+      {
+        "name": "organization same signed after revoke",
+        "status": 200,
+        "pdf": true,
+        "cache": "HIT"
+      },
+      {
+        "name": "organization same authenticated after revoke",
+        "status": 200,
+        "pdf": true,
+        "cache": "HIT"
+      },
+      {
+        "name": "candidate same signed after revoke",
+        "status": 200,
+        "pdf": true,
+        "cache": "HIT"
+      },
+      {
+        "name": "candidate same authenticated after revoke",
+        "status": 200,
+        "pdf": true,
+        "cache": "HIT"
+      }
+    ],
+    "cleanup": true,
+    "oldLinkLeak": true
+  },
+  "cvLocal": {
+    "tests": 5,
+    "passed": 5,
+    "published": false
+  },
+  "readiness": "NOT_READY_CV_REVOCATION_BLOCKER"
+}
