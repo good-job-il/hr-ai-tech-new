@@ -7,6 +7,7 @@ await pg.query("insert into auth.users(id,email,email_confirmed_at) values($1,'q
 await pg.query("insert into organizations(id,name,kind,is_test) values($1,'QA agency','agency',true)",[org]);
 await pg.query("insert into memberships(organization_id,user_id,role,status) values($1,$2,'org_admin','active')",[org,owner]);
 await pg.query("insert into candidates(id,organization_id,owner_id,created_by,full_name,email,visibility) values($1,$2,$3,$3,'דניאל לוי','qa@example.invalid','shared'),($4,$2,$3,$3,'Empty candidate','empty@example.invalid','shared')",[candidate,org,owner,empty]);
+await pg.query("update candidates set headline='מנהל תפעול' where id=$1",[candidate]);
 await pg.query("insert into jobs(id,organization_id,title,location,type,description,is_public) values($1,$2,'מנהל תפעול','Example','full-time','Synthetic job only',false)",[job,org]);
 const document=(await pg.query("insert into candidate_documents(organization_id,candidate_id,object_path,label,uploaded_by,created_at) values($1,$2,'synthetic/not-a-real-storage-object.pdf','קורות חיים.pdf',$3,'2026-11-20T10:00:00Z') returning id",[org,candidate,owner])).rows[0].id;
 const kinds=['הפניה למשרה','שיחה טלפונית','עודכן סטטוס','נקלטו קורות חיים'];
@@ -28,6 +29,7 @@ const server=http.createServer(async(req,res)=>{
  if(rpc==='my_capabilities'){send(['candidates.write','candidates.all','jobs.manage']);return}
  if(rpc==='search_candidate_pool'){send({rows:[{id:candidate,owner_id:owner,full_name:'דניאל לוי',email:'qa@example.invalid',visibility:'shared',created_at:'2026-11-01T00:00:00Z'}],count:1});return}
  if(rpc==='team_directory'){send([]);return}
+ if(pathname==='/rest/v1/candidates'){send({headline:'מנהל תפעול'});return}
  if(pathname==='/rest/v1/candidate_table_preferences'){send(null);return}
  if(pathname==='/rest/v1/candidate_documents'){send([{id:document,label:'קורות חיים.pdf',created_at:'2026-11-20T10:00:00Z'}]);return}
  if(pathname.startsWith('/rest/v1/')&&req.method==='GET'){send([]);return}
