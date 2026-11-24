@@ -1,0 +1,83 @@
+{
+  "sampleCandidates": 3,
+  "samples": [
+    {
+      "alias": "sample-a",
+      "events": 6,
+      "referrals": 0,
+      "cvFormat": ".txt",
+      "downloadBytesPreserved": true,
+      "eventMetadataMatchesCsv": true,
+      "fullEventDetailsArchived": true,
+      "maxDetailLength": 416,
+      "additionalAttachments": 0
+    },
+    {
+      "alias": "sample-b",
+      "events": 12,
+      "referrals": 1,
+      "cvFormat": ".docx",
+      "downloadBytesPreserved": true,
+      "eventMetadataMatchesCsv": true,
+      "fullEventDetailsArchived": true,
+      "maxDetailLength": 1223,
+      "additionalAttachments": 0
+    },
+    {
+      "alias": "sample-c",
+      "events": 17,
+      "referrals": 2,
+      "cvFormat": ".pdf",
+      "downloadBytesPreserved": true,
+      "eventMetadataMatchesCsv": true,
+      "fullEventDetailsArchived": true,
+      "maxDetailLength": 1634,
+      "additionalAttachments": 0
+    }
+  ],
+  "events": 35,
+  "referrals": 3,
+  "newArchiveRows": 0,
+  "snapshots": 15,
+  "files": 11,
+  "replayCreatedDuplicates": false,
+  "cloudWrites": 0,
+  "clientSends": 0,
+  "limitations": [
+    "Scoped sample only, not full Civi backup",
+    "No non-CV attachment present in sample",
+    "No cloud import performed",
+    "TXT/DOCX not supported by current PDF-only product upload",
+    "Event CSV alone omits full details; UI snapshots required",
+    "CSV does not establish stable event/referral IDs"
+  ],
+  "date": "2026-11-24",
+  "issue": "HR-44",
+  "environment": "Civi UI export + private local staging; cloud duplicate check read-only",
+  "existingPoolMatches": [
+    {
+      "alias": "sample-a",
+      "matches": 0
+    },
+    {
+      "alias": "sample-b",
+      "matches": 1
+    },
+    {
+      "alias": "sample-c",
+      "matches": 0
+    }
+  ],
+  "tests": {
+    "nodeTests": 4,
+    "pythonTests": 1,
+    "allPassed": true
+  },
+  "productionImportPerformed": false,
+  "sourceExportGaps": [
+    "Event CSV omits full details",
+    "Company-local candidate number differs from URL record ID",
+    "Delayed search can export a previous result",
+    "No non-CV attachment in inspected sample"
+  ]
+}

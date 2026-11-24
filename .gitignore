@@ -21,3 +21,5 @@ supabase/.branches/
 work/pilot-build-*
 /outputs.zip
 /data.sql
+__pycache__/
+*.pyc
