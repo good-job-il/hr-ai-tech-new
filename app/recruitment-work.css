@@ -1,0 +1,16 @@
+.recruitmentQueue .orgViewTabs {margin:0;padding-inline:12px;}
+.recruitmentQueue .orgViewTabs button {display:inline-flex;align-items:center;gap:7px;}
+.recruitmentQueue .orgWorkRow {flex-wrap:wrap;}
+.recruitmentQueue .orgWorkRow small {display:block;}
+.recruitmentQueue .orgWorkRow button {flex-shrink:0;}
+.queueEmpty {padding:20px;margin:0;color:#5b627a;}
+.queueMore {margin:12px 16px;}
+.queueOverdue {background:#fff0ed;color:#9c301e;}
+.candidateJobAssignment {margin-block:16px;}
+.candidateJobAssignment button + button {margin-inline-start:8px;}
+.candidateJobAssignment form {margin-top:12px;max-width:620px;}
+.candidateJobAssignment select {width:100%;}
+.candidateJobAssignment .taskRow {display:flex;align-items:center;}
+@media(max-width:760px){
+  .recruitmentQueue .orgViewTabs button {padding-inline:9px;}
+}
