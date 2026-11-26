@@ -11,7 +11,22 @@ assert.equal(new URL(url).hostname, 'rnstsczayhzrxzcstzpr.supabase.co');
 assert.equal(m.project_ref, 'rnstsczayhzrxzcstzpr');
 assert.match(m.run, /^qa-cv-/);
 const target = new URL(base);
-assert(target.protocol === 'https:' || target.hostname === 'localhost', 'HTTPS or localhost required');
+assert(
+  (target.protocol === 'https:' && ['www.hr-ai.tech', 'hr-ai.tech'].includes(target.hostname)) ||
+  (target.protocol === 'http:' && ['localhost', '127.0.0.1'].includes(target.hostname)),
+  'Use the production website or a local build for test account requests',
+);
+const legacyFixtures = [
+  { bucket: 'organization-cvs', path: m.legacyPath, signedUrl: m.legacySignedUrl, prefix: m.org, role: 'client' },
+  { bucket: 'candidate-cvs', path: m.legacyCandidatePath, signedUrl: m.legacyCandidateSignedUrl, prefix: m.users.outsider.id, role: 'recruiter' },
+];
+for (const {bucket, path, signedUrl, prefix} of legacyFixtures) {
+  assert(path && signedUrl, `Capture both legacy URLs for ${bucket} before the cutover`);
+  assert(path.startsWith(`${prefix}/`), `Unexpected fixture path for ${bucket}`);
+  assert(path.split('/').every(part => /^[a-zA-Z0-9_-][a-zA-Z0-9_.-]*$/.test(part)), `Unsafe fixture path for ${bucket}`);
+  const signed = new URL(signedUrl);
+  assert(signed.origin === new URL(url).origin && signed.pathname === `/storage/v1/object/sign/${bucket}/${path}` && signed.searchParams.has('token'), `Unexpected fixture signed URL for ${bucket}`);
+}
 const clients = {}, results = [];
 let fixtureValidated = false;
 async function ok(p) { const r = await p; assert.equal(r.error, null, r.error?.message); return r.data; }
@@ -84,18 +99,20 @@ try {
   await api('recruiter', candidateInput, 403, 'application CV revoked grant');
   assert((await clients.outsider.storage.from('candidate-cvs').download(m.ownPath)).error, 'candidate raw download blocked');
   assert((await clients.outsider.storage.from('candidate-cvs').createSignedUrl(m.ownPath, 120)).error, 'candidate signed URL blocked');
-  assert(m.legacyPath && m.legacySignedUrl, 'Capture legacy URLs before migration/path rotation');
-  assert.equal(new URL(m.legacySignedUrl).origin, new URL(url).origin);
-  assert(m.legacyPath.startsWith(m.org + '/'));
-  const token = (await clients.client.auth.getSession()).data.session.access_token;
-  for (const [name, legacyUrl, headers] of [
-    ['previous exact authenticated URL', `${url}/storage/v1/object/authenticated/organization-cvs/${m.legacyPath}`, { apikey: key, Authorization: `Bearer ${token}` }],
-    ['previous exact signed URL', m.legacySignedUrl, {}],
-  ]) {
-    const response = await fetch(legacyUrl, { headers, cache: 'no-store', redirect: 'error' });
-    await response.arrayBuffer();
-    assert(response.status >= 400, name);
-    results.push({ name, result: 'PASS', status: response.status });
+  for (const {bucket, path, signedUrl, role} of legacyFixtures) {
+    const token = (await clients[role].auth.getSession()).data.session.access_token;
+    const headers = { apikey: key, Authorization: `Bearer ${token}` };
+    for (const [kind, legacyUrl, requestHeaders] of [
+      ['authenticated', `${url}/storage/v1/object/authenticated/${bucket}/${path}`, headers],
+      ['signed', signedUrl, {}],
+    ]) {
+      const name = `${bucket}: previous exact ${kind} URL denied`;
+      const response = await fetch(legacyUrl, { headers: requestHeaders, cache: 'no-store', redirect: 'error' });
+      const bytes = new Uint8Array(await response.arrayBuffer());
+      assert([400, 401, 403, 404, 410].includes(response.status), name);
+      assert.notEqual(new TextDecoder().decode(bytes.slice(0, 5)), '%PDF-', name);
+      results.push({ name, result: 'PASS', status: response.status });
+    }
   }
   fs.writeFileSync(reportPath, JSON.stringify({ result: 'PASS', at: new Date().toISOString(), environment: target.origin, project: m.project_ref, results }, null, 2));
   console.log(JSON.stringify({ result: 'PASS', scenarios: results.length }));
