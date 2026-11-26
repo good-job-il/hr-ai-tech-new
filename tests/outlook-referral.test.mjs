@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {actAs, testDatabase} from './support/database.mjs';
 import {decodeOutlookReferralReply, identifySentReferral, matchOutlookReferralReply, outlookReferralPayload, sendOutlookReferral} from '../lib/outlook-referral.mjs';
+import {syncOutlookReferrals} from '../lib/outlook-referral-sync.mjs';
 
 const mailbox = 'sender@example.invalid';
 const recipient = 'client@example.invalid';
@@ -53,12 +54,26 @@ test('Graph calls preserve sent mail and capture only the text of the verified r
     assert.equal(url.origin,'https://graph.microsoft.com');
     assert.ok(url.pathname.endsWith('graph%2Fid'));
     assert.ok(url.searchParams.get('$select').includes('internetMessageHeaders'));
-    assert.equal(request.headers.Prefer,'outlook.body-content-type="text"');
+    assert.equal(request.headers.Prefer,'IdType="ImmutableId", outlook.body-content-type="text"');
     return Response.json(source);
   });
   assert.equal(decoded.referralId,referralId);
   assert.equal(decoded.body,'Tomorrow.');
   assert.equal(await decodeOutlookReferralReply('fixture','graph/id',threads,mailbox,async ()=>Response.json({...source,uniqueBody:{contentType:'html',content:'<p>raw</p>'}})),null);
+});
+
+test('Outlook paging never forwards credentials to an unexpected endpoint', async () => {
+  const deliveries = [{id:referralId,recipient,requestedAt:'2026-11-26T11:00:00Z'}];
+  let requests = 0;
+  const transport = async url => {
+    requests++;
+    assert.equal(url.origin,'https://graph.microsoft.com');
+    if (url.pathname === '/v1.0/me') return Response.json({mail:mailbox});
+    return Response.json({value:[], '@odata.nextLink':'https://example.invalid/messages'});
+  };
+  await assert.rejects(syncOutlookReferrals({token:'fixture',mailbox,deliveries,earliest:deliveries[0].requestedAt,
+    storage:{},transport}),/OUTLOOK_MAIL_PAGE_INVALID/);
+  assert.equal(requests,2);
 });
 
 test('A matched reply appears under the correct job in internal activity only', async () => {
@@ -85,25 +100,50 @@ test('A matched reply appears under the correct job in internal activity only', 
     await assert.rejects(pg.query('select * from outlook_referral_replies'),/permission denied/);
     await pg.exec('reset role');
     const ids = [referralId,'00000000-0000-4000-9000-000000000052'];
-    for (const [index,sentId] of [firstSentId,secondSentId].entries()) {
-      await pg.query('insert into outlook_referral_deliveries(id,presentation_id,privacy_version,sent_by,mailbox,recipient,accepted_at,provider_message_id) select $1,id,privacy_version,$2,$3,$4,$5,$6 from client_presentations where id=$7',
-        [ids[index],owner,mailbox,recipient,'2026-11-26T11:00:00Z',sentId,jobs[index].presentation]);
+    const requestedAt = '2026-11-26T11:00:00.001Z';
+    const sentAt = '2026-11-26T11:00:00Z';
+    for (const [index,id] of ids.entries()) {
+      await pg.query('insert into outlook_referral_deliveries(id,presentation_id,privacy_version,sent_by,mailbox,recipient,requested_at) select $1,id,privacy_version,$2,$3,$4,$5 from client_presentations where id=$6',
+        [id,owner,mailbox,recipient,requestedAt,jobs[index].presentation]);
     }
-    const matched = matchOutlookReferralReply(reply, ids.map((id,index)=>({referralId:id,recipient,messageIds:[[firstSentId,secondSentId][index]],sentAt:'2026-11-26T11:00:00Z'})), mailbox);
-    assert.equal(matched, referralId);
-    const args = [matched,mailbox,reply.internetMessageId,reply.receivedDateTime,'Fictitious reply: please call tomorrow.'];
-    const insert = 'insert into outlook_referral_replies(delivery_id,mailbox,provider_message_id,received_at,body) values($1,$2,$3,$4,$5) on conflict(mailbox,provider_message_id) do nothing';
-    await pg.query(insert,args);
-    await pg.query(insert,[ids[1],...args.slice(1)]);
+    const deliveries = ids.map(id=>({id,recipient,requestedAt}));
+    const body = 'Fictitious reply: please call tomorrow.';
+    const sentMessages = ids.map((id,index)=>({
+      ...outlookReferralPayload({referralId:id,mailbox,recipient,subject:'Same subject',body:'Synthetic referral'}).message,
+      from:to(mailbox),sender:to(mailbox),isDraft:false,sentDateTime:sentAt,internetMessageId:[firstSentId,secondSentId][index],
+    }));
+    const storage = {
+      confirmSent: (id, messageId, sentAt)=>pg.query('update outlook_referral_deliveries set provider_message_id=$2,accepted_at=$3 where id=$1 and provider_message_id is null',[id,messageId,sentAt]),
+      saveReply: ({referralId,mailbox,messageId,receivedAt,body})=>pg.query(
+        'insert into outlook_referral_replies(delivery_id,mailbox,provider_message_id,received_at,body) values($1,$2,$3,$4,$5) on conflict(mailbox,provider_message_id) do nothing',
+        [referralId,mailbox,messageId,receivedAt,body],
+      ),
+    };
+    let bodyReads = 0;
+    const transport = async url => {
+      if (url.pathname === '/v1.0/me') return Response.json({mail:mailbox});
+      if (url.pathname.includes('/sentitems/')) return Response.json({value:sentMessages});
+      if (url.pathname.includes('/inbox/')) return Response.json({value:[{...reply,id:'unrelated',internetMessageHeaders:[]},{...reply,id:'matched'}]});
+      assert.equal(url.pathname,'/v1.0/me/messages/matched');
+      bodyReads++;
+      return Response.json({...reply,uniqueBody:{contentType:'text',content:body}});
+    };
+    assert.deepEqual(await syncOutlookReferrals({token:'fixture',mailbox,deliveries,earliest:sentAt,storage,transport}),{sent:2,replies:1});
+    assert.equal(bodyReads,1);
+    const trackers = deliveries.map((row,index)=>({...row,sentAt,providerMessageId:[firstSentId,secondSentId][index],
+      replyIds:index===0?[reply.internetMessageId]:[]}));
+    assert.deepEqual(await syncOutlookReferrals({token:'fixture',mailbox,deliveries:trackers,earliest:sentAt,storage,transport}),{sent:0,replies:0});
+    assert.equal(bodyReads,1);
+    await assert.rejects(syncOutlookReferrals({token:'fixture',mailbox:recipient,deliveries,earliest:sentAt,storage,transport}),/OUTLOOK_MAILBOX_MISMATCH/);
     await actAs(pg,owner);
     const activity = (await query("select candidate_activity($1,'','outlook_reply') data",[candidate])).data;
     assert.equal(activity.count,1);
     assert.equal(activity.rows[0].job_key,jobs[0].job);
-    assert.equal(activity.rows[0].body,args[4]);
+    assert.equal(activity.rows[0].body,body);
     assert.equal((await query('select status from candidate_placements where id=$1',[jobs[0].placement])).status,'submitted');
     await actAs(pg,clientUser);
     await assert.rejects(pg.query('select candidate_activity($1)',[candidate]),/NOT_PERMITTED/);
-    assert.ok(!JSON.stringify((await query('select client_portal_data() data')).data).includes(args[4]));
+    assert.ok(!JSON.stringify((await query('select client_portal_data() data')).data).includes(body));
   } finally {
     await pg.close();
   }
