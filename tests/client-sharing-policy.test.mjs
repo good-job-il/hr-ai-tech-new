@@ -11,10 +11,15 @@ assert.equal((await pg.query('select has_client_portal($1) ok',[client])).rows[0
 assert.equal((await pg.query('select count(*) n from support_tickets where id=$1',[request])).rows[0].n,1);
 await actAs(pg,clientUser);assert.equal((await pg.query('select count(*) n from support_tickets where id=$1',[request])).rows[0].n,0);
 await actAs(pg,clientUser);await pg.query("select submit_client_feedback($1,'note','Test person private history')",[share]);
+assert.equal((await pg.query('select * from recruitment_work_queue($1)',[org])).rows.length,0);
 await assert.rejects(pg.query("select submit_client_feedback($1,'interview_scheduled','',now()+interval '2 days')",[share]),/Not permitted/);
 await actAs(pg,manager);await pg.query("select share_candidate_portal($1,'Approved professional summary',$2)",[submission,doc]);await actAs(pg,clientUser);await assert.rejects(pg.query("select submit_client_feedback($1,'interview_scheduled','',now()+interval '2 days')",[share]),/INVALID_INTERVIEW/);
 await assert.rejects(pg.query("select set_client_sharing_policy($1,true,'client')",[client]),/Not permitted/);
 await actAs(pg,manager);await pg.query("select set_client_sharing_policy($1,true,'client')",[client]);
+const [feedback]=(await pg.query('select kind,event_id,job_id,record_id from recruitment_work_queue($1)',[org])).rows;
+assert.deepEqual({...feedback,event_id:!!feedback?.event_id},{kind:'client_feedback',event_id:true,job_id:job,record_id:placement});
+await pg.query('update notifications set read_at=now() where id=$1',[feedback.event_id]);
+assert.equal((await pg.query('select * from recruitment_work_queue($1)',[org])).rows.length,0);
 await actAs(pg,clientUser);assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.presentations.length,0);
 assert.equal((await pg.query("select count(*) n from storage.objects where bucket_id='organization-cvs'")).rows[0].n,0);
 await actAs(pg,manager);
