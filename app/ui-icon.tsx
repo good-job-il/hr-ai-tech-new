@@ -2,6 +2,11 @@ import {useId} from 'react';
 export default function UiIcon({name,size=21,tone}:{name:string;size?:number;tone?:'brand'}){
 const gradient='icon-'+useId().replace(/:/g,'');
 const paths:Record<string,React.ReactNode>={
+ refresh:<><path d="M20 9a8 8 0 0 0-14-4L3 8m0-5v5h5M4 15a8 8 0 0 0 14 4l3-3m0 5v-5h-5"/></>,
+ referral:<path d="m14 3 8 7-8 7v-4C7 13 4 15 2 20c0-8 4-12 12-12V3Z"/>,
+ history:<><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6M12 7v5l3 2"/></>,
+ phone:<path d="M5 3h4l2 5-3 2c1 3 3 5 6 6l2-3 5 2v4c0 2-2 3-4 2C9 19 5 15 3 7c-1-2 0-4 2-4Z"/>,
+ lock:<><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></>,
  flame:<path d="M12 3c1 5-4 6-4 10 0 2 1 3 2 4-1-4 3-4 4-7 3 3 5 5 5 8a7 7 0 0 1-14 0c0-5 5-7 7-15Z"/>,
  robot:<><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M2 11v5m20-5v5M8 20v2m8-2v2M8 16h8"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/><circle cx="12" cy="2" r="1"/></>,
  chat:<><path d="M4 3h16a1 1 0 0 1 1 1v13H9l-6 5V4a1 1 0 0 1 1-1Z"/><path d="M7 9h1m4 0h1m4 0h1M7 13h9"/></>,
