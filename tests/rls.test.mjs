@@ -5,7 +5,7 @@ import {PGlite} from '@electric-sql/pglite';
 test('PostgreSQL RLS: tenant isolation, roles, private pools, access, merge, CV and rewards',async()=>{
  const pg=new PGlite();
  try{
- await pg.exec(`create role anon;create role authenticated;create role service_role;create schema auth;create schema storage;
+ await pg.exec(`create role anon;create role authenticated;create role service_role;create schema auth;create schema storage;create function storage.allow_any_operation(expected text[]) returns boolean language sql stable as $$select current_setting('storage.operation',true)=any(expected)$$;select set_config('storage.operation','object.list',false);
  create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz,raw_user_meta_data jsonb not null default '{"contact_phone":"+12025550101"}',raw_app_meta_data jsonb not null default '{}',deleted_at timestamptz);
  create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
  create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);

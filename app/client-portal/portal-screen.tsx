@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import {db} from '../../lib/supabase';
+import {readCv} from '../../lib/cv-client';
 import {withoutNiqqud} from '../../lib/hebrew-text.mjs';
 import {LANGUAGE_KEY,restoreSiteLanguage} from '../../lib/site-language.mjs';
 
@@ -24,7 +25,7 @@ export default function ClientPortal(){
  useEffect(()=>{void load();const sub=db?.auth.onAuthStateChange((event,session)=>{const uid=session?.user.id??'';if(event==='SIGNED_OUT'||uid!==currentUser.current){++sequence.current;currentUser.current=uid;D(null);A(null);M('');V('inbox')}setTimeout(()=>void load(),0)});return()=>{++sequence.current;sub?.data.subscription.unsubscribe()}},[]);
  async function respond(value:PortalResponse){if(!db)throw Error('UNAVAILABLE');const r=await db.rpc('submit_client_portal_response',{presentation:value.presentation,expected_revision:value.share_revision,response_action:value.response_action,response_note:value.response_note,rejection_reason:value.rejection_reason,interview_at:value.interview_at});if(r.error)throw Error('RESPONSE_NOT_SAVED');D(d=>d?{...d,presentations:d.presentations.filter(p=>p.id!==value.presentation)}:d);}
  async function updateStatus(value:PortalUpdateRequest){if(!db)throw Error('UNAVAILABLE');const r=await db.rpc('submit_client_portal_update',{presentation:value.presentation,expected_revision:value.share_revision,request_id:value.request_id,status_code:value.status_code,update_note:value.update_note});if(r.error)throw Error('UPDATE_NOT_SAVED');D(d=>d?{...d,presentations:d.presentations.map(p=>p.id===value.presentation?{...p,status_updates:[r.data,...(p.status_updates??[]).filter(u=>u.id!==r.data.id)].slice(0,20)}:p)}:d);}
- async function openDocument(candidate:PortalCandidate){const d=await db!.rpc('client_presentation_document',{presentation:candidate.id});if(d.error||!d.data?.path)throw Error('DOCUMENT_UNAVAILABLE');const signed=await db!.storage.from('organization-cvs').createSignedUrl(d.data.path,120);if(signed.error||!signed.data)throw Error('DOCUMENT_UNAVAILABLE');return {url:signed.data.signedUrl,label:withoutNiqqud(d.data.label)};}
+ async function openDocument(candidate:PortalCandidate){return {file:await readCv({kind:'presentation',presentation:candidate.id}),label:t('קורות חיים','CV')};}
 
  return <WorkspaceShell lang={lang} onLanguage={()=>L(lang==='he'?'en':'he')} view={view} onNavigate={account?V:undefined} name={account?.name||account?.email} client={data?.clients.map(c=>c.name).join(' · ')} agency={data?.clients[0]?.agency} count={data?.presentations.length} accountMenu={account?<details className="cpAccountMenu"><summary>{t('אפשרויות חשבון','Account options')}</summary><div><button onClick={()=>V('account')}>{t('פרטי החשבון','Account details')}</button><PortalOrganizationTransition lang={lang}/><button onClick={()=>void db!.auth.signOut()}>{t('יציאה','Sign out')}</button></div></details>:null}>{account&&<HelpDrawer key={account.id} userId={account.id} lang={lang} context={{audience:'client'}} onLanguage={()=>L(lang==='he'?'en':'he')} onSignIn={()=>{}} onNavigate={next=>{if(next==='client-portal'){V('inbox');void load();return}if(next==='account-profile'||next==='account-preferences'){V('account');return}window.location.href='/?view='+encodeURIComponent(next)}}/>}
 
