@@ -7,7 +7,7 @@ export function useListScroll<T extends HTMLElement=HTMLDivElement>(memory:ListS
   useLayoutEffect(()=>{
     if(!visible)return;
     const node=box.current;
-    window.scrollTo(0,memory.page);
+    window.scrollTo({top:memory.page,behavior:'instant'});
     if(node){if(axis==='x')node.scrollLeft=memory.box;else node.scrollTop=memory.box;}
     const onPage=()=>{memory.page=window.scrollY;};
     const onBox=()=>{if(node)memory.box=axis==='x'?node.scrollLeft:node.scrollTop;};

@@ -11,8 +11,6 @@
 .candidateJobAssignment form {margin-top:12px;max-width:620px;}
 .candidateJobAssignment select {width:100%;}
 .candidateJobAssignment .taskRow {display:flex;align-items:center;}
-.orgReturnToJobList {display:none;}
 @media(max-width:760px){
-  .orgReturnToJobList {display:inline-flex;}
   .recruitmentQueue .orgViewTabs button {padding-inline:9px;}
 }

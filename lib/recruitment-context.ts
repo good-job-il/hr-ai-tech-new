@@ -5,7 +5,7 @@ export type CandidateListState = {
   sort:{key:import('../app/candidate-column-settings').CandidateColumn; direction:'asc'|'desc'};
   section:string; advancedOpen:boolean;
 };
-export type JobListState = {query:string; selected:string; tab:string};
+export type JobListState = {query:string; status:string; visibility:string; selected:string; tab:string};
 export type BoardListState = {query:string; stage:string; view:string};
 export type RecruitmentListMemory = {
   candidates?:CandidateListState; jobs?:JobListState; boards:Map<string,BoardListState>;
