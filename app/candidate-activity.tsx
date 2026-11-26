@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
+import {createPortal} from 'react-dom';
 import {db} from '../lib/supabase';
 import UiIcon from './ui-icon';
 import './candidate-activity.css';
@@ -17,7 +18,7 @@ export function CandidateHistoryIdentity({candidate,name,visibility,lang}:{candi
 function rowTone(row:ActivityRow){const kind=row.kind;return /phone|שיחה|טלפון|ענה/.test(kind)?'phone':/status|סטטוס|סינון|feedback/.test(kind)?'status':/document|מסמך|קו"ח|קורות/.test(kind)?'document':/referral|הפניה/.test(kind)?'referral':'note'}
 function ActivityBody({body,status}:{body:string;status:boolean}){const parts=status&&body.length<100?body.split(' → '):[];return parts.length===2?<p className="activityStatusFlow"><bdi>{parts[0]}</bdi><span aria-hidden="true">→</span><bdi>{parts[1]}</bdi></p>:<p className="activityBody" dir="auto">{body}</p>}
 
-export default function CandidateActivity({candidate,lang,onDocuments}:{candidate:string;lang:'he'|'en';onDocuments:()=>void}){
+export default function CandidateActivity({candidate,lang,onDocuments,noteActionTarget}:{candidate:string;lang:'he'|'en';onDocuments:()=>void;noteActionTarget?:HTMLElement|null}){
  const he=lang==='he',t=(a:string,b:string)=>he?a:b;
  const [job,J]=useState(''),[kind,K]=useState(''),[query,Q]=useState(''),[search,S]=useState(''),[page,P]=useState(0),[reload,R]=useState(0);
  const [response,D]=useState<{candidate:string;data:ActivityData}|null>(null),[busy,B]=useState(true),[error,E]=useState('');
@@ -38,8 +39,9 @@ export default function CandidateActivity({candidate,lang,onDocuments}:{candidat
  const date=(value:string,options?:Intl.DateTimeFormatOptions)=>new Intl.DateTimeFormat(he?'he-IL':'en-GB',{timeZone:'Asia/Jerusalem',...options}).format(new Date(value));
  const dayKey=(value:string)=>date(value,{year:'numeric',month:'2-digit',day:'2-digit'});
  const today=dayKey(new Date().toISOString());
+ const noteAction=data?.can_note&&<button type="button" className="gradientButton" aria-expanded={noteOpen} onClick={()=>{O(!noteOpen);NE('')}}><UiIcon name="plus" size={20}/>{t('הוספת הערה','Add note')}</button>;
  return <section className="candidateActivity" aria-label={t('היסטוריה ופעילות','History & activity')} aria-busy={busy}>
-  <div className="activityHeading"><div><h3>{t('היסטוריה ופעילות','History & activity')}</h3><p>{t('כל הפעילות וההפניות של המועמד, במקום אחד.','The candidate’s activity and referrals in one place.')}</p></div>{data?.can_note&&<button className="gradientButton" aria-expanded={noteOpen} onClick={()=>{O(!noteOpen);NE('')}}>+ {t('הוספת הערה','Add note')}</button>}</div>
+  <div className="activityHeading"><div><h3>{t('היסטוריה ופעילות','History & activity')}</h3><p>{t('כל הפעילות וההפניות של המועמד, במקום אחד.','The candidate’s activity and referrals in one place.')}</p></div>{noteAction&&(noteActionTarget?createPortal(noteAction,noteActionTarget):noteActionTarget===undefined?noteAction:null)}</div>
   <p className="activityPrivacy"><UiIcon name="lock" size={16}/>{t('המידע גלוי לצוות המורשה בלבד','Visible to authorized staff only')}</p>
   {noteOpen&&data?.can_note&&<form className="activityNoteForm" onSubmit={async e=>{e.preventDefault();if(!db||!note.trim())return;const target=candidate;V(true);NE('');const result=await db.rpc('add_candidate_internal_note',{candidate:target,note:note.trim()});if(current.current!==target)return;V(false);if(result.error)NE(t('ההערה לא נשמרה. אפשר לנסות שוב.','The note was not saved. Please retry.'));else{N('');O(false);P(0);R(x=>x+1)}}}><label>{t('הערה פנימית','Internal note')}<textarea required maxLength={4000} value={note} onChange={e=>N(e.target.value)}/></label><small>{t('ההערה נשמרת לצוות בלבד. היא לא תישלח למועמד או ללקוח.','Saved for staff only. Nothing is sent to the candidate or client.')}</small><div><button className="gradientButton" disabled={saving||!note.trim()}>{t('שמירת הערה','Save note')}</button><button type="button" disabled={saving} onClick={()=>O(false)}>{t('ביטול','Cancel')}</button></div>{noteError&&<p role="alert">{noteError}</p>}</form>}
   <div className="activityFilters"><label>{t('משרה','Job')}<select value={job} onChange={e=>{J(e.target.value);P(0)}}><option value="">{t('כל המשרות','All jobs')}</option>{data?.jobs.map(option=><option key={option.key} value={option.key}>{option.label||t('משרה ללא כותרת במקור','Untitled source job')}</option>)}</select></label><label>{t('סוג אירוע','Event type')}<select value={kind} onChange={e=>{K(e.target.value);P(0)}}><option value="">{t('כל סוגי האירועים','All event types')}</option>{data?.types.map(option=><option key={option.key} value={option.key}>{option.key.startsWith('civi:')?'Civi · ':''}{activityTitle({kind:option.key,title:option.label},he)}</option>)}</select></label><label className="activitySearch">{t('חיפוש בהיסטוריה','Search history')}<span><UiIcon name="search" size={18}/><input value={query} maxLength={300} placeholder={t('חיפוש בהיסטוריה','Search history')} onChange={e=>Q(e.target.value)}/></span></label><button className="activityClear" onClick={()=>{J('');K('');Q('');S('');P(0)}}>{t('ניקוי סינון','Clear filters')}</button></div>
