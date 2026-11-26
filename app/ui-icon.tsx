@@ -2,6 +2,9 @@ import {useId} from 'react';
 export default function UiIcon({name,size=21,tone}:{name:string;size?:number;tone?:'brand'}){
 const gradient='icon-'+useId().replace(/:/g,'');
 const paths:Record<string,React.ReactNode>={
+ check:<path d="m5 12 4 4L19 6"/>,
+ close:<path d="m6 6 12 12M18 6 6 18"/>,
+ document:<><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8m-8 4h6"/></>,
  plus:<path d="M12 5v14M5 12h14"/>,
  refresh:<><path d="M20 9a8 8 0 0 0-14-4L3 8m0-5v5h5M4 15a8 8 0 0 0 14 4l3-3m0 5v-5h-5"/></>,
  referral:<path d="m14 3 8 7-8 7v-4C7 13 4 15 2 20c0-8 4-12 12-12V3Z"/>,

@@ -28,13 +28,13 @@ test('Portal to employer link needs independent agency approval and preserves sh
  await assert.rejects(pg.query('select decide_portal_organization_link($1,true)',[link]),/NOT_PERMITTED/);
  await assert.rejects(pg.query('update agency_clients set target_organization_id=null where id=$1',[client]),/END_LINK_FIRST/);
  await actAs(pg,clientUser);const after=(await pg.query('select client_portal_data() d')).rows[0].d;
- assert.equal(after.presentations[0].id,before.presentations[0].id);assert.equal(after.presentations[0].feedback[0].note,'Existing feedback');
+ assert.equal(before.presentations[0].id,presentation);assert.equal(after.presentations.length,0);await actAs(pg,agencyUser);assert.equal((await pg.query('select placement_pilot_details($1) d',[placement])).rows[0].d.presentations[0].feedback[0].note,'Existing feedback');await actAs(pg,clientUser);
  assert.equal((await pg.query('select count(*) n from candidates where organization_id=$1',[agency])).rows[0].n,0);
  assert.equal((await pg.query('select count(*) n from candidates where organization_id=$1',[employer])).rows[0].n,0);
  assert.ok(!JSON.stringify(after).includes('PRIVATE AGENCY NOTE'));
  assert.equal((await pg.query('select organization_portal_connections($1) d',[employer])).rows[0].d[0].status,'active');
  await pg.query('select end_portal_organization_link($1)',[link]);assert.equal((await pg.query('select organization_portal_connections($1) d',[employer])).rows[0].d.length,0);
- assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.presentations.length,1);
+ assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.presentations.length,0);assert.equal((await pg.query('select client_portal_data() d')).rows[0].d.clients.length,1);
  await actAs(pg,agencyUser);assert.equal((await pg.query('select target_organization_id from agency_clients where id=$1',[client])).rows[0].target_organization_id,null);
  assert.equal((await pg.query("select count(*) n from management_audit where entity_id=$1 and action like 'organization_link_%'",[client])).rows[0].n,3);
  const second=(await pg.query("insert into agency_clients(organization_id,name) values($1,'New workspace test') returning id",[agency])).rows[0].id;
