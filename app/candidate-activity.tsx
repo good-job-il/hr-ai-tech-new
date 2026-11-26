@@ -9,7 +9,10 @@ export type ActivityRow={id:string;source:'native'|'civi';kind:string;title:stri
 export type ActivityData={rows:ActivityRow[];count:number;page_size:number;jobs:{key:string;label:string}[];types:{key:string;label:string}[];can_note:boolean};
 const labels:Record<string,[string,string]>={note:['נוספה הערה פנימית','Internal note added'],referral:['שיוך למשרה','Assigned to a job'],status:['עודכן סטטוס','Status updated'],document:['נוסף מסמך','Document added'],interview:['נקבע ראיון','Interview scheduled'],feedback:['משוב לקוח','Client feedback'],whatsapp_draft:['טיוטת WhatsApp — לא נשלחה','WhatsApp draft — not sent'],whatsapp_sending:['WhatsApp — שליחה בתהליך','WhatsApp — sending'],whatsapp_sent:['הודעת WhatsApp — נשלחה לשירות','WhatsApp — accepted by provider'],whatsapp_delivered:['הודעת WhatsApp — נמסרה','WhatsApp — delivered'],whatsapp_read:['הודעת WhatsApp — נקראה','WhatsApp — read'],whatsapp_failed:['הודעת WhatsApp — השליחה נכשלה','WhatsApp — failed'],whatsapp_unknown:['הודעת WhatsApp — תוצאה לא ידועה','WhatsApp — outcome unknown'],whatsapp_received:['התקבלה הודעת WhatsApp','WhatsApp message received']};
 const statusLabels:Record<string,[string,string]>={submitted:['הוגש','Submitted'],reviewing:['בטיפול','In review'],interview:['ראיון','Interview'],offer:['הצעה','Offer'],hired:['גויס','Hired'],rejected:['נדחה','Rejected'],withdrawn:['בוטל','Withdrawn']};
-export function activityTitle(row:Pick<ActivityRow,'kind'|'title'>,he:boolean){return labels[row.kind]?.[he?0:1]??row.title??row.kind.replace(/^civi:/,'')}
+export function activityTitle(row:Pick<ActivityRow,'kind'|'title'>,he:boolean){
+ if(row.kind==='outlook_reply')return he?'התקבלה תשובה ב-Outlook':'Outlook reply received';
+ return labels[row.kind]?.[he?0:1]??row.title??row.kind.replace(/^civi:/,'');
+}
 export function CandidateHistoryIdentity({candidate,name,visibility,lang}:{candidate:string;name:string;visibility:string;lang:'he'|'en'}){
  const [headline,H]=useState('');
  useEffect(()=>{let alive=true;H('');void db?.from('candidates').select('headline').eq('id',candidate).single().then(result=>{if(alive&&!result.error)H(result.data?.headline??'')});return()=>{alive=false}},[candidate]);
