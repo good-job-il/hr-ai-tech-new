@@ -72,7 +72,7 @@ export default function OrganizationJobs({jobs,apps,orgId,userId,role,lang,onRef
     {!selected?<section className="organizationJobIndex" ref={list}>
       <div className="orgPageHeading">
         <div><h1>{t('משרות ותהליכים','Jobs & processes')}</h1></div>
-        {onAdd&&<button className="gradientButton" onClick={onAdd}><UiIcon name="plus" size={18}/>{t('פרסום משרה','Publish a job')}</button>}
+        {onAdd&&<button className="gradientButton" onClick={onAdd}><UiIcon name="plus" size={18}/>{t('משרה חדשה','New job')}</button>}
       </div>
       <div className="organizationJobFilters">
         <label>{t('חיפוש משרה','Find job')}<input value={query} placeholder={t('שם המשרה או מיקום','Job title or location')} onChange={e=>setQuery(e.target.value)}/></label>

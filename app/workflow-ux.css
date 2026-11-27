@@ -1,0 +1,29 @@
+.activeJobFilters,.workflowActions,.workflowNext {display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.activeJobFilters {padding:12px 0}
+.activeJobFilters strong {color:#1e2747;font-size:.88rem}
+.workflowNext {padding:12px 14px;border-radius:12px;background:#f4f0ff;color:#332263;justify-content:space-between}
+.workflowStatus {background:#eef2f7;color:#344362;white-space:normal}
+.workflowStatus:is([data-stage="submitted"],[data-stage="reviewing"]) {background:#edf3ff;color:#224590}
+.workflowStatus:is([data-stage="approval"],[data-stage="offer"],[data-stage="task"]) {background:#fff4dc;color:#744805}
+.workflowStatus:is([data-stage="interview"],[data-stage="client_feedback"]) {background:#f2eaff;color:#58328d}
+.workflowStatus[data-stage="hired"] {background:#e8f6ec;color:#1b5e39}
+.workflowStatus:is([data-stage="rejected"],[data-stage="overdue"]) {background:#fdeeed;color:#8e2d32}
+.jobEditor fieldset {margin:0;border:1px solid #e5e5f3;border-radius:12px;padding:12px;display:grid;gap:10px;min-inline-size:0}
+.jobEditor legend,.jobEditor summary {font-weight:700;color:#252b4a}
+.jobEditor details {padding:12px;border:1px solid #e5e5f3;border-radius:12px}
+.jobEditor details[open] > label {margin-block-start:10px}
+.jobEditorPreview {display:grid;gap:7px;overflow-wrap:anywhere}
+.jobEditor [hidden] {display:none}
+.workflowQueueRow small {display:block}
+.workflowMobilePool {display:none}
+@media (max-width:640px) {
+  .workflowQueueRow {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start}
+  .workflowQueueRow button {min-height:42px}
+  .workflowMobilePool {display:grid;gap:8px;padding:10px}
+  .workflowMobilePool .candidateNameButton {min-height:44px}
+  .workflowMobilePool article {padding:10px;border:1px solid #e5e5f3;border-radius:10px}
+  .workflowMobilePool + .orgTableScroll {display:none}
+  .jobEditor input:not([type="checkbox"]),.jobEditor textarea,.jobEditor select {min-inline-size:0;width:100%}
+}
+.workflowCandidateAssignments {display:grid;gap:7px;margin-block:14px}
+.workflowMobilePool article {display:grid;gap:4px;justify-items:start}

@@ -51,6 +51,7 @@ export default function CandidateJobAssignment({orgId,userId,candidateId,jobs,ag
         {openJobs.map(item=><option key={item.id} value={item.id}>{item.title}{item.location?' · '+item.location:''}</option>)}
       </select></label>
       {!openJobs.length&&<p>{t('אין משרות פתוחות זמינות לשיוך.','No open jobs are available for assignment.')}</p>}
+      {agency&&job?.client_id&&<p>{t('השיוך נשמר בתוך חברת ההשמה. בקשת אישור היא שלב נפרד משליחה ללקוח.','The assignment stays within your agency. Requesting approval is separate from sending to the client.')}</p>}
       {agency&&job?.client_id&&<label className="taskRow"><input type="checkbox" checked={request} disabled={busy} onChange={event=>setRequest(event.target.checked)}/>{t('לבקש גם אישור להפניה','Also request submission approval')}</label>}
       <button disabled={busy||!job||!!saved&&!request}>{saved?t('ניסיון נוסף לבקשת אישור','Retry approval request'):t('שמירת שיוך','Save assignment')}</button>
       <button type="button" disabled={busy} onClick={()=>{setShow(false);setRequest(false);setError('');}}>{t('סגירה','Close')}</button>

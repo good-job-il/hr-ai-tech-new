@@ -10,7 +10,7 @@ import './recruitment-work.css';
 type Task={id:string;title:string;due_date:string|null};
 type Interview={id:string;starts_at:string;notes:string;target:HiringTarget};
 type QueueEvent={kind:'approval'|'client_feedback';event_id:string;job_id:string;record_id:string;job_title:string;candidate_name:string;occurred_at:string};
-type WorkView='tasks'|'interviews'|'applications'|QueueEvent['kind'];
+type WorkView='attention'|'tasks'|'interviews'|'applications'|QueueEvent['kind'];
 
 export default function OrganizationDaily({org,userId,lang,applications,onNavigate,interviewsOnly=false}:{
   org:{id:string;name:string;kind?:string}; userId:string; lang:'he'|'en'; applications:Application[];
@@ -20,7 +20,7 @@ export default function OrganizationDaily({org,userId,lang,applications,onNaviga
   const cap=useCapabilities(org.id),agency=org.kind==='agency';
   const [tasks,setTasks]=useState<Task[]>([]),[interviews,setInterviews]=useState<Interview[]>([]);
   const [events,setEvents]=useState<QueueEvent[]>([]),[taskCount,setTaskCount]=useState<number|null>(null);
-  const [tab,setTab]=useState<WorkView>(interviewsOnly?'interviews':agency?'approval':'applications');
+  const [tab,setTab]=useState<WorkView>(interviewsOnly?'interviews':'attention');
   const [show,setShow]=useState(false),[error,setError]=useState(''),[busy,setBusy]=useState(false);
   const [loading,setLoading]=useState(true),[queueError,setQueueError]=useState(false);
   const [reload,setReload]=useState(0);
@@ -97,7 +97,28 @@ export default function OrganizationDaily({org,userId,lang,applications,onNaviga
       if(cap.can('approvals.manage'))tabs.unshift({id:'approval',label:t('ממתינים לאישור הפניה','Pending submission approvals'),icon:'mine'});
     }
   }
-  const activeTab=tabs.some(item=>item.id===tab)?tab:'client_feedback';
+  if(!interviewsOnly)tabs.unshift({id:'attention',label:t('דורש טיפול','Needs attention'),icon:'tasks'});
+  const activeTab=tabs.some(item=>item.id===tab)?tab:tabs[0].id;
+  const myAssignments=newApplications.filter(item=>!item.handler_id||item.handler_id===userId);
+  const urgentTasks=tasks.filter(task=>task.due_date&&task.due_date<=today);
+  const attention:{id:string;text:string;context?:string;detail:string;label:string;run:()=>void;kind:string;time:boolean;owner?:string}[]=[
+    ...urgentTasks.map(task=>({id:task.id,text:task.title,detail:task.due_date!,label:t('פתיחת משימות','Open tasks'),run:()=>setTab('tasks'),kind:task.due_date!<today?'overdue':'task',time:false})),
+    ...[...(cap.can('approvals.manage')?approvals:[]),...feedback].map(event=>({
+      id:event.event_id,text:event.candidate_name,context:event.job_title,detail:event.occurred_at,time:true,kind:event.kind,
+      label:event.kind==='approval'?t('בדיקת בקשה','Review request'):t('פתיחת משוב','Open feedback'),
+      run:()=>open({jobId:event.job_id,recordId:event.record_id,manual:true}),
+    })),
+    ...myAssignments.slice(0,20).map(item=>({
+      id:item.id,text:applicantNames[item.candidate_id]||t('מועמדות חדשה','New application'),context:item.job?.title,detail:item.created_at,time:true,kind:'submitted',
+      label:t('פתיחת מועמדות','Open application'),run:()=>open({jobId:item.job!.id,recordId:item.id}),
+      owner:item.handler_id===userId?t('משויך אליי','Assigned to me'):t('טרם שויך','Unassigned'),
+    })),
+    ...interviews.map(item=>({
+      id:item.id,text:t('ראיון מתוכנן','Scheduled interview'),detail:item.starts_at,time:true,kind:'interview',
+      label:t('פתיחה במשרה','Open in job'),run:()=>open(item.target),
+    })),
+  ];
+  const attentionLabels:Record<string,string>={approval:t('ממתין לאישור','Awaiting approval'),client_feedback:t('משוב חדש','New feedback'),submitted:t('הגשה חדשה','New application'),interview:t('ראיון','Interview'),overdue:t('עבר המועד','Overdue'),task:t('לטיפול היום','Due today')};
   const open=(target:HiringTarget)=>onNavigate('org-jobs',target);
   const openLabel=t('פתיחה במשרה','Open in job');
   return <section className="orgDaily">
@@ -118,6 +139,17 @@ export default function OrganizationDaily({org,userId,lang,applications,onNaviga
         <UiIcon name={item.icon} size={17}/> {item.label} {item.count!=null&&<span className="badge">{item.count}</span>}
       </button>)}</div>
       {loading&&<p className="queueEmpty" role="status">{t('טוען את העבודה שלך…','Loading your work…')}</p>}
+      {!loading&&activeTab==='attention'&&<>
+        {attention.slice(0,12).map(item=><article className="orgWorkRow workflowQueueRow" key={item.kind+item.id}>
+          <div><b dir="auto">{item.text}</b>{item.context&&<small dir="auto">{item.context}</small>}</div>
+          <span className="badge workflowStatus" data-stage={item.kind}>{attentionLabels[item.kind]}</span>
+          <small>{item.time?dateTime(item.detail):new Date(item.detail+'T12:00:00').toLocaleDateString(locale)}{item.owner&&' · '+item.owner}</small>
+          <button onClick={item.run}>{item.label}</button>
+        </article>)}
+        {queueError&&<p className="queueEmpty" role="status">{t('חלק מהתור לא זמין כרגע.','Part of the queue is currently unavailable.')} <button onClick={()=>setReload(value=>value+1)}>{t('ניסיון נוסף','Retry')}</button></p>}
+        {!attention.length&&!queueError&&<p className="queueEmpty">{t('אין כרגע פריטים שדורשים טיפול.','Nothing needs your attention right now.')}</p>}
+        {attention.length>12&&<p className="queueEmpty">{t('פריטים נוספים מופיעים לפי סוג בלשוניות למעלה.','More items are available in the tabs above.')}</p>}
+      </>}
       {!loading&&activeTab==='tasks'&&<>{tasks.map(task=><article className="orgWorkRow" key={task.id}>
         <input type="checkbox" aria-label={t('השלמת משימה','Complete task')} disabled={busy||!cap.can('tasks.manage')}
           onChange={()=>void update(()=>db!.from('recruitment_tasks').update({done:true}).eq('organization_id',org.id).eq('id',task.id))}/>
